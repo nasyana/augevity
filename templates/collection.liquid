@@ -69,6 +69,27 @@
 
 {% endif %}
 
+{% if collection.handle == 'bone-broth-marinade' %}
+
+{% section 'marinade-title' %}
+<!-- <div class="collection-title-gv fade-in-image"
+	style=" background: url({% if collection.image %}{{ collection.image | img_url: '2048x' }}{% endif %})  #333; ">
+
+	<h1>{{ collection.title}}</h1>
+
+</div> -->
+<div class="gevity-new-style">
+
+	<div id="grey-bg-collection-header">
+		<h2>HAPPY TASTE BUDS, HAPPY GUT BUGS!</h2>
+	</div>
+
+	{% section 'marinade-graphics' %}
+	{% section 'marinades-three-columns' %}
+
+</div>
+
+{% endif %}
 
 
 

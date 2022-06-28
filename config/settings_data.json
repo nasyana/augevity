@@ -2390,6 +2390,32 @@
         ],
         "settings": {
         }
+      },
+      "marinade-title": {
+        "type": "marinade-title",
+        "settings": {
+          "main-header": "Bone Broth Marinade",
+          "desktopimg": "shopify:\/\/shop_images\/20220613_Gevity_Marinade_Landing_Page_Banner_Image_Mobile.png",
+          "mobileimg": "shopify:\/\/shop_images\/20220613_Gevity_Marinade_Landing_Page_Banner_Image.png"
+        }
+      },
+      "marinade-graphics": {
+        "type": "marinade-graphics",
+        "settings": {
+          "item1alt": "",
+          "item2alt": "",
+          "item3alt": "",
+          "item4alt": "",
+          "item5alt": ""
+        }
+      },
+      "marinades-three-columns": {
+        "type": "marinades-three-columns",
+        "settings": {
+          "one-description": "",
+          "two-description": "",
+          "three-description": ""
+        }
       }
     },
     "content_for_index": [
