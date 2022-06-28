@@ -1,0 +1,47 @@
+<div class="gevity-new-style product">
+     <script>console.log('product', {{ product | json }});</script>
+
+
+     {%- if product.id != 1205654552619 and product.id != 4488920465474 and product.id != 4744358690882 -%}
+
+     {% section 'product-template-am-cleanse' %}
+     {% section 'am-cleanse-section1' %}
+
+     {% section 'am-cleanse-section2' %} 
+
+     <!-- Reviews Section -->
+
+     {% if product.metafields.my_fields.hide_reviews %}
+
+     {%else%}
+     {% section 'am-cleanse-section3' %}
+
+     {% endif %}
+
+     {%- if product.type == "Concentrate" -%}
+     {% section 'am-cleanse-section4' %}
+     {%- endif -%}
+
+     {%- if product.tags contains "Body Glue X" -%}
+     {% section 'body-glue-x-graphics' %}
+     {%- endif -%}
+
+     {%- if product.type == "Sauce" -%}
+     {% section 'am-cleanse-section45' %}
+     {%- endif -%}
+
+     {% section 'am-cleanse-section5' %}
+
+     {% section 'am-cleanse-section6' %}
+     {% section 'product-recommendations' %}
+     {% section 'recently-viewed-products' %}
+
+     {%- else -%}
+
+     {% section 'product-template' %}
+     {% section 'nase-product-page-section' %}
+     {% section 'product-recommendations' %}
+     {% section 'recently-viewed-products' %}
+     {%- endif -%}
+
+</div>

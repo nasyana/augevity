@@ -1,0 +1,152 @@
+<style>
+
+
+    .storyreadmorecontent{
+    
+        margin-top: 20px;
+        display: none;
+        vertical-align: top;
+    }
+    p{
+    
+        margin-top:20px;
+        margin-bottom:20px
+    }
+    
+    .storyreadmorebutton{
+    
+        display:flex; flex-direction: row; justify-content: space-between;
+        border-top: 1px solid;
+        padding-top: 20px;
+        margin-top: 40px;
+        cursor: pointer;
+      
+    }
+
+    .row{
+
+display: table; 
+vertical-align: top;
+
+}
+.tablecell{
+
+display: table-cell;
+
+vertical-align: top;
+width: 50%;
+}
+
+.first{
+
+    padding-right: 5%;
+}
+
+.founderheader{
+
+    text-align:center; margin-bottom: 80px; margin-top: 10px
+
+}
+
+
+        @media only screen and (max-width: 700px) {
+
+            .row{display: block!important}
+
+            .img{
+                margin-top: 40px!important;
+            }
+
+            .founderheader{
+
+text-align:center; margin-bottom: 0px; margin-top: 60px
+
+}
+            .storyreadmorebutton{
+
+                margin-bottom: 20px;
+            }
+
+          #onlymobile{display: block!important;}
+          #onlydesktop{display: none!important;}
+          .tablecell{
+            width: 100%;
+display: block;
+
+vertical-align: top;
+}
+.first{
+
+padding-right: 0%;
+}
+
+      }
+          @media only screen and (min-width: 700px) {
+      
+          #onlymobile{display: none!important;}
+          #onlydesktop{display: table-cell!important;}
+      }
+    
+
+      </style>
+
+<section class="full_width " style="background-color:#eee">
+
+    <h2 class="kapra header2 founderheader">{{ section.settings.header }}</h2>
+    <div class="row">
+        <div class="tablecell img" id="onlymobile">
+            <img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded" src={{'markandaty.jpg' | asset_url}}>
+        </div>
+        <div class="tablecell first">
+
+
+            <div class="subtitle circular" style="margin-bottom: 0px;">
+                {{ section.settings.subheader }}
+            </div>
+
+            <div class="book">
+                {{ section.settings.body }}
+            </div>
+
+            <div class="storyreadmorecontent book">
+                {{ section.settings.storyreadmorecontent }}
+            </div>
+            <div class="storyreadmorebutton book">
+
+                <a class="storymorelabel">READ MORE</a>
+                <a style="font-size: 20px;">+</a>
+            </div>
+
+
+        </div>
+        <div class="tablecell" id="onlydesktop">
+            <img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded" src={{'markandaty.jpg' | asset_url}}>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+          "name": "Founder Story",
+          "settings": [{
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+          },{
+            "type": "richtext",
+            "id": "subheader",
+            "label": "Sub Header"
+          },{
+            "type": "richtext",
+            "id": "body",
+            "label": "Body Text"
+          },{
+            "type": "richtext",
+            "id": "storyreadmorecontent",
+            "label": "story Readmore Content"
+          }
+                  
+          ]
+      }
+{% endschema %}

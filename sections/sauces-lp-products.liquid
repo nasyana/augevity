@@ -1,0 +1,150 @@
+<section  class="sec-10 gevity_new_style_shop gevity_new_style_shop-1 desktop-only sauces" style="padding: 60px 0; border-bottom: 1px solid #dddddd;">
+	<div class="row"  style="padding: 20px 0;">
+      <div class="container">
+		<div class="col-sm-12 text-center">
+			<h2>{{ section.settings.main-header }}</h2>
+		</div>
+		<div class="col-sm-12 col-md-3 col-lg-3 text-center">
+		<a href="{{ section.settings.item1-url }}">	<img src="{{ section.settings.item1-image | img_url: '2048x1055' }}" alt="Natural"/></a>
+			<h5>{{ section.settings.item1-header }}</h5>
+			<h6>{{ section.settings.item1-description }}</h6>
+			<span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ 1205654454315 }}" style="display: inline-block;">{{ product.metafields.stamped.badge }} </span>
+			<button type="button" class="btn"><a href="{{ section.settings.item1-url }}">{{ section.settings.item1-price }}</a></button>	
+		</div>
+		<div class="col-sm-12 col-md-3 col-lg-3 text-center">
+			<a href="{{ section.settings.item2-url }}"><img src="{{ section.settings.item2-image | img_url: '2048x1055' }}" alt="Curry"/></a>
+			<h5>{{ section.settings.item2-header }}</h5>
+			<h6>{{ section.settings.item2-description }}</h6>
+			<span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ 1205654388779 }}" style="display: inline-block;">{{ product.metafields.stamped.badge }} </span>
+			<button type="button" class="btn"><a href="{{ section.settings.item2-url }}">{{ section.settings.item2-price }}</a></button>	
+		</div>
+		<div class="col-sm-12 col-md-3 col-lg-3 text-center">
+			<a href="{{ section.settings.item3-url }}"><img src="{{ section.settings.item3-image | img_url: '2048x1055' }}" alt="Lemon & Herb"/></a>
+			<h5>{{ section.settings.item3-header }}</h5>
+			<h6>{{ section.settings.item3-description }}</h6>
+			<span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ 1205654421547 }}" style="display: inline-block;">{{ product.metafields.stamped.badge }} </span>
+			<button type="button" class="btn"><a href="{{ section.settings.item3-url }}">{{ section.settings.item3-price }}</a></button>	
+		</div>	
+
+    <div class="col-sm-12 col-md-3 col-lg-3 text-center">
+			<a href="{{ section.settings.item4-url }}"><img src="{{ section.settings.item4-image | img_url: '2048x1055' }}" alt="Lemon & Herb"/></a>
+			<h5>{{ section.settings.item4-header }}</h5>
+			<h6>{{ section.settings.item4-description }}</h6>
+			<span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ 1205654421547 }}" style="display: inline-block;">{{ product.metafields.stamped.badge }} </span>
+			<button type="button" class="btn"><a href="{{ section.settings.item4-url }}">{{ section.settings.item4-price }}</a></button>	
+		</div>	
+
+      </div>		
+	</div>
+
+</section>
+
+
+
+{% schema %}
+    {
+        "name": "Sauces Products",
+        "settings": [{
+                        "type": "text",
+                        "id": "main-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "image_picker",
+                        "id": "item1-image",
+                        "label": "Image One"
+                      },{
+                        "type": "text",
+                        "id": "item1-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item1-description",
+                        "label": "description"
+                      },{
+                        "type": "number",
+                        "id": "item1-product-id",
+                        "label": "Shopify Product ID"
+                      },{
+                        "type": "text",
+                        "id": "item1-price",
+                        "label": "Price from"
+                      }, {
+                        "type": "url",
+                        "id": "item1-url",
+                        "label": "URL"
+                      }, {
+                        "type": "image_picker",
+                        "id": "item2-image",
+                        "label": "Image Two"
+                      },{
+                        "type": "text",
+                        "id": "item2-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item2-description",
+                        "label": "description"
+                      },{
+                        "type": "number",
+                        "id": "item2-product-id",
+                        "label": "Shopify Product ID"
+                      },{
+                        "type": "text",
+                        "id": "item2-price",
+                        "label": "Price from"
+                      },{
+                        "type": "url",
+                        "id": "item2-url",
+                        "label": "URL"
+                      },{
+                        "type": "image_picker",
+                        "id": "item3-image",
+                        "label": "Image Three"
+                      },{
+                        "type": "text",
+                        "id": "item3-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item3-description",
+                        "label": "description"
+                      },{
+                        "type": "number",
+                        "id": "item3-product-id",
+                        "label": "Shopify Product ID"
+                      },{
+                        "type": "text",
+                        "id": "item3-price",
+                        "label": "Price from"
+                      },{
+                        "type": "url",
+                        "id": "item3-url",
+                        "label": "URL"
+                      },{
+                        "type": "image_picker",
+                        "id": "item4-image",
+                        "label": "Image Three"
+                      },{
+                        "type": "text",
+                        "id": "item4-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item4-description",
+                        "label": "description"
+                      },{
+                        "type": "number",
+                        "id": "item4-product-id",
+                        "label": "Shopify Product ID"
+                      },{
+                        "type": "text",
+                        "id": "item4-price",
+                        "label": "Price from"
+                      },{
+                        "type": "url",
+                        "id": "item4-url",
+                        "label": "URL"
+                      }
+                    ]
+    }
+    {% endschema %}

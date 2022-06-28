@@ -1,0 +1,95 @@
+<style>
+    section#nase_why {
+        display: table;
+    }
+      </style>
+    
+    {% for block in section.blocks %}
+    
+    <section id="nase_why" class="careers" style="background: #f4f4f4!important">
+      <div class="nase_half image" style="background-image: url('{{ block.settings.item-image | img_url: '2048x1055' }}')">
+            <div class="nase_right-content" >
+                <p>&nbsp;</p>
+            </div>
+        </div>	
+        <div class="nase_half" style="background: #f4f4f4!important">
+            <div class="nase_left-content">
+                <h2 id="scroll_to_faq">{{ block.settings.header}}</h2>
+                <p>{{ block.settings.description}}</p>
+                <ul>
+                    <li class="question">{{ block.settings.line1 }}</li>
+                    <li class="question">{{ block.settings.line2 }}</li>
+                    <li class="question">{{ block.settings.line3 }}</li>
+                    <li class="question">{{ block.settings.line4 }}</li>
+                    <li class="question">{{ block.settings.line5 }}</li>
+        
+                </ul>
+            
+            </div>
+        </div>
+    
+    </section>
+    
+    {% endfor %}
+    
+    
+    {% schema %}
+    {
+        "name": "Careers Section Three",
+        "blocks": [
+                {
+                    "type": "image",
+                    "name": "Careers Section Three",
+                    "settings": [
+                      {
+                        "type": "image_picker",
+                        "id": "item-image",
+                        "label": "Image of the product"
+                      }, {
+                        "type": "image_picker",
+                        "id": "mob-item-image",
+                        "label": "Mobile Version"
+                      }, {
+                        "type": "url",
+                        "id": "block_link",
+                        "label": "Link URL"
+                      }, {
+                        "type": "text",
+                        "id": "header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "description",
+                        "label": "description"
+                      },{
+                        "type": "text",
+                        "id": "line1",
+                        "label": "Line1"
+                      },{
+                        "type": "text",
+                        "id": "line2",
+                        "label": "Line2"
+                      },{
+                        "type": "text",
+                        "id": "line3",
+                        "label": "Line3"
+                      },{
+                        "type": "text",
+                        "id": "line4",
+                        "label": "Line4"
+                      },{
+                        "type": "text",
+                        "id": "line5",
+                        "label": "Line5"
+                      }
+    
+                      
+                      
+                      
+                      
+                      
+                    ]
+                }
+        ]
+    }
+    {% endschema %}

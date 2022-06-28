@@ -1,0 +1,352 @@
+<style>
+  input[type="text"]:disabled {
+    color: #333 !important;
+}
+</style>
+{%- capture section_settings -%}
+{
+  "type": {{ settings.cart_type | json }},
+  "itemCount": {{ cart.item_count }},
+  "drawer": false,
+  "hasShippingEstimator": {% if section.settings.show_shipping_estimator and cart.item_count > 0 %}true{% else %}false{% endif %}
+}
+{%- endcapture -%}
+{% comment %} {%- render 'nase-custom-cart-js' -%} {% endcomment %}
+
+{% assign showSpecialProduct = false %}
+{% assign minQty = 3 %}
+{% assign cartQty = cart.item_count %}
+{% assign allowedSpecialProduct = false %}
+
+{% if cartQty >= minQty %}
+    {% assign allowedSpecialProduct = true %}
+{% endif %}
+{% assign specialProductId = 4748420415554 %}
+
+{% assign specialProductName = 'Sriracha' %}
+{% assign hasSpecialProduct = false %}
+{% assign itemLabel = 'items' %}
+
+            {% if cartQty == 2 %}
+                {% assign itemLabel = 'item' %}
+            {% endif %}
+{% for item in cart.items %}
+
+    <script>console.log('item',{{cart | json}})</script>
+
+    {% if item.product_id == specialProductId  %}
+        {% assign hasSpecialProduct = true %}
+
+        {% break %}
+    {% endif %}
+
+    {% if item.variant.title contains 'Subscription' %}
+        {% assign hasSubscription = true %}
+    {% endif %}
+
+
+{% endfor %}
+
+<section data-section-id="{{ section.id }}" data-section-type="cart" data-section-settings='{{ section_settings }}'>
+ {% if cart.total_price < 10000 %}
+<div class="youNeedNotice" style="background: #fafafa!important">You're {{ 10000 | minus: cart.total_price | money_without_trailing_zeros }} away from Free Shipping! <a href="https://au.gevityrx.com/collections/all" style="
+    background: #000;
+    color: #fff;
+    padding: 5px 12px;
+    margin: 0 11px;
+    display: inline-block;
+">Continue Shopping</a>
+<span>
+
+{% if hasSpecialProduct == false %}{% endif %}
+
+{% if allowedSpecialProduct and hasSpecialProduct == false and showSpecialProduct == true   %}
+
+
+  <a href="/cart/add?id=32590811725890&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">Woohoo! Claim Your Free
+      {{specialProductName}}! 🎁</a>
+
+
+{% endif %}
+
+{% if allowedSpecialProduct and hasSpecialProduct == true and showSpecialProduct == true  %}
+
+
+  Look at you go! You have a free
+  {{specialProductName}}!! 🎁
+
+{% endif %}
+
+
+{% if allowedSpecialProduct == false and showSpecialProduct == true  %}
+
+  You only need another
+  {{ minQty | minus: cart.item_count }}
+  {{itemLabel}} to get your FREE
+  {{specialProductName}}! 🎁
+
+
+{%- endif -%}
+</span>
+</div>
+  {%- endif -%}
+
+   {% if cart.total_price >= 10000 %}
+<div class="youNeedNotice">YOU’VE GOT FREE SHIPPING!<br>
+
+<span>
+{% if hasSpecialProduct == false %}{% endif %}
+
+{% if allowedSpecialProduct and hasSpecialProduct == false and showSpecialProduct == true  %}
+
+
+  <a href="/cart/add?id=32590811725890&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">Woohoo! Claim Your Free
+      {{specialProductName}}! 🎁</a>
+
+
+{% endif %}
+
+{% if allowedSpecialProduct and hasSpecialProduct == true and showSpecialProduct == true  %}
+
+
+  Look at you go! You have a free
+  {{specialProductName}}!! 🎁
+
+{% endif %}
+
+
+{% if allowedSpecialProduct == false and showSpecialProduct == true  %}
+
+  You only need another
+  {{ minQty | minus: cart.item_count }}
+  {{itemLabel}} to get your FREE
+  {{specialProductName}}! 🎁
+
+
+{%- endif -%}
+</span>
+</div>
+  {%- endif -%}
+
+  {%- if cart.item_count == 0 -%} 
+    <div class="EmptyState">
+      <div class="Container">
+        <h1 class="EmptyState__Title Heading u-h5">{{ 'cart.general.empty' | t }}</h1>
+
+        {%- if settings.cart_show_free_shipping_threshold -%}
+          {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
+          {%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money_without_trailing_zeros }}</span>{%- endcapture -%}
+
+          <p class="Text--subdued">{{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}</p>
+        {%- endif -%}
+
+        <a href="{{ routes.all_products_collection_url }}" class="EmptyState__Action Button Button--primary">{{ 'cart.general.empty_button' | t }}</a>
+      </div>
+    </div>
+  {%- else -%}
+    <div class="Container">
+      <header class="PageHeader">
+        <div class="SectionHeader SectionHeader--center">
+          <h1 class="SectionHeader__Heading Heading u-h1">{{ 'cart.general.title' | t }}</h1>
+
+          {%- if settings.cart_show_free_shipping_threshold -%}
+            {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
+
+            <p class="SectionHeader__Description Text--subdued">
+              {%- if cart.total_price >= threshold_in_cents -%}
+                {{- 'cart.general.free_shipping' | t -}}
+              {%- else -%}
+                {%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money_without_trailing_zeros }}</span>{%- endcapture -%}
+                {{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}
+              {%- endif -%}
+            </p>
+          {%- endif -%}
+        </div>
+      </header>
+
+      <div class="PageContent">
+        <form action="{{ routes.cart_url }}" method="POST" class="Cart Cart--expanded" novalidate>
+          <input type="hidden" name="attributes[collection_mobile_items_per_row]" value="">
+          <input type="hidden" name="attributes[collection_desktop_items_per_row]" value="">
+
+          {% render 'cart-items' %}
+
+
+
+
+        {% assign hasBag = false %}
+        {% assign hasSubscription = false %}
+{% for item in cart.items %}
+
+{% comment %} console.log('item', {{ item | json }}) {% endcomment %}
+  {% if item.id == 32601813942338  %}
+    {% assign hasBag = true %}
+    {% break %}
+  {% endif %}
+
+   {% if item.variant.title contains 'Subscription' %}
+    {% assign hasSubscription = true %}
+  {% endif %}
+
+
+{% endfor %}
+
+
+{% comment %} {% if cart.total_price < 10000 and hasBag == false and hasSubscription == false %}
+<div class="youNeedNotice">You only need another {{ 12000 | minus: cart.total_price | money }} to get your FREE Gevity Rx Shopper Bag</div>
+  {%- endif -%} {% endcomment %}
+
+
+
+
+{% if cart.total_price >= 12000 and hasBag == false and hasSubscription == false %}
+
+{% comment %} 
+<input type="submit" name="add" value="--" class="btn btn--purchase"  
+onclick="Shopify.addItem({{ 32601813942338 }}, 1);"
+/> {% endcomment %}
+
+
+   {% comment %} <a id="addBagToCart" style="cursor: pointer; color: green">GET FREE Gevity Rx Shopper Bag</a> {% endcomment %}
+{% comment %} <div class="CartItem addBagToCart">
+
+      <div class="CartItem__ImageWrapper AspectRatio">
+        <div class="AspectRatio" style="--aspect-ratio: 1.0">
+          <img class="addBagToCart CartItem__Image" src="https://cdn.shopify.com/s/files/1/2717/0382/products/Jute_Black_600x.jpg?v=1608188480" alt="">
+        </div>
+      </div>
+
+      <div class="CartItem__Info">
+        <h2 class="addBagToCart CartItem__Title Heading">
+          Gevity Rx Shopper Bag
+        </h2>
+         <div class="CartItem__Meta Heading Text--subdued"><p class="CartItem__Variant">Woohoo you've spent over $120 and qualify to get a FREE Gevity Rx Shopper Bag!  Simply click here to add it to your cart for free. </p></div>
+           
+      </div>
+
+      <div class="CartItem__Actions Heading Text--subdued" style="text-align: center">
+            <div class="CartItem__QuantitySelector">
+           <span class="addBagToCart" style="cursor: pointer; color: green">ADD TO CART (FREE)</span>
+            </div>
+
+           
+          </div>
+
+    
+         
+</div> {% endcomment %}
+
+
+  {% comment %} <input type="button" value="+" class="button-plus" data-field="quantity" onclick="Shopify.addItem({{ 32601813942338 }}, 1)">Add To Cart</Button> {% endcomment %}
+
+   {%- endif -%}
+
+
+
+          <footer class="Cart__Footer">
+            {%- if settings.cart_enable_notes -%}
+              <div class="Cart__NoteContainer">
+                <span class="Cart__NoteButton">{{ 'cart.general.add_note' | t }}</span>
+                <textarea class="Cart__Note Form__Textarea" name="note" id="cart-note" rows="4" placeholder="{{ 'cart.general.note_placeholder' | t }}">{{ cart.note }}</textarea>
+              </div>
+            {%- endif -%}
+
+            <div class="Cart__Recap">
+              {%- capture shipping_and_taxes_notice -%}{{ 'cart.general.shipping_and_taxes_notice' | t }}{%- endcapture -%}
+
+              {%- if cart.cart_level_discount_applications != blank -%}
+                {%- for discount_application in cart.cart_level_discount_applications -%}
+                  <p class="Cart__Discount Heading u-h6">{{ 'cart.general.discount' | t }} ({{ discount_application.title }}): -<span data-money-convertible>{{ discount_application.total_allocated_amount | money_without_trailing_zeros }}</span></p>
+                {%- endfor -%}
+              {%- endif -%}
+
+              <p class="Cart__Total Heading u-h6">{{ 'cart.general.total' | t }}: <span data-money-convertible>{{ cart.total_price | money_without_trailing_zeros }}</span></p>
+
+              {%- if shipping_and_taxes_notice != blank -%}
+                <p class="Cart__Taxes Text--subdued">{{ shipping_and_taxes_notice }}</p>
+              {%- endif -%}
+
+              <button type="submit" name="checkout" class="Cart__Checkout Button Button--primary Button--full">{{ 'cart.general.checkout' | t }}</button>
+            </div>
+          </footer>
+
+        
+
+        </form>
+
+        <!--
+
+
+  <div class="input-group m-0">
+
+  <Button type="button" value="+" class="button-plus" data-field="quantity" onclick="Shopify.addItem({{ 32601813942338 }}, 1)">
+</div>
+
+
+
+        -->
+
+  
+
+        {%- if section.settings.show_shipping_estimator -%}
+          <div class="Section Section--spacingExtraLarge">
+            <div class="Panel">
+              <h2 class="Panel__Title Heading u-h2">{{ 'cart.shipping_estimator.title' | t }}</h2>
+
+              <div class="Panel__Content">
+                <div class="ShippingEstimator">
+                  <div class="ShippingEstimator__Form">
+                    <div class="ShippingEstimator__Country Form__Select Select Select--primary">
+                      {%- render 'icon' with 'select-arrow' -%}
+                      <select name="country" title="{{ 'cart.shipping_estimator.country' | t }}" data-default="{% if customer %}{{ customer.default_address.country }}{% elsif section.settings.shipping_estimator_default_country != '' %}{{ section.settings.shipping_estimator_default_country }}{% endif %}">{{ all_country_option_tags }}</select>
+                    </div>
+
+                    <div class="ShippingEstimator__Province Form__Select Select Select--primary" style="display: none">
+                      {%- render 'icon' with 'select-arrow' -%}
+                      <select name="province" title="{{ 'cart.shipping_estimator.province' | t }}"></select>
+                    </div>
+
+                    <input type="text" class="ShippingEstimator__Zip Form__Input" name="zip" placeholder="{{ 'cart.shipping_estimator.zip_code' | t }}">
+
+                    <button type="button" class="ShippingEstimator__Submit Button Button--primary">{{ 'cart.shipping_estimator.estimate' | t }}</button>
+                  </div>
+
+                  <div class="ShippingEstimator__Error Alert Alert--error" style="display: none"></div>
+                  <div class="ShippingEstimator__Results">
+                    <div class="ShippingEstimator__ResultsInner"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+
+        {% render 'shop-now-boxes' %}
+      </div>
+    </div>
+  {%- endif -%}
+
+  
+</section>
+
+{% schema %}
+{
+  "name": "Cart page",
+  "class": "shopify-section--bordered",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_shipping_estimator",
+      "label": "Show shipping rates calculator",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "shipping_estimator_default_country",
+      "label": "Default country to use",
+      "info": "If your customer is logged-in, the country in his default shipping address will be selected.",
+      "default": "United States"
+    }
+  ]
+}
+{% endschema %}

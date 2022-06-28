@@ -1,0 +1,13 @@
+{% comment %}
+  DO NOT MODIFY THIS FILE DIRECTLY. THIS FILE WILL BE OVERWRITTEN.
+  YOU CAN MODIFY THE LIQUID CODE FOR THIS CUSTOM FIELD HERE:
+  https://customfields.bonify.io/dashboard/meadow-marrow.myshopify.com/products/configure/197286/edit
+{% endcomment %}
+{% if product.metafields.custom_fields["hero_ingredients_image_3"] != blank %}
+  <div class="custom-field custom-field__hero-ingredients-image-3 custom-field__type--image">
+    <h3 class="custom-field--title">Hero Ingredients Image 3</h3>
+    <div class="custom-field--value">  
+      {% include 'cf-image' with image: product.metafields.custom_fields["hero_ingredients_image_3"], print: 'url' %}
+    </div>
+  </div>
+{% endif %}

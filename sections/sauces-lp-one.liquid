@@ -1,0 +1,72 @@
+<style>
+    section#nase_why {
+        display: table;
+    }
+      </style>
+    
+    {% for block in section.blocks %}
+    
+    <section class="sec-01" style="background: #f4f4f4!important; width: 100%; background-position: center; color: #fff"; > 
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 gevity_new_style_half-bg one-image" style="background-image: url('{{ block.settings.item-image | img_url: '2048x1055' }}')"></div> 
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center" style="padding: 10% 0; background-image: url({{ 'Sauces-Header-Right.jpg' | asset_url }}); background-size: cover;">
+              {% comment %} <h1 class="gwhite">{{ block.settings.header }}</h1> 
+              <p>{{ block.settings.description }}</p>   {% endcomment %}
+
+       <div > <img src="{{ block.settings.item-image2 | img_url: '2048x1055' }}">  </div>
+              </div>
+          </div> 
+    </section> 
+    
+    {% endfor %}
+    
+     
+    {% schema %}
+    {
+        "name": "Sauces One",
+        "blocks": [
+                {
+                    "type": "image",
+                    "name": "Sauces One",
+                    "settings": [
+                      {
+                        "type": "image_picker",
+                        "id": "item-image",
+                        "label": "Image of the product"
+                      }, {
+                        "type": "image_picker",
+                        "id": "mob-item-image",
+                        "label": "Mobile Version"
+                      },{
+                        "type": "image_picker",
+                        "id": "item-image2",
+                        "label": "Image of the product"
+                      }, {
+                        "type": "image_picker",
+                        "id": "mob-item-image2",
+                        "label": "Mobile Version"
+                      }, {
+                        "type": "url",
+                        "id": "block_link",
+                        "label": "Link URL"
+                      }, {
+                        "type": "html",
+                        "id": "header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "html",
+                        "id": "description",
+                        "label": "description"
+                      }
+    
+    
+    
+    
+    
+                 
+                    ]
+                }
+        ]
+    }
+    {% endschema %}

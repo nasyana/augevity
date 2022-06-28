@@ -1,0 +1,86 @@
+{% if page.handle == 'about' %}
+    {% section 'about-new-top' %}
+    <div id="about-container">
+
+        {% section 'about-new-intro' %}
+        {% section 'about-new-founder-story' %}
+        {% section 'about-new-join-our-team' %}
+        {% section 'about-new-jobs' %}
+        {%- comment -%} {% section 'about-section-two' %} 
+ {% section 'about-section-three' %}
+ {% section 'about-section-five' %}
+ {% section 'about-section-six' %}{%- endcomment -%}
+        {% section 'about-new-3collections' %}
+    </div>
+{% endif %}
+
+{% if page.handle == 'health-practitioners' %}
+
+    <div id="health-prac-container">
+        {% section 'health-prac-section-one' %}
+        {% section 'health-prac-section-two' %}
+        {% section 'health-prac-section-three' %}
+        {% section 'health-prac-section-four' %}
+        {% section 'health-prac-section-five' %}
+        <!-- {% section 'health-prac-section-six' %} -->
+                         <!-- {% section 'health-prac-section-seven' %} -->
+
+        {% section 'wholesaler-section-four' %}
+        {% section 'wholesaler-section-five' %}
+
+    </div>
+{% endif %}
+
+
+{% if page.handle == 'wholesaler' %}
+
+    <div id="wholesaler-container">
+        {% section 'wholesaler-section-one' %}
+        {% section 'wholesaler-section-two' %}
+        {% section 'wholesaler-section-three' %}
+        {% section 'wholesaler-section-four' %}
+        {% section 'wholesaler-section-five' %}
+    </div>
+
+{% endif %}
+
+
+{% if page.handle == 'careers' %}
+
+    <div id="careers-container">
+        {% section 'careers-section-one' %}
+        {% section 'careers-section-two' %}
+        {% section 'careers-section-three' %}
+        {% section 'careers-section-four' %}
+
+    </div>
+
+{% endif %}
+
+
+{% if page.handle == 'contact-faqs' %}
+
+    <div id="contact-faq">
+        {% section 'contact-faq-one' %}
+        {% section 'contact-faq-two' %}
+
+
+    </div>
+
+{% endif %}
+
+
+{% unless page.handle == 'about' or page.handle == 'health-practitioners' or page.handle == 'wholesaler' or page.handle == 'careers' or page.handle == 'contact-faqs' %}
+    <div class="Container {{ page.title | handleize }}">
+        <header class="PageHeader">
+            <div class="SectionHeader SectionHeader--center">
+                <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+            </div>
+        </header>
+
+        <div class="PageContent PageContent--narrow Rte">
+            {{ page.content }}
+        </div>
+    </div>
+
+{% endunless %}

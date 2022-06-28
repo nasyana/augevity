@@ -1,0 +1,49 @@
+<script>
+  
+
+
+
+
+
+
+  
+   jQuery( document ).ready(function(event) {
+
+
+
+
+jQuery('#addBagToCart').click(()=>{
+
+
+
+        alert('add')
+         data = {
+      "quantity": 1,
+      "id": 11765651963947,
+  }
+  
+  }
+  
+  
+  jQuery.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: data,
+   	  error: function(data, textstatus) {
+      console.log(data.responseJSON);
+    },dataType: 'json',
+      success: function() { 
+         window.location.href = '/cart'; 
+      console.log('yo!');
+       // return;
+      }
+  }).done(function( data ) {
+    if ( console && console.log ) {
+    }
+  });}
+
+       
+       
+});
+  
+</script>

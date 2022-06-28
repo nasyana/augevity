@@ -1,0 +1,90 @@
+<style>
+    @media only screen and (max-width: 500px) {
+  
+      #onlymobile{display: block;}
+      #onlydesktop{display: none;}
+  }
+      @media only screen and (min-width: 500px) {
+  
+      #onlymobile{display: none;}
+      #onlydesktop{display: block;}
+  }
+  </style>
+   {% for block in section.blocks %}
+  <section class="full_width about_section_two wholesaler">
+  
+   
+      <div class="full_width onlydesktop" > 
+       
+       
+            
+        <h2>{{ block.settings.header }}</h2>
+        
+        <p class="nase_about_body">{{ block.settings.body }}</p>
+        
+        <p class="nase_about_footer">{{ block.settings.footer }}</p>
+
+        <ul class="twocols">
+            <li class="question">{{block.settings.line1}}</li>
+            <li class="question">{{block.settings.line2}}</li>
+            <li class="question">{{block.settings.line3}}</li>
+            <li class="question">{{block.settings.line4}}</li>
+            <li class="question">{{block.settings.line5}}</li>
+            <li class="question">{{block.settings.line6}}</li>
+        </ul>
+     
+              
+      </div>
+  
+  
+  </section>
+  {% endfor %}
+  
+  {% schema %}
+  {
+      "name": "Wholesaler Section Four",
+      "blocks": [
+              {
+                  "type": "image",
+                  "name": "Wholesaler Section Four",
+                  "settings": [
+                    {
+                      "type": "text",
+                      "id": "header",
+                      "label": "Box Header"
+                    },{
+                      "type": "text",
+                      "id": "body",
+                      "label": "Body"
+                    },{
+                      "type": "text",
+                      "id": "line1",
+                      "label": "Line 1"
+                    },{
+                        "type": "text",
+                        "id": "line2",
+                        "label": "Line 2"
+                      },{
+                        "type": "text",
+                        "id": "line3",
+                        "label": "Line 3"
+                      },{
+                        "type": "text",
+                        "id": "line4",
+                        "label": "Line 4"
+                      },{
+                        "type": "text",
+                        "id": "line5",
+                        "label": "Line 5"
+                      },{
+                        "type": "text",
+                        "id": "line6",
+                        "label": "Line 6"
+                      }
+  
+               
+                  ]
+              }
+      ]
+  }
+  {% endschema %}

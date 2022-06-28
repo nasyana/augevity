@@ -1,0 +1,69 @@
+
+<div class="gevity-new-style">
+
+
+	{% section 'body-glue-section-one' %}
+
+
+{% section 'body-glue-section-two' %}
+
+{% section 'body-glue-videos' %}
+
+{% section 'body-glue-section-three' %}
+
+{% section 'body-glue-section-four' %}
+{% section 'body-glue-section-five' %}
+{% section 'body-glue-benefits-slider' %}
+
+{% section 'body-glue-section-six' %}
+
+{% section 'body-glue-section-seven' %}
+
+
+{% section 'body-glue-section-eight' %}
+
+
+{% section 'body-glue-section-nine' %}
+{% section 'body-glue-section-ten' %}
+{% section 'body-glue-ten-mobile' %}
+
+{% section 'body-glue-section-eleven' %}
+{% section 'body-glue-eleven-mobile' %}
+{% section 'body-glue-three-icons' %}
+
+<section  class="sec-13">
+	<div class="row" style="background-color:#000000; padding: 30px 0; color: #ffffff;">
+		<div class="col-sm-12 text-center">
+			<h2 class="gwhite" style="margin: 0;">MORE REVIEWS FROM OUR GEVITY GANG</h2>			
+		</div>
+	</div>
+	<div class="arrow-down"></div>
+</section>
+
+<section  class="sec-14" style="background-color: #fff; padding: 0px 0;">
+	<div class="row">
+      <div class="container">
+		<div class="col-sm-12">
+			<div id="stamped-main-widget" 
+			data-widget-style="full-page"
+			data-product-id="{{ product.id }}" 
+			data-name="{{ product.title | escape }}" 
+			data-url="{{ shop.url }}{{ product.url }}" 
+			data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" 
+			data-description="{{ product.description | escape }}" 
+			data-product-sku="{{product.selected_or_first_available_variant.sku}}"
+			data-product-type="{{product.type}}"> 
+			 
+			</div>
+			
+				<!-- <div id="review-section">
+					Want to write a review? Look out for an email from Gevity RX 7 days after purchase.
+					</div>	 -->
+		</div>
+      </div>		
+	</div>	
+</section>
+
+ {% section 'body-glue-section-fifteen' %}
+
+</div>

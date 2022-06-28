@@ -1,0 +1,88 @@
+<style>
+section#nase_why {
+    display: table;
+}
+  </style>
+
+{% for block in section.blocks %}
+
+<section id="nase_why" style="background: #f4f4f4!important">
+  <div class="nase_half image" style="background-image: url('{{ block.settings.item-image | img_url: '2048x1055' }}')">
+		<div class="nase_right-content" >
+			<p>&nbsp;</p>
+		</div>
+	</div>	
+	<div class="nase_half" style="background: #f4f4f4!important">
+		<div class="nase_left-content">
+			<h2 id="scroll_to_faq">{{ block.settings.header}}</h2>
+			<p>{{ block.settings.description}}</p>
+			<ul>
+ 
+               {% if page.metafields.custom_fields["heal"] != blank %}
+               <div class="custom-field custom-field__heal custom-field__type--field-collection">
+                 <!-- <h3 class="custom-field--title">Health Practitioners Benefits</h3> -->
+                 <div class="custom-field--value">
+                   {% assign separator = "|###|" %}
+                   {% assign question_array = page.metafields.custom_fields["question"] | split: separator %}
+                   {% assign answer_array = page.metafields.custom_fields["answer"] | split: separator %}
+                   {% assign fc_keys = page.metafields.custom_fields["heal"] | split: "," %}
+                   {% for i in fc_keys %}
+                     {% assign index = i | plus: 0 %}
+       
+              <li class="question">{{ question_array[index] }}</li>
+       
+              <li class="answer">	{{ answer_array[index] }} </li>
+        
+      {% endfor %}
+
+{% endif %}
+			</ul>
+		
+		</div>
+	</div>
+
+</section>
+
+{% endfor %}
+
+
+{% schema %}
+{
+	"name": "Health Prac Section Three",
+	"blocks": [
+    		{
+    			"type": "image",
+    			"name": "Health Prac Section Three",
+    			"settings": [
+                  {
+                    "type": "image_picker",
+                    "id": "item-image",
+                    "label": "Image of the product"
+                  }, {
+                    "type": "image_picker",
+                    "id": "mob-item-image",
+                    "label": "Mobile Version"
+                  }, {
+                    "type": "url",
+                    "id": "block_link",
+                    "label": "Link URL"
+                  }, {
+                    "type": "text",
+                    "id": "header",
+                    "label": "Box Header"
+                  }, {
+                    "type": "text",
+                    "id": "description",
+                    "label": "description"
+                  }
+
+
+
+
+
+             
+    			]
+    		}
+	]
+}
+{% endschema %}

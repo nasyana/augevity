@@ -1,0 +1,272 @@
+{%- capture flickity_options -%}
+    {
+                              "prevNextButtons": false,
+                              "wrapAround": true,
+                              "dragThreshold": 16,
+                              "pageDots":
+    {% if section.blocks.size > 1 %}true{% else %}false
+    {% endif %},
+                              "autoPlay":
+    {% if section.settings.autoplay %}
+        {{ section.settings.cycle_speed | times: 1000 }}{% else %}false
+    {% endif %}
+    }
+{%- endcapture -%}
+
+{%- assign should_show_nav = false -%}
+
+{%- for block in product.metafields.custom_fields.reviews -%}
+    {%- if block.settings.logo -%}
+        {%- assign should_show_nav = true -%}
+        {%- break -%}
+    {%- endif -%} 
+{%- endfor -%}
+
+<script>console.log('line_item.productx',{{product.metafields.custom_fields["product_review_slider"] | json}})</script>
+
+  {%- comment -%}
+{% if product.metafields.custom_fields["product_review_slider"] != blank %}
+  <div class="custom-field custom-field__product-review-slider custom-field__type--field-collection-json">
+    <h3 class="custom-field--title">Product Review Slider</h3>
+    <div class="custom-field--value">
+      {% for item in product.metafields.custom_fields["product_review_slider"] %}
+        <div class="fc-item fc-index--{{ forloop.index0 }}">
+           {% if item["review"] != blank %}
+             <div class="fc-field field__review field-type--text">
+               <h4 class="custom-field--title">Review</h4>
+               <div class="custom-field--value">
+                 {{ item["review"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["author"] != blank %}
+             <div class="fc-field field__author field-type--text">
+               <h4 class="custom-field--title">Author</h4>
+               <div class="custom-field--value">
+                 {{ item["author"] }}
+               </div>
+             </div>
+           {% endif %}
+         </div>
+       {% endfor %}
+    </div>
+  </div>
+{% endif %}
+  {%- endcomment -%}
+
+
+  {% if product.metafields.custom_fields["product_review_slider"] != blank %}
+<section class="Section " id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="testimonials" style="background-color: #4C576B; background-color: {{ product.metafields.custom_fields["testimonial_bg"]  | strip_html }};">
+
+    <div class="TestimonialList {% if should_show_nav %}TestimonialList--withNav{% endif %} Carousel Carousel--fadeIn reviews" data-flickity-config='{{ flickity_options }}'>
+      {% for item in product.metafields.custom_fields["product_review_slider"] %}
+            <div id="block-{{ item.id }}" class="Carousel__Cell Testimonial {% if forloop.first %}is-selected{% endif %}" data-slide-index="{{ forloop.index0 }}">
+                <div class="Container">
+
+          
+
+                    <div class="testi" style="margin-bottom: 10px; height: 30px; opacity: 0.7; color: {{ product.metafields.custom_fields["accent_colour"]  | strip_html }}">
+
+                     
+                    
+                      <i class="spr-icon spr-icon-star" style="color: rgba(255,255,255,1)"></i><i class="spr-icon spr-icon-star" style="color: rgba(255,255,255,1)"></i><i class="spr-icon spr-icon-star" style="color: rgba(255,255,255,1)"></i><i class="spr-icon spr-icon-star" style="color: rgba(255,255,255,1)"></i><i class="spr-icon spr-icon-star" style="color: rgba(255,255,255,1)" ></i></div>
+                      <!-- {%- if block.settings.logo != blank -%}
+                          <img class="Testimonial__Logo hidden-lap-and-up" src="{{ block.settings.logo | img_url: '300x' }}" alt="{{ block.settings.logo.alt | escape }}">
+                      {%- endif -%} -->
+                      {% if item["review"] != blank %}
+                          <div class="am Testimonial__Content">
+                            {{ item["review"] }}
+                          </div>
+                          <div class="am Testimonial__Content">
+                            {{ item["author"] }}
+                          </div>
+                      {%- endif -%}
+  
+  
+                  </div>
+              </div>
+          {%- endfor -%}
+      </div>
+  
+  
+  </section>
+
+
+{% else %}
+
+
+<section class="Section " id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="testimonials" style="background-color: #4C576B; background-color: {{ product.metafields.custom_fields["testimonial_bg"]  | strip_html }};">
+
+  <div class="TestimonialList {% if should_show_nav %}TestimonialList--withNav{% endif %} Carousel Carousel--fadeIn reviews" data-flickity-config='{{ flickity_options }}'>
+      {%- for block in section.blocks -%}
+          <div id="block-{{ block.id }}" class="Carousel__Cell Testimonial {% if forloop.first %}is-selected{% endif %}" {{ block.shopify_attributes }} data-slide-index="{{ forloop.index0 }}">
+              <div class="Container">
+
+                  {% comment %} <img class="Testimonial__Logo" src="{{ section.settings.top-image | img_url: '300x' }}"> {% endcomment %}
+
+                  <div class="testi" style="margin-bottom: 10px; height: 30px; opacity: 0.7; color: {{ product.metafields.custom_fields["accent_colour"]  | strip_html }}">
+
+                   
+                  
+                  <i class="spr-icon spr-icon-star" style="color: {{ product.metafields.custom_fields["stars_colour"]  | strip_html  }}"></i><i class="spr-icon spr-icon-star" style="color: {{ product.metafields.custom_fields["stars_colour"]  | strip_html  }}"></i><i class="spr-icon spr-icon-star" style="color: {{ product.metafields.custom_fields["stars_colour"]  | strip_html  }}"></i><i class="spr-icon spr-icon-star" style="color: {{ product.metafields.custom_fields["stars_colour"]  | strip_html  }}"></i><i class="spr-icon spr-icon-star" style="color: {{ product.metafields.custom_fields["stars_colour"]  | strip_html  }}" ></i></div>
+                  <!-- {%- if block.settings.logo != blank -%}
+                      <img class="Testimonial__Logo hidden-lap-and-up" src="{{ block.settings.logo | img_url: '300x' }}" alt="{{ block.settings.logo.alt | escape }}">
+                  {%- endif -%} -->
+                  {%- if block.settings.quote != blank -%}
+                      <div class="am Testimonial__Content">
+                          {{ block.settings.quote }}
+                      </div>
+                      <div class="am Testimonial__Content">
+                          {{ block.settings.name }}
+                      </div>
+                  {%- endif -%}
+
+
+              </div>
+          </div>
+      {%- endfor -%}
+  </div>
+
+
+</section>
+
+
+{% endif -%}
+  {%- comment -%}
+
+
+  {% assign reviews = "cheddar" | split: ','%}
+<section class="Section " id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="testimonials" style="background-color: #4C576B; background-color: {{ product.metafields.custom_fields["testimonial_bg"]  | strip_html }};">
+
+    <div class="TestimonialList {% if should_show_nav %}TestimonialList--withNav{% endif %} Carousel Carousel--fadeIn reviews" data-flickity-config='{{ flickity_options }}'>
+        {%- for review in reviews -%}
+            <div id="block-{{ 1 }}" class="Carousel__Cell Testimonial {% if forloop.first %}is-selected{% endif %}"  data-slide-index="{{ forloop.index0 }}">
+                <div class="Container">
+ 
+                   
+
+                    <div class="testi" style="margin-bottom: 10px; height: 30px; opacity: 0.7; color: {{ product.metafields.custom_fields["accent_colour"]  | strip_html }}">
+
+                    <i class="spr-icon spr-icon-star" style="color: {{ product.metafields.custom_fields["stars_colour"]  | strip_html  }}"></i><i class="spr-icon spr-icon-star" style="color: {{ product.metafields.custom_fields["stars_colour"]  | strip_html  }}"></i><i class="spr-icon spr-icon-star" style="color: {{ product.metafields.custom_fields["stars_colour"]  | strip_html  }}"></i><i class="spr-icon spr-icon-star" style="color: {{ product.metafields.custom_fields["stars_colour"]  | strip_html  }}"></i><i class="spr-icon spr-icon-star" style="color: {{ product.metafields.custom_fields["stars_colour"]  | strip_html  }}" ></i></div>
+                    <!-- {%- if block.settings.logo != blank -%}
+                        <img class="Testimonial__Logo hidden-lap-and-up" src="{{ block.settings.logo | img_url: '300x' }}" alt="{{ block.settings.logo.alt | escape }}">
+                    {%- endif -%} -->
+                    {%- if product.metafields.my_fields.testimonial_1 != blank -%}  
+                        <div class="am Testimonial__Content">
+                            {{ product.metafields.my_fields.testimonial_1 }} 
+                        </div>
+                        <div class="am Testimonial__Content">
+                            {{ product.metafields.my_fields.testimonial_1_name  }}
+                        </div>
+                    {%- endif -%}
+
+
+                </div>
+            </div>
+        {%- endfor -%}
+    </div>
+
+
+</section>
+{%- endcomment -%}
+<style>
+  #section-{{ section.id }} {
+    color: {{ section.settings.text_color }};
+    background: {{ section.settings.background }};
+  }
+
+  #section-{{ section.id }} .flickity-page-dots .dot:not(.is-selected) {
+    border-color: {{section.settings.background | color_mix: section.settings.text_color, 85}};
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "class": "shopify-section--bordered",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Auto rotate between testimonials",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "cycle_speed",
+      "min": 3,
+      "max": 8,
+      "step": 1,
+      "unit": "sec",
+      "label": "Change testimonials every",
+      "default": 5
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#eaeaea"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#1c1b1b"
+    },{
+        "type": "image_picker",
+        "id": "top-image",
+        "label": "Top Image",
+        "info": "340 x 80px .jpg recommended"
+      }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo",
+          "info": "340 x 80px .jpg recommended"
+        },
+        {
+          "type": "richtext",
+          "id": "quote",
+          "label": "Quote",
+          "default": "<p>Share what your customers are saying about your products, your company...</p>",
+                                      "info": "For best results, keep the word count consistent in each quote."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "id": "name",
+                                        "label": "Name"
+                              
+                                      }
+                                  ]
+                                }
+                              ],
+                              "presets": [
+                                { 
+                                  "category": "Text",
+                                  "name": "Testimonials",
+                                  "settings": {},
+                                  "blocks": [
+                                    {
+                                      "type": "testimonial",
+                                      "settings": {}
+                                    },
+                                    {
+                                      "type": "testimonial",
+                                      "settings": {}
+                                    },
+                                    {
+                                      "type": "testimonial",
+                                      "settings": {}
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+{% endschema %}

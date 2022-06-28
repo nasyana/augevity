@@ -1,0 +1,174 @@
+<script>console.log('Tags', {{ current_tags | json }});</script>
+<script>console.log('Collection', {{ collection.handle | json }});</script>
+
+{% comment %} {% section 'body-glue-section-one' %} {% endcomment %}
+
+{% if collection.handle == 'all' %}
+
+<div class="collection-title-gv fade-in-image"
+	style=" background: url({{ 'all-header.jpg' | asset_url }})  #333; ">
+
+	<h1>BONE BROTH REDEFINED</h1>
+
+</div>
+<div class="gevity-new-style">
+
+	<div id="grey-bg-collection-header">
+		<h2 id="desktopheader" class="extra">THE WORLD’S MOST NUTRIENT DENSE BONE BROTH</h2>
+		<h2 id="mobileheader" class="extra">THE WORLD’S MOST<br/>NUTRIENT DENSE BONE BROTH</h2>
+		<p style="padding: 0 5%;">With 10 x more collagen forming amino acids per gram than traditional bone broth, it’s
+			easy to understand why Body Glue™ is Australia’s BEST bone broth.</p>
+	</div>
+	{% section 'body-glue-graphics' %}
+
+</div>
+
+
+{% section 'shop-now-boxes' %}
+
+
+{% endif %}
+
+
+{% if collection.handle == 'body-glue-x' %}
+
+{% section 'body-glue-x-header' %}
+
+<div class="gevity-new-style">
+
+
+	{% section 'body-glue-x-three-columns' %}
+	{% section 'body-glue-x-temporary-products' %}
+	
+</div>
+
+
+
+
+{% endif %}
+
+{% if collection.handle == 'bone-broth-sauces' %}
+
+{% section 'sauce-title' %}
+<!-- <div class="collection-title-gv fade-in-image"
+	style=" background: url({% if collection.image %}{{ collection.image | img_url: '2048x' }}{% endif %})  #333; ">
+
+	<h1>{{ collection.title}}</h1>
+
+</div> -->
+<div class="gevity-new-style">
+
+	<div id="grey-bg-collection-header">
+		<h2>THE EASIEST AND MOST DELICIOUS WAY TO CONSUME BONE BROTH!</h2>
+	</div>
+
+	{% section 'sauce-graphics' %}
+	{% section 'sauces-three-columns' %}
+
+</div>
+
+{% endif %}
+
+
+
+
+{% if current_tags[0] != 'Culinary' and current_tags[0] == 'Performance' %}
+{% section 'performance-title' %}
+
+<!-- <div class="collection-title-gv fade-in-image"
+	style=" background: url({{ 'performance-header.jpg' | asset_url }})  #333; ">
+
+	<h1>{{ current_tags[0]}}</h1>
+
+</div> -->
+<div class="gevity-new-style sipcook">
+
+	<div id="grey-bg-collection-header">
+		<img src="{{ 'functional-ingredients.png' | asset_img_url: '500x' }}" alt="Functional Ingredients" />
+		<h2>ACHIEVING YOUR BEST RESULTS AND ADDING THE WORLD’S MOST NUTRIENT DENSE BONE BROTH TO YOUR DAILY ROUTINE IS AS EASY AS:</h2>
+	</div>
+	{% section 'performance-three-columns' %}
+
+	</div>
+
+</div>
+
+{% endif %}
+
+{% if current_tags[0] != 'Performance' and current_tags[0] == 'Culinary' %}
+
+{% section 'culinary-title' %}
+
+<!-- <div class="collection-title-gv fade-in-image"
+	style=" background: url({{ 'culinary-header.jpg' | asset_url }})  #333; ">
+
+	<h1>{{ current_tags[0]}} Range</h1>
+
+</div> -->
+
+
+<div class="gevity-new-style">
+	
+	<div id="grey-bg-collection-header" class="sipcook">
+		<img src="{{ 'sipcook.png' | asset_img_url: '500x' }}" alt="Sip Cook Create" />
+		<h2>CONSUMING BODY GLUE™ AND ADDING THE WORLD’S MOST NUTRIENT
+			DENSE BONE BROTH TO YOUR DAILY ROUTINE IS AS EASY AS:</h2>
+	</div>
+	{% section 'culinary-three-columns' %}
+
+</div>
+
+{% endif %}
+
+{% if collection.handle == 'bone-broth-body-glue' and current_tags[0] != 'Culinary' and current_tags[0] != 'Performance'
+%}
+
+{% section 'bodyglue-title' %}
+<!-- <div class="collection-title-gv fade-in-image"
+	style=" background: url({% if collection.image %}{{ collection.image | img_url: '2048x' }}{% endif %})  #333; ">
+
+	<h1>BONE BROTH REDEFINED</h1>
+
+</div> --> 
+<div class="gevity-new-style">
+
+	<div id="grey-bg-collection-header">
+		<h2 id="desktopheader" class="extra">THE WORLD’S MOST NUTRIENT DENSE BONE BROTH</h2>
+		<h2 id="mobileheader" class="extra">THE WORLD’S MOST<br/>NUTRIENT DENSE BONE BROTH</h2>
+		<p style="padding: 0 5%;">With 10 x more collagen forming amino acids per gram than traditional bone broth, it’s
+			easy to understand why Body Glue™ is Australia’s BEST bone broth.</p>
+	</div>
+	{% section 'body-glue-graphics-two' %}
+	<!-- <div class="SectionHeader SectionHeader--center" style="margin: 3% 5%;">
+		<div class="SectionHeader__Description Rte">
+			<p><strong>With 10 x more collagen forming amino acids per gram than traditional bone broth, it’s easy to
+					understand why Body Glue™ is Australia’s best bone broth.</strong></p>
+
+			<p>Maximum bioavailability! It’s made meat & vegetable free and never treated with heat so your body can
+				easily absorb the nutrients.</p>
+			<p>Strong immunity starts in the gut - Body Glue™ plays a vital role in reducing inflammation, aids with
+				digestion</p>
+			<p>It’s so versatile - sip, cook, create, blend, whiz, baste, drizzle, dip. 3 ranges and endless
+				possibilities! Serious value! When it comes to nutrient levels</p>
+		</div>
+
+	</div> -->
+
+</div>
+
+{% endif %}
+
+</div>
+
+
+
+<!-- {% section 'collections-top-section' %} -->
+{% unless collection.handle == 'body-glue-x' %}
+{% section 'collection-template' %}
+{% endunless %}
+{% if collection.handle != 'all' %}
+{% section 'you-may-also-like' %}
+{% endif %}
+<!-- {% section 'you-may-also-like' %}
+{% section 'recently-viewed-products' %} -->
+<!-- {% section 'collection-footer' %}  -->

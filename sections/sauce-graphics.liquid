@@ -1,0 +1,125 @@
+<style>
+
+@media only screen and (max-width: 600px) {
+
+
+#onlymobile{display: block;}
+#onlydesktop{display: none;}
+}
+@media only screen and (min-width: 600px) {
+
+
+#onlymobile{display: none;}
+#onlydesktop{display: block;} 
+} 
+
+</style>
+
+<section class="sec-04" style="padding: 0 0 0 0;">
+
+    <div class="row" id="onlydesktop">
+        <div class="container">
+            <div class="newcomicbox">
+                <img src="{{ section.settings.item1-image | img_url: '2048x1055' }}" alt="{{section.settings.item1alt}}"/>
+            </div>
+            <div class="newcomicbox">
+                <img src="{{ section.settings.item2-image | img_url: '2048x1055' }}" alt="{{section.settings.item2alt}}"/>
+            </div>
+            <div class="newcomicbox">
+                <img src="{{ section.settings.item3-image | img_url: '2048x1055' }}" alt="{{section.settings.item3alt}}"/>
+            </div>
+            <div class="newcomicbox">
+                <img src="{{ section.settings.item4-image | img_url: '2048x1055' }}" alt="{{section.settings.item4alt}}"/>
+            </div>
+
+            <div class="newcomicbox">
+                <img src="{{ section.settings.item5-image | img_url: '2048x1055' }}" alt="{{section.settings.item5alt}}"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="onlymobile">
+        <div class="container">
+            <div class="newcomicbox">
+                <img src="{{ section.settings.item1-image | img_url: '2048x1055' }}" alt="{{section.settings.item1alt}}"/>
+            </div>
+            <div class="newcomicbox">
+                <img src="{{ section.settings.item2-image | img_url: '2048x1055' }}" alt="{{section.settings.item2alt}}"/>
+            </div>
+            <div class="newcomicbox">
+                <img src="{{ section.settings.item4-image | img_url: '2048x1055' }}" alt="{{section.settings.item4alt}}"/>
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="row" id="onlymobile">
+        <div class="container">
+
+            <div class="newcomicbox">
+            </div>
+            <div class="newcomicbox">
+                <img src="{{ section.settings.item3-image | img_url: '2048x1055' }}" alt="{{section.settings.item3alt}}"/>
+            </div>
+         
+        
+            <div class="newcomicbox">
+                <img src="{{ section.settings.item5-image | img_url: '2048x1055' }}" alt="{{section.settings.item5alt}}"/>
+            </div>
+            <div class="newcomicbox">
+            </div>
+           
+        </div>
+    </div>
+
+ 
+</section>
+
+
+{% schema %}
+{
+    "name": "Sauce Graphics",
+    "settings": [{
+                    "type": "image_picker",
+                    "id": "item1-image",
+                    "label": "Image One"
+                  },{
+                    "type": "text",
+                    "id": "item1alt",
+                    "label": "Image 1 Alt Tag"
+                    },{
+                    "type": "image_picker",
+                    "id": "item2-image",
+                    "label": "Image Two"
+                  },{
+                    "type": "text",
+                    "id": "item2alt",
+                    "label": "Image 2 Alt Tag"
+                    },{
+                    "type": "image_picker",
+                    "id": "item3-image",
+                    "label": "Image Three"
+                  },{
+                    "type": "text",
+                    "id": "item3alt",
+                    "label": "Image 3 Alt Tag"
+                    },{
+                    "type": "image_picker",
+                    "id": "item4-image",
+                    "label": "Image Four"
+                  },{
+                    "type": "text",
+                    "id": "item4alt",
+                    "label": "Image 4 Alt Tag"
+                    },{
+                    "type": "image_picker",
+                    "id": "item5-image",
+                    "label": "Image Five"
+                  },{
+                    "type": "text",
+                    "id": "item5alt",
+                    "label": "Image 5 Alt Tag"
+                    } 
+                ]
+}
+{% endschema %}

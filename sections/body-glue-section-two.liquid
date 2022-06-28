@@ -1,0 +1,99 @@
+<style>
+    section#nase_why {
+        display: table;
+    }
+      </style>
+    
+    {% for block in section.blocks %}
+
+
+    <section  class="sec-02 gevity_new_style_why-body-glue"  style="padding: 60px 0;">
+        <div class="row" style="padding: 20px 0;">
+          <div class="container">
+            <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 text-center">
+                <h2>{{ block.settings.header }}</h2>
+                <p>{{ block.settings.description }}</p>
+
+                       <a href="#shopify-section-body-glue-section-ten">  <button class="btn btn-warning" style="background: #BD1F66" type="button">
+                    
+Shop the Body Glue Range
+                    
+                </button> </a>
+            </div>
+          </div>
+        </div>
+
+
+        {% comment %} <div class="row">
+          <div class="container">
+            <div class="col-sm-12 col-md-6 col-lg-5 col-lg-offset-1 text-center">
+    
+            
+                <img style="margin: 20px 0;" src="{{ block.settings.image-one | img_url: '2048x1055' }}" alt="10x More"/>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-5 text-center">
+    
+        
+                <img style="margin: 20px 0;" src="{{ block.settings.image-two | img_url: '2048x1055' }}" alt="26 Serves"/>
+            </div>
+          </div>
+        </div> {% endcomment %}
+
+        
+    </section>
+
+    
+    <!-- <section class="sec-01" style="background: #f4f4f4!important; width: 100%; color: #fff"; >
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 gevity_new_style_half-bg" style="background-image: url('{{ block.settings.item-image | img_url: '2048x1055' }}')"></div> 
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center" style="padding: 10% 0; background-image: url({{ 'Header-Right.jpg' | asset_url }}); background-size: cover;">
+              <h1 class="gwhite">{{ block.settings.header }}</h1> 
+              <p>{{ block.settings.description }}</p>  
+              </div>
+          </div> 
+    </section>  -->
+    
+    {% endfor %}
+    
+    
+    {% schema %}
+    {
+        "name": "Body Glue Two",
+        "blocks": [
+                {
+                    "type": "image",
+                    "name": "Body Glue Two",
+                    "settings": [
+                      {
+                        "type": "image_picker",
+                        "id": "image-one",
+                        "label": "Image One"
+                      }, {
+                        "type": "image_picker",
+                        "id": "image-two",
+                        "label": "Image Two"
+                      }, {
+                        "type": "url",
+                        "id": "block_link",
+                        "label": "Link URL"
+                      }, {
+                        "type": "html",
+                        "id": "header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "html",
+                        "id": "description",
+                        "label": "description"
+                      }
+    
+    
+    
+    
+    
+                 
+                    ]
+                }
+        ]
+    }
+    {% endschema %}

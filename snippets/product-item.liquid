@@ -1,0 +1,487 @@
+<style type="text/css">
+    .addedToCart {
+
+        /* background: #000000;
+  color:#fff; */
+        /* background: {{product.metafields.my_fields.product_accent_colour}}!important; */
+        opacity: 0.4;
+    }
+
+    a.qtybox {
+
+
+        padding: 10px 15px;
+        margin: 0 5px;
+        border: 1px solid;
+        cursor: pointer;
+
+
+    }
+
+    div#bagtoopenid {
+
+        border: 1px solid #000000;
+        padding: 10px;
+        display: none;
+    }
+
+    div#bagtoopenid.show {
+
+        display: block;
+    }
+
+    div.product h2.ProductItem__Title a {
+
+        font-size: 13px !important;
+        font-family: "Circular Std" !important;
+
+    }
+
+    body div.product h2.ProductItem__Title span.price {
+
+        font-size: 13px !important;
+        font-family: "Circular Std" !important;
+        border: 1px solid;
+        float: right;
+        font-size: 1em;
+        padding: 6px;
+        letter-spacing: 0 !important;
+        display: inline-block;
+    }
+
+    h2.ProductItem__Title a {
+        letter-spacing: 1px !important;
+        max-width: 70% !important;
+        display: inline-block;
+        font-size: 1.2em;
+    }
+
+    body h2.ProductItem__Title span.price {
+        border: 1px solid;
+        float: right;
+        font-size: 1em;
+        padding: 6px;
+        letter-spacing: 0 !important;
+        display: inline-block;
+    }
+
+    #quickaddtobag {
+
+
+        background: #000;
+        color: #fff;
+        width: 100%;
+        text-transform: uppercase;
+        font-family: "Circular Std";
+        font-weight: bold;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    #quickaddtobag span {
+        margin-top: 20px;
+        flex: 1;
+    }
+
+    #quickaddtobagsingle {
+
+
+        background: #000;
+        color: #fff;
+        width: 100%;
+        text-transform: uppercase;
+        font-family: "Circular Std";
+        font-weight: bold;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    #quickaddtobagsingle span {
+        margin-top: 20px;
+        flex: 1;
+    }
+
+    #gevitybestseller {
+
+        border: 2px solid #000;
+        position: absolute;
+        padding: 0 7px;
+        left: -5%;
+        top: 30%;
+        transform: rotateZ(90deg);
+        font-family: "Circular Std";
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    #infoshort {
+
+        background-color: #F4F39F;
+
+        /* width: 40%; */
+        padding: 20px;
+        border-radius: 50%;
+        transform: rotate(12deg);
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        font-family: "KapraNeueSemiBoldCondensed" !important;
+        font-size: 2.6vh;
+        color: #000 !important;
+
+    }
+
+    #infoshort p {
+
+        letter-spacing: 0 !important;
+        line-height: 1em;
+    }
+
+    body div h3#collectionstyle {
+
+        text-align: left !important;
+        letter-spacing: 0 !important;
+    }
+
+    .Heading {
+
+        font-family: "Circular Std";
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .ProductListWrapper .spr-badge-caption {
+        display: inline !important;
+    }
+
+    .product-stars {
+        min-height: 25px;
+        margin-bottom: 20px;
+        width: 100% !important;
+        display: block;
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
+
+    img.ProductItem__Image.ProductItem__Image--alternate.Image--fadeIn.lazyautosizes.Image--lazyLoaded.second_image {
+
+        opacity: 1 !important;
+    }
+
+    @media screen and(max-width: 640px) {
+
+        #infoshort p {
+
+            letter-spacing: 0 !important;
+
+        }
+
+        #infoshort {
+
+            background-color: #F4F39F;
+
+            /* width: 40%; */
+            padding: 10px;
+            border-radius: 50%;
+            transform: rotate(12deg);
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            font-family: "KapraNeueSemiBoldCondensed" !important;
+            font-size: 2.0vh;
+
+
+        }
+
+        #gevitybestseller {
+
+            border: 2px solid #000;
+            position: absolute;
+            padding: 0 7px;
+            left: -17%;
+            top: 30%;
+            transform: rotateZ(90deg);
+            font-family: "Circular Std";
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+
+        h2.ProductItem__Title a {
+
+            max-width: 67% !important;
+
+        }
+
+
+    }
+</style>
+
+<div class="ProductItem {% if use_horizontal %}ProductItem--horizontal{% endif %}">
+    <div class="ProductItem__Wrapper">
+
+        {%- comment -%}
+    We are using LazySizes to efficiently choose the most appropriate image in the set. However, because internally
+    LazySizes uses srcset, we need to make
+    sure that the image sizes we offer is not larger than the max size uploaded by the merchants.
+    {%- endcomment -%}
+        <script>console.log({{ product | json }});</script>
+        {%- if settings.product_image_size == 'natural' or use_horizontal -%}
+            {%- assign use_natural_size = true -%}
+        {%- else -%}
+            {%- assign use_natural_size = false -%}
+        {%- endif -%}
+
+        {%- if settings.product_show_secondary_image and product.images[1] != blank and use_horizontal != true -%}
+            {%- assign has_alternate_image = true -%}
+        {%- else -%}
+            {%- assign has_alternate_image = false -%}
+        {%- endif -%}
+        {% comment %}Nase start product item{% endcomment%}
+        <a href="{{ product.url }}" class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}">
+            {%- if use_horizontal -%}
+                {%- assign max_width = 125 -%}
+            {%- else -%}
+                {%- assign max_width = product.featured_image.width -%}
+            {%- endif -%}
+
+            <div class="AspectRatio AspectRatio--{% if use_natural_size %}withFallback{% else %}{{ settings.product_image_size }}{% endif %}" style="max-width: {{ max_width }}px; {% if use_natural_size %}padding-bottom: {{ 100.0 | divided_by: product.featured_image.aspect_ratio }}%;{% endif %} --aspect-ratio: {{ product.featured_image.aspect_ratio }}">
+                {%- comment -%}
+        IMPLEMENTATION NOTE: The alternate image (not visible by default) should be the first in the DOM, as the spinner
+        (Image__Loader element) is
+        displayed based on the immediately previously shown image.
+        {%- endcomment -%}
+
+                {%- if has_alternate_image -%}
+                    {%- capture supported_sizes -%}
+                        {%- render 'image-size', sizes: '200,300,400,600,800,900,1000,1200', image:
+        product.images[1] -%}
+                    {%- endcapture -%}
+
+                    {%- assign image_url = product.images[1] | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+                    <img class="ProductItem__Image ProductItem__Image--alternate Image--lazyLoad Image--fadeIn second_image" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ product.images[1].alt | escape }}" data-image-id="{{ product.images[1].id }}">
+                {%- endif -%}
+
+                {%- capture supported_sizes -%}
+                    {%- render 'image-size', sizes: '200,400,600,700,800,900,1000,1200', image:
+        product.featured_image -%}
+                {%- endcapture -%}
+                {%- assign image_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+                <img class="ProductItem__Image Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ product.featured_image.alt | escape }}" data-image-id="{{ product.featured_image.id }}">
+                <span class="Image__Loader"></span>
+
+                <noscript>
+                    <img class="ProductItem__Image ProductItem__Image--alternate" src="{{ product.images[1] | img_url: '600x' }}" alt="{{ product.images[1].alt | escape }}">
+                    <img class="ProductItem__Image" src="{{ product.featured_image | img_url: '600x' }}" alt="{{ product.featured_image.alt | escape }}">
+                </noscript>
+            </div>
+
+
+        </a>
+
+        {%- if show_labels -%}
+            {%- capture product_labels -%}
+                {%- for tag in product.tags -%}
+                    {%- if tag contains '__label' -%}
+                        <span class="ProductItem__Label Heading Text--subdued">{{ tag | split: '__label:' | last }}</span>
+                        {%- break -%}
+                    {%- endif -%}
+                {%- endfor -%}
+
+                {%- if product.available -%}
+                    {%- if product.compare_at_price > product.price -%}
+
+                        <!-- <span class="ProductItem__Label Heading Text--subdued">{{ 'product.labels.on_sale' | t }}</span> -->
+                    {%- endif -%}
+                {%- else -%}
+                    <span class="ProductItem__Label Heading Text--subdued soldout">{{ 'product.labels.sold_out' | t }}</span>
+                {%- endif -%}
+            {%- endcapture -%}
+
+            {%- if product_labels != blank -%}
+                <div class="ProductItem__LabelList">
+                    {{ product_labels }}
+                </div>
+            {%- endif -%}
+        {%- endif -%}
+
+        {%- if show_product_info -%}
+            <div class="ProductItem__Info {% unless use_horizontal %}ProductItem__Info--{{ settings.product_info_alignment }}{% endunless %}">
+                {%- if show_vendor -%}
+                    <p class="ProductItem__Vendor Heading">{{ product.vendor }}</p>
+                {%- endif -%}
+
+                <h2 class="ProductItem__Title Heading">
+                    <a href="{{ product.url | within: collection }}">{{ product.title }}
+
+                        {% if product.metafields.my_fields.available_via_pre_sale %}**AVAILABLE NOW VIA PRE-SALE
+                        {% endif %}
+                    </a>
+                    <span class="price">{{product.variants[0].price | money}}</span>
+                </h2>
+
+                {%- if show_color_swatch -%}
+                    {%- assign color_swatch_list = '' -%}
+
+                    {%- capture color_swatch -%}
+                        {%- assign color_label = 'color,colour,couleur,colore,farbe,색,色,färg,farve' | split: ',' -%}
+                        {%- capture color_name -%}
+                            {{ section.id }}-{{ product.id }}
+                        {%- endcapture -%}
+
+                        {%- for option in product.options_with_values -%}
+                            {%- assign downcased_option = option.name | downcase -%}
+
+                            {%- if color_label contains downcased_option -%}
+                                {%- assign variant_option = 'option' | append: forloop.index -%}
+
+                                {%- for value in option.values -%}
+                                    {%- assign downcased_value = value | downcase -%}
+                                    {%- capture color_id -%}
+                                        {{ section.id }}-{{ product.id }}-{{ forloop.index }}
+                                    {%- endcapture -%}
+
+                                    {%- for variant in product.variants -%}
+                                        {%- if variant[variant_option] == value -%}
+                                            {%- assign variant_for_value = variant -%}
+                                            {%- break -%}
+                                        {%- endif -%}
+                                    {%- endfor -%}
+
+                                    <div class="ProductItem__ColorSwatchItem">
+                                        {%- if variant_for_value.image -%}
+                                            {%- capture supported_sizes -%}
+                                                {%- render 'image-size', sizes: '200,400,600,700,800,900,1000,1200', image:
+        variant_for_value.image -%}
+                                            {%- endcapture -%}
+                                            {%- assign variant_image_url = variant_for_value.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                                        {%- endif -%}
+
+                                        {%- assign color_swatch_name = value | handle | append: '.png' -%}
+                                        {%- assign color_swatch_image = images[color_swatch_name] -%}
+
+                                        <input class="ColorSwatch__Radio" type="radio" name="{{ color_name }}" id="{{ color_id }}" value="{{ value | escape }}" {% if option.selected_value==value %} checked="checked" {% endif %} data-variant-url="{{ variant_for_value.url }}{% if variant_for_value.image %}#Image{{ variant_for_value.image.id }}{% endif %}" {% if variant_for_value.image %} data-image-id="{{ variant_for_value.image.id }}" data-image-url="{{ variant_image_url }}" data-image-widths="[{{ supported_sizes }}]" data-image-aspect-ratio="{{ variant_for_value.image.aspect_ratio }}" {% endif %} aria-hidden="true">
+                                        <label class="ColorSwatch ColorSwatch--small {% if downcased_value == 'white' %}ColorSwatch--white{% endif %}" for="{{ color_id }}" style="background-color: {{ value | replace: ' ', '' | downcase }}; {% if color_swatch_image != blank %}background-image: url({{ color_swatch_image | img_url: '64x64' }}){% endif %}" title="{{ value | escape }}" data-tooltip="{{ value | escape }}"></label>
+                                    </div>
+                                {%- endfor -%}
+                            {%- endif -%}
+                        {%- endfor -%}
+                    {%- endcapture -%}
+
+                    {%- if color_swatch != blank -%}
+                        {%- capture color_swatch_list -%}
+                            <div class="ProductItem__ColorSwatchList">
+                                {{- color_swatch -}}
+                            </div>
+                        {%- endcapture -%}
+                    {%- endif -%}
+                {%- endif -%}
+
+
+                {% if collection %}
+                    {% assign product_collection = collection %}
+                {% else %}
+                    {% assign product_collection = product.collections.first %}
+                {% endif %}
+
+                {% unless product_collection == blank %}
+
+                    {% for collection in product.collections %}
+                        <h3 id="collectionstyle">
+                            <a href="{{ collection.url }}">{{ collection.title }}</a>
+                        </h3>
+                    {% endfor %}
+
+                    <!-- <h3 id="collectionstyle">{{ product.metafields.descriptors.subtitle }}</h3> -->
+
+                    {% if product.metafields.my_fields.product_info_short %}
+
+                        <div id="infoshort" style="background: {{product.metafields.my_fields.product_accent_colour}}">
+                            <p style="letter-spacing: 2.6px;">{{ product.metafields.my_fields.product_info_short }}</p>
+                        </div>
+                    {% endif %}
+                    <div class="product-stars" js-scroll-to="#product-blocks">
+                        <a href="#gevity-reviews">
+
+                            <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+                            <!--<span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{ product.handle }}" style="display: inline-block;">{{ product.metafields.stamped.badge }}</!--<span> -->
+                                                                                              <!--    <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span> -->
+
+                        </a>
+                    </div>
+
+                    {%if product.variants[10].id %}
+                        <Button id="quickaddtobag" openquickadd="{{ product.id}}" aria-controls="drawer-name" allvariants='{{ product.variants | json }}' aria-expanded="false">
+                            <span>Quick Add To Bag</span>
+                            <span>+</span>
+                        </Button>
+                        <div id="bagtoopenid" bagtoopen="{{ product.id}}">
+                            <div style="width:100%; height: 40px; font-weight: bold; font-family:'Circular Std'!important;">SELECT QTY</div>
+                            <div style="width:100%; height: 40px">
+                                <a aria-controls="drawer-namex" qty="1" data-drawer-trigger second_image="{{ product.images[1] | img_url: '600x' }}" class="qtybox" add="{{ product.variants[8].id }}" highest="{{ product.variants[0].price }}">1</a>
+                                <a qty="2" aria-controls="drawer-namex" data-drawer-trigger second_image="{{ product.images[1] | img_url: '600x' }}" class="qtybox" add="{{ product.variants[9].id }}" highest="{{ product.variants[0].price }}">2</a>
+                                <a aria-controls="drawer-namex" data-drawer-trigger qty="3" second_image="{{ product.images[1] | img_url: '600x' }}" class="qtybox" add="{{ product.variants[10].id }}" highest="{{ product.variants[0].price }}">3</a>
+                            </div>
+                        </div>
+                        {%else%}
+                        <Button id="quickaddtobagsingle" qty="1" class="qtybox" add="{{ product.variants[0].id }}" openquickadd="{{ product.variants[0].id}}" aria-controls="drawer-name" aria-expanded="false">
+                            <span>Quick Add To
+                                                                                                          Bag</span>
+                            <span>+</span>
+                        </Button>
+                    {%endif %}
+
+
+                {% endunless %}
+
+                {%- if show_price_on_hover == nil -%}
+                    {%- assign show_price_on_hover = settings.product_show_price_on_hover -%}
+                {%- endif -%}
+
+                {%- if show_price_on_hover and color_swatch_list != blank -%}
+                    {{- color_swatch_list -}}
+                {%- endif -%}
+
+                {%- if product.template_suffix != 'coming-soon' -%}
+                    <div class="ProductItem__PriceList {% if show_price_on_hover %}ProductItem__PriceList--showOnHover{% endif %} Heading">
+                        {%- if product.compare_at_price > product.price -%}
+                            <!-- <span class="ProductItem__Price Price Price--highlight Text--subdued" data-money-convertible>{{ product.price |
+          money_without_trailing_zeros }}</span> -->
+                                                                                            <!-- <span class="ProductItem__Price Price Price--compareAt Text--subdued" data-money-convertible>{{
+          product.compare_at_price | money_without_trailing_zeros }}</span> -->
+                        {%- elsif product.price_varies -%}
+                            <!-- {%- capture formatted_min_price -%}<span data-money-convertible>{{ product.price_min |
+          money_without_trailing_zeros }}</span>{%- endcapture -%}
+        {%- capture formatted_max_price -%}<span data-money-convertible>{{ product.price_max |
+          money_without_trailing_zeros }}</span>{%- endcapture -%}
+        <span class="ProductItem__Price Price Text--subdued">{{ 'collection.product.from_price_html' | t: min_price:
+          formatted_min_price, max_price: formatted_max_price }}</span> -->
+                        {%- else -%}
+                            <span class="ProductItem__Price Price Text--subdued" data-money-convertible>{{ product.price |
+          money_without_trailing_zeros }}</span>
+                        {%- endif -%}
+                    </div>
+                {%- endif -%}
+
+                {%- if show_price_on_hover == false and color_swatch_list != blank -%}
+                    {{- color_swatch_list -}}
+                {%- endif -%}
+            </div>
+        {%- endif -%}
+
+        {% if product.metafields.my_fields.best_seller %}
+            <div id="gevitybestseller">Best Seller</div>
+        {% endif %}
+
+    </div>
+
+    {%- if use_horizontal -%}
+        <a href="{{ product.url }}" class="ProductItem__ViewButton Button Button--secondary hidden-pocket">{{
+    'collection.product.view_product' | t }}</a>
+    {%- endif -%}
+
+</div>

@@ -1,0 +1,388 @@
+<style>
+  .CartItem__ImageWrapper {
+    width: 170px;
+  }
+
+  .CartItem {
+
+    margin-bottom: 0px;
+  }
+
+  .collectionCart {
+
+    text-transform: capitalize;
+    letter-spacing: 0px;
+  }
+
+  .CartItem__PriceList {
+
+    margin-bottom: 0px;
+  }
+
+  .CartItem__Remove.Link.Link--underline.Link--underlineShort {
+    border: 1px solid;
+    padding: 4px 7px;
+    text-transform: uppercase;
+    font-family: "Circular Std" !important;
+  }
+
+  .QuantitySelector {
+    border: 1px solid #000;
+    margin-bottom: 0px
+  }
+
+  .QuantitySelector__Button.Link.Link--primary {
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+
+  input.QuantitySelector__CurrentQuantity {
+
+    width: 42px;
+  }
+
+  #youvesaved {
+    font-family: "Circular Std" !important;
+  }
+
+  .CartItemWrapper {
+    border-bottom: 1px solid;
+  }
+
+  .CartItem__ImageWrapper,
+  .CartItem__Info {
+
+    vertical-align: top;
+  }
+
+  .remove-noBorder {
+
+    border: none !important;
+
+  }
+
+  .CartItem__Remove.Link.Link--underline.Link--underlineShort.remove-noBorder {
+    color: #aaa;
+  }
+
+  #shopify-section-cart-template .qtyCartStyle {
+
+    /* display: none !important */
+  }
+</style>
+
+
+{%- assign for_drawer = true -%}
+
+{%- if template == 'cart' or template == 'cart.ajax' -%}
+{%- assign for_drawer = false -%}
+{%- endif -%}
+
+<div class="Cart__ItemList">
+  {%- unless for_drawer -%}
+  <div class="Cart__Head hidden-phone">
+    <span class="Cart__HeadItem Heading Text--subdued u-h7">{{ 'cart.items.product' | t }}</span>
+    <span class="Cart__HeadItem"></span>
+    <span class="Cart__HeadItem Heading Text--subdued u-h7 qtyCartStyle" style="text-align: center">{{
+      'cart.items.quantity' | t }}</span>
+    <span class="Cart__HeadItem Heading Text--subdued u-h7" style="text-align: right">{{ 'cart.items.total' | t
+      }}</span>
+  </div>
+  {%- endunless -%}
+
+  {%- for line_item in cart.items -%}
+
+  {%-if line_item.product.variants[8] -%}
+
+  {%- assign isMulti = true -%}
+
+  {%- endif -%}
+
+
+  {%-if line_item.product.variants[8].id == line_item.variant.id -%}
+
+  {%- assign upSku = line_item.product.variants[9].id -%}
+
+  {%- endif -%}
+  {%-if line_item.product.variants[9].id == line_item.variant.id -%}
+
+  {%- assign upSku = line_item.product.variants[10].id -%}
+  {%- assign downSku = line_item.product.variants[8].id -%}
+  {%- endif -%}
+  {%-if line_item.product.variants[10].id == line_item.variant.id -%}
+
+  {%- assign upSku = line_item.product.variants[11].id -%}
+  {%- assign downSku = line_item.product.variants[9].id -%}
+  {%- endif -%}
+
+  {%-if line_item.product.variants[11].id == line_item.variant.id -%}
+
+  {%- assign upSku = line_item.product.variants[12].id -%}
+  {%- assign downSku = line_item.product.variants[10].id -%}
+  {%- endif -%}
+
+
+  {%-if line_item.product.variants[12].id == line_item.variant.id -%}
+
+  {%- assign upSku = line_item.product.variants[13].id -%}
+  {%- assign downSku = line_item.product.variants[11].id -%}
+  {%- endif -%}
+
+
+  {%-if line_item.product.variants[13].id == line_item.variant.id -%}
+
+  {%- assign upSku = line_item.product.variants[14].id -%}
+  {%- assign downSku = line_item.product.variants[12].id -%}
+  {%- endif -%}
+
+
+  {%-if line_item.product.variants[14].id == line_item.variant.id -%}
+
+  {%- assign upSku = line_item.product.variants[15].id -%}
+  {%- assign downSku = line_item.product.variants[13].id -%}
+  {%- endif -%}
+
+  {%-if line_item.product.variants[15].id == line_item.variant.id -%}
+
+  {%- assign downSku = line_item.product.variants[14].id -%}
+  {%- endif -%}
+
+  <script>
+
+    console.log('line_item.product', {{ line_item | json}}, {{ line_item.product.variants[8].title | json }}, {{ line_item.variant.id | json }}, {{ line_item.variant.title | json }})
+
+    console.log('upSku', {{ downSku | json }}, {{ upSku | json }})</script>
+
+
+
+  </script>
+
+
+  {%- if for_drawer -%}
+  <div class="CartItemWrapper">
+    {%- endif -%}
+
+    <div class="CartItem">
+      <div class="CartItem__ImageWrapper AspectRatio">
+        <div class="AspectRatio" style="--aspect-ratio: {{ line_item.image.aspect_ratio }}">
+          <!-- {%if line_item.properties.second_image%}
+          <img class="CartItem__Image" src="{{ line_item.properties.second_image}}" alt="{{ line_item.image.alt | escape }}">
+          {%else%}
+          <img class="CartItem__Image" src="{{ line_item.image | img_url: '240x' }}" alt="{{ line_item.image.alt | escape }}">
+          {%endif%} -->
+            
+          {%if line_item.variant.product.images[1]%}
+          <img product_id="{{line_item.product_id}}" class="eCartItem__Imag"
+            src="{{ line_item.variant.product.images[1] | img_url: '240x' }}" alt="{{ line_item.image.alt | escape }}">
+          {%else%}
+          <img product_id="{{line_item.product_id}}" class="CartItem__Image"
+            src="{{ line_item.image | img_url: '240x' }}" alt="{{ line_item.image.alt | escape }}">
+          {%endif%}
+
+
+        </div>
+      </div>
+
+      <div class="CartItem__Info">
+        <h2 class="CartItem__Title Heading">
+          <a href="{{ line_item.url }}">{{line_item.quantity | toNumber }} x {{ line_item.product.title }}</a>
+        </h2>
+
+        <div class="CartItem__Meta Heading Text--subdued">
+          {%- unless line_item.product.has_only_default_variant -%}
+          <!-- <p class="CartItem__Variant">{{ line_item.variant.title }}</p> -->
+          {%- endunless -%}
+
+          {%- if line_item.properties != empty -%}
+          <ul class="CartItem__PropertyList">
+            {%- for property in line_item.properties -%}
+
+            {%- unless property.first == 'subscription_id' or property.first == 'shipping_interval_frequency' or
+            property.first== 'shipping_interval_unit_type' -%}
+            {%- assign first_character_in_key = property.first | truncate: 1, '' -%}
+
+            {%- if property.last == blank or property.first == "subscription_id" or property.first ==
+            "shipping_interval_frequency" or property.first == "shipping_interval_unit_type" or first_character_in_key
+            == '_' -%}
+            {%- continue -%}
+            {%- endif -%}
+
+            <li class="CartItem__Property {{ property.first }}">{{ property.first }}: {{ property.last }}</li>
+
+            {%- endunless -%}
+            {%- endfor -%}
+          </ul>
+          {%- endif -%}
+
+
+
+          <div class="CartItem__PriceList">
+            {%- if line_item.original_price != line_item.final_price -%}
+            {%comment%} <span class="CartItem__Price Price Price--highlight" data-money-convertible>{{
+              line_item.final_price | money_with_currency }}</span>{%endcomment%}
+            <span class="CartItem__OriginalPrice Price Price--compareAt" data-money-convertible>{{
+              line_item.original_price | money_with_currency }}</span>
+            {%- else -%}
+            <span class="CartItem__Price Price" data-money-convertible>{{ line_item.final_price | money_with_currency
+              }}</span>
+            {%- endif -%}
+
+            {%- if line_item.line_level_discount_allocations != blank -%}
+            <ul class="CartItem__DiscountList">
+              {%- for discount_allocation in line_item.line_level_discount_allocations -%}
+              <li class="CartItem__Discount">
+                {%- render 'icon' with 'sale' -%}{{ discount_allocation.discount_application.title }}: -{{
+                discount_allocation.amount | money }}
+              </li>
+              {%- endfor -%}
+            </ul>
+            {%- endif -%}
+
+
+          </div>
+
+          {% for collection in line_item.variant.product.collections %}
+          <a href="{{ collection.url }}" class="collectionCart">
+            {{collection.title}}
+          </a>
+          {% endfor %}
+
+        </div>
+
+        {%- capture item_actions -%}
+
+
+
+
+        <div class="CartItem__Actions Heading Text--subdued qtyCartStyle" style="text-align: center">
+          <div class="CartItem__QuantitySelector">
+            <div class="QuantitySelector">
+              {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
+              {%- assign qty = line_item.quantity -%}
+
+              {%- if qty == lowest_qty -%}
+              <a class="QuantitySelector__Button Link Link--primary downone" lowest_qty="{{lowest_qty}}" qty="{{qty}}" isMinus="true" 
+              ismulti="{{isMulti}}"
+                upSku="{{upSku}}" downSku="{{downSku}}"
+                title="{{ 'cart.items.set_quantity' | t: new_quantity: quantity_minus_one }}">
+                {%- else -%}
+                <a class="QuantitySelector__Button Link Link--primary downone" qty="{{qty}}" upSku="{{upSku}}"    ismulti="{{isMulti}}"
+                  downSku="{{downSku}}" title="{{ 'cart.items.set_quantity' | t: new_quantity: quantity_minus_one }}"
+                  data-quantity="{{ quantity_minus_one }}" data-line-id="{{ line_item.key }}"
+                  data-action="update-item-quantity"
+                  href="{{ routes.cart_change_url }}?quantity={{ quantity_minus_one }}&id={{ line_item.key }}">
+                  {%- endif -%}
+                  {%- render 'icon' with 'minus' -%}
+                </a>
+
+                <input type="text" name="updates[]" id="updates_{{ line_item.key }}" disabled="disabled"
+                  class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" data-line-id="{{ line_item.key }}"
+                  value="{{ line_item.quantity }}">
+
+                {%- assign quantity_plus_one = line_item.quantity | plus: 1 -%}
+
+                <a class="QuantitySelector__Button Link Link--primary" lowest_qty="{{lowest_qty}}" qty="{{qty}}" ismulti="{{isMulti}}"
+                  upSku="{{upSku}}" downSku="{{downSku}}"
+                  subOne=title="{{ 'cart.items.set_quantity' | t: new_quantity: quantity_plus_one }}"
+                  href="{{ routes.cart_change_url }}?quantity={{ quantity_plus_one }}&id={{ line_item.key }}"
+                  data-quantity="{{ quantity_plus_one }}" data-line-id="{{ line_item.key }}"
+                  data-action="update-item-quantity">
+                  {%- render 'icon' with 'plus' -%}
+                </a>
+
+            </div>
+
+          </div>
+          <a style="display: inline-block; clear: both;"
+            href="{{ routes.cart_change_url }}?quantity=0&id={{ line_item.key }}"
+            class="CartItem__Remove Link Link--underline Link--underlineShort remove-noBorder" data-quantity="0"
+            data-line-id="{{ line_item.key }}" data-action="remove-item">{{ 'cart.items.remove' | t }}</a>
+
+        </div>
+        <!-- {%if for_drawer %}
+        <a href="{{ routes.cart_change_url }}?quantity=0&id={{ line_item.key }}"
+          class="CartItem__Remove Link Link--underline Link--underlineShort" data-quantity="0"
+          data-line-id="{{ line_item.key }}" data-action="remove-item">{{ 'cart.items.remove' | t }}</a>
+        {%endif%} -->
+
+
+
+        {%- endcapture -%}
+
+        <!-- <a style="display: inline-block; clear: both;"
+          href="{{ routes.cart_change_url }}?quantity=0&id={{ line_item.key }}"
+          class="CartItem__Remove Link Link--underline Link--underlineShort remove-noBorder" data-quantity="0"
+          data-line-id="{{ line_item.key }}" data-action="remove-item">{{ 'cart.items.remove' | t }}</a> -->
+          <script>
+
+            console.log('line_item.variant.product.variant_id', {{line_item.variant | json}})
+  
+        
+            
+          </script>
+          
+        {%if for_drawer != true and line_item.variant.product %}
+
+        {%if line_item.variant.product.variants[0].price and line_item.quantity > 1%}
+        {%- assign productSave = line_item.variant.product.variants[0].price | minus: line_item.final_price | times:
+        line_item.quantity | money_without_trailing_zeros -%}
+
+        {%if productSave contains '"'%}
+        {%- else line_item.variant.product.variants[0].price and productSave > 0 -%}<div
+          style="line-height:1em; margin-top: 10px!important; font-size:0.9em; display: block; clear: both;">
+          <img style="float: left; margin-right: 8px;" src="{{ 'savings.png' | asset_img_url }}" width="25" height="25">
+          <p style="padding-top: 5px;">Look at you go! You’ve saved {{productSave}}</p>
+        </div>{%-endif-%}
+        <br>
+        {%if for_drawer != true and false%}
+        <a style="display: inline-block; clear: both;"
+          href="{{ routes.cart_change_url }}?quantity=0&id={{ line_item.key }}"
+          class="CartItem__Remove Link Link--underline Link--underlineShort remove-noBorder" data-quantity="0"
+          data-line-id="{{ line_item.key }}" data-action="remove-item">{{ 'cart.items.remove' | t }}</a>
+        {%- endif -%}
+
+        {%endif%}
+
+        {% endif%}
+        {{ item_actions }}
+
+      </div>
+
+      {%- unless for_drawer -%}
+      {{ item_actions }}
+
+      <div class="CartItem__LinePriceList Heading Text--subdued" style="text-align: right">
+        {%- if line_item.original_line_price != line_item.final_line_price -%}
+        <span class="CartItem__Price Price Price--highlight" data-money-convertible>{{ line_item.final_line_price |
+          money_without_trailing_zeros }}</span>
+        <span class="CartItem__Price Price Price--compareAt" data-money-convertible>{{ line_item.original_line_price |
+          money_without_trailing_zeros }}</span>
+        {%- else -%}
+        <span class="CartItem__Price Price" data-money-convertible>{{ line_item.final_line_price |
+          money_without_trailing_zeros }}</span>
+        {%- endif -%}
+      </div>
+      {%- endunless -%}
+
+    </div>
+    {%if line_item.variant.product.variants[8].price and line_item.quantity > 1 and for_drawer%}
+    {%- assign productSave = line_item.variant.product.variants[8].price | minus: line_item.final_price | times:
+    line_item.quantity -%}
+    {%- if productSave > 0 -%}<div style="line-height:1em; margin-top: 10px; margin-bottom: 15px; font-size:0.9em">
+      <img style="float: left; margin-right: 8px;" src="{{ 'savings.png' | asset_img_url }}" width="25" height="25">
+      <p style="padding-top: 5px;">Look at you go! You’ve saved <span id="itemSaved"
+          saved="{{productSave | divided_by: 100}}">{{productSave | money_without_trailing_zeros}}</span>!</p>
+    </div>{%- endif -%}
+
+    {%endif%}
+    {%- if for_drawer -%}
+  </div>
+
+  {%- endif -%}
+  {%- endfor -%}
+
+
+
+
+
+</div>

@@ -1,0 +1,84 @@
+<style>
+  @media only screen and (max-width: 500px) {
+
+    #onlymobile {
+      display: block;
+    }
+
+    #onlydesktop {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 500px) {
+
+    #onlymobile {
+      display: none;
+    }
+
+    #onlydesktop {
+      display: block;
+    }
+  }
+</style>
+{% for block in section.blocks %}
+<section id="nase_about_three">
+  <div class="nase_half image" style="background-image: url('{{ block.settings.item-image | img_url: '2048x655' }}')">
+
+    <div class="nase_right-content">
+
+    </div>
+  </div>
+  <div class="nase_half">
+
+    <div class="nase_left-content">
+      <h2>{{ block.settings.header }}</h2>
+      <div class="tagline_image"><img src="{{ block.settings.tagline-image | img_url: '2048x655' }}"></div>
+      <p class="section_three_body">{{ block.settings.body }}</p>
+
+
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+{% schema %}
+{
+"name": "About Section 3",
+"blocks": [
+{
+"type": "image",
+"name": "About One Image Section",
+"settings": [
+
+{
+"type": "image_picker",
+"id": "item-image",
+"label": "Image for the right side"
+},{
+"type": "image_picker",
+"id": "tagline-image",
+"label": "Image for tagline"
+},
+{
+"type": "text",
+"id": "header",
+"label": "Box Header"
+},{
+"type": "text",
+"id": "tagline",
+"label": "Box Footer"
+},
+{
+"type": "text",
+"id": "body",
+"label": "Body"
+}
+
+
+
+]
+}
+]
+}
+{% endschema %}

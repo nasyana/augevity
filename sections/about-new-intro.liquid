@@ -1,0 +1,100 @@
+<style>
+
+
+.readmorecontent{
+
+    margin-top: 20px;
+    display: none;
+   
+}
+p{
+
+    margin-top:20px;
+    margin-bottom:20px
+}
+
+.readmorebutton{
+
+    display:flex; flex-direction: row; justify-content: space-between;
+    border-top: 1px solid;
+    padding-top: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+  
+}
+
+.center{
+
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5%;
+}
+    @media only screen and (max-width: 500px) {
+  
+      #onlymobile{display: block;}
+      #onlydesktop{display: none;}
+  }
+      @media only screen and (min-width: 500px) {
+  
+      #onlymobile{display: none;}
+      #onlydesktop{display: block;}
+  }
+
+
+  </style>
+
+<section class="full_width center ">
+
+    <div class="full_width onlydesktop">
+
+
+        <h2 class="kapra header2" style="margin-bottom: 50px; ">{{ section.settings.header }}</h2>
+
+        <div class="subtitle circular maxwidth" style="margin-bottom: 0px; ">
+            {{ section.settings.subheader }}
+        </div>
+
+        <div class="book maxwidth">
+            {{ section.settings.body }}
+        </div>
+
+        <div class="readmorecontent book maxwidth">
+            {{ section.settings.readmorecontent }}
+        </div>
+        <div class="readmorebutton book ">
+            <a></a>
+            <a class="morelabel">READ MORE</a>
+            <a style="font-size: 20px;">+</a>
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+{% schema %}
+{
+      "name": "About Intro",
+      "settings": [{
+        "type": "text",
+        "id": "header",
+        "label": "Header"
+      },{
+        "type": "richtext",
+        "id": "subheader",
+        "label": "Sub Header"
+      },{
+        "type": "richtext",
+        "id": "body",
+        "label": "Body Text"
+      },{
+        "type": "richtext",
+        "id": "readmorecontent",
+        "label": "Readmore Content"
+      }
+              
+      ]
+  }
+{% endschema %}

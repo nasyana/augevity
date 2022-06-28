@@ -1,0 +1,153 @@
+<style>
+
+  @media only screen and (max-width: 600px) {
+    .threeboxesbodyglue div p{
+
+      padding: 7%;
+    }
+    .threeboxesbodyglue div{
+
+
+min-height: 0!important;
+}
+  #onlymobile{display: block;}
+  #onlydesktop{display: none;}
+  }
+  @media only screen and (min-width: 600px) {
+  
+  
+  #onlymobile{display: none;}
+  #onlydesktop{display: block;} 
+  } 
+  
+  </style>
+
+<section class="sec-04 gevity_new_style_difference" style="padding: 60px 0 0 0;">
+  <!-- <div class="row" style="padding: 20px 0;">
+        <div class="container">
+            <div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 text-center">
+                <h2>{{ section.settings.main-header }}</h2>
+                <p>{{ section.settings.main-description }}</p>
+            </div>
+        </div>
+    </div> -->
+  <div class="row">
+    <div class="container threeboxesbodyglue">
+      <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+        <h3>10 x MORE COLLAGEN</h3>
+        <p>Contains 10 x more collagen forming amino acids per gram than traditional bone broth & 30% more than bone
+          broth concentrate (independently lab verified).</p>
+
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 text-center middle">
+        <h3>MAX BIOAVAILABILITY</h3>
+        <p>Meat & vegetable free, never dehydrated, treated with extreme heat or destructured in any way to assist with
+          optimal absorption and achieve maximum bioavailability.</p>
+
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+        <h3>MAKES 39 CUPS/9.75 LITRES</h3>
+        <p>That’s BIG value! Just add hot water to make 39 instant cups or almost 10 litres of nutrient dense bone
+          broth.</p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:30px">
+    <div class="container">
+      <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+        <img src="{{ '10x.gif' | asset_img_url: '500x' }}" alt="THE BODY GLUE™ DIFFERENCE" />
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+        <img src="{{ '39cups.gif' | asset_img_url: '500x' }}" alt="THE BODY GLUE™ DIFFERENCE" />
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+        <img src="{{ 'makes975.gif' | asset_img_url: '500x' }}" alt="THE BODY GLUE™ DIFFERENCE" />
+      </div>
+
+    </div>
+  </div>
+  <!-- <div class="row">
+        <div class="container">
+            <div class="col-sm-6 col-md-6 col-lg-2 col-lg-offset-2 text-center">
+                <img src="{{ section.settings.item5-image | img_url: '2048x1055' }}" alt="THE BODY GLUE™ DIFFERENCE"/>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-2 text-center">
+                <img src="{{ section.settings.item6-image | img_url: '2048x1055' }}" alt="THE BODY GLUE™ DIFFERENCE"/>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-2 text-center">
+                <img src="{{ section.settings.item7-image | img_url: '2048x1055' }}" alt="THE BODY GLUE™ DIFFERENCE"/>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-2 text-center">
+                <img src="{{ section.settings.item8-image | img_url: '2048x1055' }}" alt="THE BODY GLUE™ DIFFERENCE"/>
+            </div>
+            <div class="col-sm-12 text-center">
+           <a href="#shopify-section-body-glue-section-ten">     <button class="btn btn-warning" type="button">
+                    {% comment %} <a href="{{ section.settings.section-url }}">{{ section.settings.button-text }}</a> {% endcomment %}
+{{ section.settings.button-text }}
+                    
+                </button></a> 
+            </div>
+        </div>
+    </div> -->
+</section>
+
+
+{% schema %}
+{
+"name": "Body Glue Graphics",
+"settings": [{
+"type": "text",
+"id": "main-header",
+"label": "Box Header"
+},{
+"type": "text",
+"id": "main-description",
+"label": "description"
+}, {
+"type": "text",
+"id": "button-text",
+"label": "Button Text"
+},{
+"type": "image_picker",
+"id": "item1-image",
+"label": "Image Two"
+},{
+"type": "image_picker",
+"id": "item2-image",
+"label": "Image Two"
+},{
+"type": "image_picker",
+"id": "item3-image",
+"label": "Image Three"
+},{
+"type": "image_picker",
+"id": "item4-image",
+"label": "Image Four"
+},{
+"type": "image_picker",
+"id": "item5-image",
+"label": "Image Five"
+} ,{
+"type": "image_picker",
+"id": "item6-image",
+"label": "Image Six"
+} ,{
+"type": "image_picker",
+"id": "item7-image",
+"label": "Image Seven"
+} ,{
+"type": "image_picker",
+"id": "item8-image",
+"label": "Image Eight"
+}
+,{
+"type": "url",
+"id": "section-url",
+"label": "Section Url"
+}
+]
+}
+{% endschema %}

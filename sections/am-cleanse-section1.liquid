@@ -1,0 +1,108 @@
+<style>
+    section#nase_why {
+        display: table;
+    }
+      </style>
+
+
+<section class="sec-07 gevity_new_style_sip-cook" style="background-color: #4C576B; background-color: {{ product.metafields.custom_fields["accent_colour"]  | strip_html }};">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 gevity_new_style_half-bg" style="background-image: url('{{ product.metafields.custom_fields["why_image"] }}')"></div>
+        <div class="col-sm-12 col-md-6 col-lg-6 sip" style="padding: 100px 10% 100px 7%;">
+            <h2 class="newFont" style="color: {{ section.settings.button-color }}!important;">{% if product.metafields.custom_fields["top_headline"] != blank %}
+{{ product.metafields.custom_fields["top_headline"] }}
+{% endif %}</h2>
+            {% comment %} <h5 style="color: {{ section.settings.button-color }}!important;">{{ section.settings.subhead }}</h5> {% endcomment %}
+            <p class="ultimate-text" style="color: {{ section.settings.button-color }}!important;">{% if product.metafields.custom_fields["top_description"] != blank %}
+{{ product.metafields.custom_fields["top_description"] }}
+{% endif %}</p>
+           
+
+    
+
+
+               <div class="item1 circle">
+              
+                <img src="{{ product.metafields.custom_fields["section_1_image_1"] }}" alt="{% if product.metafields.custom_fields["section_1_title_1"] != blank %}{{ product.metafields.custom_fields["section_1_title_1"] }}{% endif %}"/>
+                   <p style="color: {{ section.settings.button-color }}!important;"><strong>{% if product.metafields.custom_fields["section_1_title_1"] != blank %}{{ product.metafields.custom_fields["section_1_title_1"] }}{% endif %}</strong></p>
+            </div>
+            <div class="item2 circle">
+                <img src="{{ product.metafields.custom_fields["section_1_image_2"] }}" alt="{% if product.metafields.custom_fields["section_1_title_2"] != blank %}{{ product.metafields.custom_fields["section_1_title_2"] }}{% endif %}"/>
+                   <p style="color: {{ section.settings.button-color }}!important;"><strong>{% if product.metafields.custom_fields["section_1_title_2"] != blank %}{{ product.metafields.custom_fields["section_1_title_2"] }}{% endif %}</strong></p>
+            </div>
+            <div class="item3 circle">
+                <img src="{{ product.metafields.custom_fields["section_1_image_3"] }}" alt="{% if product.metafields.custom_fields["section_1_title_3"] != blank %}{{ product.metafields.custom_fields["section_1_title_3"] }}{% endif %}"/>
+                   <p style="color: {{ section.settings.button-color }}!important;"><strong>{% if product.metafields.custom_fields["section_1_title_3"] != blank %}{{ product.metafields.custom_fields["section_1_title_3"] }}{% endif %}</strong></p>
+            </div>
+ 
+    
+        </div>
+    </div> 
+
+</section>
+
+
+{% schema %}
+{
+        "name": "AM Cleanse Section 1",
+        "settings": [
+        {
+            "type": "color",
+            "id": "button-color",
+            "label": "Button color",
+            "default": "#808824"
+         },{
+                        "type": "image_picker",
+                        "id": "item-image",
+                        "label": "Image of on left"
+                      }, {
+                        "type": "image_picker",
+                        "id": "mob-item-image",
+                        "label": "Mobile Version"
+                      }, {
+                        "type": "url",
+                        "id": "url",
+                        "label": "Link URL"
+                      }, {
+                        "type": "html",
+                        "id": "header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "html",
+                        "id": "description",
+                        "label": "description"
+                      }, {
+                        "type": "text",
+                        "id": "subhead",
+                        "label": "subhead"
+                      }, {
+                        "type": "text",
+                        "id": "button-text",
+                        "label": "button-text"
+                      },{
+                        "type": "image_picker",
+                        "id": "icon-image1",
+                        "label": "Icon 1"
+                      },{
+                        "type": "image_picker",
+                        "id": "icon-image2",
+                        "label": "Icon 2"
+                      },{
+                        "type": "image_picker",
+                        "id": "icon-image3",
+                        "label": "Icon 3"
+                      },{
+                        "type": "text",
+                        "id": "item1text",
+                        "label": "Text1"
+                      },{
+                        "type": "text",
+                        "id": "item2text",
+                        "label": "Text2"
+                      },{
+                        "type": "text",
+                        "id": "item3text",
+                        "label": "Text3"
+                      }]
+    }
+{% endschema %}
