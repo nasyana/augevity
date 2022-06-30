@@ -1,5 +1,5 @@
 
-{% if product.metafields.subscriptions.subscription_id %}
+{% if product.variants[8] %}
 {%- render 'nase-custom-subscription-am' -%}
 {% endif %}
 
@@ -235,16 +235,17 @@
 		</div>
 	</div> -->
 	<!-- Subscriptions Powered by ReCharge Payments: JS -->
+
     <script src="//rechargeassets-bootstrapheroes-rechargeapps.netdna-ssl.com/static/js/rcWidget.js"></script>
 	
 
-{% if product.metafields.subscriptions.subscription_id %}
+{% if product.variants[8] %}
 {%- render 'nase-custom-subscription-am-js' -%} 
 {% endif %}
 
 <script>
         
-  
+
       
 		(function() {
 			var options = {
@@ -271,5 +272,12 @@
 			}
 		})();
 	</script>
+{%else%}
+
+{% if product.variants[8] %}
+{%- render 'nase-custom-subscription-am-js' -%} 
 {% endif %}
+
+{% endif %}
+
 <!-- Subscriptions Powered by ReCharge Payments: End Liquid Code -->

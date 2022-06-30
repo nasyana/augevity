@@ -1,5 +1,5 @@
 <div class="gevity-new-style product">
-     <script>console.log('product', {{ product | json }});</script>
+     <script>console.log('product', {{ product.variants[8] | json }});</script>
 
 
      {%- if product.id != 1205654552619 and product.id != 4488920465474 and product.id != 4744358690882 -%}
@@ -7,7 +7,14 @@
      {% section 'product-template-am-cleanse' %}
      {% section 'am-cleanse-section1' %}
 
+
+     {%- if product.type == "Marinade" -%}
+     {% section 'marinade-4col' %}
+     {%- endif -%}
+
      {% section 'am-cleanse-section2' %} 
+
+   
 
      <!-- Reviews Section -->
 
@@ -21,6 +28,8 @@
      {%- if product.type == "Concentrate" -%}
      {% section 'am-cleanse-section4' %}
      {%- endif -%}
+     
+   
 
      {%- if product.tags contains "Body Glue X" -%}
      {% section 'body-glue-x-graphics' %}

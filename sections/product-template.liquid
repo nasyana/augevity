@@ -288,7 +288,7 @@ CompareAtPrice: item.CompareAtPrice
           
        
           
-          {% if product.metafields.subscriptions.subscription_id %}
+          {% if product.variants[8] %}
 
           {% if product.available == false %}<span id="soldoutlabel">Sold Out</span>{% endif %}
             {%- render 'nase-product-form', product: product -%}

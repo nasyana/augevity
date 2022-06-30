@@ -239,28 +239,26 @@
 
     <div class="Product__InfoWrapper"> 
       <div class="Product__Info {% if image_count == 0 %}Product__Info--noGallery{% endif %}">
+     
         <div class="Container">
          
-       
-
+  
+          {% if product.variants[8].available %}{% render 'subscription-product-am' %}{% endif %}
           {%- render 'product-meta-am', product: product, show_description: true -%}
-          
+     
       
               <!-- Nase - Added statement to include nase product form for Subscriptions and normal product form if blank... -->
           {%- if product.template_suffix != 'coming-soon' -%}
 
-          {% if product.metafields.subscriptions.subscription_id == blank %}
+          {% if product.variants[8] == false %}
 
-          {% if product.available %}    {%- render 'product-form', product: product -%} 
-          {% else %}
-{%- render 'product-form', product: product -%}{% endif %}
-          {% endif %}
+          {%- render 'product-form', product: product -%}{% endif %}
           
            <!-- Begin ReCharge code -->
-{% if product.available %}{% render 'subscription-product-am' %}{% endif %}
+
 <!-- End ReCharge code -->
           
-          {% if product.metafields.subscriptions.subscription_id %}
+          {% if product.variants[8].available %}
 
           {% if product.available == false %}<span id="soldoutlabel">Sold Out</span>{% endif %}
             {%- render 'nase-product-form-am', product: product -%}

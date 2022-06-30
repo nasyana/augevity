@@ -2416,6 +2416,21 @@
           "two-description": "Cook",
           "three-description": "Enjoy"
         }
+      },
+      "marinade-4col": {
+        "type": "marinade-4col",
+        "settings": {
+          "main-header": "HAPPY TASTE BUDS, HAPPY GUT BUGS",
+          "main-description": "Get all the health benefits of cooking with Body Glue™ in one easy step! Bone Broth Marinades take the fuss out of making nutrient dense and delicious meals - simply marinate, cook, enjoy!",
+          "box1-header": "2 TBS = 1 SRV BODY GLUE™",
+          "box1-description": "",
+          "box2-header": "BETTER COOKING MADE EASY",
+          "box2-description": "",
+          "box3-header": "STACKED W\/ FUNCTIONAL INGREDIENTS",
+          "box3-description": "",
+          "box4-header": "MICROBIOME FRIENDLY",
+          "box4-description": ""
+        }
       }
     },
     "content_for_index": [
