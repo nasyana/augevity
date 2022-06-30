@@ -2412,9 +2412,9 @@
       "marinades-three-columns": {
         "type": "marinades-three-columns",
         "settings": {
-          "one-description": "",
-          "two-description": "",
-          "three-description": ""
+          "one-description": "Marinate",
+          "two-description": "Cook",
+          "three-description": "Enjoy"
         }
       }
     },

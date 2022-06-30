@@ -1,9 +1,189 @@
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+    @media only screen and (min-width: 700px){
+
+
+        .desktop{
+        display: block;
+    }
+
+    .mob{
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 700px){
+    .desktop{
+    display: none;
+}
+
+.mob{
+        display: block;
+    }
+
+
+}
+/* 
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+#nase_why .answer {
+  max-height: 420px;
+  overflow: scroll;
+} */
+.gevity2col{
+
+    padding: 2%
+}
+
+.gevity2col li{
+
+margin-bottom: 1%
+}
+
+.gevity2col .column{
+
+    padding: 5%
+}
+h3{
+
+    font-size: 20px
+}
+.bundle {
+
+    margin-top: 40px
+}
+
+h4{
+
+    margin-top: 30px
+}
+
+.ArticleItem__Image.Image--fadeIn.lazyautosizes.Image--lazyLoaded.desktop {
+  width: 100%;
+}
+
+#nase_why ul.nospace {
+  margin-top: 0;
+}
+</style>
+
 <div class="gevity-new-style product">
+    <script>console.log('product', {{ product | json }});</script>
     {% section 'product-template-am-cleanse' %}
     {% comment %} {% section 'nase-product-page-section' %} {% endcomment %}
     {% comment %} {% section 'product-recommendations' %}
     {% section 'recently-viewed-products' %} {% endcomment %}
 
+    {%- if product.id == 6766898151490 -%}
+
+    
+    <img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded desktop" src="{{ 'final-PIMPINPORTUGUESE.png' | asset_img_url: '2000x' }}">
+    <img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded desktop" src="{{ 'final-SMOKEYTEXAN.png' | asset_img_url: '2000x' }}">
+    <img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded desktop" src="{{ 'final-TERRIFICTERIYAKI.png' | asset_img_url: '2000x' }}">
+
+    <img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded mob" src="{{ 'final-PIMPINPORTUGUESE-mob.png' | asset_img_url: '2000x' }}">
+    <img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded mob" src="{{ 'final-SMOKEYTEXAN-mob.png' | asset_img_url: '2000x' }}">
+    <img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded mob" src="{{ 'final-TERRIFICTERIYAKI-mob.png' | asset_img_url: '2000x' }}">
+
+    <div class="row gevity2col">
+        <div class="column" >
+     
+            <img class="ArticleItem__Image Image--fadeIn fullwidth Image--lazyLoaded" src="{{ 'madness.jpeg' | asset_img_url: '2000x' }}">
+      
+        </div>
+        <div class="column" >
+           <!-- <ul>
+            <li>
+            <strong>2 TS = 1 SRV BODY GLUE™&nbsp;</strong>Every 2 tablespoons of Bone Broth Marinade is equivalent to 1 serving of Bone Broth Body Glue™ making it easier than ever to get the benefits of the World's Most Nutrient Dense Bone Broth.&nbsp;&nbsp;</li>
+            <li>
+            <strong>BETTER COOKING MADE EASY&nbsp;</strong>Bone Broth Marinades are guaranteed to make you a rockstar in the kitchen so you can whip up delicious, nutrient dense meals in just a few simple steps.STACKED W/</li>
+            </ul>
+            <ul>
+            <li>
+            <strong>FUNCTIONAL INGREDIENTS&nbsp;</strong>More than just a marinade with Body Glue™. No compromises have been made on any ingredient, from using only Organic EVOO to creating our very own prebiotic sweetener (Sweet Guts™).</li>
+            </ul>
+            <ul>
+            <li>
+            <strong>MICROBIOME FRIENDLY&nbsp;</strong>100% microbiome friendly and free from common gut disruptors and allergens. No sugar, soy, inflammatory vegetable or seed oils, preservatives or additives of any kind.</li>
+            </ul>-->
+            <h3>Each Bundle Contains:</h3>
+            <p class="bundle"><strong>1 x TERRIFIC TERIYAKI&nbsp;-&nbsp;</strong><strong><em>"NO SUGAR, NO SOY.&nbsp; OH BOY!"</em></strong></p>
+            <ul>
+            <li style="font-weight: 400;">
+            <b>Gevity Rx Teriyaki Difference </b><span style="font-weight: 400;">- unlike regular Teriyaki, our version contains NO soy, sugar, wheat or additives! Instead it’s made with Organic Coconut Aminos, Sweet Guts™ (our very own prebiotic sweetener) and of course Body Glue™.</span>
+            </li>
+            <li style="font-weight: 400;">
+            <b>Best with </b><span style="font-weight: 400;">- everything tastes better with Teriyaki! Chicken, beef, fish and vegetables. </span><span style="font-weight: 400;">Pairs well with Great Guts Mayo (Hello Teriyaki chicken bowl).</span>
+            </li>
+            </ul>
+            <p class="bundle"><strong>1 x PIMPIN' PORTUGUESE - <em>"IT'S PERI PERI GOOD!"</em></strong></p>
+            <ul>
+            <li>
+            <strong>Gevity Rx Portuguese Difference</strong> - most store bought Portuguese marinades contain canola oil, wheat, sugar and a host of unnecessary chemical additives. But not ours! Pimpin’ Portuguese is GOOD for you - Organic EVOO, Prebiotic Sweetener and of course, Body Glue™.</li>
+            <li>
+            <strong>Best with</strong> - chicken, fish and seafood are all great choices.&nbsp; Try marinating a whole butterflied chicken for a Pimpin’ 5 star experience. Serve with fries and Great Guts Mayo.</li>
+            </ul>
+       
+            <p class="bundle"><strong>1 x SMOKEY TEXAN&nbsp;- <em>"FOR RIBS, WINGS AND ALL THE FUN THINGS!"&nbsp;</em></strong></p>
+      <ul>
+      <li style="font-weight: 400;">
+      <b>Gevity Rx Smokey Difference </b><span style="font-weight: 400;">- the best smokey BBQ sauce is usually also sweet and you know what that means - sugar! But not on our watch! Our slightly spicy Smokey Texan Marinade is made with Sweet Guts™ (our very own prebiotic sweetener) and is actually good for you!</span>
+      </li>
+      <li><strong><b>Best with</b><span style="font-weight: 400;"> -</span> <span style="font-weight: 400;">pour it on ribs, chicken wings, almost anything! </span><span style="font-weight: 400;">Pairs well with Better Belly BBQ for extra smokey-ness!</span></strong></li>
+      </ul>
+      Please refer to individual product pages for nutrition panel&nbsp;and tips (launching tomorrow)<br>
+      <h4><strong></strong></h4>
+      <h4>
+      <strong>Easy Instructions</strong><br>
+      </h4>
+      <ol>
+      <li><span style="font-weight: 400;"> Generously cover meat or veg of your choice with marinade and refrigerate for a min of 20 mins before cooking. For extra tenderness and flavour, marinate overnight in the refrigerator.</span></li>
+      <li><span style="font-weight: 400;"> Simply grill, BBQ, pan-fry or bake to your liking, basting regularly while cooking for stronger flavour.</span></li>
+      <li><span style="font-weight: 400;"> Serve, drool and enjoy!&nbsp;</span></li>
+      </ol>
+      <i><span style="font-weight: 400;">* Tip - stack with your fav Bone Broth Sauce for the ultimate experience. </span></i> <br><span style="font-weight: 400;"><br></span>
+        </div>
+      </div>
+
+      
+    {% endif %}
     {% comment %} {% section 'am-cleanse-section1' %} {% endcomment %}
 
     {% comment %} {% section 'am-cleanse-section2' %} {% endcomment %}
