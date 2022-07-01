@@ -83,13 +83,13 @@ section { clear: both;}
 <section class="sec-07 gevity_new_style_sip-cook get-benefits" style="background-color: #fff; margin-top: 80px; margin-bottom: 80px ">
   <div class="row">
 	  <div class="container"  style=" padding: 0;">
-		<div class="col-sm-12 col-md-6 col-lg-6" style="padding: 40px; overflow: auto; background-color: {{ product.metafields.custom_fields["accent_colour"]  | strip_html }};">
+		<div class="col-sm-12 col-md-6 col-lg-6" style="padding: 40px; overflow: auto; background-color: {% if  product.metafields.custom_fields["accent_colour"] %} {{ product.metafields.custom_fields["accent_colour"]  | strip_html }} {%else%}#FFCA88{%endif%};">
 			<p style="font-size: 18px;">Get all the health benefits of cooking with Body Glue™ in one easy step! Bone Broth Marinades take the fuss out of making nutrient dense and delicious meals.</p>
 			<div class="one_third"><h4>1</h4>Marinate</div>
 			<div class="one_third"><h4>2</h4>Cook</div>
 			<div class="one_third"><h4>3</h4>Enjoy</div>
 		</div>
-		<div class="col-sm-12 col-md-6 col-lg-6 img" style="padding: 0; background-image: url('{{ product.metafields.custom_fields["why_image"] }}'); background-size: cover; background-position: center">
+		<div class="col-sm-12 col-md-6 col-lg-6 img" style="padding: 0; background-image: url('{% if product.metafields.custom_fields["why_image"] %} {{ product.metafields.custom_fields["why_image"] }} {%else%}{{ 'marinade-collection.png' | asset_img_url: '2000x' }}{%endif%}'); background-size: cover; background-position: center">
 			<!-- <img src="images/image-1.jpg" alt="Performance Range"/> -->
 		</div>
 	  </div>

@@ -2395,8 +2395,8 @@
         "type": "marinade-title",
         "settings": {
           "main-header": "Bone Broth Marinade",
-          "desktopimg": "shopify:\/\/shop_images\/20220613_Gevity_Marinade_Landing_Page_Banner_Image_Mobile.png",
-          "mobileimg": "shopify:\/\/shop_images\/20220613_Gevity_Marinade_Landing_Page_Banner_Image.png"
+          "desktopimg": "shopify:\/\/shop_images\/20220613_Gevity_Marinade_Landing_Page_Banner_Image_0125d6c4-7161-40f2-855d-86704f16a743.png",
+          "mobileimg": "shopify:\/\/shop_images\/20220613_Gevity_Marinade_Landing_Page_Banner_Image_Mobile.png"
         }
       },
       "marinade-graphics": {
@@ -2430,6 +2430,20 @@
           "box3-description": "",
           "box4-header": "MICROBIOME FRIENDLY",
           "box4-description": ""
+        }
+      },
+      "marinades-get-health": {
+        "type": "marinades-get-health",
+        "settings": {
+          "button-color": "#fff",
+          "url": "",
+          "header": "",
+          "description": "",
+          "subhead": "",
+          "button-text": "",
+          "item1text": "",
+          "item2text": "",
+          "item3text": ""
         }
       }
     },
