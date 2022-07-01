@@ -105,14 +105,14 @@ h4{
 </style>
 
 <div class="gevity-new-style product">
-    <script>console.log('product', {{ product | json }});</script>
+    <!-- <script>console.log('product', {{ product | json }});</script> -->
     {% section 'product-template-am-cleanse' %}
     {% comment %} {% section 'nase-product-page-section' %} {% endcomment %}
     {% comment %} {% section 'product-recommendations' %}
     {% section 'recently-viewed-products' %} {% endcomment %}
 
     {%- if product.id == 6766898151490 -%}
-
+<!-- This is for Marinade Bundle -->
     
     <img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded desktop" src="{{ 'final-PIMPINPORTUGUESE.png' | asset_img_url: '2000x' }}">
     <img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded desktop" src="{{ 'final-SMOKEYTEXAN.png' | asset_img_url: '2000x' }}">

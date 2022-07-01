@@ -250,7 +250,7 @@
               <!-- Nase - Added statement to include nase product form for Subscriptions and normal product form if blank... -->
           {%- if product.template_suffix != 'coming-soon' -%}
 
-          {% if product.variants[8] == false %}
+          {% if product.variants[8].available == blank %}
 
           {%- render 'product-form', product: product -%}{% endif %}
           
