@@ -215,6 +215,15 @@ body div .zsFormClass{
     z-index: 777;
 }
 
+#outOfStockPopupActiv {
+  /* display: block!important; */
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7)!important;
+  z-index: 777;
+}
+
 .closeCPicker {
     text-align: right;
     height: 70px;
@@ -222,6 +231,38 @@ body div .zsFormClass{
     margin-right: -40px;
     cursor: pointer;
 }
+
+.closeOPicker{
+
+  background: #333;
+  color: '#333'!important;
+  padding: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.closeOPicker #whitebox p{
+  color: #000
+}
+#outOfStockPopupActiv #whitebox{
+
+  margin: 10% auto;
+  border: 0px solid #fff;
+  max-width: 41rem;
+  background: #fafafa;
+  padding: 3%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8)!important;
+color: #fff;
+}
+
+#outOfStockPopupActiv div h3 {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+color: #fff;
+}
+
 
 #countryPopupActiv #whitebox{
 

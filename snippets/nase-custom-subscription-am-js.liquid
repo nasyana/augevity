@@ -105,9 +105,23 @@ return level;
 
     })
 
+
+    $('.closeOPicker').unbind().click(function (event) { 
+    let productparentid = $('button#GevityAddToCart').attr('productparentid');
+    $("#outOfStockPopupActiv").fadeOut();
+    sessionStorage.setItem(productparentid);
+  });
     // jQuery('#bagtoopenid').hide();
 
     jQuery('button#quickaddtobag').unbind().click(function (event) {
+
+
+  let oostag = $(this).attr('outofstock');
+ if(oostag == 'yep'){
+
+  $("#outOfStockPopupActiv").fadeIn();
+
+ }
 
       if ($(this).closest('.ProductItem__Wrapper').find('#bagtoopenid').css('display') == 'block') {
 
@@ -893,9 +907,40 @@ $('.refreshcart').click();
 
   }
 
+  $('.closeOPicker').unbind().click(function (event) { 
+    let productparentid = $('button#GevityAddToCart').attr('productparentid');
+    $("#outOfStockPopupActiv").fadeOut();
+    sessionStorage.setItem(productparentid);
+  });
+
 
   $('#GevityAddToCart').unbind().click(function (event) {
 
+ 
+    let oostag = $('button#GevityAddToCart').attr('outofstock');
+ if(oostag == 'yep'){
+
+  $("#outOfStockPopupActiv").fadeIn();
+
+ }
+    let productparentid = $(this).attr('productparentid');
+
+    var doesIdExistInSession = sessionStorage.getItem(productparentid);
+    /// check here if product id exists in sessionStorage. 
+
+    /// if exists, continue with rest of function 
+
+    /// if doesn't show popup and return. 
+if(!doesIdExistInSession){
+
+  /// showPopup and return 
+
+//  $("#outOfStockPopupActiv").fadeIn();
+
+
+
+
+}
 
     changevariantidam();
     console.log('Selected Variant ID is shot2: ', window.NaseLib.selectedvariant);
@@ -905,12 +950,12 @@ $('.refreshcart').click();
     var qty = parseInt(oldQty);
 
 
-    var discvariantid = $('#discvariantid').html();
+
     $('.PageOverlay').addClass('is-visible');
     event.preventDefault();
     var $purchase_type = $(".purchase-type__option.active").attr('data-mm-type');
 
-    let productparentid = $(this).attr('productparentid');
+
     let allVariantsString = $(this).attr('allvariants');
 
 

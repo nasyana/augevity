@@ -175,29 +175,44 @@
           "20d23a05-a46b-4198-9370-d803d2450657": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/20220601_Gevity_Marinade_Teaser_Banners_Desktop.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/20220601_Gevity_Marinade_Teaser_Banners_Mobile.jpg",
+              "image": "shopify:\/\/shop_images\/20220630_Gevity_Marinade_Website_Banners_Desktop.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/20220630_Gevity_Marinade_Website_Banners_Mobile.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "",
               "title": "",
               "button_1_text": "",
-              "button_1_link": "",
+              "button_1_link": "https:\/\/au.gevityrx.com\/collections\/bone-broth-marinade",
               "button_2_text": "",
-              "button_2_link": ""
+              "button_2_link": "https:\/\/au.gevityrx.com\/collections\/bone-broth-marinade"
             }
           },
           "1575341601564": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/20220524_Gevity_Home_Page_Banner_Desktop_V2.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/20220524_Gevity_Home_Page_Banner_Mobile.jpg",
+              "image": "shopify:\/\/shop_images\/26072022_Gevity_Home_Page_Banners_Desktop_3.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/26072022_Gevity_Home_Page_Banners_Mobile_3.jpg",
               "apply_overlay": false,
               "content_position": "middleCenter",
               "subheading": "",
               "title": "",
               "button_1_text": "",
-              "button_1_link": "https:\/\/au.gevityrx.com\/blogs\/recipes\/tagged\/soup",
+              "button_1_link": "https:\/\/au.gevityrx.com\/collections\/bone-broth-sauces",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "187739e2-047a-4788-8159-8922b7dcd203": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/26072022_Gevity_Home_Page_Banners_Desktop_1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/26072022_Gevity_Home_Page_Banners_Mobile_1.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "",
+              "button_1_link": "https:\/\/au.gevityrx.com\/collections\/bone-broth-body-glue",
               "button_2_text": "",
               "button_2_link": ""
             }
@@ -205,14 +220,14 @@
           "7f944ec8-7c08-43b0-8a05-90acee0ae979": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/20211111_Gevity_Home_Page_Banners_1200x1800_2_f8bc8f16-bcf7-41d3-9acf-ae18a532927f.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/20211111_Gevity_Home_Page_Banners_750x1100_2_dfc99e06-bb45-4880-9d05-9fd2ef679e3d.jpg",
+              "image": "shopify:\/\/shop_images\/26072022_Gevity_Home_Page_Banners_Desktop_2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/26072022_Gevity_Home_Page_Banners_Mobile_2.jpg",
               "apply_overlay": false,
               "content_position": "bottomCenter",
               "subheading": "",
               "title": "",
               "button_1_text": "",
-              "button_1_link": "https:\/\/au.gevityrx.com\/collections\/bundles",
+              "button_1_link": "https:\/\/au.gevityrx.com\/collections\/bone-broth-marinade",
               "button_2_text": "",
               "button_2_link": ""
             }
@@ -236,6 +251,7 @@
         "block_order": [
           "20d23a05-a46b-4198-9370-d803d2450657",
           "1575341601564",
+          "187739e2-047a-4788-8159-8922b7dcd203",
           "7f944ec8-7c08-43b0-8a05-90acee0ae979",
           "slide-0"
         ],
@@ -1803,7 +1819,7 @@
         "type": "am-cleanse-section1",
         "settings": {
           "button-color": "#ffffff",
-          "item-image": "shopify:\/\/shop_images\/A.M.-Cleanse-Body-Glue-CROPPED.jpg",
+          "item-image": "shopify:\/\/shop_images\/Teriyaki_Salmon_w_Jar_resized.jpg",
           "mob-item-image": "shopify:\/\/shop_images\/A.M.-Cleanse-Body-Glue-NO-CROP.jpg",
           "url": "",
           "header": "YOUR ANYTIME HEALTH TONIC",
@@ -2435,7 +2451,7 @@
       "marinades-get-health": {
         "type": "marinades-get-health",
         "settings": {
-          "button-color": "#fff",
+          "button-color": "#ffffff",
           "url": "",
           "header": "",
           "description": "",

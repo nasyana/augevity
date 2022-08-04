@@ -259,6 +259,10 @@ for size, we use it to display a size chart (if applicable)
 
 
      <p class="newStylelabel"><strong>Quantity</strong></p>
+     <!-- {% if   product.metafields.custom.show_out_of_stock_notice %}
+     <p class="newStylelabel"><strong>Yes it is out of stock</strong></p>
+     {%endif %} -->
+   
 <!-- Nase Edit  -->
  <div id="qty-plus-button"> 
 {% comment %}  Nase Quanitiy {% endcomment %}
@@ -278,7 +282,7 @@ for size, we use it to display a size chart (if applicable)
       <div>
         
        {%- if selected_variant.available -%}
-<button allvariants='{{ product.variants | json }}' class="Button--full new-style" productParentId="{{product.id}}" id="GevityAddToCart" style="background-color: #00B57C"><span id="add">Add To Cart</span>  <span id="sep">|</span> <span id="thepriceam">${{ product.variants[0].price | money_without_currency | remove: '.00' }}</span> <span id="perserve"> </span></button>
+<button outofstock="{% if   product.metafields.custom.show_out_of_stock_notice %}yep{%endif %}" allvariants='{{ product.variants | json }}' class="Button--full new-style" productParentId="{{product.id}}" id="GevityAddToCart" style="background-color: #00B57C"><span id="add">Add To Cart</span>  <span id="sep">|</span> <span id="thepriceam">${{ product.variants[0].price | money_without_currency | remove: '.00' }}</span> <span id="perserve"> </span></button>
  {% endif %}
 
  <script>

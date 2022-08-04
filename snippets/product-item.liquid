@@ -415,7 +415,7 @@
                     </div>
 
                     {%if product.variants[10].id %}
-                        <Button id="quickaddtobag" openquickadd="{{ product.id}}" aria-controls="drawer-name" allvariants='{{ product.variants | json }}' aria-expanded="false">
+                        <Button outofstock="{% if   product.metafields.custom.show_out_of_stock_notice %}yep{%endif %}" id="quickaddtobag" openquickadd="{{ product.id}}" aria-controls="drawer-name" allvariants='{{ product.variants | json }}' aria-expanded="false">
                             <span>Quick Add To Bag</span>
                             <span>+</span>
                         </Button>
