@@ -16,7 +16,7 @@ for size, we use it to display a size chart (if applicable)
     $( document ).ready(function() {
      
       
-      jQuery("button.ProductForm__AddToCart").click(()=>{
+     jQuery("button.ProductForm__AddToCart").on("click", function () {
 
     let oostag = jQuery("button.ProductForm__AddToCart").attr("outofstock");
 
@@ -25,6 +25,14 @@ for size, we use it to display a size chart (if applicable)
     }
 
 })
+
+
+jQuery('.closeOPicker').unbind().click(function (event) { 
+    let productparentid = jQuery('button#GevityAddToCart').attr('productparentid');
+    jQuery("#outOfStockPopupActiv").fadeOut();
+    sessionStorage.setItem(productparentid);
+  });
+
 
 
     });
