@@ -428,7 +428,7 @@
                             </div>
                         </div>
                         {%else%}
-                        <Button id="quickaddtobagsingle" qty="1" class="qtybox" add="{{ product.variants[0].id }}" openquickadd="{{ product.variants[0].id}}" aria-controls="drawer-name" aria-expanded="false">
+                        <Button  outofstock="{% if   product.metafields.custom.show_out_of_stock_notice %}yep{%endif %}" id="quickaddtobagsingle" qty="1" class="qtybox" add="{{ product.variants[0].id }}" openquickadd="{{ product.variants[0].id}}" aria-controls="drawer-name" aria-expanded="false">
                             <span>Quick Add To
                                                                                                           Bag</span>
                             <span>+</span>

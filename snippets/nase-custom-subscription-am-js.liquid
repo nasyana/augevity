@@ -147,6 +147,14 @@ return level;
 
     jQuery('button#quickaddtobagsingle').unbind().click(function (event) {
 
+
+      let oostag = $(this).attr('outofstock');
+ if(oostag == 'yep'){
+
+  $("#outOfStockPopupActiv").fadeIn();
+
+ }
+
       let qty = $(this).attr('qty');
       let productId = $(this).attr('add');
 

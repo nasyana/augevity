@@ -1174,7 +1174,6 @@
             "type": "image",
             "settings": {
               "item-image": "shopify:\/\/shop_images\/careers.jpg",
-              "mob-item-image": "",
               "block_link": "",
               "header": "WANT TO BE PART OF A LOCAL BRAND MAKING GLOBAL IMPACT?"
             }
@@ -1211,7 +1210,6 @@
             "type": "image",
             "settings": {
               "item-image": "shopify:\/\/shop_images\/team.jpg",
-              "mob-item-image": "",
               "block_link": "",
               "header": "WHY JOIN US?",
               "description": "",
@@ -2383,6 +2381,7 @@
           },
           "dec16ef4-a290-43fc-8a4c-81c2635f0752": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "jobtitle": "Marketing Manager",
               "jobdescription": "We're on the hunt for our new Marketing All-Star.  Could it be you?",
@@ -2397,12 +2396,39 @@
               "jobdescription": "",
               "fulljob": ""
             }
+          },
+          "40afde24-8eee-4815-a070-fc5b601b8dbf": {
+            "type": "text",
+            "settings": {
+              "jobtitle": "SALES & ACCOUNT  MANAGER - QLD",
+              "jobdescription": "We are seeking an experienced, energetic and highly motivated Sales & Account Manager for QLD that is familiar with health and wellness products and their retail channels including health food stores, practitioners, grocery and supplement & fitness.",
+              "fulljob": "copy-of-job-title"
+            }
+          },
+          "1721f2a8-1a77-4bb9-89a0-91a88a4a2f38": {
+            "type": "text",
+            "settings": {
+              "jobtitle": "SALES & ACCOUNT  MANAGER - NSW",
+              "jobdescription": "We are seeking an experienced, energetic and highly motivated Sales & Account Manager for NSW that is familiar with health and wellness products and their retail channels including health food stores, practitioners, grocery and supplement & fitness.",
+              "fulljob": "sales-account-manager-nsw"
+            }
+          },
+          "5d04f498-7f1e-4c04-9caf-ba1bfcc5b3be": {
+            "type": "text",
+            "settings": {
+              "jobtitle": "SALES & ACCOUNT  MANAGER - SA",
+              "jobdescription": "We are seeking an experienced, energetic and highly motivated Sales & Account Manager to South Australia that is familiar with health and wellness products and their retail channels including health food stores, practitioners, grocery and supplement & fitness.",
+              "fulljob": "sales-account-manager-sa"
+            }
           }
         },
         "block_order": [
           "080b9919-ec38-44d1-8e81-11be704632ab",
           "dec16ef4-a290-43fc-8a4c-81c2635f0752",
-          "ecb9e771-55b5-4a03-b324-66743431a06d"
+          "ecb9e771-55b5-4a03-b324-66743431a06d",
+          "40afde24-8eee-4815-a070-fc5b601b8dbf",
+          "1721f2a8-1a77-4bb9-89a0-91a88a4a2f38",
+          "5d04f498-7f1e-4c04-9caf-ba1bfcc5b3be"
         ],
         "settings": {
         }
@@ -2460,6 +2486,11 @@
           "item1text": "",
           "item2text": "",
           "item3text": ""
+        }
+      },
+      "outofstock-popup": {
+        "type": "outofstock-popup",
+        "settings": {
         }
       }
     },
