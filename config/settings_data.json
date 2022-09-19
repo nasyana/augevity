@@ -172,6 +172,21 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
+          "7f944ec8-7c08-43b0-8a05-90acee0ae979": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20220915_Gevity_September_Website-Banners_Desktop_1.gif",
+              "mobile_image": "shopify:\/\/shop_images\/20220915_Gevity_September_Website-Banners_Mobile_1.gif",
+              "apply_overlay": false,
+              "content_position": "bottomCenter",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
           "20d23a05-a46b-4198-9370-d803d2450657": {
             "type": "image",
             "settings": {
@@ -217,21 +232,6 @@
               "button_2_link": ""
             }
           },
-          "7f944ec8-7c08-43b0-8a05-90acee0ae979": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/26072022_Gevity_Home_Page_Banners_Desktop_2.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/26072022_Gevity_Home_Page_Banners_Mobile_2.jpg",
-              "apply_overlay": false,
-              "content_position": "bottomCenter",
-              "subheading": "",
-              "title": "",
-              "button_1_text": "",
-              "button_1_link": "https:\/\/au.gevityrx.com\/collections\/bone-broth-marinade",
-              "button_2_text": "",
-              "button_2_link": ""
-            }
-          },
           "slide-0": {
             "type": "image",
             "settings": {
@@ -249,10 +249,10 @@
           }
         },
         "block_order": [
+          "7f944ec8-7c08-43b0-8a05-90acee0ae979",
           "20d23a05-a46b-4198-9370-d803d2450657",
           "1575341601564",
           "187739e2-047a-4788-8159-8922b7dcd203",
-          "7f944ec8-7c08-43b0-8a05-90acee0ae979",
           "slide-0"
         ],
         "settings": {

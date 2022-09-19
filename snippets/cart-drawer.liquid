@@ -84,7 +84,7 @@
 
     <form class="Cart Drawer__Content" action="{{ routes.cart_url }}" method="POST" novalidate>
         <div class="Drawer__Main" data-scrollable>
-            {% assign showSpecialProduct = false %}
+            {% assign showSpecialProduct = true %}
             {% assign minQty = 3 %}
             {% assign cartQty = cart.item_count %}
             {% assign allowedSpecialProduct = false %}
@@ -96,15 +96,36 @@
             {% if cartQty >= minQty %}
                 {% assign allowedSpecialProduct = true %}
             {% endif %}
-            {% assign specialProductId = 4748420415554 %}
-            {% assign specialProductName = 'Sriracha' %}
-            {% assign hasSpecialProduct = false %}
 
+            {% assign specialProductId = 4748420415554 %}
+            {% assign specialProductId1 = 6763825266754 %}
+            {% assign specialProductId2 = 39827113607234 %}
+            {% assign specialProductId3 = 39827388825666 %}
+            
+            {% assign isMultipleSpecialProducts = true %}
+            {% assign specialProductName = 'Marinade!' %}
+            {% assign hasSpecialProduct = false %}
+            {% assign specialProductIdsArray = "39827398459458,39827113607234,39827388825666" | split: ',' %}
             {% for item in cart.items %}
 
                 <script>console.log('item',{{cart | json}})</script>
 
-                {% if item.product_id == specialProductId  %}
+                {% comment %} {% if item.product_id == specialProductId  %}
+                    {% assign hasSpecialProduct = true %}
+
+                    {% break %}
+                {% endif %} {% endcomment %}
+                {% if item.product_id == specialProductId1  %}
+                    {% assign hasSpecialProduct = true %}
+
+                    {% break %}
+                {% endif %}
+                {% if item.product_id == specialProductId2  %}
+                    {% assign hasSpecialProduct = true %}
+
+                    {% break %}
+                {% endif %}
+                {% if item.product_id == specialProductId3  %}
                     {% assign hasSpecialProduct = true %}
 
                     {% break %}
@@ -152,20 +173,23 @@
 
                     {% if hasSpecialProduct == false %}{% endif %}
 
-                    {% if allowedSpecialProduct and hasSpecialProduct == false and showSpecialProduct == true and showSpecialProduct == true %}
+                    {% if allowedSpecialProduct and hasSpecialProduct == false and showSpecialProduct == true and showSpecialProduct == true and isMultipleSpecialProducts == false %}
 
 
                         <a href="/cart/add?id=32590811725890&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">Woohoo! Claim Your Free
                             {{specialProductName}}! 🎁</a>
 
+                     
+
 
                     {% endif %}
 
+                  
 
                     {% if allowedSpecialProduct and hasSpecialProduct == true and showSpecialProduct == true %}
 
 
-                        Look at you go! You have a free
+                        <strong style="width: 100%; display: block;">Look at you go! You have a free</strong>
                         {{specialProductName}}!! 🎁
 
                     {% endif %}
@@ -189,9 +213,9 @@
                     YOU’VE GOT FREE SHIPPING!<br>
 
 
-                    {% if hasSpecialProduct == false %}{% endif %}
+                    {% comment %} {% if hasSpecialProduct == false %}{% endif %} {% endcomment %}
 
-                    {% if allowedSpecialProduct and hasSpecialProduct == false and showSpecialProduct == true %}
+                    {% if allowedSpecialProduct and hasSpecialProduct == false and showSpecialProduct == true and isMultipleSpecialProducts == false %}
 
 
                         <a href="/cart/add?id=32590811725890&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">Woohoo! Claim Your Free
@@ -199,6 +223,21 @@
 
 
                     {% endif %}
+
+                    {%if isMultipleSpecialProducts and hasSpecialProduct == false %}
+                    <a href="#" id="addSpecialProduct" specialproductid="{{specialProductId}}">Woohoo! Claim Your Free
+                    {{specialProductName}}! </a><br>
+
+                  
+
+                    <a href="/cart/add?id=39827398459458&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">🎁 Smokey Texan</a><br>
+
+                    <a href="/cart/add?id=39827113607234&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">🎁 Pimpin Portugese</a><br>
+
+                    <a href="/cart/add?id=39827388825666&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">🎁 Terrific Teriyaki</a>
+
+                {% endif %}
+
 
                     {% if allowedSpecialProduct and hasSpecialProduct == true and showSpecialProduct == true %}
 
