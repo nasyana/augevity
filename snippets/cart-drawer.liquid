@@ -7,355 +7,355 @@
 
 
   
-//   jQuery( document ).ready(function(event) {
-
-
-
-//   var sum = 0;
-// $('#itemSaved').each(function () {
-//   var counter = $(this).html();
-//   var id = $(this).attr('id');
-//   sum += parseInt($(this).html(), 10) || 0;
-// });
-
-// $('#savedTotal').html(sum);
-
-
-//   });
-
-  </script>
-
-{%- capture section_settings -%}
-    {
-                                                                                                                                                                                                                                                                                                                                                                                                      "type":
-    {{ settings.cart_type | json }},
-                                                                                                                                                                                                                                                                                                                                                                                                      "itemCount":
-    {{ cart.item_count }},
-                                                                                                                                                                                                                                                                                                                                                                                                      "drawer": true,
-                                                                                                                                                                                                                                                                                                                                                                                                      "hasShippingEstimator": false
-                                                                                                                                                                                                                                                                                                                                                                                                    }
-{%- endcapture -%}
-<style type="text/css">
-    .Cart__Empty.Heading.u-h5 {
-        text-align: center;
-
-    }
-
-    .bottomdata {
-        padding: 1% 7%;
-        border-top: 1px solid;
-    }
-    .bottomdata.last {
-        border-bottom: 2px solid #000;
-    }
-
-    .Cart__Checkout {
-
-        font-family: "Circular Std" !important;
-    }
-
-    input[type="text"]:disabled {
-        color: #333 !important;
-    }
-
-    .addthencart {
-
-        background: #000 !important;
-        width: 100% !important;
-        color: #fff !important;
-        padding: 5%;
-        margin: 18px auto 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: "Circular Std" !important;
-        letter-spacing: 2px
-    }
-</style>
-<div id="sidebar-cart" class="Drawer Drawer--fromRight" aria-hidden="true" data-section-id="cart" data-section-type="cart" data-section-settings='{{ section_settings }}'>
-    <div class="Drawer__Header Drawer__Header--bordered Drawer__Container">
-        <span class="Drawer__Title Heading u-h4 refreshcart">{{ 'cart.general.title' | t }}</span>
-
-        <button class="Drawer__Close Icon-Wrapper--clickable" data-action="close-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.close_cart' | t }}">
-            {%- render 'icon' with 'close' -%}
-        </button>
-    </div>
-
-
-    <form class="Cart Drawer__Content" action="{{ routes.cart_url }}" method="POST" novalidate>
-        <div class="Drawer__Main" data-scrollable>
-            {% assign showSpecialProduct = true %}
-            {% assign minQty = 3 %}
-            {% assign cartQty = cart.item_count %}
-            {% assign allowedSpecialProduct = false %}
-            {% assign itemLabel = 'items' %}
-
-            {% if cartQty == 2 %}
-                {% assign itemLabel = 'item' %}
-            {% endif %}
-            {% if cartQty >= minQty %}
-                {% assign allowedSpecialProduct = true %}
-            {% endif %}
-
-            {% assign specialProductId = 4748420415554 %}
-            {% assign specialProductId1 = 6763825266754 %}
-            {% assign specialProductId2 = 39827113607234 %}
-            {% assign specialProductId3 = 39827388825666 %}
-            
-            {% assign isMultipleSpecialProducts = true %}
-            {% assign specialProductName = 'Marinade!' %}
-            {% assign hasSpecialProduct = false %}
-            {% assign specialProductIdsArray = "39827398459458,39827113607234,39827388825666" | split: ',' %}
-            {% for item in cart.items %}
-
-                <script>console.log('item',{{cart | json}})</script>
-
-                {% comment %} {% if item.product_id == specialProductId  %}
-                    {% assign hasSpecialProduct = true %}
-
-                    {% break %}
-                {% endif %} {% endcomment %}
-                {% if item.product_id == specialProductId1  %}
-                    {% assign hasSpecialProduct = true %}
-
-                    {% break %}
+    //   jQuery( document ).ready(function(event) {
+    
+    
+    
+    //   var sum = 0;
+    // $('#itemSaved').each(function () {
+    //   var counter = $(this).html();
+    //   var id = $(this).attr('id');
+    //   sum += parseInt($(this).html(), 10) || 0;
+    // });
+    
+    // $('#savedTotal').html(sum);
+    
+    
+    //   });
+    
+      </script>
+    
+    {%- capture section_settings -%}
+        {
+                                                                                                                                                                                                                                                                                                                                                                                                          "type":
+        {{ settings.cart_type | json }},
+                                                                                                                                                                                                                                                                                                                                                                                                          "itemCount":
+        {{ cart.item_count }},
+                                                                                                                                                                                                                                                                                                                                                                                                          "drawer": true,
+                                                                                                                                                                                                                                                                                                                                                                                                          "hasShippingEstimator": false
+                                                                                                                                                                                                                                                                                                                                                                                                        }
+    {%- endcapture -%}
+    <style type="text/css">
+        .Cart__Empty.Heading.u-h5 {
+            text-align: center;
+    
+        }
+    
+        .bottomdata {
+            padding: 1% 7%;
+            border-top: 1px solid;
+        }
+        .bottomdata.last {
+            border-bottom: 2px solid #000;
+        }
+    
+        .Cart__Checkout {
+    
+            font-family: "Circular Std" !important;
+        }
+    
+        input[type="text"]:disabled {
+            color: #333 !important;
+        }
+    
+        .addthencart {
+    
+            background: #000 !important;
+            width: 100% !important;
+            color: #fff !important;
+            padding: 5%;
+            margin: 18px auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Circular Std" !important;
+            letter-spacing: 2px
+        }
+    </style>
+    <div id="sidebar-cart" class="Drawer Drawer--fromRight" aria-hidden="true" data-section-id="cart" data-section-type="cart" data-section-settings='{{ section_settings }}'>
+        <div class="Drawer__Header Drawer__Header--bordered Drawer__Container">
+            <span class="Drawer__Title Heading u-h4 refreshcart">{{ 'cart.general.title' | t }}</span>
+    
+            <button class="Drawer__Close Icon-Wrapper--clickable" data-action="close-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.close_cart' | t }}">
+                {%- render 'icon' with 'close' -%}
+            </button>
+        </div>
+    
+    
+        <form class="Cart Drawer__Content" action="{{ routes.cart_url }}" method="POST" novalidate>
+            <div class="Drawer__Main" data-scrollable>
+                {% assign showSpecialProduct = true %}
+                {% assign minQty = 3 %}
+                {% assign cartQty = cart.item_count %}
+                {% assign allowedSpecialProduct = false %}
+                {% assign itemLabel = 'items' %}
+    
+                {% if cartQty == 2 %}
+                    {% assign itemLabel = 'item' %}
                 {% endif %}
-                {% if item.product_id == specialProductId2  %}
-                    {% assign hasSpecialProduct = true %}
-
-                    {% break %}
+                {% if cartQty >= minQty %}
+                    {% assign allowedSpecialProduct = true %}
                 {% endif %}
-                {% if item.product_id == specialProductId3  %}
-                    {% assign hasSpecialProduct = true %}
-
-                    {% break %}
-                {% endif %}
-
-                {% if item.variant.title contains 'Subscription' %}
-                    {% assign hasSubscription = true %}
-                {% endif %}
-
-
-            {% endfor %}
-
-
-            {%- comment -%}Check if number of products in cart is more than amount required to get discount.{%- endcomment -%}
-
-
-            {%- comment -%}If it is, and we do not have Sriracha in our cart. Prompt user to add to cart as a free gift{%- endcomment -%}
-
-            {%- if settings.cart_show_free_shipping_threshold -%}
-                {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
-
-                <div class="Cart__ShippingNotice Text--subdued">
-                    <div class="Drawer__Container">
-                        {%- if cart.total_price >= threshold_in_cents -%}
-                            <p>{{- 'cart.general.free_shipping' | t -}}</p>
-                        {%- else -%}
-                            {%- capture remaining_amount -%}
-                                <span>{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>
-                            {%- endcapture -%}
-                            <p>{{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}</p>
+    
+                {% assign specialProductId = 4748420415554 %}
+                {% assign specialProductId1 = 39827398459458 %}
+                {% assign specialProductId2 = 39827113607234 %}
+                {% assign specialProductId3 = 39827388825666 %}
+                
+                {% assign isMultipleSpecialProducts = true %}
+                {% assign specialProductName = 'Marinade!' %}
+                {% assign hasSpecialProduct = false %}
+                {% assign specialProductIdsArray = "39827398459458,39827113607234,39827388825666" | split: ',' %}
+                {% for item in cart.items %}
+    
+                    <script>console.log('item',{{cart | json}})</script>
+    
+                    {% comment %} {% if item.product_id == specialProductId  %}
+                        {% assign hasSpecialProduct = true %}
+    
+                        {% break %}
+                    {% endif %} {% endcomment %}
+                    {% if item.product_id == specialProductId1  %}
+                        {% assign hasSpecialProduct = true %}
+    
+                        {% break %}
+                    {% endif %}
+                    {% if item.product_id == specialProductId2  %}
+                        {% assign hasSpecialProduct = true %}
+    
+                        {% break %}
+                    {% endif %}
+                    {% if item.product_id == specialProductId3  %}
+                        {% assign hasSpecialProduct = true %}
+    
+                        {% break %}
+                    {% endif %}
+    
+                    {% if item.variant.title contains 'Subscription' %}
+                        {% assign hasSubscription = true %}
+                    {% endif %}
+    
+    
+                {% endfor %}
+    
+    
+                {%- comment -%}Check if number of products in cart is more than amount required to get discount.{%- endcomment -%}
+    
+    
+                {%- comment -%}If it is, and we do not have Sriracha in our cart. Prompt user to add to cart as a free gift{%- endcomment -%}
+    
+                {%- if settings.cart_show_free_shipping_threshold -%}
+                    {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
+    
+                    <div class="Cart__ShippingNotice Text--subdued">
+                        <div class="Drawer__Container">
+                            {%- if cart.total_price >= threshold_in_cents -%}
+                                <p>{{- 'cart.general.free_shipping' | t -}}</p>
+                            {%- else -%}
+                                {%- capture remaining_amount -%}
+                                    <span>{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>
+                                {%- endcapture -%}
+                                <p>{{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}</p>
+                            {%- endif -%}
+                        </div>
+                    </div>
+                {%- endif -%}
+    
+    
+                {% if cart.total_price < 10000 %}
+                    <div class="youNeedNotice normal" style="background: #fafafa!important">
+                        <strong style="width: 100%; display: block;">WANT FREE SHIPPING?</strong>
+                        You're
+                        {{ 10000 | minus: cart.total_price | money_without_trailing_zeros }}
+                        away from Free Shipping!
+                        <a href="https://au.gevityrx.com/collections/all">Continue Shopping</a>
+    
+    
+                        {% if hasSpecialProduct == false %}{% endif %}
+    
+                        {% if allowedSpecialProduct and hasSpecialProduct == false and showSpecialProduct == true and showSpecialProduct == true and isMultipleSpecialProducts == false %}
+    
+    
+                            <a href="/cart/add?id=32590811725890&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">Woohoo! Claim Your Free
+                                {{specialProductName}}! 🎁</a>
+    
+                         
+    
+    
+                        {% endif %}
+    
+                      
+    
+                        {% if allowedSpecialProduct and hasSpecialProduct == true and showSpecialProduct == true %}
+    
+    
+                            <strong style="width: 100%; display: block;">Look at you go! You have a free</strong>
+                            {{specialProductName}}!! 🎁
+    
+                        {% endif %}
+    
+    
+                        {% if allowedSpecialProduct == false and showSpecialProduct == true %}
+                            <span>
+                                You only need another
+                                {{ minQty | minus: cart.item_count }}
+                                {{itemLabel}}
+                                to get your FREE
+                                {{specialProductName}}! 🎁
+                            </span>
+    
                         {%- endif -%}
                     </div>
-                </div>
-            {%- endif -%}
-
-
-            {% if cart.total_price < 10000 %}
-                <div class="youNeedNotice normal" style="background: #fafafa!important">
-                    <strong style="width: 100%; display: block;">WANT FREE SHIPPING?</strong>
-                    You're
-                    {{ 10000 | minus: cart.total_price | money_without_trailing_zeros }}
-                    away from Free Shipping!
-                    <a href="https://au.gevityrx.com/collections/all">Continue Shopping</a>
-
-
-                    {% if hasSpecialProduct == false %}{% endif %}
-
-                    {% if allowedSpecialProduct and hasSpecialProduct == false and showSpecialProduct == true and showSpecialProduct == true and isMultipleSpecialProducts == false %}
-
-
-                        <a href="/cart/add?id=32590811725890&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">Woohoo! Claim Your Free
-                            {{specialProductName}}! 🎁</a>
-
-                     
-
-
-                    {% endif %}
-
-                  
-
-                    {% if allowedSpecialProduct and hasSpecialProduct == true and showSpecialProduct == true %}
-
-
-                        <strong style="width: 100%; display: block;">Look at you go! You have a free</strong>
-                        {{specialProductName}}!! 🎁
-
-                    {% endif %}
-
-
-                    {% if allowedSpecialProduct == false and showSpecialProduct == true %}
-                        <span>
-                            You only need another
-                            {{ minQty | minus: cart.item_count }}
-                            {{itemLabel}}
-                            to get your FREE
-                            {{specialProductName}}! 🎁
-                        </span>
-
-                    {%- endif -%}
-                </div>
-            {%- endif -%}
-
-            {% if cart.total_price >= 10000 %}
-                <div class="youNeedNotice">
-                    YOU’VE GOT FREE SHIPPING!<br>
-
-
-                    {% comment %} {% if hasSpecialProduct == false %}{% endif %} {% endcomment %}
-
-                    {% if allowedSpecialProduct and hasSpecialProduct == false and showSpecialProduct == true and isMultipleSpecialProducts == false %}
-
-
-                        <a href="/cart/add?id=32590811725890&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">Woohoo! Claim Your Free
-                            {{specialProductName}}! 🎁</a>
-
-
-                    {% endif %}
-
-                    {%if isMultipleSpecialProducts and hasSpecialProduct == false %}
-                    <a href="#" id="addSpecialProduct" specialproductid="{{specialProductId}}">Woohoo! Claim Your Free
-                    {{specialProductName}}! </a><br>
-
-                  
-
-                    <a href="/cart/add?id=39827398459458&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">🎁 Smokey Texan</a><br>
-
-                    <a href="/cart/add?id=39827113607234&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">🎁 Pimpin Portugese</a><br>
-
-                    <a href="/cart/add?id=39827388825666&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">🎁 Terrific Teriyaki</a>
-
-                {% endif %}
-
-
-                    {% if allowedSpecialProduct and hasSpecialProduct == true and showSpecialProduct == true %}
-
-
-                        Look at you go! You have a free
-                        {{specialProductName}}!! 🎁
-
-                    {% endif %}
-
-
-                    {% if allowedSpecialProduct == false and showSpecialProduct == true %}
-                        <span>
-                            You only need another
-                            {{ minQty | minus: cart.item_count }}
-                            {{itemLabel}}
-                            to get your FREE
-                            {{specialProductName}}! 🎁
-                        </span>
-
-
-                    {%- endif -%}
-                </div>
-
-            {%- endif -%}
-
-
-            {%- if cart.item_count == 0 -%}
-                <p class="Cart__Empty Heading u-h5">{{ 'cart.general.empty' | t }}</p>
-            {%- else -%}
-                <div class="Drawer__Container">
-                    <input name="attributes[collection_mobile_items_per_row]" type="hidden" value="">
-                    <input name="attributes[collection_desktop_items_per_row]" type="hidden" value="">
-
-                    {% render 'cart-items' %}
-                </div>
-            {%- endif -%}
-        </div>
-        <!-- <div class="bottomdata">SAVED <span id="savedTotal"></span></div> -->
-        <div class="bottomdata last">SUB TOTAL
-            <span>{{ cart.total_price | money_with_currency }}</span>
-        </div>
-        {%- unless cart.item_count == 0 -%}
-            <div class="Drawer__Footer" data-drawer-animated-bottom>
-                {%- capture shipping_and_taxes_notice -%}
-                    {{ 'cart.general.shipping_and_taxes_notice' | t }}
-                {%- endcapture -%}
-
-                {%- if settings.cart_enable_notes or shipping_and_taxes_notice != blank -%}
-                    {%- if settings.cart_enable_notes -%}
-                        {%- if cart.note == blank -%}
-                            <button class="Cart__NoteButton" data-action="toggle-cart-note" type="button">{{ 'cart.general.add_note' | t }}</button>
-                        {%- else -%}
-                            <button class="Cart__NoteButton" data-action="toggle-cart-note" type="button">{{ 'cart.general.edit_note' | t }}</button>
-                        {%- endif -%}
-                    {%- endif -%}
-
-                    {%- if shipping_and_taxes_notice != blank -%}
-                        <p class="Cart__Taxes Text--subdued">{{ shipping_and_taxes_notice }}</p>
-                    {%- endif -%}
-
-                    {%- if cart.cart_level_discount_applications != blank -%}
-                        {%- for discount_application in cart.cart_level_discount_applications -%}
-                            <p class="Cart__Discount">{%- render 'icon' with 'sale' -%}
-                                {{ 'cart.general.discount' | t }}
-                                ({{ discount_application.title }}): -<span>{{ discount_application.total_allocated_amount | money }}</span>
-                            </p>
-                        {%- endfor -%}
-                    {%- endif -%}
                 {%- endif -%}
-
-
-                {% if allowedSpecialProduct and hasSpecialProduct == false and showSpecialProduct == true  %}
-
-
-                    <a href="/cart/add?id=32590811725890&quantity=1" class="addthencart" id="addSpecialProduct" specialproductid="{{specialProductId}}">CHECKOUT</a>
-
-                {% else %}
-                    <button class="Cart__Checkout Button Button--primary Button--full" name="checkout" type="submit">
-                        <span>{{- 'cart.general.checkout' | t -}}</span>
-                        <!-- <span class="Button__SeparatorDot"></span>
-<span>{{ cart.total_price | money_with_currency }}</span> -->
-                    </button>
-                {% endif %}
-
-                <input name="return_to" type="hidden" value="/checkout/"/>
-                {%- if settings.cart_enable_notes -%}
-                    <div aria-hidden="true" class="Cart__OffscreenNoteContainer">
-                        {%- if cart.note == blank -%}
-                            <span class="Cart__NoteButton">{{ 'cart.general.add_note' | t }}</span>
-                        {%- else -%}
-                            <span class="Cart__NoteButton">{{ 'cart.general.edit_note' | t }}</span>
+    
+                {% if cart.total_price >= 10000 %}
+                    <div class="youNeedNotice">
+                        YOU’VE GOT FREE SHIPPING!<br>
+    
+    
+                        {% comment %} {% if hasSpecialProduct == false %}{% endif %} {% endcomment %}
+    
+                        {% if allowedSpecialProduct and hasSpecialProduct == false and showSpecialProduct == true and isMultipleSpecialProducts == false %}
+    
+    
+                            <a href="/cart/add?id=32590811725890&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">Woohoo! Claim Your Free
+                                {{specialProductName}}! 🎁</a>
+    
+    
+                        {% endif %}
+    
+                        {%if isMultipleSpecialProducts and hasSpecialProduct == false %}
+                        <a href="#" id="addSpecialProduct" specialproductid="{{specialProductId}}">Woohoo! Claim Your Free
+                        {{specialProductName}}! </a><br>
+    
+                      
+    
+                        <a href="/cart/add?id=39827398459458&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">🎁 Smokey Texan</a><br>
+    
+                        <a href="/cart/add?id=39827113607234&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">🎁 Pimpin Portugese</a><br>
+    
+                        <a href="/cart/add?id=39827388825666&quantity=1" id="addSpecialProduct" specialproductid="{{specialProductId}}">🎁 Terrific Teriyaki</a>
+    
+                    {% endif %}
+    
+    
+                        {% if allowedSpecialProduct and hasSpecialProduct == true and showSpecialProduct == true %}
+    
+    
+                            Look at you go! You have a free
+                            {{specialProductName}}!! 🎁
+    
+                        {% endif %}
+    
+    
+                        {% if allowedSpecialProduct == false and showSpecialProduct == true %}
+                            <span>
+                                You only need another
+                                {{ minQty | minus: cart.item_count }}
+                                {{itemLabel}}
+                                to get your FREE
+                                {{specialProductName}}! 🎁
+                            </span>
+    
+    
                         {%- endif -%}
-
-                        <div class="Form__Item">
-                            <textarea class="Cart__Note Form__Textarea" name="note" id="cart-note" rows="3" placeholder="{{ 'cart.general.note_placeholder' | t }}" data-scrollable>{{ cart.note }}</textarea>
-                        </div>
-
-                        <button class="Button Button--primary Button--full" data-action="toggle-cart-note" type="button">{{ 'cart.general.save_note' | t }}</button>
+                    </div>
+    
+                {%- endif -%}
+    
+    
+                {%- if cart.item_count == 0 -%}
+                    <p class="Cart__Empty Heading u-h5">{{ 'cart.general.empty' | t }}</p>
+                {%- else -%}
+                    <div class="Drawer__Container">
+                        <input name="attributes[collection_mobile_items_per_row]" type="hidden" value="">
+                        <input name="attributes[collection_desktop_items_per_row]" type="hidden" value="">
+    
+                        {% render 'cart-items' %}
                     </div>
                 {%- endif -%}
             </div>
-        {%- endunless -%}
-    </form>
-</div>
-
-
-<script>
-
-    jQuery(document).ready(function (event) {
-
-        $("a.downone").click(function (e) {
-
-            e.stopImmediatePropagation();
-            e.preventDefault();
-
-
-        })
-
-
-    });
-</script>
+            <!-- <div class="bottomdata">SAVED <span id="savedTotal"></span></div> -->
+            <div class="bottomdata last">SUB TOTAL
+                <span>{{ cart.total_price | money_with_currency }}</span>
+            </div>
+            {%- unless cart.item_count == 0 -%}
+                <div class="Drawer__Footer" data-drawer-animated-bottom>
+                    {%- capture shipping_and_taxes_notice -%}
+                        {{ 'cart.general.shipping_and_taxes_notice' | t }}
+                    {%- endcapture -%}
+    
+                    {%- if settings.cart_enable_notes or shipping_and_taxes_notice != blank -%}
+                        {%- if settings.cart_enable_notes -%}
+                            {%- if cart.note == blank -%}
+                                <button class="Cart__NoteButton" data-action="toggle-cart-note" type="button">{{ 'cart.general.add_note' | t }}</button>
+                            {%- else -%}
+                                <button class="Cart__NoteButton" data-action="toggle-cart-note" type="button">{{ 'cart.general.edit_note' | t }}</button>
+                            {%- endif -%}
+                        {%- endif -%}
+    
+                        {%- if shipping_and_taxes_notice != blank -%}
+                            <p class="Cart__Taxes Text--subdued">{{ shipping_and_taxes_notice }}</p>
+                        {%- endif -%}
+    
+                        {%- if cart.cart_level_discount_applications != blank -%}
+                            {%- for discount_application in cart.cart_level_discount_applications -%}
+                                <p class="Cart__Discount">{%- render 'icon' with 'sale' -%}
+                                    {{ 'cart.general.discount' | t }}
+                                    ({{ discount_application.title }}): -<span>{{ discount_application.total_allocated_amount | money }}</span>
+                                </p>
+                            {%- endfor -%}
+                        {%- endif -%}
+                    {%- endif -%}
+    
+    
+                    {% if allowedSpecialProduct and hasSpecialProduct == false and showSpecialProduct == true  %}
+    
+    
+                        <a href="/cart/add?id=32590811725890&quantity=1" class="addthencart" id="addSpecialProduct" specialproductid="{{specialProductId}}">CHECKOUT</a>
+    
+                    {% else %}
+                        <button class="Cart__Checkout Button Button--primary Button--full" name="checkout" type="submit">
+                            <span>{{- 'cart.general.checkout' | t -}}</span>
+                            <!-- <span class="Button__SeparatorDot"></span>
+    <span>{{ cart.total_price | money_with_currency }}</span> -->
+                        </button>
+                    {% endif %}
+    
+                    <input name="return_to" type="hidden" value="/checkout/"/>
+                    {%- if settings.cart_enable_notes -%}
+                        <div aria-hidden="true" class="Cart__OffscreenNoteContainer">
+                            {%- if cart.note == blank -%}
+                                <span class="Cart__NoteButton">{{ 'cart.general.add_note' | t }}</span>
+                            {%- else -%}
+                                <span class="Cart__NoteButton">{{ 'cart.general.edit_note' | t }}</span>
+                            {%- endif -%}
+    
+                            <div class="Form__Item">
+                                <textarea class="Cart__Note Form__Textarea" name="note" id="cart-note" rows="3" placeholder="{{ 'cart.general.note_placeholder' | t }}" data-scrollable>{{ cart.note }}</textarea>
+                            </div>
+    
+                            <button class="Button Button--primary Button--full" data-action="toggle-cart-note" type="button">{{ 'cart.general.save_note' | t }}</button>
+                        </div>
+                    {%- endif -%}
+                </div>
+            {%- endunless -%}
+        </form>
+    </div>
+    
+    
+    <script>
+    
+        jQuery(document).ready(function (event) {
+    
+            $("a.downone").click(function (e) {
+    
+                e.stopImmediatePropagation();
+                e.preventDefault();
+    
+    
+            })
+    
+    
+        });
+    </script>
