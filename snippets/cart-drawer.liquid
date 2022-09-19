@@ -115,17 +115,19 @@
     
                         {% break %}
                     {% endif %} {% endcomment %}
-                    {% if item.product_id == specialProductId1  %}
+                    {% if item.id == specialProductId1  %}
+
+                        <script>console.log('item',{{item | json}})</script>
                         {% assign hasSpecialProduct = true %}
     
                         {% break %}
                     {% endif %}
-                    {% if item.product_id == specialProductId2  %}
+                    {% if item.id == specialProductId2  %}
                         {% assign hasSpecialProduct = true %}
     
                         {% break %}
                     {% endif %}
-                    {% if item.product_id == specialProductId3  %}
+                    {% if item.id == specialProductId3  %}
                         {% assign hasSpecialProduct = true %}
     
                         {% break %}
