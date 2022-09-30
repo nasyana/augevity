@@ -1,0 +1,259 @@
+<style>
+
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+    align-content: normal;
+  }
+  
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(4) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(5) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+      .fivecol {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . . ."; 
+  }
+  
+  .fourcol {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr ; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . ."; 
+  }
+  
+  .flex-items img, .flex-items img{
+  
+      max-width: 160px!important;
+  
+  }
+
+
+  @media screen and (max-width: 700px){
+
+    .flex-container{
+
+      display: block!important
+    }
+
+    .mobile-only{
+
+      display: block!important
+
+    }
+
+    .desktop-only{
+
+      display: none!important
+    }
+     
+  }
+  </style>
+  
+  <section class="sec-04 gevity_new_style_difference" style="padding: 60px 0;">
+      <div class="row" style="padding: 20px 0;">
+          <div class="container">
+              <div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 text-center">
+                  <h2 class="newFont">{{ section.settings.main-header }}</h2>
+                  <p>{{ section.settings.main-description }}</p>
+              </div>
+          </div>
+      </div>
+  <div class="desktop-only">
+      <div class="container">
+      <div class="flex-container">
+        
+  
+              <div class="col-sm-6 col-md-2 col-lg-2 text-center">
+                  <img src="{{ section.settings.item1-image | img_url: '2048x1055' }}" alt="Australian Owned"/>
+              </div>
+              <div class="col-sm-6 col-md-2 col-lg-2 text-center">
+                  <img src="{{ section.settings.item2-image | img_url: '2048x1055' }}" alt="Gluten Free"/>
+              </div>
+              <div class="col-sm-6 col-md-2 col-lg-2 text-center">
+                  <img src="{{ section.settings.item3-image | img_url: '2048x1055' }}" alt="Dairy Free"/>
+              </div>
+              <div class="col-sm-6 col-md-2 col-lg-2 text-center">
+                  <img src="{{ section.settings.item4-image | img_url: '2048x1055' }}" alt="Paleo & Allergen Friendly"/>
+              </div>
+              <div class="col-sm-6 col-md-2 col-lg-2 text-center">
+                  <img src="{{ section.settings.item5-image | img_url: '2048x1055' }}" alt="Paleo & Allergen Friendly"/>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+      <div class="fourcol">
+          <div class="xbox">
+          </div>
+              <div class="xbox">
+                  <img src="{{ section.settings.item6-image | img_url: '2048x1055' }}" alt="Australian Grass Fed Beef"/>
+              </div>
+              <div class="xbox">
+                  <img src="{{ section.settings.item7-image | img_url: '2048x1055' }}" alt="Practitioner Preferred"/>
+              </div>
+              <div class="xbox">
+                  <img src="{{ section.settings.item8-image | img_url: '2048x1055' }}" alt="Transparent Labelling"/>
+              </div>
+              <div class="xbox">
+                  <img src="{{ section.settings.item9-image | img_url: '2048x1055' }}" alt="Concentrated Not Dehydrated"/>
+              </div>
+   
+          </div>
+      </div>
+    </div>
+
+
+    <div class="mobile-only">
+      <div class="container">
+      <div class="flex-container">
+        
+  
+              <div class="col-sm-6 col-md-2 col-lg-2 text-center">
+                  <img src="{{ section.settings.item1-image | img_url: '2048x1055' }}" alt="Australian Owned"/>
+              </div>
+              <div class="col-sm-6 col-md-2 col-lg-2 text-center">
+                  <img src="{{ section.settings.item2-image | img_url: '2048x1055' }}" alt="Gluten Free"/>
+              </div>
+              <div class="col-sm-6 col-md-2 col-lg-2 text-center">
+                  <img src="{{ section.settings.item3-image | img_url: '2048x1055' }}" alt="Dairy Free"/>
+              </div>
+              <div class="col-sm-6 col-md-2 col-lg-2 text-center">
+                  <img src="{{ section.settings.item4-image | img_url: '2048x1055' }}" alt="Paleo & Allergen Friendly"/>
+              </div>
+              <div class="col-sm-6 col-md-2 col-lg-2 text-center">
+                  <img src="{{ section.settings.item5-image | img_url: '2048x1055' }}" alt="Paleo & Allergen Friendly"/>
+              </div>
+
+              <div class="col-sm-6 col-md-2 col-lg-2 text-center">
+                <img src="{{ section.settings.item6-image | img_url: '2048x1055' }}" alt="Australian Grass Fed Beef"/>
+            </div>
+            <div class="col-sm-6 col-md-2 col-lg-2 text-center">
+              <img src="{{ section.settings.item7-image | img_url: '2048x1055' }}" alt="Practitioner Preferred"/>
+              </div>
+              
+            <div class="col-sm-6 col-md-2 col-lg-2 text-center">
+              <img src="{{ section.settings.item8-image | img_url: '2048x1055' }}" alt="Transparent Labelling"/>
+            </div>
+            <div class="col-sm-6 col-md-2 col-lg-2 text-center">
+              <img src="{{ section.settings.item9-image | img_url: '2048x1055' }}" alt="Concentrated Not Dehydrated"/>
+            </div>
+          </div>
+      </div>
+    
+    </div>
+  </section>
+  
+  
+  {% schema %}
+  {
+      "name": "Body Glue X Graphics",
+      "settings": [{
+                      "type": "html",
+                      "id": "main-header",
+                      "label": "Box Header"
+                    },{
+                      "type": "html",
+                      "id": "main-description",
+                      "label": "description"
+                    },{ 
+                      "type": "text",
+                      "id": "button-text",
+                      "label": "Button Text"
+                    },{
+                      "type": "image_picker",
+                      "id": "item1-image",
+                      "label": "Image One"
+                    },{
+                      "type": "image_picker",
+                      "id": "item2-image",
+                      "label": "Image Two"
+                    },{
+                      "type": "image_picker",
+                      "id": "item3-image",
+                      "label": "Image Three"
+                    },{
+                      "type": "image_picker",
+                      "id": "item4-image",
+                      "label": "Image Four"
+                    },{
+                      "type": "image_picker",
+                      "id": "item5-image",
+                      "label": "Image Five"
+                    },{
+                      "type": "image_picker",
+                      "id": "item6-image",
+                      "label": "Image Six"
+                    }  ,{
+                      "type": "image_picker",
+                      "id": "item7-image",
+                      "label": "Image Seven"
+                    } ,{
+                      "type": "image_picker",
+                      "id": "item8-image",
+                      "label": "Image Eight"
+                    }  ,{
+                      "type": "image_picker",
+                      "id": "item9-image",
+                      "label": "Image Nine"
+                    }  
+                    ,{
+                      "type": "url",
+                      "id": "section-url",
+                      "label": "Section Url"
+                    }  
+                  ]
+  }
+  {% endschema %}

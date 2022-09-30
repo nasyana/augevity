@@ -1,0 +1,117 @@
+<section  class="sec-10 gevity_new_style_shop gevity_new_style_shop-1 desktop-only" style="padding: 60px 0; border-bottom: 1px solid #dddddd;">
+	<div class="row"  style="padding: 20px 0;">
+      <div class="container">
+		<div class="col-sm-12 text-center">
+			<h2>{{ section.settings.main-header }}</h2>
+		</div>
+		<div class="col-sm-12 col-md-4 col-lg-4 text-center">
+			<img src="{{ section.settings.item1-image | img_url: '2048x1055' }}" alt="Natural"/>
+			<h5>{{ section.settings.item1-header }}</h5>
+			<h6>{{ section.settings.item1-description }}</h6>
+			<span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ 1205654454315 }}" style="display: inline-block;">{{ product.metafields.stamped.badge }} </span>
+			<button type="button" class="btn"><a href="{{ section.settings.item1-url }}">{{ section.settings.item1-price }}</a></button>	
+		</div>
+		<div class="col-sm-12 col-md-4 col-lg-4 text-center">
+			<img src="{{ section.settings.item2-image | img_url: '2048x1055' }}" alt="Curry"/>
+			<h5>{{ section.settings.item2-header }}</h5>
+			<h6>{{ section.settings.item2-description }}</h6>
+			<span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ 1205654388779 }}" style="display: inline-block;">{{ product.metafields.stamped.badge }} </span>
+			<button type="button" class="btn"><a href="{{ section.settings.item2-url }}">{{ section.settings.item2-price }}</a></button>	
+		</div>
+		<div class="col-sm-12 col-md-4 col-lg-4 text-center">
+			<img src="{{ section.settings.item3-image | img_url: '2048x1055' }}" alt="Lemon & Herb"/>
+			<h5>{{ section.settings.item3-header }}</h5>
+			<h6>{{ section.settings.item3-description }}</h6>
+			<span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ 1205654421547 }}" style="display: inline-block;">{{ product.metafields.stamped.badge }} </span>
+			<button type="button" class="btn"><a href="{{ section.settings.item3-url }}">{{ section.settings.item3-price }}</a></button>	
+		</div>	
+      </div>		
+	</div>
+
+</section>
+
+
+
+{% schema %}
+    {
+        "name": "Body Glue Section Ten",
+        "settings": [{
+                        "type": "text",
+                        "id": "main-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "image_picker",
+                        "id": "item1-image",
+                        "label": "Image One"
+                      },{
+                        "type": "text",
+                        "id": "item1-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item1-description",
+                        "label": "description"
+                      },{
+                        "type": "number",
+                        "id": "item1-product-id",
+                        "label": "Shopify Product ID"
+                      },{
+                        "type": "text",
+                        "id": "item1-price",
+                        "label": "Price from"
+                      }, {
+                        "type": "url",
+                        "id": "item1-url",
+                        "label": "URL"
+                      }, {
+                        "type": "image_picker",
+                        "id": "item2-image",
+                        "label": "Image Two"
+                      },{
+                        "type": "text",
+                        "id": "item2-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item2-description",
+                        "label": "description"
+                      },{
+                        "type": "number",
+                        "id": "item2-product-id",
+                        "label": "Shopify Product ID"
+                      },{
+                        "type": "text",
+                        "id": "item2-price",
+                        "label": "Price from"
+                      },{
+                        "type": "url",
+                        "id": "item2-url",
+                        "label": "URL"
+                      },{
+                        "type": "image_picker",
+                        "id": "item3-image",
+                        "label": "Image Three"
+                      },{
+                        "type": "text",
+                        "id": "item3-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item3-description",
+                        "label": "description"
+                      },{
+                        "type": "number",
+                        "id": "item3-product-id",
+                        "label": "Shopify Product ID"
+                      },{
+                        "type": "text",
+                        "id": "item3-price",
+                        "label": "Price from"
+                      },{
+                        "type": "url",
+                        "id": "item3-url",
+                        "label": "URL"
+                      }
+                    ]
+    }
+    {% endschema %}

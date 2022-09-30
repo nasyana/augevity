@@ -1,0 +1,198 @@
+<style>
+
+.threeboxesbodygluex h3{
+
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.threeboxesbodygluex div{
+
+padding: 3%;
+}
+
+
+.middle{
+
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+.middleright{
+  border-right: 1px solid;
+}
+
+.threeboxesbodygluex div {
+
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+
+    @media only screen and (max-width: 600px) {
+      .threeboxesbodygluex div p{
+  
+        padding: 7%;
+      }
+      .threeboxesbodygluex div{
+  
+  
+  min-height: 0!important;
+  }
+    #onlymobile{display: block;}
+    #onlydesktop{display: none;}
+    }
+    @media only screen and (min-width: 600px) {
+    
+    
+    #onlymobile{display: none;}
+    #onlydesktop{display: block;}  
+    } 
+
+    @media only screen and (min-width: 700px){
+
+
+      #iconflex img{
+
+max-width: 60%
+}
+
+.desktop{
+display: block;
+
+}
+
+.mob{
+display: none;
+}
+}
+
+
+
+@media only screen and (max-width: 700px){
+
+  
+  #iconflex img{
+
+max-width: 90%
+}
+
+.desktop{
+display: none;
+}
+
+.mob{
+display: block;
+}
+
+
+}
+
+#iconflex{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2#mobileheader {
+  font-size: 30px!important;
+}
+
+h2#desktopheader {
+  font-size: 3em;
+}
+
+    </style>
+  	<div id="grey-bg-collection-header">
+		<h2 id="desktopheader" >{{section.settings.main-header}}</h2>
+		<h2 id="mobileheader" >{{section.settings.main-description}}</h2>
+		<p style="padding: 0 5%;">{{section.settings.main-description}}</p>
+	</div>
+  <section class="sec-04 gevity_new_style_difference" style="padding: 60px 0 0 0;">
+
+    <div class="row">
+      <div class="container threeboxesbodygluex">
+        <div class="col-sm-12 col-md-6 col-lg-3 text-center">
+          <h3>{{section.settings.box1-header}}</h3> 
+          <p>{{section.settings.box1-description}}</p>
+  
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 text-center middle">
+            <h3>{{section.settings.box2-header}}</h3> 
+          <p>{{section.settings.box2-description}}</p>
+  
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 text-center middleright">
+            <h3>{{section.settings.box3-header}}</h3> 
+          <p>{{section.settings.box3-description}}</p>
+  
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-3 text-center">
+          <h3>{{section.settings.box4-header}}</h3> 
+        <p>{{section.settings.box4-description}}</p>
+
+      </div>
+  
+      </div>
+    </div>
+    <div id="iconflex">
+    <img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded desktop" src="{{ '5Icons-marinades.png' | asset_img_url: '2000x' }}">
+    <img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded mob" src="{{ '5Icons-marinades-mob.png' | asset_img_url: '2000x' }}">
+  </div>
+  </section>
+  
+  
+  {% schema %}
+  {
+  "name": "Marinade 4 Col",
+  "settings": [{
+  "type": "text",
+  "id": "main-header",
+  "label": "Box Header"
+  },{
+  "type": "text",
+  "id": "main-description",
+  "label": "description"
+  },{
+    "type": "text",
+    "id": "box1-header",
+    "label": "Box 1 Header"
+  },
+  {
+    "type": "text",
+    "id": "box1-description",
+    "label": "Box 1 Description"
+  },
+  {
+    "type": "text",
+    "id": "box2-header",
+    "label": "Box 2 Header"
+  },
+  {
+    "type": "text",
+    "id": "box2-description",
+    "label": "Box 2 Description"
+  },
+  {
+    "type": "text",
+    "id": "box3-header",
+    "label": "Box 3 Header"
+  },
+  {
+    "type": "text",
+    "id": "box3-description",
+    "label": "Box 3 Description"
+  },
+  {
+    "type": "text",
+    "id": "box4-header",
+    "label": "Box 4 Header"
+  },
+  {
+    "type": "text",
+    "id": "box4-description",
+    "label": "Box 4 Description"
+  }
+  ]
+  }
+  {% endschema %}

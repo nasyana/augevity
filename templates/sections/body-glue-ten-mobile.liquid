@@ -1,0 +1,171 @@
+{%- capture flickity_options -%}
+{
+  "prevNextButtons": false,
+  "wrapAround": true,
+  "dragThreshold": 16,
+  "pageDots": {% if section.blocks.size > 1 %}true{% else %}false{% endif %},
+  "autoPlay": {% if section.settings.autoplay %}{{ section.settings.cycle_speed | times: 1000 }}{% else %}false{% endif %}
+}
+{%- endcapture -%}
+
+{%- assign should_show_nav = false -%}
+
+{%- for block in section.blocks -%}
+  {%- if block.settings.logo -%}
+    {%- assign should_show_nav = true -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<section class="Section Section--spacingNormal GevityBenefitSlider mobile-only" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="testimonials">
+
+  <div class="col-sm-12 text-center">
+    <h2 >{{ section.settings.header }}</h2>
+  </div>
+  <div class="productList TestimonialList {% if should_show_nav %}TestimonialList--withNav{% endif %} Carousel Carousel--fadeIn" data-flickity-config='{{ flickity_options }}'>
+    {%- for block in section.blocks -%}
+      <div id="block-{{ block.id }}" class="Carousel__Cell Testimonial {% if forloop.first %}is-selected{% endif %}" {{ block.shopify_attributes }} data-slide-index="{{ forloop.index0 }}">
+        <div class="Container">
+          
+           {%- if block.settings.product-image != blank -%}
+           <a href="{{ section.settings.product-url }}">    <img class="GevitySlider hidden-lap-and-up" src="{{ block.settings.product-image | img_url: '300x' }}" alt="{{ block.settings.logo.alt | escape }}"> </a>
+          {%- endif -%}
+          {%- if block.settings.title != blank -%}
+            <h3 class="g-product-title">
+             <a href="{{ section.settings.product-url }}"> {{ block.settings.title }}</a>
+            </h3>
+            <p class="g-product-description">
+                {{ block.settings.description }}
+              </p>
+
+              <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ block.settings.productid }}" style="display: inline-block;">{{ product.metafields.stamped.badge }} </span>
+              <button type="button" class="btn"><a href="{{ block.settings.product-url }}">{{ block.settings.price }}</a></button>	
+          {%- endif -%}
+
+         
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+
+ {%- if should_show_nav -%}
+    <div class="GevitySlider hidden-pocket">
+      {%- for block in section.blocks -%}
+        {%- if block.settings.logo != blank -%}
+          <img class="TestimonialNav__Item {% if forloop.first %}is-selected{% endif %}" src="{{ block.settings.product-image | img_url: '300x' }}" alt="{{ block.settings.logo.alt | escape }}" data-index="{{ forloop.index0 }}">
+          <h2></h2>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</section>
+
+<style>
+  #section-{{ section.id }} {
+    color: {{ section.settings.text_color }};
+    background: {{ section.settings.background }};
+  }
+
+  #section-{{ section.id }} .flickity-page-dots .dot:not(.is-selected) {
+    border-color: {{section.settings.background | color_mix: section.settings.text_color, 85}};
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Body Glue Culinary Mob",
+  "class": "shopify-section--bordered",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Auto rotate between Products",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "cycle_speed",
+      "min": 3,
+      "max": 8,
+      "step": 1,
+      "unit": "sec",
+      "label": "Change Products every",
+      "default": 5
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#eaeaea"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#1c1b1b"
+    },
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header",
+      "default": "#1c1b1b"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "product-image",
+          "label": "Product Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Product Title"
+        }, {
+            "type": "text",
+            "id": "description",
+            "label": "Description"
+          }, {
+            "type": "number",
+            "id": "productid",
+            "label": "Product ID"
+          }, {
+            "type": "url",
+            "id": "product-url",
+            "label": "Product URL"
+          },{
+            "type": "text",
+            "id": "price",
+            "label": "Price"
+          }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Shop Culinary",
+      "name": "Shop Culinary",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "product",
+          "settings": {}
+        },
+        {
+          "type": "product",
+          "settings": {}
+        },
+        {
+          "type": "product",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

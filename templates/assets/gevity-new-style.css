@@ -1,0 +1,792 @@
+.sipcook img {
+  max-width: 270px!important;
+  margin-bottom: 20px;
+} 
+
+#insta-feed{
+ 
+  margin-bottom: 40px!important;
+}
+
+#desktopheader{
+
+  display: block;
+}
+
+#mobileheader{
+
+  display: none;
+}
+
+#grey-bg-collection-header h2.extra::after,#grey-bg-collection-header h2.extra::before{
+  
+  content: 'NOW \A \A \A \A 50% BIGGER!';
+  background-color: #F4F39F;
+  height: 93px;
+  width: 145px;
+  padding: 21px;
+  border-radius: 50%;
+  transform: rotate(20deg);
+  position: absolute;
+  font-size: 0.7em;
+  margin-top: -30px;
+  margin-left: 15px;
+}
+
+#grey-bg-collection-header h2::before{opacity: 0}
+
+
+#grey-bg-collection-header{
+
+
+  background: #fff;
+  text-align: center;
+  padding: 4% 20% 0% 20%;
+}
+
+
+#grey-bg-collection-header p {
+  font-size: 1.4em;
+}
+
+
+.shopnowcontainer .Button.Button--secondary.Button--full {
+  margin-bottom: 5%;
+}
+
+.shopnowcontainer h2 a,.shopnowcontainer h2 {
+  font-size: 12px;
+  text-align: center !important;
+  color: #000!important;
+ 
+}
+
+#shopify-section-sauce-graphics .container,#shopify-section-body-glue-graphics .container {
+  max-width: 1000px!important;
+}
+
+.Button--secondary{
+  color: #000 !important;
+}
+.shopnowcontainer h2{
+
+  padding: 0 10%;
+  line-height: 20px;
+  color: #000!important;
+}
+
+
+.gevity-new-style .SectionHeader.SectionHeader--center{
+
+  margin: 5% 5%;
+
+}
+
+
+@media screen and (max-width: 800px){
+  #grey-bg-collection-header{
+
+    margin-top: 40px;
+    background: #fff;
+    text-align: center;
+    padding: 3% 2% 0% 2%;
+  }
+  
+
+  #grey-bg-collection-header h2.extra::after, #grey-bg-collection-header h2.extra::before {
+
+    content: 'NOW \A \A \A \A 50% BIGGER!';
+    background-color: #F4F39F;
+    height: 66px;
+    width: 90px;
+    padding-top: 18px;
+    border-radius: 50%;
+    transform: rotate(12deg);
+    position: absolute;
+    font-size: 0.4em;
+    margin-top: -60px;
+    margin-left: -55px;
+
+}
+  
+  #desktopheader{
+
+    display: none;
+  }
+
+  #mobileheader{
+
+    display: block;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px){
+
+  .shopnowcontainer{
+
+    padding: 5%;
+  }
+  .gevity-new-style .SectionHeader.SectionHeader--center{
+
+    margin: 15% 12%!important;
+  
+  }
+
+  /* #grey-bg-collection-header{
+
+
+    background: #eee;
+    text-align: center;
+    padding: 7% 13% 3% 13%;
+  }
+   */
+
+}
+@font-face {
+  font-family: "Circular Std";
+  src: url("CircularStd-MediumItalic.woff2") format("woff2"),
+    url("CircularStd-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("CircularStd-Black.woff2") format("woff2"),
+    url("CircularStd-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("CircularStd-Medium.woff2") format("woff2"),
+    url("CircularStd-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std Bold";
+  src: url("CircularStd-Bold.woff2") format("woff2"),
+    url("CircularStd-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("CircularStd-BlackItalic.woff2") format("woff2"),
+    url("CircularStd-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("CircularStd-BookItalic.woff2") format("woff2"),
+    url("CircularStd-BookItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("CircularStd-BoldItalic.woff2") format("woff2"),
+    url("CircularStd-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("CircularStd-Book.woff2") format("woff2"),
+    url("CircularStd-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KapraNeueSemiBoldCondensed";
+  src: url("KapraNeueSemiBoldCondensed.woff2") format("woff2"),
+    url("KapraNeueSemiBoldCondensed.woff") format("woff");
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  display: table;
+  width: 100%;
+}
+
+.col-lg-6 {
+  width: 50%;
+  display: table-cell !important;
+  float: none;
+}
+
+.gevity-new-style .gevity_new_style_benefits img {
+  max-width: 50%;
+  margin: 20px 0;
+  border: 1px solid;
+  border-radius: 170px;
+  padding: 21px;
+}
+
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.gevity-new-style,
+body .gevity-new-style .Heading {
+  font-family: "Circular Std" !important;
+}
+
+
+
+
+.gevity-new-style h1 {
+  font-family: "KapraNeueSemiBoldCondensed" !important;
+  font-size: 100px !important;
+  margin-bottom: 0 !important;
+  color: #000 !important;
+}
+.gevity-new-style h2 {
+  font-family: "KapraNeueSemiBoldCondensed" !important;
+  margin: 0 0 0.5em !important;
+  font-size: 40px;
+  color: #000 !important;
+}
+.gevity-new-style .h5,
+.gevity-new-style h5 {
+  font-size: 16px;
+  margin: 0.75em 0;
+  font-family: "Circular Std" !important;
+  color: #000 !important;
+}
+.gevity-new-style .h6,
+.gevity-new-style h6 {
+  color: #999;
+  margin: 0;
+}
+.gevity-new-style img {
+  max-width: 100%;
+}
+.gevity-new-style .btn {
+  padding: 10px 20px;
+  border-radius: 0;
+  margin-top: 30px;
+}
+.gevity-new-style .btn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.gevity-new-style section {
+  clear: both;
+}
+.gevity-new-style .gevity_new_style_half-bg {
+  padding: 13% 100px;
+  background-size: cover;
+  background-position: center;
+}
+.gevity-new-style .gevity_new_style_why-body-glue img {
+  max-width: 60%;
+}
+.gevity-new-style .gevity_new_style_why-body-glue .col-lg-5.col-lg-offset-1 {
+  border-right: 2px solid #dbdbdb;
+}
+.gevity-new-style .gevity_new_style_nutrients h2 {
+  border-bottom: 1px solid #ddd;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.gevity-new-style .gevity_new_style_nutrients img {
+  border-radius: 50%;
+  max-width: 25%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+/* .gevity-new-style .gevity_new_style_difference .row { margin: 0 5%;} */
+.gevity-new-style .gevity_new_style_difference img {
+  max-width: 80%;
+  margin: 20px 0;
+}
+.gevity-new-style .gevity_new_style_benefits img {
+  max-width: 50%;
+  margin: 20px 0;
+}
+.gevity-new-style .gevity_new_style_benefits h2 {
+  border-bottom: 1px solid #eeeeee;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.gevity-new-style .gevity_new_style_ranges img {
+  margin-top: 20px;
+  max-width: 75%;
+}
+.gevity-new-style .btn.gevity_new_style_performance {
+  background-color: #cb4e7a;
+  color: #fff;
+}
+.gevity-new-style .btn.gevity_new_style_performance:hover {
+  background-color: #dd608c;
+}
+.gevity-new-style .btn.gevity_new_style_culinary {
+  background-color: #da7843;
+  color: #fff;
+}
+.gevity-new-style .btn.gevity_new_style_culinary:hover {
+  background-color: #e4a822;
+}
+.gevity-new-style .gevity_new_style_sip-cook h2 {
+  color: #808825;
+  font-size: 48px;
+}
+.gevity-new-style .gevity_new_style_sip-cook .btn {
+  background-color: #808825;
+}
+.gevity-new-style .gevity_new_style_sip-cook .btn:hover {
+  background-color: #909835;
+}
+
+.gevity-new-style .gevity_new_style_sip-cook .btn {
+  background-color: #808825;
+  color: #fff;
+}
+.gevity-new-style .gevity_new_style_fuel-peak h2 {
+  color: #987480;
+  font-size: 48px;
+}
+.gevity-new-style .gevity_new_style_fuel-peak .btn {
+  background-color: #987480;
+}
+.gevity-new-style .gevity_new_style_fuel-peak .btn:hover {
+  background-color: #b5919d;
+}
+
+.gevity-new-style .gevity_new_style_fuel-peak .btn {
+  background-color: #987480;
+  color: #fff;
+}
+.gevity-new-style .gevity_new_style_testimonial img {
+  margin-bottom: 30px;
+  max-width: 140px;
+}
+.gevity-new-style .gevity_new_style_shop.gevity_new_style_shop-1 .container {
+  padding: 0 12.5%;
+}
+.gevity-new-style .gevity_new_style_shop img {
+  max-width: 38%;
+  margin: 20px 0;
+}
+
+.gevity-new-style .gevity_new_style_shop.sauces img {
+  max-width: 78%;
+  margin: 20px 0;
+}
+.gevity-new-style .gevity_new_style_shop p {
+  margin: 0;
+}
+.gevity-new-style .gevity_new_style_shop p img {
+  margin: 10px 0 0;
+}
+.gevity-new-style .gevity_new_style_shop .btn,
+.gevity-new-style .productList .btn {
+  background-color: #000000;
+  display: block;
+  margin: 8px auto;
+  color: #fff;
+}
+.gevity-new-style .gevity_new_style_shop .btn:hover {
+  background-color: #212121;
+}
+.gevity-new-style .gevity_new_style_facilities img {
+  margin: 10px 0;
+}
+.gevity-new-style .gevity_new_style_bone-broth .btn {
+  background-color: #000000;
+}
+.gevity-new-style .gevity_new_style_bone-broth .btn:hover {
+  background-color: #212121;
+}
+
+.gevity-new-style h1.gwhite,
+.gevity-new-style h2.gwhite {
+  color: #fff !important;
+  margin-bottom: 0 !important;
+}
+.text-center.benefit-item p {
+  max-width: 160;
+  margin: 0 auto;
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: #da7843;
+  border-color: #da7843;
+}
+.tm {
+  vertical-align: super;
+  font-size: 56px;
+  margin-left: 4px;
+}
+
+.supercharged p {
+  max-width: 305px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+}
+
+.gevity-new-style .stamped-fa.stamped-fa-star::before {
+  color: gold !important;
+  font-size: 17px;
+}
+
+.stamped-badge-caption {
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #000;
+  margin: 0 auto;
+}
+
+/*-------------------------------Mobile--------------------------*/
+@media (min-width: 768px) {
+  .gevity-new-style .gevity_new_style_shop.gevity_new_style_shop-1 .container {
+    padding: 0 2%;
+  }
+  .gevity-new-style .gevity_new_style_bone-broth .container {
+    background-size: 78% !important;
+  }
+}
+/*-------------------------------Mobile end-------------------------*/
+
+.Testimonial__Logo {
+  margin-bottom: 30px;
+}
+@media (max-width: 700px) {
+  .js .TestimonialList .flickity-page-dots {
+    margin-top: 30px !important;
+  }
+
+  .tm {
+    font-size: 49px;
+  }
+
+  .sec-01 h1.gwhite {
+    font-size: 6.4em !important;
+    margin-left: 28px;
+  }
+
+  .gevity_new_style_facilities .col-sm-12 {
+    margin-bottom: 20px;
+    line-height: 1.1;
+  }
+
+  .gevity-new-style .gevity_new_style_half-bg.one-image {
+    padding: 140px 100px;
+    background-size: cover;
+  }
+
+  .row.supercharged {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .sec-03.gevity_new_style_nutrients {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .GevityBenefitSlider .col-sm-12.text-center {
+    margin-bottom: 20px;
+  }
+
+  .GevityBenefitSlider .TestimonialList .flickity-page-dots {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .GevityBenefitSlider .Testimonial__Content {
+    max-width: 60%;
+    margin: 0px auto;
+  }
+
+  .GevityBenefitSlider .GevitySlider.hidden-lap-and-up {
+    border: 1px solid aliceblue;
+    border-radius: 100px;
+    max-width: 100px;
+  }
+
+  .gevity-new-style .gevity_new_style_nutrients img {
+    border-radius: 50%;
+    max-width: 49%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+
+  .col-sm-12.col-md-6.col-lg-4.text-center.supercharged {
+    margin-bottom: 30px;
+  }
+
+  .btn.full {
+    width: 100%;
+  }
+
+  .col-sm-6.col-md-6.col-lg-4 {
+    padding: 15% !important;
+  }
+
+  #shopify-section-body-glue-graphics .col-sm-6.col-md-6.col-lg-4 {
+    padding: 0% !important;
+  }
+
+
+
+  .col-lg-6 {
+    width: 100%;
+    display: block !important;
+    float: none;
+  }
+
+  .Testimonial__Logo {
+    margin-top: 0px !important;
+    margin-bottom: 30px;
+  }
+
+  .gevity_new_style_difference .col-sm-6 {
+    width: 49%;
+    display: inline-block;
+  }
+
+  .col-sm-12.col-md-6.col-lg-5.text-center.bottom-part {
+    margin-top: 30px;
+  }
+
+  .col-sm-12.col-md-6.col-lg-6.sip {
+    padding: 10% !important;
+  }
+}
+
+#bcallout {
+  padding: 5%;
+}
+
+.productList .GevitySlider.hidden-lap-and-up {
+  border-radius: 0;
+  max-width: 160px;
+}
+
+.g-product-description {
+  color: #888;
+  font-size: 15px;
+}
+
+#oval {
+  position: absolute;
+  top: 0;
+  background: #b98157;
+  height: 150%;
+  width: 220px;
+  border-radius: 50%;
+  right: -38px;
+  z-index: 1;
+  margin-top: -25%;
+}
+
+ul#shopbodynav li {
+  border: .5px solid #fff;
+  display: inline;
+  margin-right: 2%;
+  padding: 4% 6%;
+}
+
+
+ul#shopbodynav li a:hover{
+
+
+  color: #fff;
+}
+
+
+ul#shopbodynav {
+  margin-top: 40px;
+}
+
+
+#section-body-glue-section-nine{
+
+  padding-bottom: 30px;
+}
+#section-body-glue-section-nine .Container {
+  padding-bottom: 54px !important;
+  overflow: hidden;
+}
+
+#section-body-glue-section-nine .Container .Testimonial__Logo {
+  margin-top: 54px !important;
+}
+
+#callout-text {
+  z-index: 1 !important;
+  position: absolute;
+}
+
+.gevity_new_style_bone-broth .col-sm-6.col-md-6.col-lg-4,
+.gevity_new_style_bone-broth .col-sm-6.col-md-4.col-lg-4,
+.gevity_new_style_bone-broth .col-sm-4.col-md-4.col-lg-4,
+.gevity_new_style_bone-broth .col-sm-5.col-md-6.col-lg-4 {
+  height: 500px;
+}
+
+.sec-15.gevity_new_style_bone-broth {
+  overflow: hidden;
+}
+.gevity-new-style .gevity_new_style_bone-broth.sec-15 .container {
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .sec-15.gevity_new_style_bone-broth .container.thisone {
+    padding-top: 255px !important;
+    background-size: 100% !important;
+    background-position: top !important;
+  }
+  #bcallout {
+    padding: 7%;
+  }
+  #callout-text h2 br {
+    display: none !important;
+  }
+
+  body div#callout-text h1.gwhite {
+    line-height: 13.5vw !important;
+  }
+
+  .gevity-new-style .sec-15 .btn {
+    padding: 20px 20px;
+  }
+
+  .gevity-new-style .sec-15 h2 {
+    text-align: center;
+  }
+
+  div#oval {
+    position: absolute;
+    top: 0;
+
+    height: 150%;
+    width: 320% !important;
+    border-radius: 50%;
+    right: -38px;
+    z-index: 1;
+    margin-top: -13%;
+    margin-right: -98%;
+  }
+
+  span#nutrientdense {
+    font-size: 17vw !important;
+  }
+
+  span#worldsmost {
+    font-size: 15vw !important;
+  }
+
+  span#bbroth {
+    font-size: 23.2vw !important;
+  }
+
+  .gevity-new-style .gevity_new_style_bone-broth.sec-15 .container {
+    background-size: 100% !important;
+    background-position: bottom right;
+  }
+
+  .sec-15.gevity_new_style_bone-broth .container.thisone {
+    padding-top: 80% !important;
+    background-size: 100% !important;
+    background-position: top !important;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .gevity-new-style .gevity_new_style_bone-broth.sec-15 .container {
+    background-size: cover !important;
+    background-position: bottom right;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gevity-new-style .gevity_new_style_bone-broth .container {
+    background-size: 68% !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .sec-15.gevity_new_style_bone-broth .container.thisone {
+    background-position: 102px 0px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .sec-15.gevity_new_style_bone-broth .container.thisone {
+    background-size: 100% !important;
+    background-position: top !important;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 600px) {
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .sec-15.gevity_new_style_bone-broth .container.thisone {
+  }
+
+  .container.thisone {
+    padding-right: 50% !important;
+  }
+
+  #oval {
+    right: -52px;
+  }
+
+  #bcallout {
+    padding: 10% !important;
+  }
+}
+@media (min-width: 600px) {
+  .sec-15.gevity_new_style_bone-broth .container.thisone span#bbroth {
+    line-height: 0px !important;
+  }
+}
+
+.sec-15 button.btn.full {
+  width: 100%;
+}
+
+footer#section-footer {
+  background: #000;
+}
+
+body h2.Footer__Title.Heading.u-h6 {
+  color: #fff !important;
+  text-transform: none;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+
+
+/* .Header__Wrapper a.Heading.u-h6 {
+  font-weight: bolder;
+} */
+
+
+/* //////// Product AM Cleanse */
+
+
+/* .gevity-new-style section { overflow: auto!important;} */

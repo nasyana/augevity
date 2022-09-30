@@ -1,0 +1,95 @@
+<div class="ProductMeta">
+  {%- if section.settings.show_vendor and product.vendor != blank -%}
+    <h2 class="ProductMeta__Vendor Heading u-h6">
+      {%- assign vendor_handle = product.vendor | handle -%}
+      {%- assign collection_for_vendor = collections[vendor_handle] -%}
+
+      {%- unless collection_for_vendor.empty? -%}
+        <a href="{{ collection_for_vendor.url }}">{{ product.vendor }}</a>
+      {%- else -%}
+
+<!-- Nase Edit         {{- product.vendor -}} -->
+{% assign product_collection = product.collections.first %}
+     
+{% if product_collection %}
+{{ product_collection.title | link_to: product_collection.url }}      
+{% endif %}
+<!-- End Nase Edit       -->
+      
+      
+      {%- endunless -%}
+    </h2>
+  {%- endif -%}
+
+  <h1 class="ProductMeta__Title Heading u-h2 newFont">
+    {%- if template.name == 'product' -%}
+      {{- product.title -}}
+    {%- else -%}
+      <a href="{{ product.url }}">{{ product.title }}</a>
+    {%- endif -%}
+  </h1>
+  
+  {%- if product.id == 6766898151490 -%}
+  {%- else -%}
+
+  {%- endif -%}
+  <div class="product-stars" js-scroll-to="#product-blocks">
+    <a href="#gevity-reviews">  
+
+     <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" data-product-sku="{{product.selected_or_first_available_variant.sku}}" style="display: inline-block;"><span> 
+   <!--    <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span> -->
+
+   </a>
+  </div>
+  <!-- / PRODUCT STARS -->
+
+
+  {%- if show_description and section.settings.description_below_add_to_cart == false -%}
+    <div class="ProductMeta__Description Description_Expand">
+
+      
+      <div class="Rte">
+        {%- comment -%}
+        We have figured out that some merchants were copy-pasting huge chunk of code into the product description,
+        which can make the theme crashes if it contains some special attributes used by the theme. We therefore make sure to process this
+        {%- endcomment -%}
+
+        {{ product.description | replace: 'data-section-type', 'data-section-type-placeholder' }}
+
+       
+      </div>
+
+      <div class="Full">
+
+        {{ product.description | replace: 'data-section-type', 'data-section-type-placeholder' }}
+      </div>
+     
+      <a href="#" id="grx_readmore">See More</a>
+    
+    </div>
+  {%- endif -%}
+
+
+  {%- if section.settings.show_sku and product.selected_or_first_available_variant.sku != blank -%}
+  <p class="ProductMeta__Sku Heading Text--subdued u-h6">{{ 'product.form.sku' | t }}: <span class="ProductMeta__SkuNumber">{{ product.selected_or_first_available_variant.sku }}</span></p>
+{%- endif -%}
+
+
+{%- if product.template_suffix != 'coming-soon' -%}
+
+{% if product.metafields.subscriptions.subscription_id == blank %}
+
+
+  <div class="ProductMeta__PriceList Heading">
+    {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+      <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+      <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4" data-money-convertible>WAS {{ product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</span>
+    {%- else -%}
+      <span class="ProductMeta__Price Price Text--subdued u-h4" data-money-convertible>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+    {%- endif -%}
+  </div>
+
+  {% endif %}
+{%- endif -%}
+
+</div>

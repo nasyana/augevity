@@ -1,0 +1,207 @@
+<script>
+
+function getCorrectSkuBasedOnQty(totalNewQty,allVariants,isSubscription){
+
+
+console.log('cartdata getCorrectSku',totalNewQty,allVariants,isSubscription)
+let newSku
+if(isSubscription){
+
+
+
+  if(totalNewQty == 1){  
+    newSku = allVariants[12].id
+}else if(totalNewQty == 2){ 
+newSku = allVariants[13].id
+}else if(totalNewQty >= 3 && totalNewQty < 6){ 
+newSku = allVariants[14].id
+}else if(totalNewQty >= 6){ 
+newSku = allVariants[15].id
+}
+
+
+}else{
+
+
+  if(totalNewQty == 1){  
+    newSku = allVariants[8].id
+}else if(totalNewQty == 2){ 
+newSku = allVariants[9].id
+}else if(totalNewQty >= 3 && totalNewQty < 6){ 
+newSku = allVariants[10].id
+}else if(totalNewQty >= 6){ 
+newSku = allVariants[11].id
+}
+
+}
+
+
+return newSku
+
+}
+
+
+function doesParentExistInCart(items,parentProductId){
+
+console.log('cartdata parentProductId in function',parentProductId)
+let productArray = items.filter((item)=> item.product_id == parentProductId);
+let exists = productArray?.length > 0;
+
+return exists ? productArray[0] : false;
+
+}
+
+jQuery( document ).ready(function(event) {
+
+
+jQuery('button#quickaddtobag').unbind().click(function(event){ 
+
+
+
+
+  if($(this).closest('.ProductItem__Info').find('#bagtoopenid').css('display') == 'block'){
+
+    $(this).removeClass('expanded');
+    $(this).closest('.ProductItem__Info').find('#bagtoopenid').slideUp('show');
+  }else{
+    $(this).closest('.ProductItem__Info').find('#bagtoopenid').slideDown('show'); 
+    $(this).addClass('expanded');
+  }
+
+
+});
+/// click function to press add to bag with productid which shows div containing 3 buttons
+
+$('a.qtybox').unbind().click(function(event){
+  alert('asd')
+  let parentProductId = parseInt($(this).closest('button#quickaddtobag').attr('openquickadd'));
+$(this).addClass('addedToCart');
+// $('.gevity-load').css('opacity', 1).css('visiblity','visible');
+let qty = $(this).attr('qty');
+let productId = $(this).attr('add');
+
+addItemToCart(parseInt(productId), parseInt(qty), "1", "Months"); 
+document.documentElement.dispatchEvent(new CustomEvent('product:changed', {
+    bubbles: false  //this code is for prestige theme, is to refresh the cart
+  }));
+
+// $("[open-drawer=open-drawer]").click();
+
+});
+
+
+function addItemToCart(variant_id, qty, frequency, unit_type,parentProductId) {
+data = {
+  "id": variant_id,
+  "quantity": qty
+}
+
+
+let newQty = qty;
+console.log('quickcartdata',parentProductId)
+var cartContents = fetch('/cart.js')
+  .then(response => response.json())
+  .then(cdata => { 
+    
+    console.log('cartdata fetch',cdata) 
+  
+    let { items } = cdata
+  
+parentItem = doesParentExistInCart(items,parentProductId);
+
+let oldQty = parseInt(parentItem.quantity);
+if(parentItem){
+
+/// calculate correct pricing level from new qty
+console.log('cartdata parentItem',parentItem)
+
+let oldSku = parseInt(parentItem.variant_id);
+
+let totalNewQty = newQty + oldQty;
+  console.log('allVariants in cartdata',allVariants,data.subscription_id)
+let theNewSku = getCorrectSkuBasedOnQty(totalNewQty,allVariants,data.subscription_id)
+console.log('cartdata oldSku,newSku',oldSku, newSku)
+/// remove old variation
+console.log('cartdata returned theNewSku',theNewSku)
+
+fetch('/cart/change.js', {
+                body: JSON.stringify({ id: oldSku, quantity: 0 }),
+                credentials: 'same-origin',
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'X-Requested-With': 'XMLHttpRequest' // This is needed as currently there is a bug in Shopify that assumes this header
+                }
+              }).then(function (cart) {
+
+                console.log('cartdata newQty oldQty',newQty,oldQty);
+                cart.json().then(async function (content) {
+
+                  await jQuery.post('/cart/update.js', {
+                    updates: {
+
+                      [oldSku]: 0,
+                      [theNewSku]: newQty + oldQty,
+                      
+                    }
+                  });
+
+                  document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', {
+          bubbles: true
+        }));
+
+        if (useSideCart) {
+
+$('a.Header__Icon[data-action="open-drawer"][data-drawer-id="sidebar-cart"]').get(0).click();
+$('.refreshcart').click();
+
+}
+
+
+                  document.dispatchEvent(new CustomEvent('theme:loading:end'));
+                });
+              });
+
+
+}else{
+
+  jQuery.ajax({
+  type: 'POST',
+  url: '/cart/add.js',
+  data: data,
+  dataType: 'json',
+  success: function() { 
+
+
+    document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', {
+      bubbles: true  //this code is for prestige theme, is to refresh the cart
+   }));
+   
+  //  $('.gevity-load').css('opacity', 0).css('visiblity','hidden');
+   $('a.Header__Icon[data-action="open-drawer"][data-drawer-id="sidebar-cart"]').get(0).click();
+   $('.refreshcart').click();
+  //  setTimeout(() => {
+  //   $('[data-action="update-item-quantity"]').get(0).click();
+  
+  //  }, 500);
+
+}
+
+});
+
+
+
+}
+
+  });
+
+
+
+//   document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', {
+//   	bubbles: true    // same code for prestige theme   
+ //  }));
+
+
+}
+});
+</script>

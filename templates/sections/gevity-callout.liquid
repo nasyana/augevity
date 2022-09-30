@@ -1,0 +1,62 @@
+<style>
+
+
+.calloutnew{
+
+    background: #000;
+    padding: 10px;
+   
+}
+
+
+    
+    @media only screen and (max-width: 800px) {
+
+        .calloutnew h2{
+
+color: #fff;
+text-align: center; 
+font-weight: bold;
+font-size: 2vh;
+
+
+}
+      #onlymobile{display: block;}
+      #onlydesktop{display: none;}
+  }
+      @media only screen and (min-width: 800px) {
+
+        .calloutnew h2{
+
+color: #fff;
+text-align: center; 
+font-weight: bold;
+font-size: 1.5vh;
+
+
+}
+
+  
+      #onlymobile{display: none;}
+      #onlydesktop{display: block;} 
+  } 
+  </style>  
+ 
+   <div class="calloutnew">
+  
+    <h2>{{ section.settings.callout}}</h2>
+   <!-- <h2>{{ section.settings.callout}}</h2> -->
+   
+</div> 
+
+  
+  {% schema %}
+  {
+  "name": "Gevity Callout",
+  "settings": [{
+  "type": "text",
+  "id": "callout",
+  "label": "Gevity Callout"
+  }]
+  }
+  {% endschema %}

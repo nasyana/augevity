@@ -1,0 +1,70 @@
+<style>
+  @media only screen and (max-width: 500px) {
+
+    #onlymobile{display: block;}
+    #onlydesktop{display: none;}
+}
+    @media only screen and (min-width: 500px) {
+
+    #onlymobile{display: none;}
+    #onlydesktop{display: block;}
+}
+</style>
+ {% for block in section.blocks %}
+<section class="full_width about_section_two">
+
+ 
+    <div class="full_width onlydesktop" > 
+     
+ 	
+      	
+      <h2>{{ block.settings.header }}</h2>
+      
+      <p class="nase_about_body">{{ block.settings.body }}</p>
+      
+      <p class="nase_about_footer">{{ block.settings.footer }}</p>
+      
+<!--       <a href="{{ block.settings.block_link }}">
+       <img id="" src="" style="width: 100%">
+        <img id="onlymobile" src="{{ block.settings.mob-item-image | img_url: '2048x655' }}" style="width: 100%"></a> -->
+    		
+    </div>
+
+
+</section>
+{% endfor %}
+
+{% schema %}
+{
+	"name": "About Section 2",
+	"blocks": [
+    		{
+    			"type": "image",
+    			"name": "About One Image Section",
+    			"settings": [
+                  {
+                    "type": "text",
+                    "id": "header",
+                    "label": "Box Header"
+                  },{
+                    "type": "text",
+                    "id": "body",
+                    "label": "Body"
+                  },{
+                    "type": "text",
+                    "id": "footer",
+                    "label": "Box Footer"
+                  },{
+                    "type": "text",
+                    "id": "bottom",
+                    "label": "Box Footer2"
+                  }
+
+
+
+             
+    			]
+    		}
+	]
+}
+{% endschema %}

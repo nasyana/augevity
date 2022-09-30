@@ -1,0 +1,687 @@
+<script>
+  
+
+
+
+
+let useSideCart = false;
+
+  
+   jQuery( document ).ready(function(event) {
+
+
+
+
+ $('#youvesaved').html('Purchase more & save!'); 
+
+$('span[data-action="increase-quantity"]').click(()=>{
+
+var oldQty = $('span#qtyholder').text()
+var increase = parseInt(oldQty) + 1;
+$('span#qtyholder').text(increase)
+
+ changevariantidam();
+})
+
+$('span[data-action="decrease-quantity"]').click(()=>{
+
+var oldQty = $('span#qtyholder').text()
+
+if(parseInt(oldQty) > 1){
+
+var decrease = parseInt(oldQty) - 1;
+$('span#qtyholder').text(decrease)
+}
+
+ changevariantidam();
+})
+
+     
+      var myCurrentProduct = {{ product | json }};
+
+
+     console.log('myCurrentProduct', myCurrentProduct);
+
+
+
+   
+
+
+   var  $productvariationid = myCurrentProduct.variants[0].id;
+      var $onejar = myCurrentProduct.variants[0].price / 100; 
+        var $twojar = myCurrentProduct.variants[1].price / 100 / 2; 
+        var $threejar = myCurrentProduct.variants[2].price / 100 / 3; 
+        var $sixjar = myCurrentProduct.variants[3].price / 100 / 6;  
+        
+        var $onejarsub = myCurrentProduct.variants[4].price / 100; 
+        var $twojarsub = myCurrentProduct.variants[5].price / 100 / 2; 
+        var $threejarsub = myCurrentProduct.variants[6].price / 100 / 3; 
+        var $sixjarsub = myCurrentProduct.variants[7].price / 100 / 6; 
+     
+        $("#onejar").html($onejar); 
+		$("#twojars").html($twojar); 
+		$("#threejars").html($threejar); 
+		$("#sixjars").html($sixjar); 
+
+
+var text = 'Single ' + $onejar + ' / Jar';
+
+    $('.ProductForm__OptionName').html(text);
+
+    var bulkprice = $sixjarsub + ' / Jar';
+
+    $('#buybulk .perjar').html(bulkprice);
+
+    $quantity = $('.Popover__Value.is-selected').attr('data-quantity');
+    $('#perserve').html(' ($' + (myCurrentProduct.variants[0].price / 100 / $quantity / 27).toFixed(2) + ' Per Serve)');
+
+console.log('myCurrentProduct.variants[0]',myCurrentProduct.variants[0])
+
+
+     
+     function changevariantid(){
+
+
+
+
+
+
+
+$purchase_type = $(".purchase-type__option.active").attr('data-mm-type');
+
+var $quantity = $('span#qtyholder').text()
+if($quantity.length > 0){
+
+
+}else{
+$quantity = $('.Popover__Value.is-selected').attr('data-quantity');
+
+}
+
+
+
+console.log('quantity',$quantity);
+
+$frequency = $('.deliver.active').attr('data-frequency');
+
+if(false){$quantity = 6; }
+var deliveryEvery = 'Delivery Every: ' + $frequency + ' Days';
+
+$('.deliverevery').html(deliveryEvery);
+
+console.log("Purchase Type: " + $purchase_type + " Quantity: " + $quantity + " Frequency: " + $frequency );
+var originalFullPrice = myCurrentProduct.variants[0].price * $quantity;
+
+if($purchase_type == 'buyonce' && $quantity == 1  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[0]; }
+if($purchase_type == 'buyonce' && $quantity == 2  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[1]; }
+if($purchase_type == 'buyonce' && $quantity == 3  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[2]; }
+if($purchase_type == 'buyonce' && $quantity == 6  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[3]; }
+
+if($purchase_type == 'subscribe' && $quantity == 1  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[4]; }
+if($purchase_type == 'subscribe' && $quantity == 2  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[5]; }
+if($purchase_type == 'subscribe' && $quantity == 3  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[6]; }
+if($purchase_type == 'subscribe' && $quantity == 6  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[7]; }
+
+       if( $quantity == 1  ){  window.NaseLib.oneoffprice = myCurrentProduct.variants[0].price; window.NaseLib.pricesub = myCurrentProduct.variants[4].price;}
+       if( $quantity == 2  ){  window.NaseLib.oneoffprice = myCurrentProduct.variants[1].price; window.NaseLib.pricesub = myCurrentProduct.variants[5].price;}
+       if( $quantity == 3  ){  window.NaseLib.oneoffprice = myCurrentProduct.variants[2].price; window.NaseLib.pricesub = myCurrentProduct.variants[6].price;}
+       if( $quantity == 6  ){  window.NaseLib.oneoffprice = myCurrentProduct.variants[3].price; window.NaseLib.pricesub = myCurrentProduct.variants[7].price;}
+       
+      
+console.log('window.NaseLib.oneoffprice: ', window.NaseLib.oneoffprice);
+console.log('window.NaseLib.pricesub: ', window.NaseLib.pricesub);
+console.log('Selected Variant ID is: ', window.NaseLib.selectedvariant);
+console.log('window.NaseLib.selectedvariant.price',window.NaseLib.selectedvariant.price);
+
+
+if($quantity != 1){
+  $('#nyousave').html('$' + originalFullPrice / 100 + ' AUD');
+  }
+
+  if($quantity == 1){
+  $('#nyousave').html('');
+  }
+
+
+$('#theprice').html('$' + window.NaseLib.selectedvariant.price / 100 + ' AUD');
+
+$('#thepriceam').html('$' + window.NaseLib.selectedvariant.price / 100);
+
+$('#perserve').html('($' + (window.NaseLib.selectedvariant.price / 100 / $quantity / 27).toFixed(2) + ' Per Serve)');
+
+
+$('#afterpayprice').html('$' + window.NaseLib.selectedvariant.price / 100 / 4);
+
+// $('#theprice').html();
+
+}
+     
+     
+       function changevariantidam(){
+
+
+
+
+
+
+
+$purchase_type = $(".purchase-type__option.active").attr('data-mm-type');
+
+var $quantity = $('span#qtyholder').text()
+if($quantity.length > 0){
+
+
+}else{
+$quantity = $('.Popover__Value.is-selected').attr('data-quantity');
+
+}
+
+
+
+console.log('quantity',$quantity);
+
+$frequency = $('.deliver.active').attr('data-frequency');
+
+if(false){$quantity = 6; }
+var deliveryEvery = 'Delivery Every: ' + $frequency + ' Days';
+
+$('.deliverevery').html(deliveryEvery);
+
+console.log("Purchase Type: " + $purchase_type + " Quantity: " + $quantity + " Frequency: " + $frequency );
+var originalFullPrice = myCurrentProduct.variants[0].price * $quantity;
+
+if($purchase_type == 'buyonce' && $quantity == 1  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[8]; }
+if($purchase_type == 'buyonce' && $quantity == 2  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[9]; }
+if($purchase_type == 'buyonce' && $quantity > 2 && $quantity < 6  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[10]; }
+if($purchase_type == 'buyonce' && $quantity > 5  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[11]; }
+
+if($purchase_type == 'subscribe' && $quantity == 1  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[12]; }
+if($purchase_type == 'subscribe' && $quantity == 2  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[13]; }
+if($purchase_type == 'subscribe' && $quantity > 2 && $quantity < 6  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[14]; }
+if($purchase_type == 'subscribe' && $quantity > 5  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[15]; }
+
+       if( $quantity == 1  ){  window.NaseLib.oneoffprice = myCurrentProduct.variants[8].price; window.NaseLib.pricesub = myCurrentProduct.variants[12].price;}
+       if( $quantity == 2  ){  window.NaseLib.oneoffprice = myCurrentProduct.variants[9].price; window.NaseLib.pricesub = myCurrentProduct.variants[13].price;}
+       if( $quantity > 2 && $quantity < 6  ){  window.NaseLib.oneoffprice = myCurrentProduct.variants[10].price; window.NaseLib.pricesub = myCurrentProduct.variants[14].price;}
+       if( $quantity > 5  ){  window.NaseLib.oneoffprice = myCurrentProduct.variants[11].price; window.NaseLib.pricesub = myCurrentProduct.variants[15].price;}
+       
+      
+console.log('window.NaseLib.oneoffprice: ', window.NaseLib.oneoffprice);
+console.log('window.NaseLib.pricesub: ', window.NaseLib.pricesub);
+console.log('Selected Variant ID is: ', window.NaseLib.selectedvariant);
+console.log('window.NaseLib.selectedvariant.price',window.NaseLib.selectedvariant.price);
+
+
+if($quantity != 1){
+  $('#nyousave').html('$' + originalFullPrice / 100 + ' AUD'); 
+  $('#youvesaved').html('Look at you go — you’ve saved $'+((originalFullPrice / 100) - (window.NaseLib.selectedvariant.price * $quantity / 100)) + ' AUD'); 
+  }
+
+  if($quantity == 1){
+  $('#nyousave').html('');
+
+  $('#youvesaved').html('Purchase more & save!'); 
+  }
+
+
+$('#theprice').html('$' + window.NaseLib.selectedvariant.price  / 100 + ' AUD');
+
+$('#thepriceam').html('$' + window.NaseLib.selectedvariant.price * $quantity / 100);
+
+$('#perserve').html('($' + (window.NaseLib.selectedvariant.price / 100 / 27).toFixed(2) + ' Per Serve)');
+
+
+$('#afterpayprice').html('$' + window.NaseLib.selectedvariant.price / 100 / 4);
+
+// $('#theprice').html();
+
+}
+
+     
+     ////////// Set all main vars
+     
+     
+     
+     $('.selection-type.delivertype').hide();
+
+     
+     
+     var $originalprice = myCurrentProduct.variants[0].price / 100;
+   	
+     
+     var $subscriptionprice = myCurrentProduct.variants[4].price / 100 ;
+      
+     
+      $(".onetimeprice span").html($originalprice);
+ $(".subscriptionprice span").html($subscriptionprice);
+     
+
+   
+        var $purchase_type = $(".purchase-type__option.active").attr('data-mm-type');
+  var $quantity = $('.Popover__Value.is-selected').attr('data-quantity');
+  var $frequency = $('.deliver.active').attr('data-frequency');
+  
+
+  function showData(){
+    
+
+    var $jarprice = 35;
+    
+
+ var $originalprice = myCurrentProduct.variants[0].price / 100;  
+  
+   // alert($originalprice);
+    
+    
+$purchase_type = $(".purchase-type__option.active").attr('data-mm-type');
+$quantity = $('.Popover__Value.is-selected').attr('data-quantity');
+
+ var $perjar = $('.quantity-item.active').attr('data-jar-price');
+    
+$frequency = $('.deliver.active').attr('data-frequency');
+    
+    
+   		 var $selectedprice = $('.quantity.active .price_per span').html()
+         
+         $selectedprice = parseFloat($selectedprice);
+
+    console.log('selected price yo', $selectedprice);
+     
+    	 var $onetimerendered = $selectedprice * $quantity;
+    
+   		 var $subscriptionpricerendered = $selectedprice * $quantity;
+    
+  	 	 var $listpricetotal = $quantity * $originalprice;
+    
+  
+  
+      
+    
+        var $onejar = myCurrentProduct.variants[0].price / 100; 
+        var $twojar = myCurrentProduct.variants[1].price / 100 / 2; 
+        var $threejar = myCurrentProduct.variants[2].price / 100 / 3; 
+        var $sixjar = myCurrentProduct.variants[3].price / 100 / 6; 
+        
+        var $onejarsub = myCurrentProduct.variants[4].price / 100; 
+        var $twojarsub = myCurrentProduct.variants[5].price / 100 / 2; 
+        var $threejarsub = myCurrentProduct.variants[6].price / 100 / 3; 
+        var $sixjarsub = myCurrentProduct.variants[7].price / 100 / 6; 
+    
+    if($purchase_type == 'buyonce'){
+      
+      
+    
+        $("#onejar").html($onejar); 
+		$("#twojars").html($twojar); 
+		$("#threejars").html($threejar); 
+		$("#sixjars").html($sixjar); 
+      
+   
+   		$(".yourprice span").html($onetimerendered);
+      
+      	var $yousaveprice = 0.00;
+
+if($quantity == 1){  var showSelected = 'Single ' + $onejar + ' / Jar'; }
+if($quantity == 2){  var showSelected = '2 Pack ' + $twojar + ' / Jar'; }
+if($quantity == 3){  var showSelected = '3 Pack ' + $threejar + ' / Jar'; }
+if($quantity == 6){  var showSelected = '6 Pack ' + $sixjar + ' / Jar'; }
+var showSelected = showSelected;
+    
+    }else {
+    
+    $(".yourprice span").html($subscriptionpricerendered);
+      
+         var $yousaveprice = $onetimerendered * .19;
+      
+     	 $("#onejar").html($onejarsub); 
+		 $("#twojars").html($twojarsub); 
+		 $("#threejars").html($threejarsub); 
+		 $("#sixjars").html($sixjarsub); 
+
+     if($quantity == 1){  var showSelected = 'Single ' + $onejarsub + ' / Jar'; }
+if($quantity == 2){  var showSelected = '2 Pack ' + $twojarsub + ' / Jar'; }
+if($quantity == 3){  var showSelected = '3 Pack ' + $threejarsub + ' / Jar'; }
+if($quantity == 6){  var showSelected = '6 Pack ' + $sixjarsub + ' / Jar'; }
+var showSelected = showSelected;
+    
+    }
+
+   
+
+$('.ProductForm__OptionName').html(showSelected);
+    
+
+    
+    $(".listprice span").html($listpricetotal);
+    
+    $yourprice = $selectedprice * $quantity; 
+   
+    
+changevariantid();
+
+
+changevariantidam();
+
+
+
+    
+       	$(".onetimeprice span").html(window.NaseLib.oneoffprice / 100);
+     	$(".subscriptionprice span").html(window.NaseLib.pricesub / 100);
+    
+     $(".yousave span").html($listpricetotal - $yourprice);
+    
+    
+console.log("Purchase Type: " + $purchase_type + " Quantity: " + $quantity + " Frequency: " + $frequency );
+    
+    setTimeout(
+  function() 
+  {
+    //do something special
+    
+     $('html').removeClass('no-scroll'); console.log('yep');
+  }, 1000);
+
+   
+
+  }
+  
+     
+     window.NaseLib = {};
+     
+     window.NaseLib.running = false;
+
+    
+  function addTheItemToCart(variant_id, quantity, shipping_interval_frequency, shipping_interval_unit_type, subscription_id) {
+    
+    
+    console.log("Purchase Type: " + $purchase_type + " Quantity: " + $quantity + " Frequency: " + $frequency + "ID: " + variant_id );
+    
+
+    
+   // window.NaseLib.running = true;
+    
+    if(!variant_id){ }
+    
+    $('img#loader').show();
+      
+      
+      $purchase_type = $(".purchase-type__option.active").attr('data-mm-type');
+      
+      
+      if($purchase_type == 'buyonce'){
+    
+  data = {
+      "quantity": quantity,
+      "id": variant_id,
+   //   "properties[shipping_interval_frequency]": shipping_interval_frequency, 
+//	"properties[shipping_interval_unit_type]": shipping_interval_unit_type,            
+//	"properties[subscription_id]": subscription_id,
+  }
+    
+    
+  }else{
+    
+    
+  data = {
+      "quantity": quantity,
+      "id": variant_id,
+      "properties[shipping_interval_frequency]": shipping_interval_frequency, 
+	"properties[shipping_interval_unit_type]": shipping_interval_unit_type,            
+	"properties[subscription_id]": subscription_id,
+    "properties[Deliver Every]": ' ' + shipping_interval_frequency + ' ' + shipping_interval_unit_type,
+  }
+  
+  }
+  
+      
+  jQuery.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: data,
+   	  error: function(data, textstatus) {
+      console.log(data.responseJSON);
+    },dataType: 'json',
+      success: function() { 
+         if(!useSideCart){window.location.href = '/cart'; }
+      console.log('yo!');
+       // return;
+      }
+  }).done(function( data ) {
+    if ( console && console.log ) {
+     // console.log( "Sample of data:", data.slice( 0, 100 ) );
+    }
+  });;
+    
+    
+
+}
+
+   
+$('#GevityAddToCart').unbind().click(function(event){ 
+
+  
+
+  var discvariantid = $('#discvariantid').html();
+  $('.PageOverlay').addClass('is-visible');
+  event.preventDefault();
+  var $purchase_type = $(".purchase-type__option.active").attr('data-mm-type');
+  var $quantity = $('.Popover__ValueList button.is-selected').attr('data-quantity');
+  var $frequency = $('.deliver.active').attr('data-frequency');
+  
+  console.log('$purchase_type',$purchase_type)
+  console.log('$quantity',$quantity)
+  console.log('$frequency',$frequency)
+
+
+  if($purchase_type == 'buyonce' && $quantity == 1  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[0]; }
+if($purchase_type == 'buyonce' && $quantity == 2  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[1]; }
+if($purchase_type == 'buyonce' && $quantity == 3  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[2]; }
+if($purchase_type == 'buyonce' && $quantity == 6  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[3]; }
+
+if($purchase_type == 'subscribe' && $quantity == 1  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[4]; }
+if($purchase_type == 'subscribe' && $quantity == 2  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[5]; }
+if($purchase_type == 'subscribe' && $quantity == 3  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[6]; }
+if($purchase_type == 'subscribe' && $quantity == 6  ){  window.NaseLib.selectedvariant = myCurrentProduct.variants[7]; }
+
+       if( $quantity == 1  ){  window.NaseLib.oneoffprice = myCurrentProduct.variants[0].price; window.NaseLib.pricesub = myCurrentProduct.variants[4].price;}
+       if( $quantity == 2  ){  window.NaseLib.oneoffprice = myCurrentProduct.variants[1].price; window.NaseLib.pricesub = myCurrentProduct.variants[5].price;}
+       if( $quantity == 3  ){  window.NaseLib.oneoffprice = myCurrentProduct.variants[2].price; window.NaseLib.pricesub = myCurrentProduct.variants[6].price;}
+       if( $quantity == 6  ){  window.NaseLib.oneoffprice = myCurrentProduct.variants[3].price; window.NaseLib.pricesub = myCurrentProduct.variants[7].price;}
+
+
+  if(!window.NaseLib.selectedvariant){  window.NaseLib.selectedvariant.id = myCurrentProduct.variants[0].id;}
+  
+  
+  if($purchase_type == 'buyonce'){
+  
+    
+   // var $productvariationid = myCurrentProduct.variants[0].id;
+      
+      //15166321754155;
+    
+  var $productvariationid = window.NaseLib.selectedvariant.id;
+    
+    
+  }else{	
+    
+  //  var $productvariationid = parseInt(discvariantid);
+    
+  var   $productvariationid = window.NaseLib.selectedvariant.id;
+    
+ 
+  
+  
+  }
+  
+  
+  console.log("Adding to Cart - Purchase Type: " + $purchase_type + " Quantity: " + $quantity + " Frequency: " + $frequency );
+
+  $quantity = 1;
+  
+  addTheItemToCart($productvariationid, $quantity, $frequency, "Days", "172053"); 
+
+ 
+
+});
+
+
+  
+//////////////// once or subscription? 
+
+
+      
+         $('.purchase-type__option').click(function(event){
+     
+event.preventDefault();
+
+$('.purchase-type__option').removeClass('active');
+
+$(this).addClass('active');
+           
+           if($(this).hasClass('subscribe-and-save')){
+           
+           $('.selection-type.delivertype').fadeIn();
+           }else{
+           
+           $('.selection-type.delivertype').fadeOut();
+           }
+
+showData();
+
+});
+
+//////////////// frequency selection
+
+
+   $('.deliver').click(function(event){
+    
+event.preventDefault();
+
+$('.deliver').removeClass('active');
+
+$(this).addClass('active');
+showData();
+
+});
+     
+
+///////////////// Select Quantity
+
+
+$('.quantity').click(function(event){
+      
+event.preventDefault();
+
+$('.quantity').removeClass('active');
+
+$(this).addClass('active');
+showData();
+
+
+});
+       
+
+/////////////////////// Add to cart function
+
+$('.Popover__Value').click(function(event){
+  
+  // event.preventDefault();
+
+  var text = $(this).text();
+  $('.ProductForm__OptionName').html(text);
+  
+//   $('.ProductForm__OptionName').addClass('ProductForm__SelectedValue');
+
+  $('.Popover__Value').removeClass('is-selected');
+  
+  $('html').removeClass('no-scroll');
+
+  $(this).addClass('is-selected');
+      
+// event.preventDefault();
+
+changevariantid();
+
+
+$('.OptionSelector').attr('aria-hidden','true');
+
+
+$('.PageOverlay').removeClass('is-visible');
+
+$('html').removeClass('no-scroll');
+  
+  console.log('remove no scroll');
+//   alert('remove no scroll');
+showData();
+
+
+
+// $("input").focus(); 
+
+});
+
+
+$('.PageOverlay').click(function(event){
+  
+  $('html').removeClass('no-scroll');
+
+$('.OptionSelector').attr('aria-hidden','true');
+
+
+  
+//   alert('remove no scroll');
+$('.PageOverlay').removeClass('is-visible');
+
+
+
+
+
+});
+      $('.ProductForm__Item').click(function(event){
+
+
+      
+
+        $('.PageOverlay').addClass('is-visible');
+      
+      // event.preventDefault();
+      $('.ProductForm__Item').attr('aria-expanded','false');
+      
+      // showData();
+      
+      $('.OptionSelector').attr('aria-hidden','false');
+      
+          $('html').removeClass('no-scroll');
+        
+      });
+     
+     $('.numjars').click(function(event){
+      
+//        alert('asd')
+ event.preventDefault();
+
+
+// showData();
+
+
+});
+   
+     
+     $('.numjars').addEventListener('click', function(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+    return false;
+});
+
+
+
+
+///////////End doc ready
+
+
+
+       
+       
+});
+  
+</script>

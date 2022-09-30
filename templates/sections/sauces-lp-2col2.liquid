@@ -1,0 +1,62 @@
+<style>
+    section#nase_why {
+        display: table;
+    }
+      </style>
+
+
+<section class="sec-08 gevity_new_style_fuel-peak">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6" style="padding: 100px 10% 100px 10%;">
+            <h2 style="color: {{ section.settings.button-color }}!important;">{{ section.settings.header }}</h2>
+            <h5>{{ section.settings.subhead }}</h5>
+            <p>{{ section.settings.description }}</p>
+           {% comment %} <a href="#shopify-section-body-glue-section-eleven"> <button class="btn" style="background-color: {{ section.settings.button-color }}!important;" type="button">
+                {{ section.settings.button-text}}
+            </button></a> {% endcomment %}
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 gevity_new_style_half-bg" style="background-image: url('{{ section.settings.item-image | img_url: '2048x1055' }}')"></div>
+    </div>
+
+</section>
+
+{% schema %}
+{
+        "name": "Sauces 2 Col2",
+        "settings": [
+        {
+            "type": "color",
+            "id": "button-color", 
+            "label": "Button color",
+            "default": "#987480"
+         },{
+                        "type": "image_picker",
+                        "id": "item-image",
+                        "label": "Image of on left"
+                      }, {
+                        "type": "image_picker",
+                        "id": "mob-item-image",
+                        "label": "Mobile Version"
+                      }, {
+                        "type": "url",
+                        "id": "url",
+                        "label": "Link URL"
+                      }, {
+                        "type": "html",
+                        "id": "header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "html",
+                        "id": "description",
+                        "label": "description"
+                      }, {
+                        "type": "text",
+                        "id": "subhead",
+                        "label": "subhead"
+                      }, {
+                        "type": "text",
+                        "id": "button-text",
+                        "label": "button-text"
+                      }]
+    }
+{% endschema %}

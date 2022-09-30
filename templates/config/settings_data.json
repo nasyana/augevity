@@ -1,0 +1,3680 @@
+{
+  "current": {
+    "heading_color": "#454545",
+    "text_color": "#454545",
+    "text_light_color": "#9d9d9d",
+    "link_color": "#1c1b1b",
+    "background": "#ffffff",
+    "light_background": "#ffffff",
+    "product_on_sale_color": "#f94c43",
+    "button_background": "#000000",
+    "button_text_color": "#ffffff",
+    "header_background": "#ffffff",
+    "header_heading_color": "#454545",
+    "header_light_color": "#9d9d9d",
+    "footer_background": "#ffffff",
+    "footer_heading_color": "#454545",
+    "footer_text_color": "#9d9d9d",
+    "navigation_background": "#454545",
+    "navigation_text_color": "#ffffff",
+    "newsletter_popup_background": "#000000",
+    "newsletter_popup_text_color": "#ffffff",
+    "secondary_elements_background": "#f4f4f4",
+    "secondary_elements_text_color": "#373737",
+    "heading_font": "montserrat_n4",
+    "heading_size": "normal",
+    "uppercase_heading": true,
+    "text_font": "montserrat_n4",
+    "base_text_font_size": 15,
+    "currency_conversion_enabled": true,
+    "currency_conversion_round_amounts": true,
+    "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+    "currency_conversion_money_format": "money_format",
+    "show_page_transition": true,
+    "show_button_transition": false,
+    "show_image_zooming": true,
+    "show_element_staggering": false,
+    "search_mode": "product,article",
+    "product_show_price_on_hover": true,
+    "product_show_secondary_image": true,
+    "product_info_alignment": "center",
+    "product_image_size": "natural",
+    "product_list_horizontal_spacing": "medium",
+    "product_list_vertical_spacing": "small",
+    "cart_type": "drawer",
+    "cart_enable_notes": true,
+    "cart_show_free_shipping_threshold": false,
+    "cart_free_shipping_threshold": "50",
+    "share_image": "",
+    "social_facebook": "https:\/\/www.facebook.com\/gevityrx",
+    "social_twitter": "",
+    "social_pinterest": "",
+    "social_instagram": "https:\/\/www.instagram.com\/gevityrx\/",
+    "social_vimeo": "",
+    "social_tumblr": "",
+    "social_youtube": "",
+    "social_linkedin": "",
+    "social_snapchat": "",
+    "social_fancy": "",
+    "favicon": "shopify:\/\/shop_images\/FAVICON.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Gevity-PNG.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#010101",
+    "checkout_button_color": "#000000",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "sidebar-menu": {
+        "type": "sidebar-menu",
+        "settings": {
+          "primary_menu": "main-menu-oct-2021",
+          "secondary_menu": "explore",
+          "show_social_media": true
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "enable_bar": true,
+          "home_page_only": false,
+          "background": "#010101",
+          "text_color": "#ffffff",
+          "content": "Noticed the new look? Read about our rebrand from Meadow &amp; Marrow to Gevity RX <a href=\"\/pages\/meadow-and-marrow-rebrand\" id=\"here\">here<\/a> <span id=\"nase_close\">x<\/span>",
+          "link": "shopify:\/\/pages\/meadow-and-marrow-rebrand"
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "1574478870032": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "Products",
+              "push_1_image": "shopify:\/\/shop_images\/GRX-August2021-24074.jpg",
+              "push_1_heading": "SHOP BODY GLUE",
+              "push_1_subheading": "",
+              "push_1_url": "shopify:\/\/collections\/bone-broth-body-glue",
+              "push_2_image": "shopify:\/\/shop_images\/sauces-range.jpg",
+              "push_2_heading": "SHOP SAUCES",
+              "push_2_subheading": "",
+              "push_2_url": "shopify:\/\/collections\/bone-broth-sauces"
+            }
+          }
+        },
+        "block_order": [
+          "1574478870032"
+        ],
+        "settings": {
+          "use_sticky_header": true,
+          "logo": "shopify:\/\/shop_images\/Gevity-Rx-Logo_7aebec14-b370-4c5f-8692-1cd43bb06f51.jpg",
+          "logo_max_width": 160,
+          "mobile_logo_max_width": 90,
+          "navigation_menu": "main-menu-oct-2021",
+          "navigation_style": "logoLeft",
+          "show_icons": true,
+          "enable_transparent_header": false,
+          "enable_transparent_header_collection": false,
+          "show_transparent_header_border": true,
+          "transparent_text_color": "#ffffff"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1579334314971": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "content": "",
+              "show_social_media": false,
+              "url": "shopify:\/\/shop_images\/Gevity-white.png"
+            }
+          },
+          "1579332538428": {
+            "type": "links",
+            "settings": {
+              "menu": "explore"
+            }
+          },
+          "1573610484172": {
+            "type": "links",
+            "settings": {
+              "menu": "company"
+            }
+          },
+          "1573610574856": {
+            "type": "text",
+            "settings": {
+              "title": "Follow Us",
+              "content": "",
+              "show_social_media": true
+            }
+          }
+        },
+        "block_order": [
+          "1579334314971",
+          "1579332538428",
+          "1573610484172",
+          "1573610574856"
+        ],
+        "settings": {
+          "show_payment_methods": true
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "20d23a05-a46b-4198-9370-d803d2450657": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20220630_Gevity_Marinade_Website_Banners_Desktop.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/20220630_Gevity_Marinade_Website_Banners_Mobile.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "",
+              "button_1_link": "https:\/\/au.gevityrx.com\/collections\/bone-broth-marinade",
+              "button_2_text": "",
+              "button_2_link": "https:\/\/au.gevityrx.com\/collections\/bone-broth-marinade"
+            }
+          },
+          "1575341601564": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/26072022_Gevity_Home_Page_Banners_Desktop_3.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/26072022_Gevity_Home_Page_Banners_Mobile_3.jpg",
+              "apply_overlay": false,
+              "content_position": "middleCenter",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "",
+              "button_1_link": "https:\/\/au.gevityrx.com\/collections\/bone-broth-sauces",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "187739e2-047a-4788-8159-8922b7dcd203": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/26072022_Gevity_Home_Page_Banners_Desktop_1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/26072022_Gevity_Home_Page_Banners_Mobile_1.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "",
+              "button_1_link": "https:\/\/au.gevityrx.com\/collections\/bone-broth-body-glue",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "slide-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20220213_Gevity_Home_Page_Banners_1_Desktop.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/20220213_Gevity_Home_Page_Banners_1_Mobile.jpg",
+              "apply_overlay": false,
+              "content_position": "middleCenter",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "",
+              "button_1_link": "https:\/\/au.gevityrx.com\/collections\/body-glue-x\/products\/body-glue-x-fire-tonic-immuno-tonic?ose=false",
+              "button_2_text": "",
+              "button_2_link": "https:\/\/au.gevityrx.com\/collections\/body-glue-x\/products\/body-glue-x-fire-tonic-immuno-tonic?ose=false"
+            }
+          }
+        },
+        "block_order": [
+          "20d23a05-a46b-4198-9370-d803d2450657",
+          "1575341601564",
+          "187739e2-047a-4788-8159-8922b7dcd203",
+          "slide-0"
+        ],
+        "settings": {
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636",
+          "button_background": "#ffffff"
+        }
+      },
+      "featured-collections": {
+        "type": "featured-collections",
+        "blocks": {
+          "featured-collection-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "bone-broth-body-glue",
+              "title": "",
+              "grid_items_count": 8,
+              "button_text": "View all products"
+            }
+          },
+          "1573550340904": {
+            "type": "collection",
+            "settings": {
+              "collection": "bone-broth-sauces",
+              "title": "",
+              "grid_items_count": 8,
+              "button_text": "View all products"
+            }
+          }
+        },
+        "block_order": [
+          "featured-collection-0",
+          "1573550340904"
+        ],
+        "settings": {
+          "title": "Shop Top Sellers",
+          "layout_mode": "carousel",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "collection-list": {
+        "type": "collection-list",
+        "disabled": true,
+        "blocks": {
+          "collection-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "Sub-heading",
+              "title": "Collection name",
+              "button_text": "View products",
+              "button_link": "",
+              "apply_overlay": true
+            }
+          },
+          "collection-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "Sub-heading",
+              "title": "Collection name",
+              "button_text": "View products",
+              "button_link": "",
+              "apply_overlay": true
+            }
+          },
+          "collection-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "Sub-heading",
+              "title": "Collection name",
+              "button_text": "View products",
+              "button_link": "",
+              "apply_overlay": true
+            }
+          }
+        },
+        "block_order": [
+          "collection-0",
+          "collection-1",
+          "collection-2"
+        ],
+        "settings": {
+          "image_size": "normal",
+          "add_spacing": true,
+          "expand_collection": false,
+          "stack_on_mobile": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
+      },
+      "featured-product": {
+        "type": "featured-product",
+        "disabled": true,
+        "settings": {
+          "subheading": "",
+          "title": "Featured product",
+          "show_headings_on_mobile": true,
+          "product": "",
+          "show_vendor": true,
+          "show_sku": false,
+          "show_description": true,
+          "description_below_add_to_cart": false,
+          "selector_mode": "dropdown",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": true,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 3,
+          "show_price_in_button": false,
+          "show_payment_button": true
+        }
+      },
+      "timeline": {
+        "type": "timeline",
+        "disabled": true,
+        "blocks": {
+          "item-0": {
+            "type": "item",
+            "settings": {
+              "apply_overlay": true,
+              "title": "2000",
+              "subheading": "Sub-heading",
+              "heading": "Heading",
+              "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            }
+          },
+          "item-1": {
+            "type": "item",
+            "settings": {
+              "apply_overlay": true,
+              "title": "2001",
+              "subheading": "Sub-heading",
+              "heading": "Heading",
+              "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            }
+          },
+          "item-2": {
+            "type": "item",
+            "settings": {
+              "apply_overlay": true,
+              "title": "2002",
+              "subheading": "Sub-heading",
+              "heading": "Heading",
+              "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "item-0",
+          "item-1",
+          "item-2"
+        ],
+        "settings": {
+          "text_color": "#ffffff"
+        }
+      },
+      "blog-posts": {
+        "type": "blog-posts",
+        "disabled": true,
+        "blocks": {
+          "blog-0": {
+            "type": "blog",
+            "settings": {
+              "blog": "recipes"
+            }
+          }
+        },
+        "block_order": [
+          "blog-0"
+        ],
+        "settings": {
+          "subheading": "",
+          "title": "Recipes",
+          "show_category": false,
+          "button_link": "shopify:\/\/blogs\/recipes",
+          "button_text": "View all recipes"
+        }
+      },
+      "shop-the-look": {
+        "type": "shop-the-look",
+        "disabled": true,
+        "blocks": {
+          "look-0": {
+            "type": "look",
+            "settings": {
+              "dot_style": "light",
+              "product_1": "",
+              "product_1_horizontal_position": 30,
+              "product_1_vertical_position": 40,
+              "product_2": "",
+              "product_2_horizontal_position": 45,
+              "product_2_vertical_position": 65,
+              "product_3": "",
+              "product_3_horizontal_position": 70,
+              "product_3_vertical_position": 50
+            }
+          },
+          "look-1": {
+            "type": "look",
+            "settings": {
+              "dot_style": "light",
+              "product_1": "",
+              "product_1_horizontal_position": 25,
+              "product_1_vertical_position": 45,
+              "product_2": "",
+              "product_2_horizontal_position": 55,
+              "product_2_vertical_position": 30,
+              "product_3": "",
+              "product_3_horizontal_position": 65,
+              "product_3_vertical_position": 60
+            }
+          }
+        },
+        "block_order": [
+          "look-0",
+          "look-1"
+        ],
+        "settings": {
+          "subheading": "Shop",
+          "title": "Our looks",
+          "show_mobile_product_info": false
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_info": true,
+          "show_collection_image": false,
+          "apply_overlay": true,
+          "show_color_swatch": false,
+          "show_vendor": false,
+          "collection_image_size": "normal",
+          "show_sort_by": false,
+          "show_layout_switch": false,
+          "toolbar_position": "top",
+          "filter_position": "sidebar",
+          "filter_mode": "hidden",
+          "show_filter_color_swatch": false,
+          "filter_menu": "",
+          "grid_items_per_page": 16,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "recently-viewed-products": {
+        "type": "recently-viewed-products",
+        "settings": {
+          "show_section": false,
+          "title": "Recently viewed",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "collection-footer": {
+        "type": "collection-footer",
+        "settings": {
+          "show_section": false,
+          "text_color": "#ffffff",
+          "apply_overlay": true,
+          "title": "Our story",
+          "content": "<p>Add your own custom content to explain your processes...<\/p>"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_share_buttons": true,
+          "show_vendor": true,
+          "show_sku": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "dropdown",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": true,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 3,
+          "show_price_in_button": false,
+          "show_payment_button": false,
+          "box1subhead": "Sub-headingx",
+          "image_size": "medium",
+          "stack_images": false,
+          "show_thumbnails": true,
+          "enable_image_zoom": false,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "reviews_enabled": false,
+          "featured_image_size": "large"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "customers also bought",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": false,
+          "show_only_on_index": true,
+          "show_only_for_visitors": true,
+          "show_only_once": true,
+          "title": "JOIN OUR COMMUNITY",
+          "content": "<p>Be part of our health & wellness family and receive special offers, recipes and inspiration. <\/p>",
+          "show_newsletter": true,
+          "apparition_delay": 5
+        }
+      },
+      "1573550866156": {
+        "type": "instagram-feed",
+        "disabled": true,
+        "settings": {
+          "subheading": "@gevityrx",
+          "title": "Follow us",
+          "access_token": "4816411009.6a7999e.76a0a38c218444e1a8dba1be6e99075b",
+          "image_count": 14,
+          "button_text": "",
+          "button_url": ""
+        }
+      },
+      "1573609943572": {
+        "type": "text-with-image",
+        "disabled": true,
+        "settings": {
+          "subheading": "CALLING ALL HEALTH PRACTITIONERS",
+          "title": "PRESCRIBE BETTER CLIENT HEALTH & WELLBEING",
+          "image": "shopify:\/\/shop_images\/BODY_GLUE_SHAN_PRACTIONER.jpg",
+          "image_position": "right",
+          "content": "<p>Our Body Glue™ range has been independently lab verified to contain 10x more collagen forming amino acids than traditional broths, making it the Bone Broth practitioners prefer and recommend. <\/p>",
+          "link_text": "Learn More",
+          "link_url": "shopify:\/\/pages\/health-practitioners"
+        }
+      },
+      "1573610688282": {
+        "type": "custom-html",
+        "disabled": true,
+        "settings": {
+          "subheading": "",
+          "title": "",
+          "html": "<div id=\"threeboxcontainer\">\n<div id=\"threeboxes\">\n<div class=\"nasleft\">\n<h4>SUBSCRIBE &amp; SAVE<\/h4>\n<p>on Meadow &amp; Marrow Bone Broth<\/p>\n<\/div>\n<div class=\"nascenter\">\n<h4>SUBSCRIBE &amp; SAVE<\/h4>\n<p>on Meadow &amp; Marrow Bone Broth<\/p>\n<\/div>\n\n<div class=\"nasright\">\n<h4>SUBSCRIBE &amp; SAVE<\/h4>\n<p>on Meadow &amp; Marrow Bone Broth<\/p>\n<\/div>\n<\/div>\n<\/div>"
+        }
+      },
+      "1573769242987": {
+        "type": "nase-three-boxes",
+        "settings": {
+          "box1subhead": "10X MORE COLLAGEN AMINOS",
+          "box1p": "Compared to traditional broths",
+          "box2subhead": "MADE BY INGREDIENT GEEKS",
+          "box2p": "FOR ingredients geeks!",
+          "box3subhead": "LIFE -CHANGING HEALTH FOOD",
+          "box3p": "Quality - nutrients -  taste"
+        }
+      },
+      "1573776389069": {
+        "type": "three-boxes-with-image",
+        "settings": {
+          "item-image1": "shopify:\/\/shop_images\/nutrient-dense.png",
+          "box1subhead": "Nutrient Dense",
+          "box1p": "Our delicious products are packed with vitamins, minerals, amino acids, antioxidants, anti-inflammatories and natural detoxifiers to make them as functional as possible.",
+          "item-image2": "shopify:\/\/shop_images\/natural-2.png",
+          "box2subhead": "All Natural Ingredients",
+          "box2p": "We only use the best natural ingredients to promote high performance, increased energy, boosted immunity and better overall health and wellbeing.",
+          "item-image3": "shopify:\/\/shop_images\/gut-2.png",
+          "box3subhead": "Better Gut Health",
+          "box3p": "If you suffer from digestive issues - we feel you! Packed with the goodness of our nutritious Bone Broth Concentrate, our products are designed to promote and sustain better gut health."
+        }
+      },
+      "1573789016671": {
+        "type": "testimonials",
+        "blocks": {
+          "1579145598658": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p><strong>“By far the best Bone Broth concentrate on the market.”<\/strong><br\/>Wonderful product. I’ve used a few different brands - this is so thick & rich, brings down my<br\/>inflammation.<br\/>Kylie T. on <strong>A.M. Cleanse<\/strong><\/p>"
+            }
+          },
+          "1573789016671-0": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p><strong>“Surprisingly perfect!”<\/strong><br\/>This is awesome I thought it was going to be too spicy for me but it’s great!! Our go to now!<br\/><\/p><p>Julie H. on <strong>Souped-Up Sriracha<\/strong><\/p>"
+            }
+          },
+          "1573789016671-1": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p><strong>“Best mayo substitute I have EVER tasted”<\/strong><br\/>I was trying to get away from the bad oils in conventional mayo. This achieves that while having added health benefits and really does taste amazing. Win, win!<br\/><\/p><p>Emily H. on <strong>Great Guts Mayo<\/strong><\/p>"
+            }
+          },
+          "1573789016671-2": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p><strong>“Delicious! Absolutely love the flavours.” <\/strong><\/p><p>We used the mayo up within the first week! Even my partner and fussy kids love the mayo & bbq<br\/>sauces. Highly recommend<br\/><\/p><p>Renee S. on <strong>Great Guts Mayo<\/strong><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1579145598658",
+          "1573789016671-0",
+          "1573789016671-1",
+          "1573789016671-2"
+        ],
+        "settings": {
+          "autoplay": true,
+          "cycle_speed": 5,
+          "background": "#f5f5f5",
+          "text_color": "#1c1b1b"
+        }
+      },
+      "1573790710448": {
+        "type": "newsletter",
+        "settings": {
+          "section_size": "small",
+          "image": "shopify:\/\/shop_images\/black.jpg",
+          "text_color": "#ffffff",
+          "button_color": "#000000",
+          "subheading": "",
+          "title": "JOIN  THE GEVITY GANG",
+          "content": "<p>Sign up for your regular dose of all things health & wellbeing.<\/p>"
+        }
+      },
+      "page-contact-template": {
+        "type": "page-contact-template",
+        "blocks": {
+          "page-contact-template-0": {
+            "type": "text",
+            "settings": {
+              "title": "Your phone (optional)",
+              "use_long_text": false,
+              "is_required": false
+            }
+          }
+        },
+        "block_order": [
+          "page-contact-template-0"
+        ],
+        "settings": {
+        }
+      },
+      "nase-product-page-section": {
+        "type": "nase-product-page-section",
+        "settings": {
+          "box1subhead": "test1",
+          "box1p": "Header"
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "show_rss": false,
+          "show_tags": true,
+          "show_featured_article": true,
+          "show_category": true
+        }
+      },
+      "shop-now": {
+        "type": "shop-now",
+        "settings": {
+          "show_section": true,
+          "title": "Shop now",
+          "collection": "",
+          "grid_items_count": 9,
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "show_shipping_estimator": true,
+          "shipping_estimator_default_country": "Australia"
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "collections_to_show": "all",
+          "image_size": "small",
+          "add_spacing": true,
+          "expand_collection": false,
+          "apply_overlay": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "show_article_image": true,
+          "show_date": true,
+          "show_category": true,
+          "show_author": true,
+          "show_share_buttons": true
+        }
+      },
+      "nase-sliding-benefits": {
+        "type": "nase-sliding-benefits",
+        "settings": {
+          "autoplay": true,
+          "cycle_speed": 5,
+          "background": "#eaeaea",
+          "text_color": "#1c1b1b"
+        }
+      },
+      "1576915724982": {
+        "type": "nase-sliding-benefits",
+        "blocks": {
+          "1576915724982-0": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/nutrient-dense_e784ef91-2ee7-4729-bd5a-91dfc928f14b.png",
+              "quote": "<p><strong>Nutrient Dense<\/strong><\/p><p>Our delicious products are packed with vitamins, minerals, amino acids, antioxidants, anti-inflammatories and natural detoxifiers to make them as functional as possible.<\/p>"
+            }
+          },
+          "1576915724982-1": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/natural-2_fd37d415-205f-4b89-b9e9-4cf391153a6f.png",
+              "quote": "<p><strong>All Natural Ingredients<\/strong><\/p><p>We only use the best natural ingredients to promote high performance, increased energy, boosted immunity and better overall health and wellbeing.<\/p>"
+            }
+          },
+          "1576915724982-2": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/gut-2_41c3badc-63f8-4e4e-8d1b-e4c7d4839f87.png",
+              "quote": "<p><strong>Better Gut Health<\/strong><\/p><p>If you suffer from digestive issues - we feel you! Packed with the goodness of our nutritious Bone Broth Concentrate, our products are designed to promote and sustain better gut health.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1576915724982-0",
+          "1576915724982-1",
+          "1576915724982-2"
+        ],
+        "settings": {
+          "autoplay": true,
+          "cycle_speed": 5,
+          "background": "#ffffff",
+          "text_color": "#373737"
+        }
+      },
+      "nase-small-sliding-callouts": {
+        "type": "nase-small-sliding-callouts",
+        "blocks": {
+          "1576921632411": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p><strong>BODY GLUE NOW 50% BIGGER + FREE SHIPPING FOR ORDERS OVER $100 = BIG VALUE! <\/strong><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1576921632411"
+        ],
+        "settings": {
+          "autoplay": true,
+          "cycle_speed": 3,
+          "background": "#eaeaea",
+          "text_color": "#1c1b1b"
+        }
+      },
+      "about-section-two": {
+        "type": "about-section-two",
+        "blocks": {
+          "1577423896700": {
+            "type": "image",
+            "settings": {
+              "header": "IT’S TIME FOR WELLNESS BRANDS TO START DELIVERING ON UNCOMPROMISING HEALTH",
+              "body": "Our mission is to provide life-changing health products that you know do what they say. We want you to take control of your health, knowing that every ingredient is chosen to help you feel better, look better and perform better. Add it all up, and you’re looking at the best possible you, one who will be around for a long time.",
+              "footer": "WE’VE GOT YOUR LONGEVITY PRESCRIPTION"
+            }
+          }
+        },
+        "block_order": [
+          "1577423896700"
+        ],
+        "settings": {
+        }
+      },
+      "about-section-three": {
+        "type": "about-section-three",
+        "blocks": {
+          "1577425540351": {
+            "type": "image",
+            "settings": {
+              "item-image": "shopify:\/\/shop_images\/GevityRX_December2020-16192-Edit.jpg",
+              "tagline-image": "shopify:\/\/shop_images\/pnggevity_09e1dbd6-caf4-4a7b-8aa3-0ee60b88b461.jpg",
+              "header": "GEVITY WHAT?",
+              "tagline": "",
+              "body": "Everyone wants to live longer. That’s why longevity is our guiding principle. When we say increasing your longevity is at the core of every product we create, we mean it. If an ingredient doesn’t genuinely improve your long-term health, we don’t use it. We believe it should be easy to make the best choice for your health, now and in the future."
+            }
+          }
+        },
+        "block_order": [
+          "1577425540351"
+        ],
+        "settings": {
+        }
+      },
+      "about-section-five": {
+        "type": "about-section-five",
+        "blocks": {
+          "1577429881607": {
+            "type": "image",
+            "settings": {
+              "item-image1": "shopify:\/\/shop_images\/about-beginning-2.jpg",
+              "header1": "THE GEVITY RX STORY",
+              "body1": "<p>Founders Mark and Atlanta Fowler’s passion for developing unparalleled health products comes from personal experience in creating tools to overcome their own\nhealth challenges.<\/p><p>After several blissful and successful years together – including launching their own\npopular health café, Brio Emporium – life turned upside down in 2015 when Atlanta\nsuddenly became unwell, experiencing chronic food allergies, extreme exhaustion,\ninsomnia, mood swings and anxiety.<\/p>\n\n<p>When visits to multiple specialists offered to only mask her symptoms, not heal the root\ncause, Mark and Atlanta decided to take matters into their own hands.<\/p>\n<p>After weeks of research, they realised that her symptoms were linked to compromised\ngut health. Seeking to treat the cause, not the symptoms, they developed a healing\nprotocol. Bone broth was the foundation.<\/p>",
+              "item-image2": "shopify:\/\/shop_images\/about2.jpg",
+              "header2": "",
+              "body2": "<p>Atlanta tried every bone broth on the market but saw no improvement.\nThey decided it was time to take matters into their own hands. Armed with the knowledge that it’s only the nutrients from the bones that heal\nthe gut, they got to work on purifying and concentrating these key nutrients.<\/p>\n<p>‘Atlanta’s Body Glue’ became Meadow &amp; Marrow, the world’s most\nnutrient-dense bone broth. And the rest is history.<\/p>\n<p>Gevity Rx is built on the same relentless pursuit of uncompromising health that\nhealed Atlanta’s gut.<\/p>\n<p>As true health and wellness enthusiasts, we were disappointed with the products\navailable in the wider health market. We knew we needed to expand beyond\nbone broth, and develop a truly epic range of products and services that never\ncompromises on results.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1577429881607"
+        ],
+        "settings": {
+        }
+      },
+      "about-section-one": {
+        "type": "about-section-one",
+        "blocks": {
+          "1579304021396": {
+            "type": "image",
+            "settings": {
+              "item-image": "shopify:\/\/shop_images\/CLOSE_UP_GREEN_SMOOTHIE.jpg",
+              "mob-item-image": "shopify:\/\/shop_images\/CLOSE_UP_GREEN_SMOOTHIE.jpg",
+              "header": "LIFE-CHANGING HEALTH FOOD"
+            }
+          }
+        },
+        "block_order": [
+          "1579304021396"
+        ],
+        "settings": {
+        }
+      },
+      "about-section-six": {
+        "type": "about-section-six",
+        "blocks": {
+          "1579304456423": {
+            "type": "image",
+            "settings": {
+              "block_link": "shopify:\/\/collections\/all",
+              "header": "WE HOPE YOU’LL STICK AROUND FOR A LONG TIME",
+              "buttontext": "SHOP HEALTH"
+            }
+          }
+        },
+        "block_order": [
+          "1579304456423"
+        ],
+        "settings": {
+        }
+      },
+      "collections-top-section": {
+        "type": "collections-top-section",
+        "settings": {
+        }
+      },
+      "health-prac-section-one": {
+        "type": "health-prac-section-one",
+        "blocks": {
+          "1579339618009": {
+            "type": "image",
+            "settings": {
+              "item-image": "shopify:\/\/shop_images\/BODY_GLUE_SHAN_PRACTIONER.jpg",
+              "mob-item-image": "shopify:\/\/shop_images\/BODY_GLUE_SHAN_PRACTIONER.jpg",
+              "header": "SUPPORT YOUR CLIENTS WITH A LONGEVITY PRESCRIPTION"
+            }
+          }
+        },
+        "block_order": [
+          "1579339618009"
+        ],
+        "settings": {
+        }
+      },
+      "health-prac-section-four": {
+        "type": "health-prac-section-four",
+        "settings": {
+          "item-image1": "shopify:\/\/shop_images\/nutrient-dense_e784ef91-2ee7-4729-bd5a-91dfc928f14b.png",
+          "box1subhead": "Nutrient Dense",
+          "box1p": "Our delicious products are packed with vitamins, minerals, amino acids, antioxidants, anti-inflammatories and natural detoxifiers to make them as functional as possible.",
+          "item-image2": "shopify:\/\/shop_images\/natural-2_fd37d415-205f-4b89-b9e9-4cf391153a6f.png",
+          "box2subhead": "All Natural Ingredients",
+          "box2p": "We only use the best natural ingredients to promote high performance, increased energy, boosted immunity and better overall health and wellbeing.",
+          "item-image3": "shopify:\/\/shop_images\/gut-2_41c3badc-63f8-4e4e-8d1b-e4c7d4839f87.png",
+          "box3subhead": "Better Gut Health",
+          "box3p": "If you suffer from digestive issues - we feel you! Packed with the goodness of our nutritious Bone Broth Concentrate, our products are designed to promote and sustain better gut health."
+        }
+      },
+      "health-prac-section-two": {
+        "type": "health-prac-section-two",
+        "blocks": {
+          "1579340877548": {
+            "type": "image",
+            "settings": {
+              "header": "",
+              "body": "At Gevity Rx, we develop products designed for improving health and wellbeing to ensure our customers can nourish their bodies internally. We know that health is vital to our existence and we truly value the advice our health professionals advocate about our products. We have health stores selling our products all across the world and we want to continue to support health professionals incorporating our products into their client’s health programs.",
+              "footer": "JOIN THE GEVITY RX HEALTH PRACTITIONER FAMILY"
+            }
+          }
+        },
+        "block_order": [
+          "1579340877548"
+        ],
+        "settings": {
+        }
+      },
+      "health-prac-section-three": {
+        "type": "health-prac-section-three",
+        "blocks": {
+          "1579342435371": {
+            "type": "image",
+            "settings": {
+              "item-image": "shopify:\/\/shop_images\/better-belly.jpg",
+              "header": "FORMULATED WITH FUNCTIONAL INGREDIENTS FOR TARGET RESULTS",
+              "description": "Our products aren’t just designed to taste great. Our long term vision has been to bring back the essential elements of nutrition that are currently missing from the modern diet, combining the best of ancient wisdom and modern technology."
+            }
+          }
+        },
+        "block_order": [
+          "1579342435371"
+        ],
+        "settings": {
+        }
+      },
+      "health-prac-section-five": {
+        "type": "health-prac-section-five",
+        "blocks": {
+          "1579385419186": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>\"At Brisbane Naturopaths and Wellness Centre we just love stocking Gevity RX nutrient dense products. So many of our clients lead extremely busy lives and the convenience of Gevity Rx's bone broths provides easy, tasty nourishing and quick meals for the whole family.\"<\/p>"
+            }
+          },
+          "1579385569279": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>\"Here at Gut Happy we focus on making your gut as happy as it could be and bone broth is a staple of any healthy gut protocol. We believe that food truly is medicine so the Gevity Rx range fits our philosophy perfectly. It is by far the best tasting bone broth on the market and has been well recieved by our cusotmers.\"&nbsp;<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1579385419186",
+          "1579385569279"
+        ],
+        "settings": {
+          "autoplay": true,
+          "cycle_speed": 5,
+          "background": "#ffffff",
+          "text_color": "#1c1b1b"
+        }
+      },
+      "health-prac-section-six": {
+        "type": "health-prac-section-six",
+        "blocks": {
+          "health-prac-section-six-0": {
+            "type": "text",
+            "settings": {
+              "title": "Your phone (optional)",
+              "use_long_text": false,
+              "is_required": false
+            }
+          },
+          "1579386409872": {
+            "type": "text",
+            "settings": {
+              "title": "Occupation",
+              "use_long_text": false,
+              "is_required": false
+            }
+          },
+          "1579386422988": {
+            "type": "dropdown",
+            "settings": {
+              "title": "State",
+              "values": "QLD, NSW, VIC, WA, SA, NT"
+            }
+          }
+        },
+        "block_order": [
+          "health-prac-section-six-0",
+          "1579386409872",
+          "1579386422988"
+        ],
+        "settings": {
+          "toptext": "SIGN UP TO RECEIVE OUR HEALTH PROFESSIONAL GUIDE, WEEKLY RECIPES AND PRODUCT INFORMATION TO PROVIDE TO YOUR CLIENTS."
+        }
+      },
+      "health-prac-section-seven": {
+        "type": "health-prac-section-seven",
+        "settings": {
+          "box1p": "THE WORLD’S MOST NUTRIENT DENSE BONE BROTH"
+        }
+      },
+      "wholesaler-section-one": {
+        "type": "wholesaler-section-one",
+        "blocks": {
+          "1579752937376": {
+            "type": "image",
+            "settings": {
+              "item-image": "shopify:\/\/shop_images\/all-header.jpg",
+              "block_link": "",
+              "header": ""
+            }
+          }
+        },
+        "block_order": [
+          "1579752937376"
+        ],
+        "settings": {
+        }
+      },
+      "wholesaler-section-two": {
+        "type": "wholesaler-section-two",
+        "blocks": {
+          "1579755222111": {
+            "type": "image",
+            "settings": {
+              "text": "OUR SHELF STABLE BONE BROTH CONCENTRATE RANGE IS UNLIKE ANY OTHER BROTH ON THE MARKET, AND WITH SEVEN DIFFERENT SKU’S AVAILABLE, THERE’S SOMETHING FOR EVERYONE."
+            }
+          }
+        },
+        "block_order": [
+          "1579755222111"
+        ],
+        "settings": {
+        }
+      },
+      "wholesaler-section-three": {
+        "type": "wholesaler-section-three",
+        "blocks": {
+          "1579754266308": {
+            "type": "image",
+            "settings": {
+              "item-image": "shopify:\/\/shop_images\/shop.jpg",
+              "block_link": "",
+              "header": "WHY STOCK GEVITY RX?",
+              "description": "Our products aren’t just designed to taste great. Our long term vision has been to bring back the essential elements of nutrition that are currently missing from the modern diet, so our customers can nourish from the inside out."
+            }
+          }
+        },
+        "block_order": [
+          "1579754266308"
+        ],
+        "settings": {
+        }
+      },
+      "wholesaler-section-four": {
+        "type": "wholesaler-section-four",
+        "blocks": {
+          "1579760538072": {
+            "type": "image",
+            "settings": {
+              "header": "WHAT YOU WILL RECEIVE AS A GEVITY RX STOCKIST",
+              "body": "At Gevity RX, we value our stockists and welcome you as part of the extended Gevity family. Alongside a retail induction, you’ll receive ongoing support and assistance to help you maximise your return on investment with our top quality products.",
+              "line1": "ATTRACTIVE PRODUCT MARGINS",
+              "line2": "RETAIL TRAINING & SUPPORT MATERIALS",
+              "line3": "DEDICATED ACCOUNT MANAGEMENT",
+              "line4": "EASY ONLINE ORDERING & PAYMENT PORTAL",
+              "line5": "HIGH-RES IMAGES FOR ONLINE STORES",
+              "line6": "POINT OF SALE MATERIAL"
+            }
+          }
+        },
+        "block_order": [
+          "1579760538072"
+        ],
+        "settings": {
+        }
+      },
+      "wholesaler-section-five": {
+        "type": "wholesaler-section-five",
+        "blocks": {
+          "1579763492309": {
+            "type": "image",
+            "settings": {
+              "block_link": "https:\/\/au.gevityrx.com\/pages\/wholesaler-application",
+              "header": "BECOMING A STOCKIST IS SIMPLE",
+              "buttontext": "APPLY NOW",
+              "description": "CLICK THE BUTTON BELOW, FILL OUT YOUR DETAILS AND A MEMBER OF OUR WHOLESALE TEAM WILL BE IN CONTACT TO DISCUSS FURTHER."
+            }
+          }
+        },
+        "block_order": [
+          "1579763492309"
+        ],
+        "settings": {
+        }
+      },
+      "careers-section-one": {
+        "type": "careers-section-one",
+        "blocks": {
+          "1579768384648": {
+            "type": "image",
+            "settings": {
+              "item-image": "shopify:\/\/shop_images\/careers.jpg",
+              "block_link": "",
+              "header": "WANT TO BE PART OF A LOCAL BRAND MAKING GLOBAL IMPACT?"
+            }
+          }
+        },
+        "block_order": [
+          "1579768384648"
+        ],
+        "settings": {
+        }
+      },
+      "careers-section-two": {
+        "type": "careers-section-two",
+        "blocks": {
+          "1579768458055": {
+            "type": "image",
+            "settings": {
+              "header": "",
+              "body": "Are you a vibrant and hardworking employee looking to take the next step in your career?\nOur team are always on the lookout for new talent to join our constantly growing team in Burleigh Heads.\n<p class=\"nase_about_footer\">SO, WHO ARE WE LOOKING FOR?<\/p>\nWe’d love to hear from anyone who has a passion for health and fitness, works well in a team environment and has a flair for outstanding\ncustomer service. Knowledge of our brand and alignment with our values is really important to us, too.",
+              "footer": ""
+            }
+          }
+        },
+        "block_order": [
+          "1579768458055"
+        ],
+        "settings": {
+        }
+      },
+      "careers-section-three": {
+        "type": "careers-section-three",
+        "blocks": {
+          "1579768614742": {
+            "type": "image",
+            "settings": {
+              "item-image": "shopify:\/\/shop_images\/team.jpg",
+              "block_link": "",
+              "header": "WHY JOIN US?",
+              "description": "",
+              "line1": "WE VALUE A CLOSE - KNIT WORKING ENVIRONMENT",
+              "line2": "WE RESPECT OUR TEAM MEMBERS",
+              "line3": "WE OFFER FANTASTIC WORK-LIFEBALANCE",
+              "line4": "WE HAVE A POSITIVE BUSINESS PURPOSE",
+              "line5": "WE’RE A LOCAL BRAND MAKING GLOBAL IMPACT"
+            }
+          }
+        },
+        "block_order": [
+          "1579768614742"
+        ],
+        "settings": {
+        }
+      },
+      "careers-section-four": {
+        "type": "careers-section-four",
+        "blocks": {
+          "careers-section-four-0": {
+            "type": "text",
+            "settings": {
+              "title": "Your phone (optional)",
+              "use_long_text": false,
+              "is_required": false
+            }
+          },
+          "1579769577788": {
+            "type": "text",
+            "settings": {
+              "title": "Message",
+              "use_long_text": true,
+              "is_required": false
+            }
+          }
+        },
+        "block_order": [
+          "careers-section-four-0",
+          "1579769577788"
+        ],
+        "settings": {
+          "toptext": "YOU’RE INTERESTED IN JOINING OUR TEAM, SUBMIT YOUR INTEREST AND WE’LL KEEP YOU ON FILE FOR FUTURE TEAM ROLES."
+        }
+      },
+      "contact-faq-one": {
+        "type": "contact-faq-one",
+        "blocks": {
+          "1580173851457": {
+            "type": "shipping-faq",
+            "settings": {
+              "shipping-question": "What is your Australian shipping policy?",
+              "shipping-answer": "<p>We offer flat rate shipping to ANYWHERE in Australia for $10.<\/p><p><span style=\"text-decoration:underline\"><strong>Australian Delivery times<\/strong><\/span><\/p><p>Online orders are processed and dispatched Monday - Friday within 48hrs of being placed however please note following :<\/p><p><strong>SHIPPING UPDATE<\/strong> : <strong>We are experiencing a slight delay in the processing and dispatch of our Online Orders. Please allow an additional 3-5 Days before dispatch.<\/strong><\/p><p><\/p>"
+            }
+          },
+          "1580174628574": {
+            "type": "shipping-faq",
+            "settings": {
+              "shipping-question": "What is your international shipping policy?",
+              "shipping-answer": "<p>We offer flat rate shipping to ANYWHERE in New Zealand for $15.<\/p>\n<p>When you place an international order, your order will be shipped by DHL, but the Gevity Rx Customer Support Team is happy to handle your customer service needs.<\/p>\n<p>Please contact us at any time at info@gevityrx.com<\/p>\n<p><strong><u>International Shipping Rates:<\/u><\/strong><\/p>\n<p>International shipping fees are calculated at checkout.<\/p>\n<p><strong><u>International Delivery times:<\/u><\/strong><\/p>\n<p>Packages will be delivered in 7 - 30 business days.&nbsp; We cannot arrange shipping to alternate addresses in your country once your item has been shipped so if you will not be at the address listed on your order for up to 30 days we advise against ordering.<\/p>\n<p>Weekend delivery is not available.<\/p>\n<p><strong><u>International Shipping Customs, Duties &amp; Taxes:<\/u><\/strong><\/p>\n<p>International shipping rates cover shipping charges only. Please note that duties, taxes and carrier brokerage fees are not included in your order amount at checkout. Duties and taxes may be due to the parcel carrier upon delivery. These fees will be assessed by the parcel carrier and must be paid by the order recipient.&nbsp; We will not pay duties or taxes on your behalf, nor will we refund your purchase if you decide not to pay any duties owing.<\/p>\n<p>Customs policies vary widely from country to country; please contact your local customs office for more information. When customs clearance procedures are required, it can cause delays beyond our original delivery estimates.<\/p>"
+            }
+          },
+          "1580174646618": {
+            "type": "shipping-faq",
+            "settings": {
+              "shipping-question": "My delivery arrived damaged, what should I do?",
+              "shipping-answer": "<p>It is always so disappointing when the courier is a little too rough with our fragile deliveries.&nbsp; Please take an image of EACH broken item and forward to info@gevityrx.com and include your name and order number.&nbsp; All claims MUST be accompanied with an image to be evaluated for replacement and please note we may request for the items to be returned. Please note we will only honour claims that are made within 48 hours of receiving your order.<\/p>"
+            }
+          },
+          "1580174659142": {
+            "type": "shipping-faq",
+            "settings": {
+              "shipping-question": "I received the wrong item, what should I do?",
+              "shipping-answer": "<p>Please forward an image of your full order showing all jars received to info@gevityrx.com Include your name and order number so that we can investigate and organise collection and replacement of the item sent in error.<\/p>"
+            }
+          },
+          "1580175013361": {
+            "type": "product-faq",
+            "settings": {
+              "product-question": "How do I store it?",
+              "product-answer": "<p>Our products are shelf stable but do require you to store them in the fridge once opened. The cold temperature of the fridge also solidifies our products somewhat which makes it easier to scoop out of the jar&nbsp; &ndash; nutrients so thick they stick to the back of the spoon.<\/p>"
+            }
+          },
+          "1580175031676": {
+            "type": "product-faq",
+            "settings": {
+              "product-question": "How long will it last?",
+              "product-answer": "<p>Please check your jar for the recommended used by date sticker. Once opened and if stored correctly (see below), used by date will remain valid.<\/p>"
+            }
+          },
+          "1580175044139": {
+            "type": "product-faq",
+            "settings": {
+              "product-question": "How is your bone broth made?",
+              "product-answer": "<p>We use a completely unique proprietary process that was formulated by continuously testing the finished product for the absolute maximum nutrient density possible.<\/p>\n<p>It involves various cooking temperatures at specific times as well as other proprietary processes to purify and filter the bone broth to a point where the nutrients drawn out are so thick they literally stick to spoon.<\/p>\n<p>What you see is only what is drawn out of the bones, herbs and spices to flavour and naturally evaporated sea salt to help preserve it.&nbsp; No water, no vegetables or fillers to thicken it. Every super thick and sticky teaspoon is mother nature&rsquo;s glue ready to be absorbed and go to work exactly where your body needs it!<\/p>"
+            }
+          },
+          "1580175066031": {
+            "type": "product-faq",
+            "settings": {
+              "product-question": "Is your bone broth dehydrated?",
+              "product-answer": "<p>No &ndash; you will see nothing but thick, concentrated, unaltered broth in our jars. We NEVER dehydrate or de-structure our broth in anyway.<\/p>"
+            }
+          },
+          "1580175076145": {
+            "type": "product-faq",
+            "settings": {
+              "product-question": "Where do you source your bones?",
+              "product-answer": "<p>We take pride in sourcing only the best quality bones from the healthiest cattle we can find.<\/p>\n<p>Our products are proudly made from ONLY 100% Australian grass fed and finished cattle &ndash; from the beautiful Darling Downs region.&nbsp; All bones are also hormone and antibiotic free.<\/p>"
+            }
+          },
+          "c14d0678-9a03-4dee-963f-673aa98ca102": {
+            "type": "shipping-faq",
+            "settings": {
+              "shipping-question": "PRE-SALE SHIPPING INFORMATION",
+              "shipping-answer": "<p>Ordering a product on pre-sale is how you reserve an item that has sold out, prior to the live restock. <\/p><p>Orders over $150 that include BOTH currently available and pre-order items will be dispatched in two separate shipments.  To clarify, In stock items will be shipped asap and pre-sale items in a separate shipment once they are available - with no charge for either shipment.<\/p><p>Orders UNDER $150 that include pre-sale items will be shipped once all items are available. We will keep you updated and send a confirmation email as soon as your order is ready to go! <\/p><p>To organise split shipping for orders under $150 AUD, please contact our customer service team via email <a href=\"mailto:info@gevityrx.com\" target=\"_blank\">info@gevityrx.com<\/a>.  Our friendly team will assist with an invoice for the extra shipping charge. <\/p><p>Please note, international orders cannot be split, sorry. <\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1580173851457",
+          "1580174628574",
+          "1580174646618",
+          "1580174659142",
+          "1580175013361",
+          "1580175031676",
+          "1580175044139",
+          "1580175066031",
+          "1580175076145",
+          "c14d0678-9a03-4dee-963f-673aa98ca102"
+        ],
+        "settings": {
+          "toptext": "CONTACT US",
+          "bottomtext": "Find answers to some of our most frequently asked questions!",
+          "shippingtitle": "SHIPPING & DELIVERY FAQ’S",
+          "producttitle": "PRODUCT FAQ’S"
+        }
+      },
+      "contact-faq-two": {
+        "type": "contact-faq-two",
+        "blocks": {
+          "contact-faq-two-0": {
+            "type": "text",
+            "settings": {
+              "title": "Your phone (optional)",
+              "use_long_text": false,
+              "is_required": false
+            }
+          },
+          "1580172259717": {
+            "type": "text",
+            "settings": {
+              "title": "Message",
+              "use_long_text": true,
+              "is_required": false
+            }
+          }
+        },
+        "block_order": [
+          "contact-faq-two-0",
+          "1580172259717"
+        ],
+        "settings": {
+          "toptext": "SEND US A MESSAGE",
+          "bottomtext": "We’ll get back to you within 48 hours during our customer service hours, 8am to 4pm Monday to Friday (Brisbane, Australia time.)"
+        }
+      },
+      "body-glue-section-one": {
+        "type": "body-glue-section-one",
+        "blocks": {
+          "1593928514255": {
+            "type": "image",
+            "settings": {
+              "item-image": "shopify:\/\/shop_images\/Culinary-LeftImage.jpg",
+              "mob-item-image": "",
+              "item-image2": "shopify:\/\/shop_images\/Culinary-Landing-Page-RightText3.png",
+              "mob-item-image2": "",
+              "block_link": "",
+              "header": "BODY GLUE<span class=\"tm\">™<\/span>",
+              "description": "The world's most nutrient dense bone broth <br> with collagen so thick it sticks to the spoon."
+            }
+          }
+        },
+        "block_order": [
+          "1593928514255"
+        ],
+        "settings": {
+        }
+      },
+      "body-glue-section-two": {
+        "type": "body-glue-section-two",
+        "blocks": {
+          "1593929863333": {
+            "type": "image",
+            "settings": {
+              "image-one": "shopify:\/\/shop_images\/10xmore-collagen.gif",
+              "image-two": "shopify:\/\/shop_images\/26-serves-v2.gif",
+              "block_link": "",
+              "header": "BODY GLUE™ BE THE BEST YOU.",
+              "description": "<strong style=\"display: block; margin-bottom: 10px\">When you want to be the best, you need to have the best.<\/strong>\nBody Glue was created to help you be the best at whatever you do. From running that extra km to powering through the most challenging\ndays at work, Body Glue is the fuel you need to make it happen. With a super nutrient-dense formulation and maximum bioavailability,\nnothing supports you to be your best like Body Glue."
+            }
+          }
+        },
+        "block_order": [
+          "1593929863333"
+        ],
+        "settings": {
+        }
+      },
+      "body-glue-section-three": {
+        "type": "body-glue-section-three",
+        "settings": {
+          "main-header": "SUPERCHARGED WITH VITAMINS AND NUTRIENTS FOR OPTIMAL HEALTH",
+          "item1-image": "shopify:\/\/shop_images\/Amino-Acids.png",
+          "item1-header": "Packed with Amino Acids",
+          "item1-description": "We love Collagen & Gelatin for improving the health of skin, hair, nails and connective tissue as well as reducing joint pain and inflammation.",
+          "item2-image": "shopify:\/\/shop_images\/Collagen-Gelatin.png",
+          "item2-header": "Rich in Collagen & Gelatin",
+          "item2-description": "As the building blocks of a healthy body, Amino Acids are our top pick for increasing endurance & building muscle while reducing soreness & mental fatigue.",
+          "item3-image": "shopify:\/\/shop_images\/Grass-fed-beef.png",
+          "item3-header": "Only 100% Grass-fed Australian Beef",
+          "item3-description": "We only use grass-fed & finished beef that is free of hormones and antibiotics. Sourced from the Darling Downs region, our bone broths are 100% Australian from the very beginning.",
+          "item4-image": "shopify:\/\/shop_images\/Nutrient-dense_4c262fd9-046c-40b1-a54c-0f903c5fdb61.png",
+          "item4-header": "Super Nutrient-Dense Formula",
+          "item4-description": "Our bone broths are concentrated, not dehydrated. This means we can lock in nutrients in their most natural form, allowing your body to absorb more of the goodness.",
+          "item5-image": "shopify:\/\/shop_images\/Paleo-Allergen-Friendly.png",
+          "item5-header": "Paleo & Allergen Friendly",
+          "item5-description": "All Body Glue™ products are gluten, dairy and refined sugar-free, as well as paleo and keto-friendly. See individual products for FODMAP details."
+        }
+      },
+      "body-glue-section-four": {
+        "type": "body-glue-section-four",
+        "settings": {
+          "main-header": "THE BODY GLUE™ DIFFERENCE",
+          "main-description": "We don’t provide quick fixes. All our products are created with the highest quality ingredients to help you sustain better, long-term health. That means looking, feeling and performing at your peak - both now and for the rest of your life. If you’re ready to smash your health goals, we’ve got your longevity prescription.",
+          "button-text": "Shop the Body Glue Range",
+          "item1-image": "shopify:\/\/shop_images\/super-nutrient-dense.png",
+          "item2-image": "shopify:\/\/shop_images\/No-Meaty-taste.png",
+          "item3-image": "shopify:\/\/shop_images\/Concentrated.png",
+          "item4-image": "shopify:\/\/shop_images\/gluten-dairy-sugar-free.png",
+          "item5-image": "shopify:\/\/shop_images\/Australian-made-owned.png",
+          "item6-image": "shopify:\/\/shop_images\/Transparent-labelling.png",
+          "item7-image": "shopify:\/\/shop_images\/sipping-cooking-friendly.png",
+          "item8-image": "shopify:\/\/shop_images\/wholefood.png",
+          "section-url": "shopify:\/\/collections\/bone-broth-body-glue"
+        }
+      },
+      "body-glue-section-five": {
+        "type": "body-glue-section-five",
+        "settings": {
+          "main-header": "BONE BROTH BENEFITS",
+          "bg-image": "shopify:\/\/shop_images\/Background-CROPPED.jpg",
+          "item1-image": "shopify:\/\/shop_images\/Better-gut-health.png",
+          "item1-description": "Promotes & sustains better gut health",
+          "item2-image": "shopify:\/\/shop_images\/Boost-immune-system.png",
+          "item2-description": "Provides a healthy boost to your immune system",
+          "item3-image": "shopify:\/\/shop_images\/Hair-skin-nails_1fd28e26-f0b7-403e-a533-d833bdec1306.png",
+          "item3-description": "Improves hair, skin & nail health",
+          "item4-image": "shopify:\/\/shop_images\/Reduce-inflammation.png",
+          "item4-description": "Helps to reduce inflammation",
+          "item5-image": "shopify:\/\/shop_images\/Joint-repair.png",
+          "item5-description": "Aids joint, ligament & tendon repair"
+        }
+      },
+      "body-glue-section-six": {
+        "type": "body-glue-section-six",
+        "settings": {
+          "main-header": "THE WORLD’S MOST NUTRIENT DENSE BONE BROTH",
+          "main-description": "Available in two ranges",
+          "item1-image": "shopify:\/\/shop_images\/Performance-Range.png",
+          "item1-header": "Performance Range",
+          "item1-description": "Formulated with functional ingredients for target results",
+          "item1-button-text": "Shop Performance Range",
+          "item1-url": "https:\/\/au.gevityrx.com\/collections\/bone-broth-body-glue\/Performance",
+          "item2-image": "shopify:\/\/shop_images\/Culinary-Range.png",
+          "item2-header": "Culinary Range",
+          "item2-description": "Made for traditional sipping & cooking",
+          "item2-button-text": "Shop Culinary Range",
+          "item2-url": "https:\/\/au.gevityrx.com\/collections\/bone-broth-body-glue\/culinary?sort_by=best-selling"
+        }
+      },
+      "body-glue-section-seven": {
+        "type": "body-glue-section-seven",
+        "settings": {
+          "button-color": "#808824",
+          "item-image": "shopify:\/\/shop_images\/sip-cook-create.jpg",
+          "mob-item-image": "",
+          "url": "https:\/\/au.gevityrx.com\/collections\/bone-broth-body-glue\/Culinary",
+          "header": "SIP, COOK &amp; CREATE",
+          "description": "Add a powerful dose of essential nutrients and enhance the natural flavours of your cooking with our crowd-favourites from the culinary range. Family-friendly, versatile and packed with flavour, you’ll have no problem integrating the culinary range into your daily cooking routine. Perfect for anyone looking to boost their performance and enjoy a fuss-free path to better health.",
+          "subhead": "Infuse the goodness of bone broth into your favourite meals & drinks",
+          "button-text": "Shop The Cullinary Range"
+        }
+      },
+      "body-glue-section-eight": {
+        "type": "body-glue-section-eight",
+        "settings": {
+          "button-color": "#987480",
+          "item-image": "shopify:\/\/shop_images\/peak-performance.jpg",
+          "mob-item-image": "",
+          "url": "https:\/\/meadow-marrow.myshopify.com\/collections\/bone-broth-body-glue\/Performance?design_theme_id=79172763714&_sc=1&frame_token=F2Kk8dCRdK4ydwPjgz_zfz_ABzHPf4zDQhJPUbM7AzN4-swYZt0G_WoxBQrFynEYwTD06Om-tuSaOWGQ3CNSWzUcxVoeHMQUqCG33wmhJUKtI4I2GMt8GN4kgCg4DH2APhGwokNX4OemgJ9TvmKlNA%3D%3D",
+          "header": "FUEL PEAK PERFORMANCE\nFROM THE INSIDE OUT",
+          "description": "When you want to perform at your best, you need to fuel up with the best natural ingredients. Whether you’re looking to maximise physical function, boost mental clarity, or just want get more out of your day, our super nutrient-dense bone broth fuels your body to perform at maximum capacity, the natural way.",
+          "subhead": "Formulated with functional ingredients for targeted results",
+          "button-text": "Shop the Performance Range"
+        }
+      },
+      "body-glue-section-nine": {
+        "type": "body-glue-section-nine",
+        "blocks": {
+          "1594003560123": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/5-star-green.png",
+              "quote": "<p>I had spent months looking for a bone broth that delivered on taste and quality! I love that it is grass fed, organic, and makes me feel fantastic! The price for this product is also spot on, I&rsquo;m not spending a fortune to take care of my overall health! Thank you for creating wonderful products!<\/p>",
+              "name": "Alyssa B"
+            }
+          },
+          "1595489854436": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "",
+              "quote": "<p>The best food decision I&rsquo;ve made in a long while. This bone broth has helped me on so many levels. Curbed sugar cravings, nourished my sensitive gut, added gloriousness to my dishes.. My whole family love it! Almost time for a refill!! Thank you!!<\/p>",
+              "name": "Sarah N"
+            }
+          }
+        },
+        "block_order": [
+          "1594003560123",
+          "1595489854436"
+        ],
+        "settings": {
+          "autoplay": true,
+          "cycle_speed": 5,
+          "background": "#c7ac84",
+          "text_color": "#ffffff",
+          "top-image": "shopify:\/\/shop_images\/5-star-green.png"
+        }
+      },
+      "body-glue-section-ten": {
+        "type": "body-glue-section-ten",
+        "settings": {
+          "main-header": "SHOP BODY GLUE CULINARY RANGE",
+          "item1-image": "shopify:\/\/shop_images\/Natural_8168446f-17e6-4188-99b6-3460ae65a1a6.png",
+          "item1-header": "Natural",
+          "item1-description": "Body Glue",
+          "item1-product-id": 0,
+          "item1-price": "From $35.00",
+          "item1-url": "https:\/\/au.gevityrx.com\/products\/natural-bone-broth-body-glue",
+          "item2-image": "shopify:\/\/shop_images\/Curry.png",
+          "item2-header": "Curry",
+          "item2-description": "Body Glue",
+          "item2-product-id": 0,
+          "item2-price": "From $35.00",
+          "item2-url": "https:\/\/au.gevityrx.com\/products\/curry-bone-broth-body-glue",
+          "item3-image": "shopify:\/\/shop_images\/Lemon-Herb.png",
+          "item3-header": "Lemon & Herb",
+          "item3-description": "Body Glue",
+          "item3-product-id": 0,
+          "item3-price": "From $35.00",
+          "item3-url": "https:\/\/au.gevityrx.com\/products\/lemon-herb-bone-broth-body-glue"
+        }
+      },
+      "body-glue-section-eleven": {
+        "type": "body-glue-section-eleven",
+        "settings": {
+          "main-header": "SHOP BODY GLUE PERFORMANCE RANGE",
+          "item1-image": "shopify:\/\/shop_images\/A-M-Cleanse.png",
+          "item1-header": "A.M. Cleanse",
+          "item1-description": "Body Glue",
+          "item1-product-id": 0,
+          "item1-price": "From $35.00",
+          "item1-url": "https:\/\/au.gevityrx.com\/products\/am-cleanse-bone-broth-body-glue",
+          "item2-image": "shopify:\/\/shop_images\/Burn.png",
+          "item2-header": "Burn",
+          "item2-description": "Body Glue",
+          "item2-product-id": 0,
+          "item2-price": "From $35.00",
+          "item2-url": "https:\/\/au.gevityrx.com\/products\/burn-bone-broth-body-glue",
+          "item3-image": "shopify:\/\/shop_images\/Boost.png",
+          "item3-header": "Boost",
+          "item3-description": "Body Glue",
+          "item3-product-id": 0,
+          "item3-price": "From $35.00",
+          "item3-url": "https:\/\/au.gevityrx.com\/products\/boost-bone-broth-body-glue",
+          "item4-image": "shopify:\/\/shop_images\/Populate_9d6d1838-5094-4d44-ad47-68e28db98096.png",
+          "item4-header": "Populate",
+          "item4-description": "Body Glue",
+          "item4-product-id": 0,
+          "item4-price": "From $35.00",
+          "item4-url": "https:\/\/au.gevityrx.com\/products\/populate-bone-broth-body-glue"
+        }
+      },
+      "body-glue-three-icons": {
+        "type": "body-glue-three-icons",
+        "settings": {
+        }
+      },
+      "body-glue-benefits-slider": {
+        "type": "body-glue-benefits-slider",
+        "blocks": {
+          "1594080764281": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/Better-gut-health.png",
+              "quote": "<p>Promotes &amp; sustains better gut health<\/p>"
+            }
+          },
+          "1594081033598": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/Boost-immune-system.png",
+              "quote": "<p>Provides a healthy boost to your immune system<\/p>"
+            }
+          },
+          "1594081051420": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/Hair-skin-nails_1fd28e26-f0b7-403e-a533-d833bdec1306.png",
+              "quote": "<p>Improves hair, skin &amp; nail health<\/p>"
+            }
+          },
+          "1594081062453": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/Reduce-inflammation.png",
+              "quote": "<p>Helps to reduce inflammation<\/p>"
+            }
+          },
+          "1594081084223": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/Joint-repair.png",
+              "quote": "<p>Aids joint, ligament &amp; tendon repair<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1594080764281",
+          "1594081033598",
+          "1594081051420",
+          "1594081062453",
+          "1594081084223"
+        ],
+        "settings": {
+          "autoplay": true,
+          "cycle_speed": 4,
+          "background": "#525868",
+          "text_color": "#ffffff",
+          "header": "BONE BROTH BENEFITS"
+        }
+      },
+      "body-glue-ten-mobile": {
+        "type": "body-glue-ten-mobile",
+        "blocks": {
+          "1594368128521": {
+            "type": "product",
+            "settings": {
+              "product-image": "shopify:\/\/shop_images\/Natural_8168446f-17e6-4188-99b6-3460ae65a1a6.png",
+              "title": "Natural",
+              "description": "Body Glue",
+              "productid": 1205654454315,
+              "product-url": "https:\/\/au.gevityrx.com\/products\/natural-bone-broth-body-glue",
+              "price": "From $35.00"
+            }
+          },
+          "1594368487623": {
+            "type": "product",
+            "settings": {
+              "product-image": "shopify:\/\/shop_images\/Curry.png",
+              "title": "Curry",
+              "description": "Body Glue",
+              "productid": 1205654388779,
+              "product-url": "https:\/\/au.gevityrx.com\/products\/curry-bone-broth-body-glue",
+              "price": "From $35.00"
+            }
+          },
+          "1594370185918": {
+            "type": "product",
+            "settings": {
+              "product-image": "shopify:\/\/shop_images\/Lemon-Herb.png",
+              "title": "Lemon & Herb",
+              "description": "Body Glue",
+              "productid": 1205654421547,
+              "product-url": "https:\/\/au.gevityrx.com\/products\/lemon-herb-bone-broth-body-glue",
+              "price": "From $35.00"
+            }
+          }
+        },
+        "block_order": [
+          "1594368128521",
+          "1594368487623",
+          "1594370185918"
+        ],
+        "settings": {
+          "autoplay": true,
+          "cycle_speed": 5,
+          "background": "#ffffff",
+          "text_color": "#000000",
+          "header": "SHOP CULINARY BODY GLUE™"
+        }
+      },
+      "body-glue-eleven-mobile": {
+        "type": "body-glue-eleven-mobile",
+        "blocks": {
+          "1594372481988": {
+            "type": "product",
+            "settings": {
+              "product-image": "shopify:\/\/shop_images\/A-M-Cleanse.png",
+              "title": "A.M. Cleanse",
+              "description": "Body Glue",
+              "price": "From $35.00",
+              "productid": 1205654323243,
+              "product-url": "https:\/\/au.gevityrx.com\/products\/am-cleanse-bone-broth-body-glue"
+            }
+          },
+          "1594372707918": {
+            "type": "product",
+            "settings": {
+              "product-image": "shopify:\/\/shop_images\/Burn.png",
+              "title": "Burn",
+              "description": "Body Glue",
+              "price": "From $35.00",
+              "productid": 1205654519851,
+              "product-url": "https:\/\/au.gevityrx.com\/products\/burn-bone-broth-body-glue"
+            }
+          },
+          "1594372773067": {
+            "type": "product",
+            "settings": {
+              "product-image": "shopify:\/\/shop_images\/Boost.png",
+              "title": "Boost",
+              "description": "Body Glue",
+              "price": "From $35.00",
+              "productid": 1205654487083,
+              "product-url": "https:\/\/au.gevityrx.com\/products\/boost-bone-broth-body-glue"
+            }
+          },
+          "1594372822433": {
+            "type": "product",
+            "settings": {
+              "product-image": "shopify:\/\/shop_images\/Populate_9d6d1838-5094-4d44-ad47-68e28db98096.png",
+              "title": "Populate",
+              "description": "Body Glue",
+              "price": "From $35.00",
+              "productid": 1205654585387,
+              "product-url": "https:\/\/au.gevityrx.com\/products\/populate-bone-broth-body-glue"
+            }
+          }
+        },
+        "block_order": [
+          "1594372481988",
+          "1594372707918",
+          "1594372773067",
+          "1594372822433"
+        ],
+        "settings": {
+          "autoplay": true,
+          "cycle_speed": 5,
+          "background": "#ffffff",
+          "text_color": "#1c1b1b",
+          "header": "SHOP PERFORMANCE BODY GLUE™"
+        }
+      },
+      "body-glue-section-fifteen": {
+        "type": "body-glue-section-fifteen",
+        "settings": {
+          "background": "#b98157",
+          "header1": "BONE BROTH",
+          "header2": "BODY GLUE™",
+          "body1": "THE WORLD’S MOST",
+          "body2": "NUTRIENT-DENSE",
+          "body3": "BONE BROTH",
+          "button-text": "Shop Body Glue",
+          "main-image": "shopify:\/\/shop_images\/Shop-Body-Glue.jpg"
+        }
+      },
+      "product-template-am-cleanse": {
+        "type": "product-template-am-cleanse",
+        "settings": {
+          "show_share_buttons": true,
+          "show_vendor": true,
+          "show_sku": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "dropdown",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": true,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 0,
+          "show_price_in_button": false,
+          "show_payment_button": false,
+          "box1subhead": "Sub-heading",
+          "image_size": "large",
+          "stack_images": false,
+          "show_thumbnails": true,
+          "enable_image_zoom": false,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "reviews_enabled": false,
+          "featured_image_size": "large"
+        }
+      },
+      "am-cleanse-section1": {
+        "type": "am-cleanse-section1",
+        "settings": {
+          "button-color": "#ffffff",
+          "item-image": "shopify:\/\/shop_images\/Teriyaki_Salmon_w_Jar_resized.jpg",
+          "mob-item-image": "shopify:\/\/shop_images\/A.M.-Cleanse-Body-Glue-NO-CROP.jpg",
+          "url": "",
+          "header": "YOUR ANYTIME HEALTH TONIC",
+          "description": "Boost energy and enhance your natural immunity with a range of essential ingredients and superfoods combined to help you perform at your peak. Whether you're looking to smash your fitness goals, enhance your overall fitness or power through a busy day, A.M. Cleanse is a must-have for those who need to get sh!t done.",
+          "subhead": "",
+          "button-text": "",
+          "icon-image1": "shopify:\/\/shop_images\/Cleanse.png",
+          "icon-image2": "shopify:\/\/shop_images\/Detoxify.png",
+          "icon-image3": "shopify:\/\/shop_images\/Boost-Immunity.png",
+          "item1text": "Cleanse",
+          "item2text": "Detoxify",
+          "item3text": "Boost Immunity"
+        }
+      },
+      "am-cleanse-section2": {
+        "type": "am-cleanse-section2",
+        "settings": {
+          "main-header": "HERO INGREDIENTS",
+          "item1-image": "shopify:\/\/shop_images\/Lemon-Myrtle.jpg",
+          "item1-header": "Lemon Myrtle",
+          "item1-description": "Supercharged with Lemon Myrtle, a natural immunity booster known for its antiviral, antioxidant and anti-inflammatory properties.",
+          "item2-image": "shopify:\/\/shop_images\/Ginger.jpg",
+          "item2-header": "Ginger",
+          "item2-description": "Purify your body and amplify your immune response with the punchy power of Ginger - famous for it’s anti-inflammatory and antioxidant properties.",
+          "item3-image": "shopify:\/\/shop_images\/Apple-Cider-Vinegar.jpg",
+          "item3-header": "Organic Apple Cider Vinegar",
+          "item3-description": "Promote healthy gut function and replenish the digestive system with Apple Cider Vinegar, rich in probiotics, enzymes & antioxidants.",
+          "item4-image": "shopify:\/\/shop_images\/Turmeric.jpg",
+          "item4-header": "Turmeric",
+          "item4-description": "Detoxify with one of Mother Nature's most powerful superfoods, renowned for anti-inflammatory, antioxidant & immune-boosting qualities."
+        }
+      },
+      "am-cleanse-section3": {
+        "type": "am-cleanse-section3",
+        "blocks": {
+          "93d057f8-f60d-44fe-9403-7557cd42309a": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>I love it! Especially with prawns, chicken and salads. It is so delicious and you don’t even know it’s good for your gut<\/p>",
+              "name": "Larissa A"
+            }
+          },
+          "1595361589374": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>“I had spent months looking for a bone broth that delivered on taste and quality! I love that it is grass fed, organic, and makes me feel fantastic! The price for this product is also spot on, I’m not spending a fortune to take care of my overall health! Thank you for creating wonderful products!”<\/p>",
+              "name": "Alyssa B"
+            }
+          }
+        },
+        "block_order": [
+          "93d057f8-f60d-44fe-9403-7557cd42309a",
+          "1595361589374"
+        ],
+        "settings": {
+          "autoplay": true,
+          "cycle_speed": 5,
+          "background": "#dfa73b",
+          "text_color": "#ffffff",
+          "top-image": "shopify:\/\/shop_images\/Stars-Yellow.png"
+        }
+      },
+      "am-cleanse-section4": {
+        "type": "am-cleanse-section4",
+        "settings": {
+          "main-header": "THE WORLD'S MOST NUTRIENT DENSE BONE BROTH",
+          "main-description": "",
+          "image-one": "shopify:\/\/shop_images\/10xmore-collagen.gif",
+          "image-two": "shopify:\/\/shop_images\/26-serves-v2.gif",
+          "button-text": "",
+          "item1-image": "shopify:\/\/shop_images\/Australian-made-owned_8d0d7591-fa1c-45b4-9b8b-710445572a12.png",
+          "item2-image": "shopify:\/\/shop_images\/Gluten-Free.png",
+          "item3-image": "shopify:\/\/shop_images\/Dairy-Free.png",
+          "item4-image": "shopify:\/\/shop_images\/Paleo-allergen.png",
+          "item5-image": "shopify:\/\/shop_images\/australian-grass-fed-beef.png",
+          "item6-image": "shopify:\/\/shop_images\/Practitioner-preferred.png",
+          "item7-image": "shopify:\/\/shop_images\/Transparent-labelling_49d9c4a4-a0d4-4c80-b1ae-e6e96ae4c0a8.png",
+          "item8-image": "shopify:\/\/shop_images\/Concentrated_41714fc7-df45-4c5e-b583-ad291b8cc476.png",
+          "section-url": ""
+        }
+      },
+      "am-cleanse-section5": {
+        "type": "am-cleanse-section5",
+        "settings": {
+        }
+      },
+      "am-cleanse-section6": {
+        "type": "am-cleanse-section6",
+        "settings": {
+        }
+      },
+      "am-cleanse-section45": {
+        "type": "am-cleanse-section45",
+        "settings": {
+          "main-header": "THE GEVITY Rx DIFFERENCE",
+          "main-description": "Our sauces are a delicious, convenient and ultra-nutritious addition to your health routine. Combining the nutritional\npower of Body Glue™ with a range of nature's most potent superfoods, our sauces turn traditional recipes on their\nheads to make healthy eating simple for the entire family.<br>\n<strong style=\"display: block; margin-top: 15px\">5 for your guts to thrive:<\/strong>",
+          "item1-image": "shopify:\/\/shop_images\/2_efbe12d9-2772-4e0f-a312-20bc4b70c3d0.jpg",
+          "item2-image": "shopify:\/\/shop_images\/3_577bdf3f-ccf8-426a-95aa-e82943edc8ea.jpg",
+          "item3-image": "shopify:\/\/shop_images\/4_2a84bc4a-b3d1-4038-ab81-2fd6c01f2ebe.jpg",
+          "item4-image": "shopify:\/\/shop_images\/5.jpg",
+          "item5-image": "shopify:\/\/shop_images\/tbs.jpg",
+          "section-url": ""
+        }
+      },
+      "body-glue-videos": {
+        "type": "body-glue-videos",
+        "settings": {
+          "background_color": "#f9edf2",
+          "main-header": "Find out how Ali, Shan & Allira use Body Glue to feel and perform at their best.",
+          "item1-image": "shopify:\/\/shop_images\/1.png",
+          "item1-video": "https:\/\/youtu.be\/dpXPSNsbs4s",
+          "item1-header": "",
+          "item1-description": "",
+          "item2-image": "shopify:\/\/shop_images\/2.png",
+          "item2-video": "https:\/\/youtu.be\/87Vx9RRBYSU",
+          "item2-header": "",
+          "item2-description": "",
+          "item3-image": "shopify:\/\/shop_images\/3_dc7307b2-e8e0-487e-90f8-4dbe4d8ebbe5.png",
+          "item3-video": "https:\/\/youtu.be\/ccR5LWVmF9M",
+          "item3-header": "",
+          "item3-description": "",
+          "image-one": "shopify:\/\/shop_images\/10xmore-collagen.gif",
+          "image-two": "shopify:\/\/shop_images\/26-serves-v2.gif"
+        }
+      },
+      "sauces-lp-one": {
+        "type": "sauces-lp-one",
+        "blocks": {
+          "1602658124696": {
+            "type": "image",
+            "settings": {
+              "item-image": "shopify:\/\/shop_images\/Bone_Broth_Sauces-CROPPED-01.jpg",
+              "item-image2": "shopify:\/\/shop_images\/Sauces-RightText3.png",
+              "header": "",
+              "description": ""
+            }
+          }
+        },
+        "block_order": [
+          "1602658124696"
+        ],
+        "settings": {
+        }
+      },
+      "sauces-lp-two": {
+        "type": "sauces-lp-two",
+        "blocks": {
+          "1602684660554": {
+            "type": "image",
+            "settings": {
+              "image-one": "shopify:\/\/shop_images\/1-Serving-Sauce-01_4a16c55f-d98b-4792-898d-aa6582c645a0.png",
+              "image-two": "shopify:\/\/shop_images\/Gluten-Dairy-Sugar-free-01_3fb53bd4-c56f-49cd-b30c-f7b17236cb3b.png",
+              "header": "WHY YOU’LL LOVE OUR BODY GLUE™ SAUCES",
+              "description": "Everyone loves sauce. But when better health is on the to-do list, traditional sauces just don’t make the cut. Taking inspiration from nature's most nourishing ingredients, we’ve cooked up a delicious sauce range that actually contributes to better health. So if you love sauce as much as we do, you’ve now got a reason to add an extra dollop to your next meal (and the one after that and the one after that)."
+            }
+          }
+        },
+        "block_order": [
+          "1602684660554"
+        ],
+        "settings": {
+        }
+      },
+      "sauces-lp-three": {
+        "type": "sauces-lp-three",
+        "settings": {
+          "main-header": "SUPERCHARGED WITH VITAMINS AND NUTRIENTS FOR OPTIMAL HEALTH",
+          "item1-image": "shopify:\/\/shop_images\/Psyllium-Husk.png",
+          "item1-header": "Psyllium Husk Soluble Fibre",
+          "item1-description": "Boost fibre naturally with Psyllium Husk, a fantastic source of soluble fibre and powerful digestive health regulator for all gut types.",
+          "item2-image": "shopify:\/\/shop_images\/Prebiotic.png",
+          "item2-header": "Prebiotic Insoluble Fibre",
+          "item2-description": "Harvested for its high levels of prebiotic fibre, Chicory Root fibre contributes a delicious taste & powerful health benefits like improved gut microbiota.",
+          "item3-image": "shopify:\/\/shop_images\/Olive-Oil.png",
+          "item3-header": "Organic Extra Virgin Olive Oil",
+          "item3-description": "EVOO is the least processed type of olive oil, hand-picked for our sauces for its high antioxidant content, healthy fats & anti-inflammatory properties.",
+          "item4-image": "shopify:\/\/shop_images\/Grassfed-Beef.png",
+          "item4-header": "Only 100% Grass-fed Australian Beef",
+          "item4-description": "We only use grass-fed & finished beef that is free of hormones and antibiotics. Sourced from the Darling Downs region, our bone broths are 100% Australian from the very beginning.",
+          "item5-image": "shopify:\/\/shop_images\/Paleo.png",
+          "item5-header": "Paleo & Allergen Friendly",
+          "item5-description": "All Body Glue™ products are gluten, dairy and refined sugar-free, as well as paleo and keto-friendly. See individual products for FODMAP details."
+        }
+      },
+      "sauces-lp-products": {
+        "type": "sauces-lp-products",
+        "settings": {
+          "main-header": "SHOP BODY GLUE™ SAUCES",
+          "item1-image": "shopify:\/\/shop_images\/Great-Guts-Mayo_1200x_0ddf79c2-7143-41e0-b94f-5b78fc75c2cc.jpg",
+          "item1-header": "Great Guts Mayo",
+          "item1-description": "Bone Broth Sauce",
+          "item1-product-id": 4167344914475,
+          "item1-price": "From $17.00",
+          "item1-url": "shopify:\/\/products\/bone-broth-sauce-great-guts-mayo",
+          "item2-image": "shopify:\/\/shop_images\/Total-Tummy-Tumeric-Mayo_1200x_324d4c6c-5029-44c7-89c5-78d042a0aef1.jpg",
+          "item2-header": "Total Tummy Turmeric",
+          "item2-description": "Bone Broth Sauce",
+          "item2-product-id": 4167352221739,
+          "item2-price": "From $17.00",
+          "item2-url": "shopify:\/\/products\/bone-broth-sauce-total-tummy-turmeric",
+          "item3-image": "shopify:\/\/shop_images\/Better-Belly-BBQ_1200x_dec1436d-f6f0-470a-b235-42b127fd1735.jpg",
+          "item3-header": "Better Belly BBQ",
+          "item3-description": "Bone Broth Sauce",
+          "item3-product-id": 4167354449963,
+          "item3-price": "From $17.00",
+          "item3-url": "shopify:\/\/products\/bone-broth-sauce-better-belly-bbq",
+          "item4-image": "shopify:\/\/shop_images\/BRI4456_Sriracha-Mayo-Mockup_1000x_340fbecc-68c1-4155-9eeb-4f176dfcbd9f.png",
+          "item4-header": "SOUPED-UP SRIRACHA MAYO",
+          "item4-description": "Bone Broth Sauce",
+          "item4-product-id": 4748420415554,
+          "item4-price": "$17.00",
+          "item4-url": "shopify:\/\/products\/bone-broth-sauce-souped-up-sriracha"
+        }
+      },
+      "sauces-lp-2col1": {
+        "type": "sauces-lp-2col1",
+        "settings": {
+          "button-color": "#f07c00",
+          "item-image": "shopify:\/\/shop_images\/Flavour-Function-01.jpg",
+          "header": "WHERE FLAVOUR MEETS\nFUNCTION.",
+          "description": "When it comes to sauce, flavour is everything. That’s why we made it our mission\nto develop a sauce range that delivers on exceptional taste without all the crap\nfound in traditional sauces. Harnessing all the benefits of Body Glue™ and\nsupercharged with delicious natural ingredients, our bone broth sauces make it\neasy to focus on better health for the whole family.",
+          "subhead": "So delicious, even the kids will love it.",
+          "button-text": ""
+        }
+      },
+      "sauces-lp-2col2": {
+        "type": "sauces-lp-2col2",
+        "settings": {
+          "button-color": "#f07c00",
+          "item-image": "shopify:\/\/shop_images\/100_Local-01.jpg",
+          "header": "100% LOCAL FROM THE\nVERY BEGINNING.",
+          "description": "To make sure we’re always delivering the highest quality products, we\nonly source the highest quality ingredients from around Australia. That\nway, we can validate both the origins and sourcing methods of every\ndrop of sauce to ensure it lives up to the standards our customers have\ncome to know and love.",
+          "subhead": "Made by Aussies using the best Aussie ingredients.",
+          "button-text": ""
+        }
+      },
+      "sauces-lp-testimonials": {
+        "type": "sauces-lp-testimonials",
+        "blocks": {
+          "e8da11c6-3efd-41cd-9e60-b92049881c2b": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "<p>I love it! Especially with prawns, chicken and salads. It is so delicious and you don’t even know it’s good for your gut<\/p>",
+              "name": "Larissa A"
+            }
+          },
+          "1602688425500": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/stars.jpg",
+              "quote": "<p>The best food decision I’ve made in a long while. This bone broth has helped me on so many levels. Curbed sugar cravings, nourished my sensitive gut, added gloriousness to my dishes.. My whole family love it! Almost time for a refill!! Thank you!!<\/p>",
+              "name": "Alyssa B"
+            }
+          }
+        },
+        "block_order": [
+          "e8da11c6-3efd-41cd-9e60-b92049881c2b",
+          "1602688425500"
+        ],
+        "settings": {
+          "autoplay": true,
+          "cycle_speed": 5,
+          "background": "#f3a371",
+          "text_color": "#ffffff",
+          "top-image": "shopify:\/\/shop_images\/stars.jpg"
+        }
+      },
+      "sauces-lp-callout": {
+        "type": "sauces-lp-callout",
+        "settings": {
+          "background": "#bf3e6d",
+          "header1": "BODY GLUE™",
+          "header2": "SAUCES",
+          "body1": "SAUCES JUST GOT",
+          "body2": "FUNCTIONAL",
+          "body3": "",
+          "button-text": "Shop Sauces",
+          "main-image": "shopify:\/\/shop_images\/functional.jpg"
+        }
+      },
+      "1603765757569b3c21": {
+        "type": "maestrooo-instagram",
+        "disabled": true,
+        "settings": {
+          "title": "Gevity Rx",
+          "subheading": "<p>Follow Us<\/p>",
+          "button_text": "",
+          "button_link": "",
+          "layout": "grid",
+          "image_size": "medium",
+          "full_width": false,
+          "add_spacing": true,
+          "rows_count": 3,
+          "show_author": false,
+          "show_caption": true,
+          "show_date": false,
+          "click_action": "open_instagram",
+          "heading_color": "#000000",
+          "subheading_color": "#000000",
+          "button_background": "#000000",
+          "button_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_text_color": "#ffffff",
+          "overlay_opacity": 65
+        }
+      },
+      "nase-insta-feed": {
+        "type": "nase-insta-feed",
+        "settings": {
+          "subheading": "@GevityRx",
+          "title": "Follow us",
+          "access_token": "",
+          "image_count": 15,
+          "button_text": ""
+        }
+      },
+      "country-popup": {
+        "type": "country-popup",
+        "settings": {
+        }
+      },
+      "sauce-graphics": {
+        "type": "sauce-graphics",
+        "settings": {
+          "item1-image": "shopify:\/\/shop_images\/sauce-2tb.png",
+          "item1alt": "2TBS = 1 Serve",
+          "item2-image": "shopify:\/\/shop_images\/sauce-100.png",
+          "item2alt": "100% Australian Grass Fed Beef",
+          "item3-image": "shopify:\/\/shop_images\/sauce-no-inflammatory2.png",
+          "item3alt": "No Inflammatory Seed & Vegetable Oils",
+          "item4-image": "shopify:\/\/shop_images\/sauce-egg-free.png",
+          "item4alt": "Egg Free",
+          "item5-image": "shopify:\/\/shop_images\/sauce-gluten-free.png",
+          "item5alt": "Gluten, Dairy, Sugar Free"
+        }
+      },
+      "shop-now-boxes": {
+        "type": "shop-now-boxes",
+        "settings": {
+          "show_section": false,
+          "title": "Shop now",
+          "collection": "",
+          "grid_items_count": 6,
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "sauces-three-columns": {
+        "type": "sauces-three-columns",
+        "settings": {
+          "one-description": "Replacing your highly processed supermarket mayonnaise",
+          "two-description": "Adding any sauce to your next backyard BBQ",
+          "three-description": "Finding an excuse to have fun finger food - with no regrets!"
+        }
+      },
+      "you-may-also-like": {
+        "type": "you-may-also-like",
+        "settings": {
+          "show_section": false,
+          "title": "Shop now",
+          "collection": "",
+          "grid_items_count": 6,
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "bodyglue-title": {
+        "type": "bodyglue-title",
+        "settings": {
+          "main-header": "BONE BROTH REDEFINED",
+          "desktopimg": "shopify:\/\/shop_images\/all-header.jpg",
+          "mobileimg": "shopify:\/\/shop_images\/bodyglue.jpg"
+        }
+      },
+      "body-glue-graphics-two": {
+        "type": "body-glue-graphics-two",
+        "settings": {
+          "main-header": "",
+          "main-description": "",
+          "button-text": "",
+          "section-url": ""
+        }
+      },
+      "performance-title": {
+        "type": "performance-title",
+        "settings": {
+          "main-header": "Performance",
+          "desktopimg": "shopify:\/\/shop_images\/performance-header.jpg",
+          "mobileimg": "shopify:\/\/shop_images\/performance_562adf19-02b5-4748-8247-6dd5dbc13666.jpg"
+        }
+      },
+      "performance-three-columns": {
+        "type": "performance-three-columns",
+        "settings": {
+          "main-header": "",
+          "main-description": "",
+          "button-text": "",
+          "section-url": ""
+        }
+      },
+      "culinary-title": {
+        "type": "culinary-title",
+        "settings": {
+          "main-header": "Culinary Range",
+          "desktopimg": "shopify:\/\/shop_images\/culinary-header.jpg",
+          "mobileimg": "shopify:\/\/shop_images\/culinary_2a71ad7e-00d6-4b74-9a58-b60eac89bf25.jpg"
+        }
+      },
+      "culinary-three-columns": {
+        "type": "culinary-three-columns",
+        "settings": {
+          "main-header": "",
+          "main-description": "",
+          "button-text": "",
+          "section-url": ""
+        }
+      },
+      "sauce-title": {
+        "type": "sauce-title",
+        "settings": {
+          "main-header": "Bone Broth Sauce",
+          "desktopimg": "shopify:\/\/shop_images\/20210921_Gevity_Landing_Banner_Images_4.jpg",
+          "mobileimg": "shopify:\/\/shop_images\/sauces_65d9ccb0-44d9-4086-891c-8e5fbeb77186.jpg"
+        }
+      },
+      "gevity-callout": {
+        "type": "gevity-callout",
+        "settings": {
+          "callout": "FREE SHIPPING ON ORDERS OVER $100"
+        }
+      },
+      "drawer": {
+        "type": "drawer",
+        "settings": {
+        }
+      },
+      "body-glue-x-header": {
+        "type": "body-glue-x-header",
+        "settings": {
+          "item-image": "shopify:\/\/shop_images\/body-glue-x-head.jpg",
+          "mob-item-image": "shopify:\/\/shop_images\/body-glue-x-mobile-header.jpg",
+          "block_link": "",
+          "header": ""
+        }
+      },
+      "body-glue-x-three-columns": {
+        "type": "body-glue-x-three-columns",
+        "settings": {
+          "main-header": "SPECIAL EDITION COLLAB",
+          "main-description": "ALL-STAR ALLIANCE FOR THE TRUE INGREDIENT GEEK",
+          "box1-header": "SPECIAL EDITION COLLAB",
+          "box1-description": "Body Glue™ in any form is an absolute must for anyone looking to take their longevity seriously. And when Body Glue™ collides with a select group of complementary products, an all-star alliance is formed for the true ingredient geek.",
+          "box2-header": "WORLD’S MOST NUTRIENT DENSE BONE BROTH",
+          "box2-description": "Body Glue™ contains 10 X more collagen forming amino acids than traditional bone broths and 30% more than bone broth concentrates while achieving maximum bioavailability and optimal absorption.",
+          "box3-header": "INFUSION",
+          "box3-description": "Infused with the most highly regarded products from aligned brands. These products have been meticulously chosen because they not only pair to perfection with Body Glue™, but also have the same dedication to high standards and quality, as well as overall aligning with our mission."
+        }
+      },
+      "body-glue-graphics": {
+        "type": "body-glue-graphics",
+        "settings": {
+          "main-header": "",
+          "main-description": "",
+          "button-text": "",
+          "section-url": ""
+        }
+      },
+      "body-glue-x-graphics": {
+        "type": "body-glue-x-graphics",
+        "settings": {
+          "main-header": "SPECIAL EDITION FIRE TONIC FUSION",
+          "main-description": "",
+          "button-text": "",
+          "item1-image": "shopify:\/\/shop_images\/Body_Glue_X_Icons_1.jpg",
+          "item2-image": "shopify:\/\/shop_images\/Body_Glue_X_Icons_2.jpg",
+          "item3-image": "shopify:\/\/shop_images\/Body_Glue_X_Icons_3.jpg",
+          "item4-image": "shopify:\/\/shop_images\/icons-x_03.gif",
+          "item5-image": "shopify:\/\/shop_images\/icons-x_04.gif",
+          "item6-image": "shopify:\/\/shop_images\/icons-x_08.png",
+          "item7-image": "shopify:\/\/shop_images\/icons-x_09.gif",
+          "item8-image": "shopify:\/\/shop_images\/icons-x_11.gif",
+          "item9-image": "shopify:\/\/shop_images\/icons-x_13.png",
+          "section-url": ""
+        }
+      },
+      "16399775741bd30c68": {
+        "type": "instafeed",
+        "settings": {
+          "heading_font": "helvetica_n4",
+          "heading_size": 20,
+          "feed_width": 90,
+          "html_area": "<h3 class=\"Heading\" style=\"text-align: center; text-transform: uppercase; font-weight: bold; margin-top: 40px; font-size: 1.4em\">Follow Us For More Inspo @gevityrx<\/h3>"
+        }
+      },
+      "about-new-top": {
+        "type": "about-new-top",
+        "settings": {
+          "main-header": "LIFE-CHANGING HEALTH FOOD",
+          "desktopimg": "shopify:\/\/shop_images\/GRX_October2021-27364.jpg",
+          "mobileimg": "shopify:\/\/shop_images\/about-mobile_d2a81a56-b954-4842-8c48-df3c3314ca46.jpg"
+        }
+      },
+      "about-new-intro": {
+        "type": "about-new-intro",
+        "settings": {
+          "header": "ABOUT GEVITY RX",
+          "subheader": "<p><strong>GEVITY MEANS LONGEVITY AND RX MEANS PRESCRIPTION.<\/strong><\/p><p>We believe health should be about concentrating on improving your inner health and that in turn improves your longevity (Gevity). We also know results only come from being consistent (Rx aka prescription)<\/p>",
+          "body": "<p>Long term good health (i.e. longevity) is just not attainable without dedicated focus on internal health and this leads to something so much more valuable than just looking good on the outside. The outside appearance will take care of itself anyway, once your inner health is optimised.<\/p><p>When you have our history and have your life almost slip away from you due to poor inner health, you know that nothing matters more than looking after long term health!<\/p>",
+          "readmorecontent": "<p>However, unfortunately most people don’t have the motivation to start down this path of pursuing long term health as they don’t understand the difference it will really make to their life in the short term as well.  They don’t realise that when you have great inner health from things like optimising digestive health, immune regulation, inflammation and blood sugar response - the results become exponential and it's like being a completely different person or having super powers. It's life-changing rather than just appearance changing. <\/p><p>Because you're not inflamed, your blood sugar is dialed in and you're absorbing all micronutrients rather than passing them through - you have incredible energy, great mental clarity and focus, and an improved mood. Take it from those of us that have made the transition - you end up a completely different person because you're able to be a much better version of yourself! A better husband or wife, a better mother or father, a better work colleague, friend and all round just a more lit-up person! #lifechanging<\/p>"
+        }
+      },
+      "about-new-founder-story": {
+        "type": "about-new-founder-story",
+        "settings": {
+          "header": "FOUNDER STORY",
+          "subheader": "<p>Gevity Rx is about as personal as a business can be and we need to apologise in advance – but it’s really just a mushy love story.<\/p>",
+          "body": "<p>The journey really started for us about 8 years ago now. We had been together for a blissful couple years, our relationship was going great and we were planning out the rest of our lives together.<br\/><\/p><p>Then over the space of a year or so our life as we knew it, started falling apart. Atlanta started suffering from extreme exhaustion, mood swings, crippling anxiety and panic attacks...<\/p>",
+          "storyreadmorecontent": "<p>We had absolutely no idea what was causing it. It was very scary for us both and very painful for me to watch the woman I loved slip away from me and somewhat even from reality. <\/p><p>After thousands of dollars spent on both traditional and functional medicine doctors with no result, we realised we needed to solve this ourselves. We stopped<br\/>looking for the next doctor and instead spent that time and money on researching and experimenting with every natural health solution we could find.<\/p><p>After a long and painful education process of about a year, we realised that her symptoms were linked to issues with gut health and more specifically “leaky gut”, which was causing chronic food allergies and inflammation and in turn,<br\/>destroying her overall health.<\/p><p>Now with a clear direction of what needed to be solved, we started to work on healing the gut. This, in theory at least, is pretty straight forward, i.e. pull out the bad stuff that is causing issues (gluten, sugar, processed dairy, lectins etc) and add in some bone broth to help heal the gut lining. <\/p><p>Seems easy right? Well we did this religiously and Atlanta she didn’t get any better. Thinking something didn’t add up, we started lab testing every bone broth product available. The results made it clear that they all had very little of what we needed - the collagen forming amino acids responsible for healing the gut lining (along with all other connective tissue in the body). What made these even less effective was these aminos were hard to absorb for someone with a sensitive stomach due to also containing meat and vegetables, which can irritate the gut lining. <\/p><p>We had a small food business at the time so for the next several months we started experimenting and refitting equipment to develop a completely unique and highly concentrated version of a traditional bone broth. This contained literally nothing other than nutrients from quality bones, plus salt. No meat, no veg and barely any water. <\/p><p>What resulted was a super thick glue-like substance that we nicknamed Atlanta’s Body Glue™ . It was literally the “glue” she needed to reseal her gut lining and stop inflammation crippling the rest of her body.  The unique consistency came from the extremely high collagen content which was over 1000% or 10x higher than a traditional liquid bone broth. <\/p><p>Fast forward about 3 months and the changes were dramatic. Atlanta’s health - and therefore our life - was fast getting back on track. Happy wife, happy life as they say. Haha.  <\/p><p>Along with getting married about a year later we also made another life pact and that was to do whatever it took to help as many people as we could in the same situation. <\/p><p><\/p><p>And that was the start of what became Gevity Rx.<\/p>"
+        }
+      },
+      "about-new-join-our-team": {
+        "type": "about-new-join-our-team",
+        "settings": {
+          "header": "JOIN OUR TEAM",
+          "subheader": "<p>Gevity Rx is a family owned, Australian company that believes happy, healthy, people create the best food. Our culture, pay, health bonuses and dedication to employees’ career growth, form an empowering and meaningful workplace, where we all work together to create a healthier world, one life-changing health product at a time.<\/p>",
+          "body": "",
+          "readmorecontent": ""
+        }
+      },
+      "about-new-3collections": {
+        "type": "about-new-3collections",
+        "settings": {
+          "show_section": false,
+          "title": "Shop now",
+          "collection": "",
+          "grid_items_count": 6,
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "job-details-title": {
+        "type": "job-details-title",
+        "settings": {
+          "jobdescription": ""
+        }
+      },
+      "about-new-jobs": {
+        "type": "about-new-jobs",
+        "blocks": {
+          "080b9919-ec38-44d1-8e81-11be704632ab": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "jobtitle": "INFLUENCER COORDINATOR",
+              "jobdescription": "A position is now available in our awesome Influencer Division",
+              "fulljob": "social-media-specialist"
+            }
+          },
+          "dec16ef4-a290-43fc-8a4c-81c2635f0752": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "jobtitle": "Marketing Manager",
+              "jobdescription": "We're on the hunt for our new Marketing All-Star.  Could it be you?",
+              "fulljob": "marketing-manager"
+            }
+          },
+          "ecb9e771-55b5-4a03-b324-66743431a06d": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "jobtitle": "",
+              "jobdescription": "",
+              "fulljob": ""
+            }
+          },
+          "40afde24-8eee-4815-a070-fc5b601b8dbf": {
+            "type": "text",
+            "settings": {
+              "jobtitle": "SOCIAL MEDIA & CONTENT SPECIALIST",
+              "jobdescription": "We are seeking an experienced, energetic and highly motivated Sales & Account Manager for QLD that is familiar with health and wellness products and their retail channels including health food stores, practitioners, grocery and supplement & fitness.",
+              "fulljob": "copy-of-job-title"
+            }
+          },
+          "1721f2a8-1a77-4bb9-89a0-91a88a4a2f38": {
+            "type": "text",
+            "settings": {
+              "jobtitle": "SALES & ACCOUNT  MANAGER - NSW",
+              "jobdescription": "We are seeking an experienced, energetic and highly motivated Sales & Account Manager for NSW that is familiar with health and wellness products and their retail channels including health food stores, practitioners, grocery and supplement & fitness.",
+              "fulljob": "sales-account-manager-nsw"
+            }
+          },
+          "5d04f498-7f1e-4c04-9caf-ba1bfcc5b3be": {
+            "type": "text",
+            "settings": {
+              "jobtitle": "SALES & ACCOUNT  MANAGER - SA",
+              "jobdescription": "We are seeking an experienced, energetic and highly motivated Sales & Account Manager to South Australia that is familiar with health and wellness products and their retail channels including health food stores, practitioners, grocery and supplement & fitness.",
+              "fulljob": "sales-account-manager-sa"
+            }
+          }
+        },
+        "block_order": [
+          "080b9919-ec38-44d1-8e81-11be704632ab",
+          "dec16ef4-a290-43fc-8a4c-81c2635f0752",
+          "ecb9e771-55b5-4a03-b324-66743431a06d",
+          "40afde24-8eee-4815-a070-fc5b601b8dbf",
+          "1721f2a8-1a77-4bb9-89a0-91a88a4a2f38",
+          "5d04f498-7f1e-4c04-9caf-ba1bfcc5b3be"
+        ],
+        "settings": {
+        }
+      },
+      "marinade-title": {
+        "type": "marinade-title",
+        "settings": {
+          "main-header": "Bone Broth Marinade",
+          "desktopimg": "shopify:\/\/shop_images\/20220613_Gevity_Marinade_Landing_Page_Banner_Image_0125d6c4-7161-40f2-855d-86704f16a743.png",
+          "mobileimg": "shopify:\/\/shop_images\/20220613_Gevity_Marinade_Landing_Page_Banner_Image_Mobile.png"
+        }
+      },
+      "marinade-graphics": {
+        "type": "marinade-graphics",
+        "settings": {
+          "item1alt": "",
+          "item2alt": "",
+          "item3alt": "",
+          "item4alt": "",
+          "item5alt": ""
+        }
+      },
+      "marinades-three-columns": {
+        "type": "marinades-three-columns",
+        "settings": {
+          "one-description": "Marinate",
+          "two-description": "Cook",
+          "three-description": "Enjoy"
+        }
+      },
+      "marinade-4col": {
+        "type": "marinade-4col",
+        "settings": {
+          "main-header": "HAPPY TASTE BUDS, HAPPY GUT BUGS",
+          "main-description": "Get all the health benefits of cooking with Body Glue™ in one easy step! Bone Broth Marinades take the fuss out of making nutrient dense and delicious meals - simply marinate, cook, enjoy!",
+          "box1-header": "2 TBS = 1 SRV BODY GLUE™",
+          "box1-description": "",
+          "box2-header": "BETTER COOKING MADE EASY",
+          "box2-description": "",
+          "box3-header": "STACKED W\/ FUNCTIONAL INGREDIENTS",
+          "box3-description": "",
+          "box4-header": "MICROBIOME FRIENDLY",
+          "box4-description": ""
+        }
+      },
+      "marinades-get-health": {
+        "type": "marinades-get-health",
+        "settings": {
+          "button-color": "#ffffff",
+          "url": "",
+          "header": "",
+          "description": "",
+          "subhead": "",
+          "button-text": "",
+          "item1text": "",
+          "item2text": "",
+          "item3text": ""
+        }
+      },
+      "outofstock-popup": {
+        "type": "outofstock-popup",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+      "slideshow",
+      "1573610688282",
+      "1573769242987",
+      "featured-collections",
+      "1576915724982",
+      "1573776389069",
+      "collection-list",
+      "featured-product",
+      "timeline",
+      "1573789016671",
+      "1573609943572",
+      "blog-posts",
+      "shop-the-look",
+      "1573550866156",
+      "16399775741bd30c68",
+      "1573790710448",
+      "1603765757569b3c21"
+    ]
+  },
+  "presets": {
+    "Allure": {
+      "heading_color": "#1c1b1b",
+      "text_color": "#1c1b1b",
+      "text_light_color": "#6a6a6a",
+      "link_color": "#6a6a6a",
+      "background": "#efefef",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#1c1b1b",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#1c1b1b",
+      "header_light_color": "#6a6a6a",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#1c1b1b",
+      "footer_text_color": "#6a6a6a",
+      "newsletter_popup_background": "#1c1b1b",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#1c1b1b",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#1c1b1b",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "montserrat_n5",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "nunito_sans_n4",
+      "base_text_font_size": 14,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": false,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "page",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#efefef",
+      "checkout_accent_color": "#1c1b1b",
+      "checkout_button_color": "#1c1b1b",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#000000",
+            "text_color": "#ffffff",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    },
+    "Couture": {
+      "heading_color": "#5c5c5c",
+      "text_color": "#5c5c5c",
+      "text_light_color": "#939393",
+      "link_color": "#323232",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#5c5c5c",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#5c5c5c",
+      "header_light_color": "#939393",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#5c5c5c",
+      "footer_text_color": "#939393",
+      "newsletter_popup_background": "#ffffff",
+      "newsletter_popup_text_color": "#1c1b1b",
+      "secondary_elements_background": "#5c5c5c",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#ffffff",
+      "navigation_text_color": "#5c5c5c",
+      "heading_font": "futura_n4",
+      "heading_size": "large",
+      "uppercase_heading": false,
+      "text_font": "century_gothic_n4",
+      "base_text_font_size": 15,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "left",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "small",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "page",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#323232",
+      "checkout_button_color": "#5c5c5c",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f3f3f3",
+            "text_color": "#5c5c5c",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "center",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    },
+    "Vogue": {
+      "heading_color": "#454545",
+      "text_color": "#454545",
+      "text_light_color": "#9d9d9d",
+      "link_color": "#a17c5e",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#c2a284",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#454545",
+      "header_light_color": "#9d9d9d",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#454545",
+      "footer_text_color": "#9d9d9d",
+      "newsletter_popup_background": "#454545",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#f1e4d8",
+      "secondary_elements_text_color": "#373737",
+      "navigation_background": "#454545",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "din_neuzeit_grotesk_n3",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "futura_n4",
+      "base_text_font_size": 14,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "show_element_staggering": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "page",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#a17c5e",
+      "checkout_button_color": "#454545",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f1e4d8",
+            "text_color": "#343434",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    }
+  }
+}

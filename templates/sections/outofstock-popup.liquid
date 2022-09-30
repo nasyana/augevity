@@ -1,0 +1,16 @@
+<div style="display: none;" id="outOfStockPopupActiv">
+
+<div id="whitebox" style="margin: 10% auto">
+
+<h3>Oh hey, great taste! </h3>
+
+
+
+
+<p>You’ve chosen a best seller that is in high demand.  There will be a short delay in shipping this product but you can expect it to be on the way to you {% if   product.metafields.custom.out_of_stock_date_custom_text  %}by {{product.metafields.custom.out_of_stock_date_custom_text }} {%else %}{% if   product.metafields.custom.out_of_stock_date %}by {{product.metafields.custom.out_of_stock_date}} {%else %}as soon as it's back in stock. {%endif %}{%endif %} <br>By closing this box you agree to the delivery conditions.</p>
+
+<div class="closeOPicker">Close & Acknowledge</div>
+</div>
+
+
+</div>

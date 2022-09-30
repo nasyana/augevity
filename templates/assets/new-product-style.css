@@ -1,0 +1,480 @@
+body .gevity-new-style.product h1.Heading.newFont,
+body .gevity-new-style.product h2.Heading.newFont,
+.body .gevity-new-style.product h3.Heading.newFont {
+  font-family: "KapraNeueSemiBoldCondensed" !important;
+  font-size: 0.9em;
+}
+
+
+.Button.Button--secondary.Button--full.solid{
+  border: 1px solid #000!important;
+ 
+}
+
+body h1.Heading.newFont,
+body h2.Heading.newFont, .h3.Heading.newFont {
+  font-family: "KapraNeueSemiBoldCondensed" !important;
+  font-size: 0.9em;
+}
+
+body .gevity-new-style.product .ProductMeta__Title.Heading.u-h2 {
+  font-size: 40px !important;
+  letter-spacing: 0px;
+  font-family: "KapraNeueSemiBoldCondensed" !important;
+}
+
+.supercharged img {
+  margin-bottom: 11px;
+}
+
+body .gevity-new-style.product .ProductMeta__Description{
+
+  margin-top: 0!important;
+
+  padding-top: 0!important;
+
+  
+}
+
+li.answer li {
+    background: none!important;
+    border: 0!important;
+    list-style: circle!important;
+}
+
+body .gevity-new-style.product h2 {
+  font-family: "KapraNeueSemiBoldCondensed" !important;
+  margin: 0 !important;
+  letter-spacing: 1px;
+  margin-bottom: 10px !important;
+}
+
+
+body .gevity-new-style.product h2.option-title {
+  font-size: 14px !important;
+  font-family: "Circular Std" !important;
+  margin-bottom: 0 !important;
+}
+
+.question {
+  padding-right: 8px !important;
+  line-height: 1;
+}
+
+body .gevity-new-style.product .ProductMeta__Vendor.u-h6,
+.Rte h6 {
+  font-family: "Circular Std" !important;
+  color: #bdbdbd !important;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  margin-top: 10px !important;
+}
+
+body .gevity-new-style.product button {
+  font-family: "Circular Std" !important;
+}
+
+body .gevity-new-style.product .ProductForm__Variants.Bone.Broth.Concentrate,body .gevity-new-style.product .ProductForm__Variants.Bone.Broth.Sauce  {
+  display: none;
+}
+
+body .gevity-new-style.product #qty-plus-button {
+  display: table;
+  width: 100%;
+}
+
+body .gevity-new-style.product #qty-plus-button > div {
+  display: table-cell;
+}
+
+body .gevity-new-style.product .ProductForm__QuantitySelector {
+  width: 30%;
+}
+
+/* body .gevity-new-style.product .active .option-title, body .gevity-new-style.product .selectable-option.deliver.active, 
+body .gevity-new-style.product #GevityAddToCart,
+body .gevity-new-style.product .active .option-title, 
+body .gevity-new-style.product .selectable-option.deliver.active{
+
+font-weight: normal;
+} */
+
+body .gevity-new-style.product .QuantitySelector {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #e3e3e3;
+  white-space: nowrap;
+  padding: 7.5px 0;
+}
+
+#sep {
+  padding: 19px;
+  display: none;
+}
+
+#GevityAddToCart #add {
+  font-size: 17px;
+  border-right: 1px solid;
+  padding-right: 15px;
+  margin-right: 15px;
+}
+
+.gevity-new-style.product #perserve {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: lighter;
+  display: inline-block;
+}
+
+.gevity-new-style.product .purchase-type__option.active h2,
+.gevity-new-style.product .purchase-type__option h2,
+.gevity-new-style.product .purchase-type__option h2:hover {
+  background: none !important;
+  color: #000 !important;
+  letter-spacing: 0px;
+  border: 0px solid #f2f3f4;
+}
+
+.gevity-new-style.product .purchase-type__option.active h2 {
+  background: #f2f3f4 !important;
+  border: 0px solid #f2f3f4 !important;
+}
+
+.gevity-new-style.product .purchase-type__option h2:hover {
+  background: #f2f3f4 !important;
+}
+
+.gevity-new-style.product .purchase-type__option:hover {
+  background: none !important;
+  border: 1px solid #fff !important;
+}
+
+.gevity-new-style.product .purchase-type__option.active {
+  border: 1px #fff solid !important;
+}
+
+.gevity-new-style.product #thepriceam {
+  font-size: 1.7em;
+  display: inline;
+  margin-bottom: 20px;
+}
+
+.gevity-new-style.product #nase_why li.question,
+#nase_why li.link, body .gevity-new-style.product h3.newFont {
+  cursor: pointer;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: #000;
+  font-family: "KapraNeueSemiBoldCondensed" !important;
+}
+
+.gevity-new-style.product  .newStylelabel {
+    margin-bottom: 4px;
+}
+
+.gevity-new-style.product .spr-badge {
+    display: inline-block !important;
+    margin: 20px 0 30pxs;
+}
+
+
+
+.gevity-new-style.product #lookatyou-container {
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.gevity-new-style.product #ninstock{
+    display: inline-block;
+    text-transform: none;
+    color: #000;
+    font-weight:normal!important; 
+}
+
+.gevity-new-style.product #buybulkam {
+    float: right;
+}
+
+
+.gevity-new-style.product #lookatyou-container img {
+    width: 25px;
+    margin: -2px 7px 0 0;
+}
+
+body h1.newFont, body h2.newFont,body h2.newFont:hover, body h3.newFont{
+
+  font-family: "KapraNeueSemiBoldCondensed" !important;
+  color: #000!important;
+}
+
+h2.newFont{
+  font-size: 40px;
+}
+
+
+
+body .gevity-new-style.product h1.newFont, body .gevity-new-style.product h2.newFont,body .gevity-new-style.product h2.newFont:hover, body .gevity-new-style.product h3.newFont{
+
+  font-family: "KapraNeueSemiBoldCondensed" !important;
+  color: #000!important;
+}
+
+.border-right {
+  border-right: 1px solid #eee;
+}
+
+
+body .gevity-new-style.product .ProductMeta__Description{
+
+  border: none!important;
+}
+
+/* 
+#section-am-cleanse-section3 {
+  padding: 3% 0 4% !important;
+} */
+
+.TestimonialList.Carousel.Carousel--fadeIn.flickity-enabled.reviews {
+  padding:4%;
+} 
+
+
+
+#section-am-cleanse-section3 .Testimonial__Logo {
+  margin-top: 0;
+}
+
+body .gevity-new-style.product .item1, body .gevity-new-style.product .item2, body .gevity-new-style.product .item3 {
+  text-align: center;
+}
+
+body .gevity-new-style.product .circle {
+  display: inline-block;
+  margin-right: 4%;
+  width: 27%;
+  vertical-align: top;
+}
+
+body .gevity-new-style.product .circle img {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 17px;
+  margin: 20px 0px;
+}
+
+body .gevity-new-style.product .ultimate-text {
+  margin-top: 30px;
+}
+
+body .gevity-new-style.product .sec-07 h2.newFont {
+  border-bottom: 1px solid #ffffff6b;
+  display: inline-block;
+  font-size: 2.7vw !important;
+}
+
+
+body .gevity-new-style.product #shopify-section-am-cleanse-section4 h2.newFont{
+
+  margin-bottom: 10px!important;
+}
+
+
+body .gevity-new-style.product #shopify-section-am-cleanse-section5 h2.newFont{
+
+  color: #fff!important;
+}
+
+
+body .gevity-new-style.product .gevity_new_style_nutrients img{
+
+  max-width: 35%!important;
+}
+
+.CartItem__Property.Savings {
+  color: green;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+
+
+body .gevity-new-style.product .one-time-purchase .arrow-down, .subscribe-and-save .arrow-down{
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #fff;
+  margin: 0 auto;
+  display: none;
+
+}
+
+body .gevity-new-style.product .one-time-purchase.active .arrow-down, .subscribe-and-save.active .arrow-down{
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #F2F3F4;
+  margin: 0 auto;
+  display: block;
+
+}
+
+body .gevity-new-style.product #nase_why li, body .gevity-new-style.product li.question{
+
+  background-image: url('https://cdn.shopify.com/s/files/1/2717/0382/t/4/assets/plus.jpg');
+
+  background-size: 23px;
+  
+}
+
+body .gevity-new-style.product #nase_why li.open, body .gevity-new-style.product li.question.open{
+
+  background-image: url('https://cdn.shopify.com/s/files/1/2717/0382/t/4/assets/minus.jpg');
+
+  background-size: 23px;
+  
+}
+
+
+
+
+
+body .gevity-new-style.product #nase_why li.answer{
+
+  background: none!important;
+
+}
+
+
+body .gevity-new-style.product .sec-13 p {
+  color: #ccc;
+}
+
+span#qtyholder {
+  width: 69%;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.5em;
+  min-width: 26px;
+  text-align: center;
+}
+
+.newcomicbox {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+
+.gevity-new-style .newcomicbox img{
+
+  max-width: 100%;
+}
+
+@media (min-width: 1000px){
+
+}
+
+@media (min-width: 1000px){
+
+  .Product__Wrapper {
+    max-width: 47%!important;
+}
+}
+
+@media (max-width: 800){
+
+
+
+  .supercharged {
+    margin-bottom: 40px;
+}
+}
+
+.col-xs-2{
+  background:#00f;
+  color:#FFF;
+}
+.col-half-offset{
+  margin-left:4.166666667%
+}
+
+@media (max-width: 600px) {
+
+  body .gevity-new-style.product h2.option-title {
+    font-size: 3vw !important;
+
+  }
+  .newcomicbox {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+  .col-sm-12.col-md-6.col-lg-6.gevity_new_style_half-bg {
+    min-height: 200px;
+}
+
+
+  .gevity-new-style.product .option-title {
+    font-size: 17px !important;
+}
+
+  body .gevity-new-style.product #shopify-section-am-cleanse-section4 h2.newFont {
+    margin-bottom: 40px !important;
+}
+
+
+
+  .gevity-new-style.product #buybulkam{
+float: none;
+
+  }
+
+  .gevity-new-style.product #lookatyou-container {
+
+    font-size: 12px;
+}
+
+
+  body .gevity-new-style.product .supercharged {
+    margin-bottom: 40px;
+}
+
+  #section-am-cleanse-section3 {
+    padding: 7% 0 8% !important;
+}
+
+body .gevity-new-style.product .sec-07 h2.newFont {
+
+  font-size: 8.7vw !important;
+}
+
+
+  body .gevity-new-style.product .ProductForm__QuantitySelector,
+  body .gevity-new-style.product #qty-plus-button > div,
+  body .gevity-new-style.product .QuantitySelector {
+    display: block !important;
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .QuantitySelector__CurrentQuantity {
+    width: 70% !important;
+    font-size: 20px !important;
+  }
+
+  .QuantitySelector--large .QuantitySelector__Button {
+    width: 13% !important;
+    font-size: 20px !important;
+  }
+
+  .gevity-new-style.product #GevityAddToCart{
+
+    margin-bottom: 20px;
+  }
+
+
+}

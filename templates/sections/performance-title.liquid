@@ -1,0 +1,53 @@
+<style>
+
+    
+    @media only screen and (max-width: 800px) {
+
+        .sauce-title{
+        background: url({{ section.settings.mobileimg | img_url: '800x' }})  #333;
+        background-size: cover;
+         
+    }
+  
+      #onlymobile{display: block;}
+      #onlydesktop{display: none;}
+  }
+      @media only screen and (min-width: 800px) {
+
+        .sauce-title{
+        background: url({{ section.settings.desktopimg | img_url: '1400x' }})  #333;
+        background-size: cover;
+         
+    }
+  
+      #onlymobile{display: none;}
+      #onlydesktop{display: block;} 
+  } 
+  </style>  
+ 
+   <div class="collection-title-gv fade-in-image sauce-title"
+>
+
+   <h1>{{ section.settings.main-header}}</h1>
+   
+</div> 
+
+  
+  {% schema %}
+  {
+  "name": "Performance Title",
+  "settings": [{
+  "type": "text",
+  "id": "main-header",
+  "label": "Performance Header"
+  },{
+    "type": "image_picker",
+    "id": "desktopimg",
+    "label": "Image for Desktop"
+  },{
+    "type": "image_picker",
+    "id": "mobileimg",
+    "label": "Image for Mobile"
+  }]
+  }
+  {% endschema %}

@@ -1,0 +1,86 @@
+<section  class="sec-06 gevity_new_style_ranges" style="padding: 60px 0;">
+	<div class="row"  style="padding: 20px 0;">
+	  <div class="container">
+		<div class="col-sm-12 text-center">
+			<h2 >{{ section.settings.main-header }}</h2>
+			<p>{{ section.settings.main-description }}</p>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-5 col-lg-offset-1 text-center">
+			<img src="{{ section.settings.item1-image | img_url: '2048x1055' }}" alt="Performance Range"/>
+			<h5>{{ section.settings.item1-header }}</h5>
+			<p>{{ section.settings.item1-description }}</p>
+			{% comment %} <button type="button" class="btn gevity_new_style_performance"><a href="{{ section.settings.item1-url }}">{{ section.settings.item1-button-text }}</a></button>	 {% endcomment %}
+      	<a href="#shopify-section-body-glue-section-ten"><button type="button" class="btn gevity_new_style_performance">{{ section.settings.item1-button-text }}</button>	</a>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-5 text-center bottom-part">
+			<img src="{{ section.settings.item2-image | img_url: '2048x1055'  }}" alt="Culinary Range"/>
+			<h5>{{ section.settings.item2-header }}</h5>
+			<p>{{ section.settings.item2-description }}</p>
+			{% comment %} <button type="button" class="btn gevity_new_style_culinary"><a href="{{ section.settings.item2-url }}">{{ section.settings.item2-button-text }}</a></button>	 {% endcomment %}
+      <a href="#shopify-section-body-glue-section-eleven">	<button type="button" class="btn gevity_new_style_culinary">{{ section.settings.item2-button-text }}</button>	</a>
+		</div>
+	  </div>
+	</div>
+
+  
+
+</section>
+ 
+
+
+
+{% schema %}
+{
+    "name": "Body Glue Six",
+    "settings": [{
+                    "type": "text",
+                    "id": "main-header",
+                    "label": "Box Header"
+                  },{
+                    "type": "text",
+                    "id": "main-description",
+                    "label": "description"
+                  },{
+                    "type": "image_picker",
+                    "id": "item1-image",
+                    "label": "Image Two"
+                  },{
+                    "type": "text",
+                    "id": "item1-header",
+                    "label": "header"
+                  },{
+                    "type": "text",
+                    "id": "item1-description",
+                    "label": "description"
+                  },{
+                    "type": "text",
+                    "id": "item1-button-text",
+                    "label": "Button Text"
+                  },{
+                    "type": "url",
+                    "id": "item1-url",
+                    "label": "url"
+                  },{
+                    "type": "image_picker",
+                    "id": "item2-image",
+                    "label": "Image Two"
+                  },{
+                    "type": "text",
+                    "id": "item2-header",
+                    "label": "header"
+                  },{
+                    "type": "text",
+                    "id": "item2-description",
+                    "label": "description"
+                  },{
+                    "type": "text",
+                    "id": "item2-button-text",
+                    "label": "Button Text"
+                  },{
+                    "type": "url",
+                    "id": "item2-url",
+                    "label": "url"
+                  }
+                ]
+}
+{% endschema %}

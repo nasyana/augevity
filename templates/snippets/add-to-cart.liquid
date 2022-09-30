@@ -1,0 +1,18 @@
+
+
+<button type="submit" id="btn-{{ product.id }}" style="margin-top: 10px; display:none; " class="product-single__add-to-cart Button {% if selected_variant.available and true %}Button--primary{% else %}Button--secondary{% endif %} Button--full" {% if selected_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
+{%- if selected_variant.inventory_quantity >0 or is_Presale_item -%}
+<span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
+
+{%- if section.settings.show_price_in_button -%}
+<span class="Button__SeparatorDot"></span>
+<span>{{ selected_variant.price | money_without_trailing_zeros }}</span>
+{%- endif -%}
+{%- else -%}
+{{- 'product.form.sold_out' | t -}}
+{%- endif -%}
+</button>
+
+{%- if true and product.template_suffix != 'pre-order' -%}
+{{ form | payment_button }}
+{%- endif -%}

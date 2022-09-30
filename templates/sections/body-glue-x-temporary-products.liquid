@@ -1,0 +1,193 @@
+
+<style>
+    h2.ProductItem__Title{
+
+        font-size: 1em!important;
+        text-align: left!important;
+    }
+
+    .shopnowcontainer h2{
+
+        padding: 0!important;
+    }
+
+    body h2.ProductItem__Title span.price {
+    border: 1px solid;
+    float: right;
+    font-size: 1em;
+    padding: 6px;
+    letter-spacing: 0px !important;
+    display: inline-block;
+}
+h2.ProductItem__Title{
+
+    font-family: "Circular Std" !important;
+
+font-weight: bold;
+text-align: left;
+}
+
+h2.ProductItem__Title a{
+
+font-family: "Circular Std" !important;
+font-size: 1.1em!important;
+
+}
+</style>
+<div class="ArticleListWrapper shopnowcontainer" style="margin-top: 3%;">
+
+	<div class="ArticleList Grid Grid--m Grid--center">
+		
+       
+    
+		<div class="Grid__Cell 1/2--tablet 1/3--lap-and-up ">
+			<article class="ArticleItem">
+				<a class="ArticleItem__ImageWrapper AspectRatio AspectRatio--withFallback" style="background: url(//cdn.shopify.com/s/files/1/2717/0382/articles/GRX_August2021-23826-Edit_1x1.jpg?v=1631851738); padding-bottom: 58%; --aspect-ratio: 1" href="/collections/body-glue-x/products/body-glue-x-fire-tonic-immuno-tonic">
+	<img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded" src="{{ 'immuno.png' | asset_img_url: '500x' }}">
+
+	<noscript>
+		<img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded" src="{{ 'immuno.png' | asset_img_url: '500x' }}">
+	</noscript>
+  </a>
+
+  <div class="ProductItem__Wrapper">
+  <h2 class="ProductItem__Title Heading">
+    <a href="/collections/body-glue-x/products/body-glue-x-fire-tonic-immuno-tonic">Immuno Tonic</a> <span class="price">$39.00</span>
+  </h2>
+</div>
+
+  
+  <h3 id="collectionstyle"><a href="/collections/body-glue-x">Body Glue X</a></h3>
+  
+  <div class="product-stars" js-scroll-to="#product-blocks">
+    <a href="#gevity-reviews"><span class="spr-badge" id="spr_badge_6684434890818" data-rating="0.0"><span class="spr-starrating spr-badge-starrating"><i class="spr-icon spr-icon-star-empty" aria-hidden="true"></i><i class="spr-icon spr-icon-star-empty" aria-hidden="true"></i><i class="spr-icon spr-icon-star-empty" aria-hidden="true"></i><i class="spr-icon spr-icon-star-empty" aria-hidden="true"></i><i class="spr-icon spr-icon-star-empty" aria-hidden="true"></i></span><span class="spr-badge-caption">No reviews</span>
+</span> </a>
+  </div>
+
+
+  
+<div class="ProductItem__PriceList ProductItem__PriceList--showOnHover Heading"><!--<span class="ProductItem__Price Price Text--subdued">From <span data-money-convertible>$35</span></span> --></div>
+
+
+	
+</article></div>
+
+
+
+<div class="Grid__Cell 1/2--tablet 1/3--lap-and-up ">
+	<article class="ArticleItem">
+		<a href="#" class="ArticleItem__ImageWrapper AspectRatio AspectRatio--withFallback" style="background: url(//cdn.shopify.com/s/files/1/2717/0382/articles/GRX_GRX_BroccoliSalad-23785_1x1.jpg?v=1631602334); padding-bottom: 58%; --aspect-ratio: 1">
+	<img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded" src="{{ 'Body-glue-x-placeholder1.png' | asset_img_url: '500x' }}">
+
+	<noscript>
+		<img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded" src="{{ 'Body-glue-x-placeholder1.png' | asset_img_url: '500x' }}">
+	</noscript>
+  </a>
+ 
+	<a href="#" class="Button Button--secondary Button--full solid">COMING SOON</a>
+ 
+</article></div>
+
+
+
+
+
+
+<div class="Grid__Cell 1/2--tablet 1/3--lap-and-up">
+	<article class="ArticleItem">
+		
+		<a href="" class="ArticleItem__ImageWrapper AspectRatio AspectRatio--withFallback" style="background: url(//cdn.shopify.com/s/files/1/2717/0382/articles/GRX-August2021-24006-Edit_1x1.jpg?v=1631601849); padding-bottom: 58%; --aspect-ratio: 1" >
+	<img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded" src="{{ 'Body-glue-x-placeholder1.png' | asset_img_url: '500x' }}">
+
+	<noscript>
+		<img class="ArticleItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded" src="{{ 'Body-glue-x-placeholder1.png' | asset_img_url: '500x' }}">
+	</noscript>
+  </a>
+  
+
+      
+    <a href="#" class="Button Button--secondary Button--full solid">COMING SOON</a>
+
+  
+
+</article></div>
+
+
+
+
+</div>
+  </div>
+
+
+  {% schema %}
+{
+  "name": "You May Also Like",
+  "max_blocks": 1,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_section",
+      "label": "Show section",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Shop now"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "grid_items_count",
+      "min": 3,
+      "max": 30,
+      "step": 3,
+      "label": "Products to show",
+      "default": 6
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_info",
+      "label": "Show product info",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "Show vendor",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_color_swatch",
+      "label": "Show color swatch",
+      "info": "Some colors appear white? [Learn more](http://support.maestrooo.com/article/80-product-uploading-custom-color-for-color-swatch).",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "quote",
+      "name": "Quote",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>You can use this element to add a quote, content...</p>"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

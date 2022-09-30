@@ -1,0 +1,146 @@
+<style>
+    section#nase_why {
+        display: table;
+    }
+      </style>
+
+
+
+
+
+    <section  class="sec-03 gevity_new_style_nutrients" style="background-color: #F5F6F7; margin: 0 5%; padding: 60px 0;">
+ 
+   
+        <div class="row" style="padding: 20px 0;">
+          <div class="container">
+            <div class="col-sm-12 text-center">
+                <h2>{{ section.settings.main-header }}</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row supercharged" style="padding: 20px 0;">
+
+         
+          <div class="container">
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center supercharged">
+                <img src="{{ section.settings.item1-image | img_url: '2048x1055' }}" alt="Packed with Amino Acids"/>
+                <h5>{{ section.settings.item1-header }}</h5>
+                <p>{{ section.settings.item1-description }}</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center supercharged">
+                <img src="{{ section.settings.item2-image | img_url: '2048x1055' }}" alt="Rich in Collagen & Gelatin"/>
+                <h5>{{ section.settings.item2-header }}</h5>
+                <p>{{ section.settings.item2-description }}</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center supercharged">
+                <img src="{{ section.settings.item3-image | img_url: '2048x1055' }}" alt="Only 100% Grass-fed Australian Beef"/>
+                <h5>{{ section.settings.item3-header }}</h5>
+                <p>{{ section.settings.item3-description }}</p>
+            </div>	
+          </div>	
+      
+        </div>
+        <div class="row supercharged" style="padding: 20px 0;">
+          <div class="container">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-lg-offset-2 text-center supercharged">
+                <img src="{{ section.settings.item4-image | img_url: '2048x1055' }}" alt="Super Nutrient-Dense Formula"/>
+                <h5>{{ section.settings.item4-header }}</h5>
+                <p>{{ section.settings.item4-description }}</p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 text-center supercharged">
+                <img src="{{ section.settings.item5-image | img_url: '2048x1055' }}" alt="Paleo & Allergen Friendly"/>
+                <h5>{{ section.settings.item5-header }}</h5>
+                <p>{{ section.settings.item5-description }}</p>
+            </div>
+          </div>
+        </div>	
+        
+            
+
+    </section>
+
+    
+    <!-- <section class="sec-01" style="background: #f4f4f4!important; width: 100%; color: #fff"; >
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 gevity_new_style_half-bg" style="background-image: url('{{ block.settings.item-image | img_url: '2048x1055' }}')"></div> 
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center" style="padding: 10% 0; background-image: url({{ 'Header-Right.jpg' | asset_url }}); background-size: cover;">
+              <h1 class="gwhite">{{ block.settings.header }}</h1> 
+              <p>{{ block.settings.description }}</p>  
+              </div>
+          </div> 
+    </section>  -->
+
+    
+    
+    {% schema %}
+    {
+        "name": "Body Glue Three",
+        "settings": [{
+                        "type": "text",
+                        "id": "main-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "image_picker",
+                        "id": "item1-image",
+                        "label": "Image One"
+                      },{
+                        "type": "text",
+                        "id": "item1-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item1-description",
+                        "label": "description"
+                      }, {
+                        "type": "image_picker",
+                        "id": "item2-image",
+                        "label": "Image Two"
+                      },{
+                        "type": "text",
+                        "id": "item2-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item2-description",
+                        "label": "description"
+                      } , {
+                        "type": "image_picker",
+                        "id": "item3-image",
+                        "label": "Image Three"
+                      },{
+                        "type": "text",
+                        "id": "item3-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item3-description",
+                        "label": "description"
+                      } , {
+                        "type": "image_picker",
+                        "id": "item4-image",
+                        "label": "Image Four"
+                      },{
+                        "type": "text",
+                        "id": "item4-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item4-description",
+                        "label": "description"
+                      } , {
+                        "type": "image_picker",
+                        "id": "item5-image",
+                        "label": "Image Five"
+                      },{
+                        "type": "text",
+                        "id": "item5-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item5-description",
+                        "label": "description"
+                      }     
+                    ]
+    }
+    {% endschema %}

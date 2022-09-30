@@ -1,0 +1,210 @@
+<style>
+    section#nase_why {
+        display: table;
+    }
+      </style>
+
+
+{% if product.metafields.custom_fields["hero_ingredients_image_6"] != blank %}
+   {% assign col = '4' %}
+
+ {% elsif product.metafields.custom_fields["hero_ingredients_image_5"] %}
+
+  {% elsif product.metafields.custom_fields["hero_ingredients_image_4"] %}
+
+   {% assign col = '3' %}
+
+   {% elsif product.metafields.custom_fields["hero_ingredients_image_3"] %}
+       
+        {% assign col = '4' %}
+
+  {% elsif product.metafields.custom_fields["hero_ingredients_image_2"] %}
+
+      {% assign two = true %}
+  {% assign col = '3' %}
+
+{% endif %}
+
+
+    <section  class="sec-03 gevity_new_style_nutrients" style="background-color: #F5F6F7; margin: 0; padding: 60px 0;">
+ 
+   
+        <div class="row" style="padding: 20px 0;">
+          <div class="container">
+            <div class="col-sm-12 text-center">
+                <h2 class="newFont">{{ section.settings.main-header }}</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row supercharged" style="padding: 20px 0;">
+
+         
+          <div class="container">
+
+
+          
+{% if two %}
+
+   <div class="col-sm-12 col-md-{{col}} col-lg-{{col}} text-center supercharged">
+               
+            </div>
+
+{% endif %}
+
+{% if product.metafields.custom_fields["hero_ingredients_image_1"] != blank %}
+
+            <div class="col-sm-12 col-md-{{col}} col-lg-{{col}} text-center supercharged">
+                <img src="{{ product.metafields.custom_fields["hero_ingredients_image_1"] }}" alt="Lemon Myrtle"/>
+                <h5>{{ product.metafields.custom_fields["hero_ingredients_sub_title_1"]}}</h5>
+                <p>{{ product.metafields.custom_fields["hero_ingredients_sub_desc_1"] }}</p>
+            </div>
+{% endif %}
+
+{% if product.metafields.custom_fields["hero_ingredients_image_2"] != blank %}
+
+           <div class="col-sm-12 col-md-{{col}} col-lg-{{col}} text-center supercharged">
+                <img src="{{ product.metafields.custom_fields["hero_ingredients_image_2"] }}" alt="Lemon Myrtle"/>
+                <h5>{{ product.metafields.custom_fields["hero_ingredients_sub_title_2"]}}</h5>
+                <p>{{ product.metafields.custom_fields["hero_ingredients_sub_desc_2"] }}</p>
+            </div>
+{% endif %}
+
+           {% if product.metafields.custom_fields["hero_ingredients_image_3"] != blank %}
+
+           <div class="col-sm-12 col-md-{{col}} col-lg-{{col}} text-center supercharged">
+                <img src="{{ product.metafields.custom_fields["hero_ingredients_image_3"] }}" alt="Lemon Myrtle"/>
+                <h5>{{ product.metafields.custom_fields["hero_ingredients_sub_title_3"]}}</h5>
+                <p>{{ product.metafields.custom_fields["hero_ingredients_sub_desc_3"] }}</p>
+            </div>
+{% endif %}
+
+
+{% if product.metafields.custom_fields["hero_ingredients_image_6"] != blank %}
+
+</div>
+    <div class="container" style="margin-top: 50px">
+    
+
+{% endif %}
+
+
+{% if product.metafields.custom_fields["hero_ingredients_image_4"] != blank %}
+
+           <div class="col-sm-12 col-md-{{col}} col-lg-{{col}} text-center supercharged">
+                <img src="{{ product.metafields.custom_fields["hero_ingredients_image_4"] }}" alt="Lemon Myrtle"/>
+                <h5>{{ product.metafields.custom_fields["hero_ingredients_sub_title_4"]}}</h5>
+                <p>{{ product.metafields.custom_fields["hero_ingredients_sub_desc_4"] }}</p>
+            </div>
+{% endif %}
+
+{% if product.metafields.custom_fields["hero_ingredients_image_5"] != blank %}
+
+           <div class="col-sm-12 col-md-{{col}} col-lg-{{col}} text-center supercharged">
+                <img src="{{ product.metafields.custom_fields["hero_ingredients_image_5"] }}" alt="Lemon Myrtle"/>
+                <h5>{{ product.metafields.custom_fields["hero_ingredients_sub_title_5"]}}</h5>
+                <p>{{ product.metafields.custom_fields["hero_ingredients_sub_desc_5"] }}</p>
+            </div>
+{% endif %}
+
+{% if product.metafields.custom_fields["hero_ingredients_image_6"] != blank %}
+
+           <div class="col-sm-12 col-md-{{col}} col-lg-{{col}} text-center supercharged">
+                <img src="{{ product.metafields.custom_fields["hero_ingredients_image_6"] }}" alt="Lemon Myrtle"/>
+                <h5>{{ product.metafields.custom_fields["hero_ingredients_sub_title_6"]}}</h5>
+                <p>{{ product.metafields.custom_fields["hero_ingredients_sub_desc_6"] }}</p>
+            </div>
+{% endif %}
+
+
+          
+{% if two %}
+
+   <div class="col-sm-12 col-md-{{col}} col-lg-{{col}} text-center supercharged">
+               
+            </div>
+
+{% endif %}
+
+
+          </div>	
+      
+        </div>
+  
+        
+            
+
+    </section>
+
+    
+    <!-- <section class="sec-01" style="background: #f4f4f4!important; width: 100%; color: #fff"; >
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 gevity_new_style_half-bg" style="background-image: url('{{ block.settings.item-image | img_url: '2048x1055' }}')"></div> 
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center" style="padding: 10% 0; background-image: url({{ 'Header-Right.jpg' | asset_url }}); background-size: cover;">
+              <h1 class="gwhite">{{ block.settings.header }}</h1> 
+              <p>{{ block.settings.description }}</p>  
+              </div>
+          </div> 
+    </section>  -->
+
+    
+    
+    {% schema %}
+    {
+        "name": "AM Cleanse Section 2",
+        "settings": [{
+                        "type": "text",
+                        "id": "main-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "image_picker",
+                        "id": "item1-image",
+                        "label": "Image One"
+                      },{
+                        "type": "text",
+                        "id": "item1-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item1-description",
+                        "label": "description"
+                      }, {
+                        "type": "image_picker",
+                        "id": "item2-image",
+                        "label": "Image Two"
+                      },{
+                        "type": "text",
+                        "id": "item2-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item2-description",
+                        "label": "description"
+                      } , {
+                        "type": "image_picker",
+                        "id": "item3-image",
+                        "label": "Image Three"
+                      },{
+                        "type": "text",
+                        "id": "item3-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item3-description",
+                        "label": "description"
+                      } , {
+                        "type": "image_picker",
+                        "id": "item4-image",
+                        "label": "Image Four"
+                      },{
+                        "type": "text",
+                        "id": "item4-header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "item4-description",
+                        "label": "description"
+                      }   
+                    ]
+    }
+    {% endschema %}

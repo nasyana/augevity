@@ -1,0 +1,102 @@
+{% schema %}
+
+
+  {
+  "settings": [{
+      "type": "text",
+      "id": "toptext",
+      "label": "Top Text",
+      "default": "Top Text"
+    },{
+      "type": "text",
+      "id": "bottomtext",
+      "label": "Paragraph",
+      "default": "Paragraph"
+    },{
+        "type": "text",
+        "id": "shippingtitle",
+        "label": "Shipping Title",
+        "default": "Shipping Title"
+      },{
+        "type": "text",
+        "id": "producttitle",
+        "label": "Product Title",
+        "default": "Product Title"
+      }],
+    "name": "FAQs",
+    "blocks":[
+      {
+        "type": "shipping-faq",
+        "name": "Shipping FAQ",
+        "settings": [
+          {
+            "type": "text",
+            "id": "shipping-question",
+            "label": "Shipping Question"
+          },{
+            "type": "richtext", 
+            "id": "shipping-answer",
+            "label": "Shipping Answer"
+          
+          }
+        ]
+      },
+      {
+        "type": "product-faq",
+        "name": "Product FAQ",
+        "settings": [
+          {
+            "type": "text",
+            "id": "product-question",
+            "label": "Product Question"
+           
+          },{
+            "type": "richtext",
+            "id": "product-answer",
+            "label": "Product Answer"
+         
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+
+
+<div id="faq-container">
+    <h1 class="SectionHeader__Heading Heading u-h1">{{ section.settings.toptext }}</h1>
+<p>{{ section.settings.bottomtext }}</p>
+    <div id="nase_why" >
+<div class="shipping-faqs">
+    <h3 >{{ section.settings.shippingtitle }}</h3>
+<ul>
+{% for block in section.blocks %}
+  {% if block.type == 'shipping-faq' %}
+    <li class="question">{{block.settings.shipping-question}}</li>
+    <li  class="answer">{{block.settings.shipping-answer}}</li>
+
+  {% endif %}
+{% endfor %}
+
+</ul>
+
+</div>
+
+<div class="product-faqs">
+    <h3>{{ section.settings.producttitle }}</h3>
+    <ul>
+    {% for block in section.blocks %}   
+      {% if block.type == 'product-faq' %}
+        <li class="question">{{block.settings.product-question}}</li>
+        <li  class="answer">{{block.settings.product-answer}}</li>
+  
+      {% endif %}
+    {% endfor %}
+    
+    </ul>
+    
+    </div>
+
+    </div>
+</div>

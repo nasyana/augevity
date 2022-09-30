@@ -1,0 +1,67 @@
+<style>
+    @media only screen and (max-width: 500px) {
+  
+      #onlymobile{display: block;}
+      #onlydesktop{display: none;}
+  }
+      @media only screen and (min-width: 500px) {
+  
+      #onlymobile{display: none;}
+      #onlydesktop{display: block;} 
+  } 
+  </style>  
+   {% for block in section.blocks %}
+  <section class="full_width about_section_one" style="background-size: 100%; background: url('{{ block.settings.item-image | img_url: '2048x1055' }}')">
+  
+   
+      <div class="full_width onlydesktop" > 
+  
+                <h2 style="color: #fff!important">{{ block.settings.text }}</h2> 
+       
+               <h2>{{ block.settings.header }}</h2>
+        
+  <!--       <a href="{{ block.settings.block_link }}">
+         <img id="" src="" style="width: 100%">
+          <img id="onlymobile" src="{{ block.settings.mob-item-image | img_url: '2048x655' }}" style="width: 100%"></a> -->
+              
+      </div>
+  
+  
+  </section>
+  {% endfor %}
+  
+  {% schema %}
+  {
+      "name": "Collections Top Image",
+      "blocks": [
+              {
+                  "type": "image",
+                  "name": "Collections Top Image",
+                  "settings": [
+                    {
+                      "type": "image_picker",
+                      "id": "item-image",
+                      "label": "Image of the product"
+                    }, {
+                      "type": "image_picker",
+                      "id": "mob-item-image",
+                      "label": "Mobile Version"
+                    }, {
+                      "type": "url",
+                      "id": "block_link",
+                      "label": "Link URL"
+                    }, {
+                      "type": "text",
+                      "id": "header",
+                      "label": "Box Header"
+                    }
+  
+  
+  
+  
+               
+                  ]
+              }
+      ]
+  }
+  {% endschema %}

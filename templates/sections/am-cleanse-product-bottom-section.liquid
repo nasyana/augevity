@@ -1,0 +1,228 @@
+<section id="nase_benefits" style="background-color: {{ product.metafields.custom_fields["background_colour"]  | strip_html }}">
+	<div class="nase_container nase_header">
+		<h2>{{ product.metafields.custom_fields["product_title_-_large_section"] }}</h2>
+		<p style="color: {{ product.metafields.custom_fields["hex_colour"] | strip_html }}">{{ product.metafields.custom_fields["product_subtitle"] }}</p>
+	</div>
+  
+  {% for block in section.blocks %}
+  
+  
+  <div class="nase_container">
+		<div class="nase_sixth">
+		<img src="{{ block.settings.Benefit1Image }}" / >
+		<p>Cleanse <br/> And Detox</p>
+		</div>
+		<div class="nase_sixth">
+		<img src="{{ 'plus.png' | asset_img_url:  'master' }}" / >
+		<p>Bosts your <br/>immune system</p>
+		</div>
+		<div class="nase_sixth">
+		<img src="{{ 'cup.png' | asset_img_url:  'master' }}" / >
+		<p>26 servs <br/>in every jar</p>
+		</div>
+		<div class="nase_sixth">
+		<img src="{{ 'leaf.png' | asset_img_url:  'master' }}" / >
+		<p>Gluten, Dairy, Egg <br/>and Sugar Free</p>
+		</div>
+		<div class="nase_sixth">
+		<img src="{{ 'arrowicon.png' | asset_img_url:  'master' }}" / >
+		<p>Paleo <br/>Friendly</p>
+		</div>
+		<div class="nase_sixth">
+		<img src="{{ 'p-free.png' | asset_img_url:  'master' }}" / >
+		<p>Free From <br/>Preservative</p>
+		</div>		
+	</div>
+  
+  {% endfor %}
+
+    <div class="full_width" >  	
+	<div class="nase_container" >
+		<div class="nase_sixth">
+		<img src="{{ product.metafields.custom_fields["benefit_1_image"] }}" / >
+		<p class="benefit_text">{{ product.metafields.custom_fields["benefit_1_text"] }}</p>
+		</div>
+		<div class="nase_sixth">
+		<img src="{{ product.metafields.custom_fields["benefit_2_image"] }}" / >
+		<p >{{ product.metafields.custom_fields["benefit_2_text"] }}</p>
+		</div>
+		<div class="nase_sixth">
+		<img src="{{ product.metafields.custom_fields["benefit_3_image"] }}" / >
+		<p>{{ product.metafields.custom_fields["benefit_3_text"] }}</p>
+		</div>
+		<div class="nase_sixth">
+		<img src="{{ product.metafields.custom_fields["benefit_4_image"] }}" / >
+		<p>{{ product.metafields.custom_fields["benefit_4_text"] }} </p>	
+		</div>
+		<div class="nase_sixth">
+		<img src="{{ product.metafields.custom_fields["benefit_5_image"] }}" / >
+		<p>{{ product.metafields.custom_fields["benefit_5_text"] }}</p>
+		</div>
+		<div class="nase_sixth">
+		<img src="{{ product.metafields.custom_fields["benefit_6_image"] }}" / >
+		<p>{{ product.metafields.custom_fields["benefit_6_text"] }}</p>
+		</div>		
+	</div>
+	<div class="nase_container button_container"  >
+
+		
+
+		
+		<a class="nase_button" href="#grx_readmore" style="background-color: {{ product.metafields.custom_fields["hex_colour"]  | strip_html }}">BUY IT NOW </a>
+	</div>	
+</section>
+<section id="nase_why">
+	<div class="nase_half">
+		<div class="nase_left-content">
+			<h2 id="scroll_to_faq">{{ product.metafields.custom_fields["why_title"] }}</h2>
+			<p>{{ product.metafields.custom_fields["why_description"] }}</p>
+			<ul>
+<!-- 				<li>Good For Gut Health</li>
+				<li>Allergen Freindly</li>
+				<li>100% Australian Grass Fed Beef</li>
+				<li>10 x More Collagen Amino Acids</li>
+               -->
+              {% if product.metafields.custom_fields["faqs"] != blank %}
+
+      {% assign separator = "|###|" %}
+      {% assign question_array = product.metafields.custom_fields["question"] | split: separator %}
+      {% assign answer_array = product.metafields.custom_fields["answer"] | split: separator %}
+      {% assign fc_keys = product.metafields.custom_fields["faqs"] | split: "," %}
+      {% for i in fc_keys %}
+        {% assign index = i | plus: 0 %}
+       
+              <li class="question">{{ question_array[index] }}</li>
+       
+              <li class="answer">	{{ answer_array[index] }} </li>
+        
+      {% endfor %}
+
+{% endif %}
+			</ul>
+		
+		</div>
+	</div>
+	<div class="nase_half image" style="background-image: url('{{ product.metafields.custom_fields["why_image"] }}')">
+		<div class="nase_right-content">
+			<p>&nbsp;</p>
+		</div>
+	</div>	
+</section>
+<section id="nase_slogan" style="background-color: {{ product.metafields.custom_fields["hex_colour"]  | strip_html }}">
+	<div class="nase_container nase_header">
+		<h2>{{ product.metafields.custom_fields["big_callout"] }} </h2>
+
+	</div>
+</section> 
+<div id="gevity-reviews"></div>
+<section id="allReviews">
+
+	
+	<!-- <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div> -->
+
+	<!-- <div id="stamped-reviews-widget" data-widget-type="full-page" data-min-rating="5" data-product-image="false" data-product-ids="{{product.id}}"></div> -->
+
+	
+	<div id="stamped-main-widget" 
+data-widget-style="full-page"
+data-product-id="{{ product.id }}" 
+data-name="{{ product.title | escape }}" 
+data-url="{{ shop.url }}{{ product.url }}" 
+data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" 
+data-description="{{ product.description | escape }}" 
+data-product-sku="{{product.selected_or_first_available_variant.sku}}"
+data-product-type="{{product.type}}"> 
+
+</div>
+
+	<div id="review-section">
+		Want to write a review? Look out for an email from Gevity RX 7 days after purchase.
+		</div>	
+</section>
+
+
+
+
+{% schema %}
+{
+	"name": "AM Cleanse Bottom",
+  	"settings": [{
+      "type": "text",
+      "id": "box1subhead",
+      "label": "Box 1 Sub Heading",
+      "default": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "box1p",
+      "label": "Heading",
+      "default": "Header"
+    }],
+	"blocks": [
+    		{
+    			"type": "image",
+    			"name": "6 Benefits With Icons",
+    			"settings": [
+                  {
+                    "type": "image_picker",
+                    "id": "Benefit1Image",
+                    "label": "Benefit 1 Icon"
+                  }, {
+                    "type": "text",
+                    "id": "Benefit1Text",
+                    "label": "Benefit 1"
+                  },{
+                    "type": "image_picker",
+                    "id": "Benefit2Image",
+                    "label": "Benefit 2 Icon"
+                  }, {
+                    "type": "text",
+                    "id": "Benefit2Text",
+                    "label": "Benefit 2"
+                  },{
+                    "type": "image_picker",
+                    "id": "Benefit3Image",
+                    "label": "Benefit 3 Icon"
+                  }, {
+                    "type": "text",
+                    "id": "Benefit3Text",
+                    "label": "Benefit 3"
+                  },{
+                    "type": "image_picker",
+                    "id": "Benefit4Image",
+                    "label": "Benefit 4 Icon"
+                  }, {
+                    "type": "text",
+                    "id": "Benefit4Text",
+                    "label": "Benefit 4"
+                  },{
+                    "type": "image_picker",
+                    "id": "Benefit5Image",
+                    "label": "Benefit 5 Icon"
+                  }, {
+                    "type": "text",
+                    "id": "Benefit5Text",
+                    "label": "Benefit 5"
+                  },{
+                    "type": "image_picker",
+                    "id": "Benefit6Image",
+                    "label": "Benefit 6 Icon"
+                  }, {
+                    "type": "text",
+                    "id": "Benefit6Text",
+                    "label": "Benefit 6"
+                  }
+
+ 
+             
+    			]
+    		}
+	]
+}
+
+
+
+
+	
+
+{% endschema %}

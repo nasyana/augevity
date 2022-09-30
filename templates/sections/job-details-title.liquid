@@ -1,0 +1,67 @@
+<style>
+
+    #applybutton{
+
+        background: #000;
+        color: #fff;
+        padding: 10px 20px
+    }
+    .center{
+    
+        align-items: center;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+
+.jobdescription{ text-transform: uppercase; }
+        @media only screen and (max-width: 500px) {
+            #jobrow{border-bottom: 0px solid; margin-bottom: 20px; flex-direction: column; display: flex; width: 100%; justify-content: space-between}
+            .jobtitle{ font-size: 50px; }
+
+.jobdescription{ font-size: 16px; }
+      
+          #onlymobile{display: block;}
+          #onlydesktop{display: none;}
+      }
+          @media only screen and (min-width: 500px) {
+
+            #jobrow{border-bottom: 0px solid; margin-bottom: 20px; flex-direction: row; display: flex; width: 100%; justify-content: space-between}
+            .jobtitle{ font-size: 56px;}
+
+.jobdescription{ font-size: 20px; }
+      
+          #onlymobile{display: none;}
+          #onlydesktop{display: block;}
+      }
+    
+    
+      </style>
+
+<div id="jobrow">
+    <div>
+        <h2 class="jobtitle kapra" style="text-transform: uppercase; ">{{ page.title }}</h2>
+
+        <div class="jobdescription" style="margin-bottom: 20px!important; ">
+            <p class="book">{{ section.settings.jobdescription }}</p>
+
+        </div>
+    </div>
+    <div>
+        <a class="circular" href="#jobform" id="applybutton" style="text-transform: uppercase; display: block">Apply Now</a>
+    </div>
+</div>
+{% schema %}
+
+{
+    "name": "Job Details",
+    "settings": [
+                {
+                    "type": "text",
+                    "id": "jobdescription",
+                    "label": "Job Title 2"
+                }
+            ]
+}
+
+{% endschema %}

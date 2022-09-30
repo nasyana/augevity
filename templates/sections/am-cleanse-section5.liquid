@@ -1,0 +1,41 @@
+{% if product.metafields.my_fields.hide_reviews %}
+
+{%else%}
+
+
+
+<section  class="sec-13">
+	<div class="row" style="background-color:#000000; padding: 30px 0; color: #ffffff;">
+		<div class="col-sm-12 text-center">
+			<h2 class="newFont" style="margin: 0; color: #ffffff!important;">CUSTOMER REVIEWS</h2>		
+			<p>Want to write a review? Look out for an email from us 7 days after your purchase!</p>
+		</div>
+	</div>
+	<div class="arrow-down"></div>
+</section>
+
+<section  class="sec-14" style="background-color: #fff; padding: 0px 0;">
+	<div class="row">
+      <div class="container"> 
+		<div class="col-sm-12">
+			<div id="stamped-main-widget" 
+			data-widget-style="full-page"
+			data-product-id="{{ product.id }}" 
+			data-name="{{ product.title | escape }}" 
+			data-url="{{ shop.url }}{{ product.url }}" 
+			data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}" 
+			data-description="{{ product.description | escape }}" 
+			data-product-sku="{{product.selected_or_first_available_variant.sku}}"
+			data-product-type="{{product.type}}"> 
+			
+			</div>
+			
+				<!-- <div id="review-section">
+					Want to write a review? Look out for an email from Gevity RX 7 days after purchase.
+					</div>	 -->
+		</div>
+      </div>		
+	</div>	
+</section>
+
+{% endif %}

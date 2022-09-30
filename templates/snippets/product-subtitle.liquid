@@ -1,0 +1,14 @@
+<div class ="custom-attributes-wrapper product-single__description rte">
+    {%assign product_subtitle = product.metafields.product_subtitle %}
+     {%if product_subtitle.size > 0 %}  
+      <h3>Additional information:</h3>
+        <ul>
+          {% for field in product_subtitle %}
+           {% assign attribute_code = field | first %}
+           {% assign attribute_value = field | last %}
+            <li class="custom-attribute-item"><span class="custom-attribute-name">{{ attribute_code }}</span>: <span class="custom-attribute-value">{{attribute_value}}</span> </li>
+          {% endfor %}
+        </ul>
+     {%endif%}
+     </div>
+    <br/>

@@ -1,0 +1,96 @@
+<style>
+  @media only screen and (max-width: 500px) {
+
+    #onlymobile{display: block;}
+    #onlydesktop{display: none;}
+}
+    @media only screen and (min-width: 500px) {
+
+    #onlymobile{display: none;}
+    #onlydesktop{display: block;}
+}
+</style>
+ {% for block in section.blocks %}
+<section id="nase_about_five" style="background: url('{{ block.settings.item-image2 | img_url: '2048x655' }}') no-repeat 100% 75%; background-size: 52%;">
+  
+  <div id="about_row" class="row1"   style="background: url('{{ block.settings.item-image1 | img_url: '2048x655' }}') no-repeat 0 0; background-size: 52%;" >
+	<div class="nase_half" >
+      
+      <div class="nase_left-content">
+      
+<!--     <h3  class="about_h3">{{ block.settings.header }}</h3> -->
+        
+        </div>
+
+	</div>	
+	<div class="nase_half">
+		
+		<div class="nase_right-content_custom">
+			<h3  class="about_h3">{{ block.settings.header1 }}</h3>
+          <p class="section_three_body">{{ block.settings.body1 }}</p>
+
+		
+		</div>
+	</div>	
+    
+  </div>
+  
+   <div id="about_row" class="story row2">
+	<div class="nase_half">
+      <div class="nase_left-content section-five">
+    <h3 class="about_h3">{{ block.settings.header2 }}</h3>
+
+          <p class="section_three_body">{{ block.settings.body2 }}</p>
+        
+      </div>
+	</div>	
+
+    
+  </div>
+</section>
+{% endfor %}
+
+{% schema %}
+{
+	"name": "About Section 5",
+	"blocks": [
+    		{
+    			"type": "image",
+    			"name": "About One Image Section",
+    			"settings": [
+
+                    {
+                    "type": "image_picker",
+                    "id": "item-image1",
+                    "label": "Image for the right side"
+                  },{                  
+                    "type": "text",
+                    "id": "header1",
+                    "label": "Box Header"
+                  },
+					{
+                    "type": "html",
+                    "id": "body1",
+                    "label": "Body"
+                  },{
+                    "type": "image_picker",
+                    "id": "item-image2",
+                    "label": "Image for the right side"
+                  },{                 
+                    "type": "text",
+                    "id": "header2",
+                    "label": "Box Header"
+                  },
+					{
+                    "type": "html",
+                    "id": "body2",
+                    "label": "Body"
+                  }
+
+
+             
+    			]
+    		}
+	]
+}
+{% endschema %}

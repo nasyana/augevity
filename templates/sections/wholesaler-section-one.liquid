@@ -1,0 +1,60 @@
+<style>
+  @media only screen and (max-width: 500px) {
+
+    #onlymobile{display: block;}
+    #onlydesktop{display: none;}
+}
+    @media only screen and (min-width: 500px) {
+
+    #onlymobile{display: none;}
+    #onlydesktop{display: block;} 
+} 
+</style>  
+ {% for block in section.blocks %}
+<section class="full_width health_prac_section_one wholesaler" style="background-size: 100%; background: url('{{ block.settings.item-image | img_url: '2048x1055' }}')">
+ 
+    <div class="full_width onlydesktop" > 
+
+             <h2>{{ block.settings.header }}</h2>
+            
+    </div>
+
+
+</section>
+{% endfor %}
+
+{% schema %}
+{
+    "name": "Wholesaler Section One",
+    "blocks": [
+            {
+                "type": "image",
+                "name": "Wholesaler Section One",
+                "settings": [
+                  {
+                    "type": "image_picker",
+                    "id": "item-image",
+                    "label": "Image of the product"
+                  }, {
+                    "type": "image_picker",
+                    "id": "mob-item-image",
+                    "label": "Mobile Version"
+                  }, {
+                    "type": "url",
+                    "id": "block_link",
+                    "label": "Link URL"
+                  }, {
+                    "type": "text",
+                    "id": "header",
+                    "label": "Box Header"
+                  }
+
+
+
+
+             
+                ]
+            }
+    ]
+}
+{% endschema %}

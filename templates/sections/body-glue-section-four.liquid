@@ -1,0 +1,107 @@
+<section class="sec-04 gevity_new_style_difference" style="padding: 60px 0;">
+    <div class="row" style="padding: 20px 0;">
+        <div class="container">
+            <div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 text-center">
+                <h2>{{ section.settings.main-header }}</h2>
+                <p>{{ section.settings.main-description }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="col-sm-6 col-md-6 col-lg-2 col-lg-offset-2 text-center">
+                <img src="{{ section.settings.item1-image | img_url: '2048x1055' }}" alt="THE BODY GLUE™ DIFFERENCE"/>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-2 text-center">
+                <img src="{{ section.settings.item2-image | img_url: '2048x1055' }}" alt="THE BODY GLUE™ DIFFERENCE"/>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-2 text-center">
+                <img src="{{ section.settings.item3-image | img_url: '2048x1055' }}" alt="THE BODY GLUE™ DIFFERENCE"/>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-2 text-center">
+                <img src="{{ section.settings.item4-image | img_url: '2048x1055' }}" alt="THE BODY GLUE™ DIFFERENCE"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="col-sm-6 col-md-6 col-lg-2 col-lg-offset-2 text-center">
+                <img src="{{ section.settings.item5-image | img_url: '2048x1055' }}" alt="THE BODY GLUE™ DIFFERENCE"/>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-2 text-center">
+                <img src="{{ section.settings.item6-image | img_url: '2048x1055' }}" alt="THE BODY GLUE™ DIFFERENCE"/>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-2 text-center">
+                <img src="{{ section.settings.item7-image | img_url: '2048x1055' }}" alt="THE BODY GLUE™ DIFFERENCE"/>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-2 text-center">
+                <img src="{{ section.settings.item8-image | img_url: '2048x1055' }}" alt="THE BODY GLUE™ DIFFERENCE"/>
+            </div>
+            <div class="col-sm-12 text-center">
+           <a href="#shopify-section-body-glue-section-ten">     <button class="btn btn-warning" type="button">
+                    {% comment %} <a href="{{ section.settings.section-url }}">{{ section.settings.button-text }}</a> {% endcomment %}
+{{ section.settings.button-text }}
+                    
+                </button></a> 
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+    "name": "Body Glue Four",
+    "settings": [{
+                    "type": "text",
+                    "id": "main-header",
+                    "label": "Box Header"
+                  },{
+                    "type": "text",
+                    "id": "main-description",
+                    "label": "description"
+                  }, {
+                    "type": "text",
+                    "id": "button-text",
+                    "label": "Button Text"
+                  },{
+                    "type": "image_picker",
+                    "id": "item1-image",
+                    "label": "Image Two"
+                  },{
+                    "type": "image_picker",
+                    "id": "item2-image",
+                    "label": "Image Two"
+                  },{
+                    "type": "image_picker",
+                    "id": "item3-image",
+                    "label": "Image Three"
+                  },{
+                    "type": "image_picker",
+                    "id": "item4-image",
+                    "label": "Image Four"
+                  },{
+                    "type": "image_picker",
+                    "id": "item5-image",
+                    "label": "Image Five"
+                  }  ,{
+                    "type": "image_picker",
+                    "id": "item6-image",
+                    "label": "Image Six"
+                  } ,{
+                    "type": "image_picker",
+                    "id": "item7-image",
+                    "label": "Image Seven"
+                  }  ,{
+                    "type": "image_picker",
+                    "id": "item8-image",
+                    "label": "Image Eight"
+                  }  
+                  ,{
+                    "type": "url",
+                    "id": "section-url",
+                    "label": "Section Url"
+                  }  
+                ]
+}
+{% endschema %}

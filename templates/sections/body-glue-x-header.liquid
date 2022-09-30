@@ -1,0 +1,48 @@
+<style>
+    @media only screen and (max-width: 500px) {
+  
+      #onlymobile{display: block;}
+      #onlydesktop{display: none;}
+  }
+      @media only screen and (min-width: 500px) {
+  
+      #onlymobile{display: none;}
+      #onlydesktop{display: block;} 
+  } 
+  </style>  
+ 
+ <div id="onlydesktop" class="collection-title-gv fade-in-image" style=" background: url({{ section.settings.item-image  | img_url: '2048x1055'}})  #333; min-height: 400px; background-size: fit; background-position: center center !important">
+
+  
+</div>
+
+<div id="onlymobile" class="collection-title-gv fade-in-image" style=" background: url({{ section.settings.mob-item-image  | img_url: '2048x1055'}})  #333;  background-position: center center !important">
+
+  
+</div>
+  
+  {% schema %}
+  {
+
+                  "name": "Body Glue X Header Images",
+                  "settings": [
+                    {
+                      "type": "image_picker",
+                      "id": "item-image",
+                      "label": "Image of the product"
+                    }, {
+                      "type": "image_picker",
+                      "id": "mob-item-image",
+                      "label": "Mobile Version"
+                    }, {
+                      "type": "url",
+                      "id": "block_link",
+                      "label": "Link URL"
+                    }, {
+                      "type": "text",
+                      "id": "header",
+                      "label": "Box Header"
+                    }]
+      
+  }
+  {% endschema %}

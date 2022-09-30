@@ -1,0 +1,85 @@
+
+<section  class="sec-15 gevity_new_style_bone-broth" style="background-color: #F4F4F4;">
+
+	<div class="row">
+      <div class="container thisone" style="background-image: url('{{ section.settings.main-image | img_url: 'master'}}'); padding: 0; background-size: 67%; background-position: right;">
+		
+		<div id="bcallout" class="col-sm-6 col-md-4 col-lg-4" style="background-color: {{ section.settings.background }};">
+			<div id="oval" style="background-color: {{ section.settings.background }}"></div>
+			<div id="callout-text">
+			<h2>{{ section.settings.header1 }} <br/>{{ section.settings.header2 }}</h2>
+            <h1  class="gwhite" style="line-height: 37px; color: #ffffff; border-top: 1px solid rgba(255,255,255,0.3); border-bottom: 0px solid rgba(255,255,255,0.3); padding: 20px 0 10px;">
+                <span style="font-size: 45px;" id="worldsmost">{{ section.settings.body1 }}</span> <br/>
+                <span style="font-size: 60px;"  id="nutrientdense">
+                {% comment %} {{ section.settings.body2 }} {% endcomment %}
+                FUN<span style="opacity: 0.7">CTIONAL</span>
+                </span> <br/>
+            <span style="font-size: 70px; margin-top: 40px !important; line-height: 34px; display: block!important;" id="bbroth">{{ section.settings.body3 }}</span></h1>
+			<button type="button" class="btn full"><a href="#shopify-section-sauces-lp-products" id="callout-button">{{ section.settings.button-text }}</a></button>
+
+			</div>
+		</div> 
+      </div>		
+	</div>
+	<div class="row" style="padding: 20px 0;">
+      <div class="container">
+		{% comment %} <div class="col-sm-12">
+			<p><small>*Lab tested to contain 10 x more collagen forming amino acids versus market leading traditional bone broths.<br/>
+			We strongly advise you to check for this information on other specific products to ensure you know what you are consuming. Need help understanding or cross referencing a product label? Contact our customer support team for assistance.</small></p>
+		</div> {% endcomment %}
+      </div>		
+	</div>	
+</section>
+
+
+{% schema %}
+{
+  "name": "Sauces Callout",
+  "class": "shopify-section-bottom-callout",
+  "settings": [
+    
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#B98157"
+    },
+    {
+      "type": "text",
+      "id": "header1",
+      "label": "Top Text 1",
+      "default": "BONE BROTH BODY GLUE™"
+    },{
+      "type": "text",
+      "id": "header2",
+      "label": "Top Text 2",
+      "default": "BONE BROTH BODY GLUE™"
+    },{
+      "type": "text",
+      "id": "body1",
+      "label": "Bottom Text 1",
+      "default": "THE WORLD’S MOST"
+    },{
+      "type": "text",
+      "id": "body2",
+      "label": "Bottom Text 2",
+      "default": "THE WORLD’S MOST"
+    },{
+      "type": "text",
+      "id": "body3",
+      "label": "Bottom Text 3",
+      "default": "THE WORLD’S MOST"
+    },{
+      "type": "text",
+      "id": "button-text",
+      "label": "Button Text",
+      "default": "Shop Body Glue"
+    },{
+        "type": "image_picker",
+        "id": "main-image",
+        "label": "Main Image",
+        "info": "340 x 80px .jpg recommended"
+      }
+  ]
+                            }
+{% endschema %}

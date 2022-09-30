@@ -1,0 +1,94 @@
+<style>
+    section#nase_why {
+        display: table;
+    }
+
+    #shopify-section-wholesaler-section-three #nase_why {
+    width: 100%;
+}
+      </style>
+    
+    {% for block in section.blocks %}
+    
+    <section id="nase_why" style="background: #f4f4f4!important">
+      <div class="nase_half image" style="background-image: url('{{ block.settings.item-image | img_url: '2048x1055' }}')">
+            <div class="nase_right-content" >
+                <p>&nbsp;</p>
+            </div>
+        </div>	
+        <div class="nase_half" style="background: #f4f4f4!important">
+            <div class="nase_left-content">
+                <h2 id="scroll_to_faq">{{ block.settings.header}}</h2>
+                <p>{{ block.settings.description}}</p>
+                <ul>
+     
+                  
+
+
+    {% if page.metafields.custom_fields["wholesaler_info"] != blank %}
+
+      {% assign separator = "|###|" %}
+      {% assign wholesaler_question_array = page.metafields.custom_fields["wholesaler_question"] | split: separator %}
+      {% assign wholesaler_answer_array = page.metafields.custom_fields["wholesaler_answer"] | split: separator %}
+      {% assign fc_keys = page.metafields.custom_fields["wholesaler_info"] | split: "," %}
+      {% for i in fc_keys %}
+        {% assign index = i | plus: 0 %}
+        <li class="question">{{ wholesaler_question_array[index] }}</li>
+          <!-- <li class="answer">{{ wholesaler_answer_array[index] }}</li> -->
+     
+      {% endfor %}
+
+
+{% endif %}
+
+
+                </ul>
+            
+            </div>
+        </div>
+    
+    </section>
+    
+    {% endfor %}
+    
+    
+    {% schema %}
+    {
+        "name": "Wholesaler Section Three",
+        "blocks": [
+                {
+                    "type": "image",
+                    "name": "Wholesaler Section Three",
+                    "settings": [
+                      {
+                        "type": "image_picker",
+                        "id": "item-image",
+                        "label": "Image of the product"
+                      }, {
+                        "type": "image_picker",
+                        "id": "mob-item-image",
+                        "label": "Mobile Version"
+                      }, {
+                        "type": "url",
+                        "id": "block_link",
+                        "label": "Link URL"
+                      }, {
+                        "type": "text",
+                        "id": "header",
+                        "label": "Box Header"
+                      }, {
+                        "type": "text",
+                        "id": "description",
+                        "label": "description"
+                      }
+    
+    
+    
+    
+    
+                 
+                    ]
+                }
+        ]
+    }
+    {% endschema %}

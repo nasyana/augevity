@@ -1,0 +1,105 @@
+<style>
+
+    #applybutton{
+
+        background: #000;
+        color: #fff;
+        padding: 10px 20px
+    }
+    .center{
+    
+        align-items: center;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+  
+        @media only screen and (max-width: 500px) {
+
+            a#applybutton{
+
+                display: block;
+                width: 100%;
+                text-align: center;
+/* display: none!important */
+}
+            #jobrow{padding-top: 20px; border-bottom: 0px solid; margin-bottom: 20px; flex-direction: column; display: flex; width: 100%; justify-content: space-between}
+            .jobtitle{ font-size: 20px; }
+
+.jobdescription{ font-size: 16px; flex-direction: column; }
+      
+          #onlymobile{display: block;}
+          #onlydesktop{display: none;}
+      }
+          @media only screen and (min-width: 500px) {
+
+
+        
+
+            #jobrow{padding-top: 20px; border-bottom: 1px solid; margin-bottom: 20px; flex-direction: row; display: flex; width: 100%; justify-content: space-between}
+            .jobtitle{ font-size: 26px;}
+
+.jobdescription{ 
+    
+    flex-direction: row; 
+    
+    font-size: 20px; }
+      
+          #onlymobile{display: none;}
+          #onlydesktop{display: block;}
+      }
+    
+    
+      </style>
+{%- if section.blocks.size > 0 -%}
+    <section class="full_width  ">
+
+        <div class="full_width onlydesktop">
+
+            {% for block in section.blocks %}
+
+                <div id="jobrow">
+                    <div>
+                        <h2 class="circular jobtitle" style="text-transform: uppercase; ">{{ block.settings.jobtitle }}</h2>
+
+                        <div class="jobdescription" style="margin-bottom: 20px!important; padding-bottom: 20px;">
+                            <p class="book">{{ block.settings.jobdescription }}</p>
+
+                        </div>
+                    </div>
+                    <div>
+                        <a class="book apply" href="{{ shop.url }}/pages/{{ block.settings.fulljob.handle }}" id="applybutton">Apply</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endif %}
+
+{% schema %}
+
+{
+    "name": "List Jobs",
+    "blocks": [
+        {
+            "type": "text",
+            "name": "Jobs",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "jobtitle",
+                    "label": "Job Title"
+                }, {
+                    "type": "text",
+                    "id": "jobdescription",
+                    "label": "Job Title 2"
+                }, {
+                    "type": "page",
+                    "id": "fulljob",
+                    "label": "Full Job Page"
+                }
+            ]
+        }
+    ]
+}
+
+{% endschema %}
